@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7AA95A6A-59D7-46B1-9B9C-C9DDF020CE9E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonDAL.cs" />
+    <Compile Include="CommonFuns.cs" />
+    <Compile Include="Execute\ExecuteGenius.cs" />
+    <Compile Include="Execute\frmAPException.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Execute\frmAPException.designer.cs">
+      <DependentUpon>frmAPException.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseList.designer.cs">
+      <DependentUpon>frmBaseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoSql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoSql.Designer.cs">
+      <DependentUpon>frmDoSql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainBase.designer.cs">
+      <DependentUpon>frmMainBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMdiBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMdiBase.designer.cs">
+      <DependentUpon>frmMdiBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectBase.Designer.cs">
+      <DependentUpon>frmSelectBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetDbFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetDbFile.designer.cs">
+      <DependentUpon>frmSetDbFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdate1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdate1.Designer.cs">
+      <DependentUpon>frmUpdate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Msg\frmMsgRich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Msg\frmMsgRich.designer.cs">
+      <DependentUpon>frmMsgRich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyEntity\ComboBoxItem.cs" />
+    <Compile Include="MyEntity\SearchLabelItem.cs" />
+    <Compile Include="MyEnums\MyEnums.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Execute\frmAPException.resx">
+      <DependentUpon>frmAPException.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoSql.resx">
+      <DependentUpon>frmDoSql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMainBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMdiBase.resx">
+      <DependentUpon>frmMdiBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectBase.resx">
+      <DependentUpon>frmSelectBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetDbFile.resx">
+      <DependentUpon>frmSetDbFile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdate1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUpdate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Msg\frmMsgRich.resx">
+      <DependentUpon>frmMsgRich.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSqlServer\frmBearingUpdating.resx">
+      <DependentUpon>frmBearingUpdating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\frmMsgShineDetail.resx">
+      <DependentUpon>frmMsgShineDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucMsgShine.resx">
+      <DependentUpon>ucMsgShine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UpdateSqlServer\frmBearingUpdating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSqlServer\frmBearingUpdating.Designer.cs">
+      <DependentUpon>frmBearingUpdating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\frmMsgShineDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\frmMsgShineDetail.designer.cs">
+      <DependentUpon>frmMsgShineDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucMsgShine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucMsgShine.designer.cs">
+      <DependentUpon>ucMsgShine.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ErrorService\ErrorService.csproj">
+      <Project>{70651698-B645-4437-A64C-768873E24B2E}</Project>
+      <Name>ErrorService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\1.ico" />
+    <Content Include="images\chCloseButton_White.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

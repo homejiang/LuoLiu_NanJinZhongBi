@@ -1,0 +1,10 @@
+﻿*.exe
+*.pdb
+bin/
+obj/
+.vs/
+*.v2
+*.suo
+/SourceCode/~$开发日志.docx
+/SourceCode/~$数据表.docx
+/~$系统模块设计.docx
