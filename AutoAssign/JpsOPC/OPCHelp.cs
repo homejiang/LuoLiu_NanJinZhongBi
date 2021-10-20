@@ -4763,8 +4763,8 @@ namespace JpsOPC
             }
             return true;
         }
-        public bool WriteSwichSetting(bool blReWrite,JpsOPC.OPCEntitys.OPCEntitys set1, JpsOPC.OPCEntitys.OPCEntitys set2, JpsOPC.OPCEntitys.OPCEntitys set3, JpsOPC.OPCEntitys.OPCEntitys set4, JpsOPC.OPCEntitys.OPCEntitys set5
-            , JpsOPC.OPCEntitys.OPCEntitys set6, JpsOPC.OPCEntitys.OPCEntitys set7, JpsOPC.OPCEntitys.OPCEntitys set8, JpsOPC.OPCEntitys.OPCEntitys set9, out string sErr)
+        public bool WriteSwichSetting(bool blReWrite,JpsOPC.OPCEntitys.SwichABEntity set1, JpsOPC.OPCEntitys.SwichABEntity set2, JpsOPC.OPCEntitys.SwichABEntity set3, JpsOPC.OPCEntitys.SwichABEntity set4, JpsOPC.OPCEntitys.SwichABEntity set5
+            , JpsOPC.OPCEntitys.SwichABEntity set6, JpsOPC.OPCEntitys.SwichABEntity set7, JpsOPC.OPCEntitys.SwichABEntity set8, JpsOPC.OPCEntitys.SwichABEntity set9, out string sErr)
         {
             //sErr = string.Format("数量serverID:{0}，数量值:{1}", this.St_Cao1DxCnt.ServerHandle, grooves[0].St_CaoDxCnt);
             //return false;
@@ -4773,15 +4773,15 @@ namespace JpsOPC
                 sErr = string.Empty;
                 return true;
             }
-            if (set1 == null) set1 = new OPCEntitys.OPCEntitys();
-            if (set2 == null) set2 = new OPCEntitys.OPCEntitys();
-            if (set3 == null) set3 = new OPCEntitys.OPCEntitys();
-            if (set4 == null) set4 = new OPCEntitys.OPCEntitys();
-            if (set5 == null) set5 = new OPCEntitys.OPCEntitys();
-            if (set6 == null) set6 = new OPCEntitys.OPCEntitys();
-            if (set7 == null) set7 = new OPCEntitys.OPCEntitys();
-            if (set8 == null) set8 = new OPCEntitys.OPCEntitys();
-            if (set9 == null) set9 = new OPCEntitys.OPCEntitys();
+            if (set1 == null) set1 = new OPCEntitys.SwichABEntity();
+            if (set2 == null) set2 = new OPCEntitys.SwichABEntity();
+            if (set3 == null) set3 = new OPCEntitys.SwichABEntity();
+            if (set4 == null) set4 = new OPCEntitys.SwichABEntity();
+            if (set5 == null) set5 = new OPCEntitys.SwichABEntity();
+            if (set6 == null) set6 = new OPCEntitys.SwichABEntity();
+            if (set7 == null) set7 = new OPCEntitys.SwichABEntity();
+            if (set8 == null) set8 = new OPCEntitys.SwichABEntity();
+            if (set9 == null) set9 = new OPCEntitys.SwichABEntity();
             //foreach(GrooveGongyiEntity entity in grooves)
             //{
             //    if(entity.St_CaoUsed && entity.St_CaoDxCnt>0)

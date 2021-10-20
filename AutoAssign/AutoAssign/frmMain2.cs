@@ -874,10 +874,10 @@ namespace AutoAssign
             this._TestMode.ModeIsNeter = dr["ModeIsNeter"];
             this._TestMode.ModeIsScaner = dr["ModeIsScaner"];
             if (dr["GongYiType"].ToString() == "1")
-                this._GongYiType = GongYiTypes.Same;
+                this._SwitchMode = SwitchModes.普通分档;
             else if (dr["GongYiType"].ToString() == "2")
-                this._GongYiType = GongYiTypes.Deffrent;
-            else this._GongYiType = GongYiTypes.None;
+                this._SwitchMode = SwitchModes.分AB档;
+            else this._SwitchMode = SwitchModes.未定义;
             if (!dr["ProductClassValue"].Equals(DBNull.Value))
                 _ProductClassValue = short.Parse(dr["ProductClassValue"].ToString());
             else _ProductClassValue = -1;
@@ -957,7 +957,7 @@ namespace AutoAssign
         {
             frmGrooveSetting frm = new frmGrooveSetting(this._AutoMKOnOff);
             frm._IsNet = _TestMode.ModeIsNeter != null && !_TestMode.ModeIsNeter.Equals(DBNull.Value) && (bool)_TestMode.ModeIsNeter;
-            frm.IsAllSame(this._GongYiType == JPSEnum.GongYiTypes.Same);//设置同工艺
+            frm.IsAllSame(true);//设置同工艺
             if (this._TestState == TestStates.Testing || this._TestState == TestStates.Pause)
                 frm.SetTuoBtyCntEnable(false);
             else frm.SetTuoBtyCntEnable(true);
@@ -1362,6 +1362,107 @@ namespace AutoAssign
             }
             return true;
         }
+        public bool WriteNanjingZBIntoPLc()
+        {
+            /******************
+             * 将南京中比特有的分档信息写入PLC
+             * ***************/
+            DataTable dt;
+            try
+            {
+                dt = Common.CommonDAL.DoSqlCommandBasic.GetDateTable("select * from NanJingZB_YaCha");
+            }
+            catch(Exception ex)
+            {
+                this.ShowMsg($"获取压差值出错：{ex.Message}");
+                return false;
+            }
+            JpsOPC.OPCEntitys.YaChaEntity yacha = new JpsOPC.OPCEntitys.YaChaEntity();
+            int iMyIndex;
+            decimal decValue;
+            foreach (DataRow dr in dt.Rows)
+            {
+                if (dr["MyIndex"].Equals(DBNull.Value)) continue;
+                if (dr["YcValue"].Equals(DBNull.Value)) continue;
+                iMyIndex = int.Parse(dr["MyIndex"].ToString());
+                decValue = decimal.Parse(dr["YcValue"].ToString());
+                if (iMyIndex == 1)
+                    yacha.Yc1 = decValue;
+                else if (iMyIndex == 2) yacha.Yc2 = decValue;
+                else if (iMyIndex == 3) yacha.Yc3 = decValue;
+                else if (iMyIndex == 4) yacha.Yc4 = decValue;
+                else if (iMyIndex == 5) yacha.Yc5 = decValue;
+                else if (iMyIndex == 6) yacha.Yc6 = decValue;
+                else if (iMyIndex == 7) yacha.Yc7 = decValue;
+                else if (iMyIndex == 8) yacha.Yc8 = decValue;
+                else if (iMyIndex == 9) yacha.Yc9 = decValue;
+                else if (iMyIndex == 10) yacha.Yc10 = decValue;
+                else if (iMyIndex == 11) yacha.Yc11 = decValue;
+                else if (iMyIndex == 12) yacha.Yc12 = decValue;
+                else if (iMyIndex == 13) yacha.Yc13 = decValue;
+                else if (iMyIndex == 14) yacha.Yc14 = decValue;
+                else if (iMyIndex == 15) yacha.Yc15 = decValue;
+                else if (iMyIndex == 16) yacha.Yc16 = decValue;
+                else if (iMyIndex == 17) yacha.Yc17 = decValue;
+                else if (iMyIndex == 18) yacha.Yc18 = decValue;
+                else if (iMyIndex == 19) yacha.Yc19 = decValue;
+                else if (iMyIndex == 20) yacha.Yc20 = decValue;
+            }
+            if (this._MainControl == null)
+            {
+                this.ShowMsg("写入压差数据出错：程序控制对象为空，请重新打开窗口！");
+                return false;
+            }
+            if (this._MainControl._OPCHelperGongYi == null)
+            {
+                this.ShowMsg("写入压差数据出错：程序控制对象(工艺参数写入)为空，请重新打开窗口！");
+                return false;
+            }
+            string strErr;
+            if (!this._MainControl._OPCHelperGongYi.WriteYaCha(false,yacha, out strErr))
+            {
+                this.ShowMsg($"写入压差数据出错：{strErr}");
+                return false;
+            }
+            //不是分档不用写入
+            if (this._SwitchMode != SwitchModes.分AB档) return true;
+            try
+            {
+                dt = Common.CommonDAL.DoSqlCommandBasic.GetDateTable($"SELECT * FROM Testing_GroovesAB WHERE CODE='{this._TestCode.Replace("'", "''")}'");
+            }
+            catch (Exception ex)
+            {
+                this.ShowMsg($"获取AB分档设置信息出错：{ex.Message}");
+                return false;
+            }
+            List<JpsOPC.OPCEntitys.SwichABEntity> list = new List<JpsOPC.OPCEntitys.SwichABEntity>();
+            for (int i = 0; i < 9; i++)
+            {
+                JpsOPC.OPCEntitys.SwichABEntity set = new JpsOPC.OPCEntitys.SwichABEntity();
+                set.CaoIndex = (short)(i + 1);
+                list.Add(set);
+            }
+            int iGrooveNo;
+            foreach (DataRow dr in dt.Rows)
+            {
+                if (dr["GrooveNo"].Equals(DBNull.Value)) continue;
+                iGrooveNo = int.Parse(dr["GrooveNo"].ToString());
+                if (iGrooveNo < 1 || iGrooveNo > list.Count) continue;
+                JpsOPC.OPCEntitys.SwichABEntity set = list[iGrooveNo - 1];
+                set.MinValueA = dr["Amin"].Equals(DBNull.Value) ? 0M : decimal.Parse(dr["Amin"].ToString());
+                set.MaxValueA = dr["Amax"].Equals(DBNull.Value) ? 0M : decimal.Parse(dr["Amax"].ToString());
+                set.MinValueB = dr["Bmin"].Equals(DBNull.Value) ? 0M : decimal.Parse(dr["Bmin"].ToString());
+                set.MaxValueB = dr["Bmax"].Equals(DBNull.Value) ? 0M : decimal.Parse(dr["Bmax"].ToString());
+                set.QtyA = dr["AQty"].Equals(DBNull.Value) ? (short)0 : short.Parse(dr["AQty"].ToString());
+                set.QtyB = dr["BQty"].Equals(DBNull.Value) ? (short)0 : short.Parse(dr["BQty"].ToString());
+            }
+            if (!this._MainControl._OPCHelperGongYi.WriteSwichSetting(false, list[0], list[1], list[2], list[3], list[4], list[5], list[6], list[7], list[8], out strErr))
+            {
+                this.ShowMsg($"写入分档数据出错：{strErr}");
+                return false;
+            }
+            return true;
+        }
         #endregion
         #region  扫描枪
         /// <summary>
@@ -1473,6 +1574,7 @@ namespace AutoAssign
             this._MainControl._ResultControler.ShowLog("数据已提交至远程服务器。");
             //将槽的工艺参数写入设备
             if (!WriteGroovesIntoPLC()) return;
+            if (!WriteNanjingZBIntoPLc()) return;
             this._MainControl._ResultControler.ShowLog("工艺参数已写入PLC。");
             this._MainControl._ScannControler.SetTestingData(this._MBatchOnOff == OnOff.On, string.Empty, this._SNOnOff == OnOff.On, this._CharOnOff == OnOff.On, this._RealTable_Batterys, this._RealTable_Result);
 
@@ -3358,6 +3460,23 @@ namespace AutoAssign
             if (mode == null)
                 this.tbSwitchModeView.Text = "";
             else this.tbSwitchModeView.Text = mode.ToString();
+        }
+
+        private void btYaCha_Click(object sender, EventArgs e)
+        {
+            NanJingZB.frmYcEdit frm = new NanJingZB.frmYcEdit();
+            frm.ShowDialog();
+        }
+
+        private void linkGrooveABSet_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if(this._SwitchMode!=SwitchModes.分AB档)
+            {
+                this.ShowMsg("当前分档模式不是AB档，无法编辑！");
+                return;
+            }
+            NanJingZB.frmSwitchEdit frm = new NanJingZB.frmSwitchEdit();
+            frm.ShowDialog();
         }
     }
 }

@@ -500,6 +500,18 @@
     <Compile Include="MK\frmClearRealMKData.Designer.cs">
       <DependentUpon>frmClearRealMKData.cs</DependentUpon>
     </Compile>
+    <Compile Include="NanJingZB\frmSwitchEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NanJingZB\frmSwitchEdit.Designer.cs">
+      <DependentUpon>frmSwitchEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NanJingZB\frmYcEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NanJingZB\frmYcEdit.Designer.cs">
+      <DependentUpon>frmYcEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="OperateExcel.cs" />
     <Compile Include="PeiFang\frmGongYiSetting.cs">
       <SubType>Form</SubType>
@@ -877,6 +889,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MK\frmClearRealMKData.resx">
       <DependentUpon>frmClearRealMKData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NanJingZB\frmSwitchEdit.resx">
+      <DependentUpon>frmSwitchEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NanJingZB\frmYcEdit.resx">
+      <DependentUpon>frmYcEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PeiFang\frmGongYiSetting.resx">
       <DependentUpon>frmGongYiSetting.cs</DependentUpon>

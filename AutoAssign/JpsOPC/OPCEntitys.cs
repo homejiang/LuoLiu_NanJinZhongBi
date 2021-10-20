@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace JpsOPC.OPCEntitys
 {
-    public class OPCEntitys
+    public class SwichABEntity
     {
-        public OPCEntitys()
+        public SwichABEntity()
         {
 
         }
@@ -37,6 +37,7 @@ namespace JpsOPC.OPCEntitys
         /// B档数量
         /// </summary>
         public short QtyB = 0;
+
     }
     public class YaChaEntity
     {
