@@ -20,7 +20,7 @@ namespace AutoAssign.NanJingZB
         {
             try
             {
-                this.myDataGridView1.DataSource = Common.CommonDAL.DoSqlCommandBasic.GetDateTable("SELECT * FROM RealData_GroovesAB order by GrooveNo asc", true);
+                this.myDataGridView1.DataSource = Common.CommonDAL.DoSqlCommand.GetDateTable("SELECT * FROM RealData_GroovesAB order by GrooveNo asc", true);
             }
             catch(Exception ex)
             {
@@ -56,7 +56,7 @@ namespace AutoAssign.NanJingZB
             }
             try
             {
-                Common.CommonDAL.DoSqlCommandBasic.SaveTable(dt, "RealData_GroovesAB");
+                Common.CommonDAL.DoSqlCommand.SaveTable(dt, "RealData_GroovesAB");
             }
             catch(Exception ex)
             {

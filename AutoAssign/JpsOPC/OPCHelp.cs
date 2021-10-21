@@ -16,6 +16,15 @@ namespace JpsOPC
         public bool IsDebug = false;
         public bool InitSucessfully = false;
     }
+    public class OPCHelperSJBase
+    {
+        public const int TransIDMainform = 2012;
+        public const int TransIDSetttings = 2013;
+        public const string OPCItemTitle = "1200.1218.";
+        public int _ClientHandle = 0;
+        public bool IsDebug = false;
+        public bool InitSucessfully = false;
+    }
     public class OPCHelperBat : OPCHelperBase
     {
         OPCServer _Server = null;
@@ -46,6 +55,11 @@ namespace JpsOPC
         #region 公共函数
         public bool InitServer(out string sErr)
         {
+            if (this.IsDebug)
+            {
+                sErr = "";
+                return true;
+            }
             if (_Server == null)
             {
                 try
@@ -546,6 +560,11 @@ namespace JpsOPC
         #region 公共函数
         public bool InitServer(out string sErr)
         {
+            if (this.IsDebug)
+            {
+                sErr = "";
+                return true;
+            }
             if (_Server == null)
             {
                 try
@@ -5106,6 +5125,11 @@ namespace JpsOPC
         #region 公共函数
         public bool InitServer(out string sErr)
         {
+            if (this.IsDebug)
+            {
+                sErr = "";
+                return true;
+            }
             if (!this.InitServerDoing(out sErr))
             {
                 this.InitSucessfully = false;

@@ -62,7 +62,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(768, 445);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(768, 475);
             this.tableLayoutPanel1.TabIndex = 10;
             // 
             // label1
@@ -84,7 +84,7 @@
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 408);
+            this.panel1.Location = new System.Drawing.Point(3, 438);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(762, 34);
             this.panel1.TabIndex = 11;
@@ -127,8 +127,8 @@
             this.myDataGridView1.Location = new System.Drawing.Point(0, 38);
             this.myDataGridView1.Margin = new System.Windows.Forms.Padding(0);
             this.myDataGridView1.Name = "myDataGridView1";
-            this.myDataGridView1.RowTemplate.Height = 23;
-            this.myDataGridView1.Size = new System.Drawing.Size(768, 367);
+            this.myDataGridView1.RowTemplate.Height = 26;
+            this.myDataGridView1.Size = new System.Drawing.Size(768, 397);
             this.myDataGridView1.TabIndex = 12;
             // 
             // Column1
@@ -189,7 +189,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 445);
+            this.ClientSize = new System.Drawing.Size(768, 475);
             this.Controls.Add(this.tableLayoutPanel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

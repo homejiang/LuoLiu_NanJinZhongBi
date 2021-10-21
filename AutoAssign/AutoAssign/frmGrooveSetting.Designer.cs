@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.chkAll = new System.Windows.Forms.CheckBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -63,7 +64,6 @@
             this.uc2 = new AutoAssign.UserControls.ucMyGroove();
             this.uc1 = new AutoAssign.UserControls.ucMyGroove();
             this.btTrue = new System.Windows.Forms.Button();
-            this.chkAll = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -91,6 +91,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(894, 83);
             this.panel1.TabIndex = 24;
+            // 
+            // chkAll
+            // 
+            this.chkAll.AutoSize = true;
+            this.chkAll.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.chkAll.ForeColor = System.Drawing.Color.Blue;
+            this.chkAll.Location = new System.Drawing.Point(35, 15);
+            this.chkAll.Name = "chkAll";
+            this.chkAll.Size = new System.Drawing.Size(163, 20);
+            this.chkAll.TabIndex = 271;
+            this.chkAll.Text = "各槽参数同步更改";
+            this.chkAll.UseVisualStyleBackColor = true;
             // 
             // label14
             // 
@@ -132,9 +144,9 @@
             this.label17.Location = new System.Drawing.Point(605, 40);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(78, 19);
+            this.label17.Size = new System.Drawing.Size(83, 19);
             this.label17.TabIndex = 267;
-            this.label17.Text = "电压值(uv)";
+            this.label17.Text = "电压值(mv)";
             // 
             // label18
             // 
@@ -165,9 +177,9 @@
             this.label20.Location = new System.Drawing.Point(497, 39);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(73, 19);
+            this.label20.Size = new System.Drawing.Size(87, 19);
             this.label20.TabIndex = 264;
-            this.label20.Text = "电阻值(Ω)";
+            this.label20.Text = "电阻值(mΩ)";
             // 
             // labBtyCountTitle
             // 
@@ -209,9 +221,9 @@
             this.label12.Location = new System.Drawing.Point(158, 40);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(78, 19);
+            this.label12.Size = new System.Drawing.Size(83, 19);
             this.label12.TabIndex = 260;
-            this.label12.Text = "电压值(uv)";
+            this.label12.Text = "电压值(mv)";
             // 
             // label9
             // 
@@ -242,9 +254,9 @@
             this.label7.Location = new System.Drawing.Point(50, 39);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 19);
+            this.label7.Size = new System.Drawing.Size(87, 19);
             this.label7.TabIndex = 257;
-            this.label7.Text = "电阻值(Ω)";
+            this.label7.Text = "电阻值(mΩ)";
             // 
             // panel2
             // 
@@ -463,18 +475,6 @@
             this.btTrue.Text = "确定";
             this.btTrue.UseVisualStyleBackColor = true;
             this.btTrue.Click += new System.EventHandler(this.btTrue_Click);
-            // 
-            // chkAll
-            // 
-            this.chkAll.AutoSize = true;
-            this.chkAll.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chkAll.ForeColor = System.Drawing.Color.Blue;
-            this.chkAll.Location = new System.Drawing.Point(35, 15);
-            this.chkAll.Name = "chkAll";
-            this.chkAll.Size = new System.Drawing.Size(163, 20);
-            this.chkAll.TabIndex = 271;
-            this.chkAll.Text = "各槽参数同步更改";
-            this.chkAll.UseVisualStyleBackColor = true;
             // 
             // frmGrooveSetting
             // 

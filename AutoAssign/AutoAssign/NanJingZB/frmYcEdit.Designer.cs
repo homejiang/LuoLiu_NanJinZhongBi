@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.myDataGridView1 = new MyControl.MyDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.myDataGridView1)).BeginInit();
@@ -57,7 +58,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(730, 510);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(730, 647);
             this.tableLayoutPanel1.TabIndex = 10;
             // 
             // label1
@@ -79,10 +80,30 @@
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 473);
+            this.panel1.Location = new System.Drawing.Point(3, 610);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(724, 34);
             this.panel1.TabIndex = 11;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("宋体", 1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox1.Location = new System.Drawing.Point(411, 8);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(1, 2);
+            this.textBox1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("宋体", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.Location = new System.Drawing.Point(298, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 32);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "保存";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // myDataGridView1
             // 
@@ -97,53 +118,36 @@
             this.myDataGridView1.Location = new System.Drawing.Point(0, 38);
             this.myDataGridView1.Margin = new System.Windows.Forms.Padding(0);
             this.myDataGridView1.Name = "myDataGridView1";
-            this.myDataGridView1.RowTemplate.Height = 23;
-            this.myDataGridView1.Size = new System.Drawing.Size(730, 432);
+            this.myDataGridView1.RowTemplate.Height = 27;
+            this.myDataGridView1.Size = new System.Drawing.Size(730, 569);
             this.myDataGridView1.TabIndex = 12;
             // 
             // Column1
             // 
             this.Column1.DataPropertyName = "MyIndex";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column1.HeaderText = "通道号";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column1.Width = 78;
             // 
             // Column2
             // 
             this.Column2.DataPropertyName = "YcValue";
-            dataGridViewCellStyle6.Format = "########0.000";
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Format = "########0.000";
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column2.HeaderText = "允许最大压差值（0不限制）";
             this.Column2.Name = "Column2";
             this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Column2.Width = 200;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("宋体", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(298, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 32);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "保存";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("宋体", 1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox1.Location = new System.Drawing.Point(411, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1, 2);
-            this.textBox1.TabIndex = 1;
-            // 
             // frmYcEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 510);
+            this.ClientSize = new System.Drawing.Size(730, 647);
             this.Controls.Add(this.tableLayoutPanel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -164,9 +168,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private MyControl.MyDataGridView myDataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }
