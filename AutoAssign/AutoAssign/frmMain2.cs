@@ -3484,5 +3484,17 @@ namespace AutoAssign
             NanJingZB.frmSj frm = new NanJingZB.frmSj();
             frm.ShowDialog();
         }
+
+        private void 首检记录查询ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NanJingZB.frmSjList frm = new NanJingZB.frmSjList();
+            frm.Show();
+        }
+
+        private void 首检调试ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NanJingZB.frmNjzbDebug frm = new NanJingZB.frmNjzbDebug();
+            frm.Show();
+        }
     }
 }

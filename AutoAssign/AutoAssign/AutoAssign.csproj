@@ -501,11 +501,23 @@
     <Compile Include="MK\frmClearRealMKData.Designer.cs">
       <DependentUpon>frmClearRealMKData.cs</DependentUpon>
     </Compile>
+    <Compile Include="NanJingZB\frmNjzbDebug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NanJingZB\frmNjzbDebug.Designer.cs">
+      <DependentUpon>frmNjzbDebug.cs</DependentUpon>
+    </Compile>
     <Compile Include="NanJingZB\frmSj.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NanJingZB\frmSj.Designer.cs">
       <DependentUpon>frmSj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NanJingZB\frmSjList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NanJingZB\frmSjList.Designer.cs">
+      <DependentUpon>frmSjList.cs</DependentUpon>
     </Compile>
     <Compile Include="NanJingZB\frmSwitchEdit.cs">
       <SubType>Form</SubType>
@@ -897,8 +909,14 @@
     <EmbeddedResource Include="MK\frmClearRealMKData.resx">
       <DependentUpon>frmClearRealMKData.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NanJingZB\frmNjzbDebug.resx">
+      <DependentUpon>frmNjzbDebug.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NanJingZB\frmSj.resx">
       <DependentUpon>frmSj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NanJingZB\frmSjList.resx">
+      <DependentUpon>frmSjList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NanJingZB\frmSwitchEdit.resx">
       <DependentUpon>frmSwitchEdit.cs</DependentUpon>
@@ -1045,6 +1063,7 @@
     <Content Include="images\S16\Mac16.png" />
     <Content Include="images\S16\print16.png" />
     <Content Include="images\S16\refresh_18.gif" />
+    <None Include="images\S16\search16.png" />
     <Content Include="images\S16\up.png" />
     <Content Include="images\S25\Audited.png" />
     <Content Include="images\S25\bhg25.png" />

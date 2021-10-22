@@ -1003,6 +1003,12 @@ namespace JpsOPC
         #region 功能函数
         public bool ReadWrkState(out short iValue,out string sErr)
         {
+            if(this.IsDebug)
+            {
+                iValue = SJDebug.WorkState;
+                sErr = "";
+                return true;
+            }
             iValue = 0;
             if (this.SJ_Work == null)
             {
@@ -1217,7 +1223,27 @@ namespace JpsOPC
         #region 读取结果
         public bool ReadResult(ref NanJingZB_SJResult data,out string sErr)
         {
-
+            if(this.IsDebug)
+            {
+                sErr = string.Empty;
+                data.SJ_Resut1 = SJDebug.SJ_Resut1;
+                data.SJ_Resut2 = SJDebug.SJ_Resut2;
+                data.SJ_Resut3 = SJDebug.SJ_Resut3;
+                data.SJ_Resut4 = SJDebug.SJ_Resut4;
+                data.SJ_Resut5 = SJDebug.SJ_Resut5;
+                data.SJ_Resut6 = SJDebug.SJ_Resut6;
+                data.SJ_Resut7 = SJDebug.SJ_Resut7;
+                data.SJ_Resut8 = SJDebug.SJ_Resut8;
+                data.SJ_Resut9 = SJDebug.SJ_Resut9;
+                data.SJ_Resut10 = SJDebug.SJ_Resut10;
+                data.SJ_Resut11 = SJDebug.SJ_Resut11;
+                data.SJ_Resut12 = SJDebug.SJ_Resut12;
+                data.SJ_Resut13 = SJDebug.SJ_Resut13;
+                data.SJ_Resut14 = SJDebug.SJ_Resut14;
+                data.SJ_Resut15 = SJDebug.SJ_Resut15;
+                data.SJ_Resut16 = SJDebug.SJ_Resut16;
+                return true;
+            }
             Array values = null;
             #region serverHandles
             Array serverHandles = new int[17] { 0
@@ -1364,6 +1390,12 @@ namespace JpsOPC
         #region 设置WorkState
         public bool SetWorkState(short iValue,out string sErr)
         {
+            if(this.IsDebug)
+            {
+                SJDebug.WorkState = iValue;
+                sErr = string.Empty;
+                return true;
+            }
             if (this.SJ_Work == null)
             {
                 sErr = "SJ_Work复位失败：opc为空！";
@@ -1400,6 +1432,7 @@ namespace JpsOPC
         {
             if (this.IsDebug)
             {
+
                 sErr = string.Empty;
                 return true;
             }

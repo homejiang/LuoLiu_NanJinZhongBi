@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,7 +19,7 @@ namespace AutoAssign.NanJingZB
         /// <summary>
         /// 保存成功后该值就不为0了
         /// </summary>
-        string _Guid = string.Empty;
+        //string _Guid = string.Empty;
         DateTime? _StartTime = null;
         DateTime? _EndTime = null;
         public frmSj()
@@ -27,17 +28,31 @@ namespace AutoAssign.NanJingZB
             this._SJListen = new SJListen(this);
             this._SJListen.ShowErrNotice += _SJListen_ShowErrNotice;
             this._SJListen.ShowLogNotice += _SJListen_ShowLogNotice;
+            this._SJListen.StopedListenNotice += _SJListen_StopedListenNotice;
             this._SJListen.SJResultCompeletedNotice += _SJListen_SJResultCompeletedNotice;
             this._SJListen.SJCompeletedNotice += _SJListen_SJCompeletedNotice;
             this.dgvResult.AutoGenerateColumns = false;
             this.dgvSet.AutoGenerateColumns = false;
             this.btStart.Enabled = this.BindSet();
+            this.btSave.Enabled = false;
+            this.labPleaseSave.Visible = false;
+            this.button1.Visible = AutoAssign.JPSEntity.Debug.ScannerOpc.IsDebug;
+
+
+        }
+
+        private void _SJListen_StopedListenNotice(int iStopCase)
+        {
+            if (iStopCase == 99)
+                this.Close();
         }
 
         private void _SJListen_SJCompeletedNotice()
         {
             //此时已经完成了
-            this.SetFormStyle();
+            this.btSave.Enabled = true;
+            this.btStart.Enabled = true;
+            this.labPleaseSave.Visible = true;
         }
 
         private void _SJListen_SJResultCompeletedNotice(NanJingZB_SJResult result)
@@ -120,19 +135,27 @@ namespace AutoAssign.NanJingZB
         private void _SJListen_ShowLogNotice(string sMsg)
         {
             if (this.checkBox1.Checked) return;
+            ClearLog();
             string sText = $"<#000000>[{DateTime.Now.ToString("HH:mm:ss")}]->{sMsg}</#000000>\r\n";
             Common.CommonFuns.AddRichTexBoxText(sText, this.rtbLog);
+            this.rtbLog.Focus();
             this.rtbLog.Select(this.rtbLog.Text.Length, 0);
         }
 
         private void _SJListen_ShowErrNotice(string sMsg)
         {
             if (this.checkBox1.Checked) return;
+            ClearLog();
             string sText = $"<#FF0000>[{DateTime.Now.ToString("HH:mm:ss")}]->{sMsg}</#FF0000>\r\n";
             Common.CommonFuns.AddRichTexBoxText(sText, this.rtbLog);
+            this.rtbLog.Focus();
             this.rtbLog.Select(this.rtbLog.Text.Length, 0);
         }
-
+        private void ClearLog()
+        {
+            if (this.rtbLog.Text.Length > 10000)
+                this.rtbLog.Clear();
+        }
         private bool BindSet()
         {
             try
@@ -197,15 +220,29 @@ namespace AutoAssign.NanJingZB
             }
             return true;
         }
-
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            if (this._SJListen != null && this._SJListen.Running)
+            {
+                if (this.IsUserConfirm("首检正在运行中，您确定要退出吗？"))
+                {
+                    this._SJListen.StopListenning(99);
+                }
+                e.Cancel = true;
+            }
+            base.OnClosing(e);
+        }
         private void btSave_Click(object sender, EventArgs e)
         {
             //保存
             string sGuid;
             if(this.SaveResult(out sGuid))
             {
-                this._Guid = sGuid;
-                SetFormStyle();
+                this.ShowMsgRich("保存成功");
+                //this._Guid = sGuid;
+                this.btSave.Enabled = false;
+                this.btStart.Enabled = true;
+                this.labPleaseSave.Visible = false;
             }
         }
         private bool SaveResult(out string sGuid)
@@ -221,14 +258,14 @@ namespace AutoAssign.NanJingZB
                 this.ShowMsg("检测结束时间为空，无法保存。");
                 return false;
             }
-            if (this._Guid.Length > 0)
-            {
-                this.ShowMsg("当前数据已保存过，无法再次保存！");
-                return false;
-            }
+            //if (this._Guid.Length > 0)
+            //{
+            //    this.ShowMsg("当前数据已保存过，无法再次保存！");
+            //    return false;
+            //}
             sGuid = Guid.NewGuid().ToString();
             List<string> list = new List<string>();
-            list.Add($"INSERT INTO NanJingZB_SJRecordSet (ID,GrooveNo,Guid,VMin,VMax,RMin,RMax) SELECT GrooveNo,'{sGuid}',VMin,VMax,RMin,RMax FROM NanJingZB_SJSet");
+            list.Add($"INSERT INTO NanJingZB_SJRecordSet (GrooveNo,Guid,VMin,VMax,RMin,RMax) SELECT GrooveNo,'{sGuid}',VMin,VMax,RMin,RMax FROM NanJingZB_SJSet");
             DataTable dtResult = this.dgvResult.DataSource as DataTable;
             if(dtResult==null)
             {
@@ -253,6 +290,7 @@ namespace AutoAssign.NanJingZB
                 this.ShowMsg($"提交至数据库出错：{ex.Message}({ex.Source})");
                 return false;
             }
+            dtResult.AcceptChanges();
             return true;
         }
 
@@ -261,19 +299,29 @@ namespace AutoAssign.NanJingZB
             if(this.Start())
             {
                 this._StartTime = DateTime.Now;
-                this.SetFormStyle();
+                this._EndTime = null;
+                this.btStart.Enabled = false;
+                this.btSave.Enabled = false;
+                this.labPleaseSave.Visible = false;
+                //this.SetFormStyle();
                 this.dgvResult.DataSource = null;
             }
         }
         private void SetFormStyle()
         {
-            this.btSave.Enabled = this._Guid.Length == 0;
-            this.btStart.Enabled = this._SJListen != null && !this._SJListen.Running;
+            //this.btSave.Enabled = this._Guid.Length == 0;
+            //this.btStart.Enabled = this._SJListen != null && !this._SJListen.Running;
         }
 
         private void frmSj_Load(object sender, EventArgs e)
         {
             SetFormStyle();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmNjzbDebug frm = new frmNjzbDebug();
+            frm.Show();
         }
     }
 }

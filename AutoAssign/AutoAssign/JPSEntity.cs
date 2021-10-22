@@ -7197,6 +7197,7 @@ namespace AutoAssign.JPSEntity
     #region 首检线程
     public class SJListen
     {
+        public event StopedListenCallBack StopedListenNotice = null;
         public event SJResultCompeletedCallBack SJResultCompeletedNotice = null;
         public event SJCompeletedCallBack SJCompeletedNotice = null;
         public event ShowMsgAsynCallBack ShowLogNotice = null;
@@ -7204,6 +7205,7 @@ namespace AutoAssign.JPSEntity
         public JpsOPC.OPCHelperNanJingZhongBi _OPCHelper = null;
         public NanJingZB.frmSj MyForm = null;
         public bool Interrupt = false;
+        public int StopCase = 0;
         Thread _thread = null;
         public bool Running = false;
         public SJListenSteps _Steps = SJListenSteps.None;
@@ -7228,6 +7230,7 @@ namespace AutoAssign.JPSEntity
             if (_OPCHelper==null)
             {
                 this._OPCHelper = new JpsOPC.OPCHelperNanJingZhongBi();
+                this._OPCHelper.IsDebug = Debug.ScannerOpc.IsDebug;
                 try
                 {
                     if(!this._OPCHelper.InitServer(out sErr))
@@ -7242,6 +7245,7 @@ namespace AutoAssign.JPSEntity
                     return false;
                 }
             }
+            this.StopCase = 0;
             this._NanJingZB_SJRVRange = setData;
             this._Steps = SJListenSteps.Setting;//首先进入后直接设置参数
             _thread = new System.Threading.Thread(new System.Threading.ThreadStart(Listen));
@@ -7264,6 +7268,7 @@ namespace AutoAssign.JPSEntity
             this.Running = true;
             Listeniing();
             this.Running = false;
+            CallStopedListenAsync(this.StopCase);
         }
         private void Listeniing()
         {
@@ -7271,7 +7276,7 @@ namespace AutoAssign.JPSEntity
             {
                 if (!this.Running)
                 {
-                    this.ShowLogAsyn("自动插装已强制停止。");
+                    this.ShowLogAsyn("首检线程已经停止。");
                     break;
                 }
                 this.Doing();
@@ -7363,7 +7368,7 @@ namespace AutoAssign.JPSEntity
                     }
                     if (!result.IsOK())
                     {
-                        ; this.ShowLog($"下位机返回的结果有-1，继续等待。");
+                        ; this.ShowLogAsyn($"下位机返回的结果有-1，继续等待。");
                         return;
                     }
                     this.ShowLogAsyn($"数据读取成功。");
@@ -7414,12 +7419,34 @@ namespace AutoAssign.JPSEntity
                 this.CallSJCompeletedAsyn();
             }
         }
-        public void StopListenning()
+        /// <summary>
+        /// 关闭线程
+        /// </summary>
+        /// <param name="iStopCase">99意思是退出窗口</param>
+        public void StopListenning(int iStopCase = 0)
         {
+            StopCase = iStopCase;
             this.Running = false;
         }
         #region 消息
-        
+        private void CallStopedListenAsync(int iStopCase)
+        {
+            StopedListenCallBack call = new StopedListenCallBack(CallStopedListen);
+            try
+            {
+                this.MyForm.Invoke(call, new object[] { iStopCase });
+            }
+            catch(Exception ex)
+            {
+
+            }
+        }
+        private void CallStopedListen(int iStopCase)
+        {
+            if (this.StopedListenNotice != null)
+                this.StopedListenNotice(iStopCase);
+        }
+
         /// <summary>
         /// 异步消息显示
         /// </summary>
@@ -7534,6 +7561,7 @@ namespace AutoAssign.JPSEntity
     public delegate void SnStatisticReadedCallBack(string iSnCnt, string decLpl, string decScannLpl, string decMBatchLpl, bool blSucessfully, string sErr);
     public delegate void RefreshMKCodeCallBack(string sMkCode,short iAsbCnt, bool blFinished,short iMKFinishedCnt);
     public delegate void PrinterControlerPrintTypeChangedCallBack(PrinterControl.PrintTypes oldType, PrinterControl.PrintTypes newType);
+    public delegate void StopedListenCallBack(int iStopCase);
     public class MainControl
     {
         public event SysNewReadCompeletedCallBack SysNewReadCompeletedNotice = null;
