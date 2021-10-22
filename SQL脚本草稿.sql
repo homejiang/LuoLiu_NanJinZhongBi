@@ -31,3 +31,14 @@ WHILE @I<=9 BEGIN
 	VALUES(@I)
 	set @I=@I+1
 END
+初始化首检设置
+DECLARE @I INT 
+SET @I=1
+WHILE @I<=16 BEGIN
+	INSERT INTO NanJingZB_SJSet(GrooveNo)
+	VALUES(@I)
+	set @I=@I+1
+END
+
+SELECT * FROM NanJingZB_SJSet ORDER BY GrooveNo ASC
+

@@ -1379,13 +1379,13 @@ namespace AutoAssign
             }
             JpsOPC.OPCEntitys.YaChaEntity yacha = new JpsOPC.OPCEntitys.YaChaEntity();
             int iMyIndex;
-            decimal decValue;
+            float decValue;
             foreach (DataRow dr in dt.Rows)
             {
                 if (dr["MyIndex"].Equals(DBNull.Value)) continue;
                 if (dr["YcValue"].Equals(DBNull.Value)) continue;
                 iMyIndex = int.Parse(dr["MyIndex"].ToString());
-                decValue = decimal.Parse(dr["YcValue"].ToString());
+                decValue = (float)decimal.Parse(dr["YcValue"].ToString());
                 if (iMyIndex == 1)
                     yacha.Yc1 = decValue;
                 else if (iMyIndex == 2) yacha.Yc2 = decValue;
@@ -1449,10 +1449,10 @@ namespace AutoAssign
                 iGrooveNo = int.Parse(dr["GrooveNo"].ToString());
                 if (iGrooveNo < 1 || iGrooveNo > list.Count) continue;
                 JpsOPC.OPCEntitys.SwichABEntity set = list[iGrooveNo - 1];
-                set.MinValueA = dr["Amin"].Equals(DBNull.Value) ? 0M : decimal.Parse(dr["Amin"].ToString());
-                set.MaxValueA = dr["Amax"].Equals(DBNull.Value) ? 0M : decimal.Parse(dr["Amax"].ToString());
-                set.MinValueB = dr["Bmin"].Equals(DBNull.Value) ? 0M : decimal.Parse(dr["Bmin"].ToString());
-                set.MaxValueB = dr["Bmax"].Equals(DBNull.Value) ? 0M : decimal.Parse(dr["Bmax"].ToString());
+                set.MinValueA = (float)(dr["Amin"].Equals(DBNull.Value) ? 0M : decimal.Parse(dr["Amin"].ToString()));
+                set.MaxValueA = (float)(dr["Amax"].Equals(DBNull.Value) ? 0M : decimal.Parse(dr["Amax"].ToString()));
+                set.MinValueB = (float)(dr["Bmin"].Equals(DBNull.Value) ? 0M : decimal.Parse(dr["Bmin"].ToString()));
+                set.MaxValueB = (float)(dr["Bmax"].Equals(DBNull.Value) ? 0M : decimal.Parse(dr["Bmax"].ToString()));
                 set.QtyA = dr["AQty"].Equals(DBNull.Value) ? (short)0 : short.Parse(dr["AQty"].ToString());
                 set.QtyB = dr["BQty"].Equals(DBNull.Value) ? (short)0 : short.Parse(dr["BQty"].ToString());
             }
@@ -3476,6 +3476,12 @@ namespace AutoAssign
                 return;
             }
             NanJingZB.frmSwitchEdit frm = new NanJingZB.frmSwitchEdit();
+            frm.ShowDialog();
+        }
+
+        private void btSj_Click(object sender, EventArgs e)
+        {
+            NanJingZB.frmSj frm = new NanJingZB.frmSj();
             frm.ShowDialog();
         }
     }

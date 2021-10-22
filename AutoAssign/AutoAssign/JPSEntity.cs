@@ -1,5 +1,6 @@
 ﻿using AutoAssign.JPSEnum;
 using Common;
+using JpsOPC.OPCEntitys;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -571,11 +572,13 @@ namespace AutoAssign.JPSEntity
                 if (this._State == JPSEnum.ScannerStates.WriteInotPLC_GetMyCode)
                 {
                     if (!this.Listen_WriteIntoPLC_GetMyCode()) continue;
+                    if (!this.Listen_WriteIntoPLC_GetDxOrgInfo()) continue;//2020-10-22南京中比添加原始数据读取
                     this._State = JPSEnum.ScannerStates.WriteInotPLC_OPC;
                 }
                 if (this._State == JPSEnum.ScannerStates.WriteInotPLC_OPC)
                 {
                     if (!this.Listen_WriteIntoPLC_OPC()) continue;
+                    if (!Listen_WriteIntoPLC_OPC_DxOrgData()) continue;
                     //写入成功，延时
                     this._State = JPSEnum.ScannerStates.ReadingPLCIOValue;
                     //这里存储电芯数据，但出错了就不用管了，毕竟与逻辑无关联
@@ -1232,6 +1235,119 @@ namespace AutoAssign.JPSEntity
             this.Listen_CodeEntitys[9].MyCode = sMyCode9;
             return true;
         }
+        private bool Listen_WriteIntoPLC_GetDxOrgInfo()
+        {
+            #region 申明变量
+            decimal decCapacity0;
+            decimal decR0;
+            decimal decV0;
+            decimal decCapacity1;
+            decimal decR1;
+            decimal decV1;
+            decimal decCapacity2;
+            decimal decR2;
+            decimal decV2;
+            decimal decCapacity3;
+            decimal decR3;
+            decimal decV3;
+            decimal decCapacity4;
+            decimal decR4;
+            decimal decV4;
+            decimal decCapacity5;
+            decimal decR5;
+            decimal decV5;
+            decimal decCapacity6;
+            decimal decR6;
+            decimal decV6;
+            decimal decCapacity7;
+            decimal decR7;
+            decimal decV7;
+            decimal decCapacity8;
+            decimal decR8;
+            decimal decV8;
+            decimal decCapacity9;
+            decimal decR9;
+            decimal decV9;
+            #endregion
+            try
+            {
+                #region 调用数据获取结果
+                this._ScannControler.MyForm.BllDAL.GetDxOrgInfo(this.Listen_BlockNo,
+                     this.Listen_CodeEntitys[0].SNCode, this.Listen_CodeEntitys[1].SNCode, this.Listen_CodeEntitys[2].SNCode, this.Listen_CodeEntitys[3].SNCode,
+                    this.Listen_CodeEntitys[4].SNCode, this.Listen_CodeEntitys[5].SNCode, this.Listen_CodeEntitys[6].SNCode, this.Listen_CodeEntitys[7].SNCode,
+                    this.Listen_CodeEntitys[8].SNCode, this.Listen_CodeEntitys[9].SNCode
+                    , out decCapacity0
+                    , out decCapacity1
+                    , out decCapacity2
+                    , out decCapacity3
+                    , out decCapacity4
+                    , out decCapacity5
+                    , out decCapacity6
+                    , out decCapacity7
+                    , out decCapacity8
+                    , out decCapacity9
+                    , out decR0
+                    , out decR1
+                    , out decR2
+                    , out decR3
+                    , out decR4
+                    , out decR5
+                    , out decR6
+                    , out decR7
+                    , out decR8
+                    , out decR9
+                    , out decV0
+                    , out decV1
+                    , out decV2
+                    , out decV3
+                    , out decV4
+                    , out decV5
+                    , out decV6
+                    , out decV7
+                    , out decV8
+                    , out decV9
+                    );
+                #endregion
+            }
+            catch (Exception ex)
+            {
+                this.ShowErrAsyn($"读取扫描枪[{this.Listen_BlockNo}]电芯原始数据出错：{ex.Message}({ex.Source})");
+                return false;
+            }
+            #region 赋值
+            this.Listen_CodeEntitys[0].Capacity = decCapacity0;
+            this.Listen_CodeEntitys[0].R = decR0;
+            this.Listen_CodeEntitys[0].V = decV0;
+            this.Listen_CodeEntitys[1].Capacity = decCapacity1;
+            this.Listen_CodeEntitys[1].R = decR1;
+            this.Listen_CodeEntitys[1].V = decV1;
+            this.Listen_CodeEntitys[2].Capacity = decCapacity2;
+            this.Listen_CodeEntitys[2].R = decR2;
+            this.Listen_CodeEntitys[2].V = decV2;
+            this.Listen_CodeEntitys[3].Capacity = decCapacity3;
+            this.Listen_CodeEntitys[3].R = decR3;
+            this.Listen_CodeEntitys[3].V = decV3;
+            this.Listen_CodeEntitys[4].Capacity = decCapacity4;
+            this.Listen_CodeEntitys[4].R = decR4;
+            this.Listen_CodeEntitys[4].V = decV4;
+            this.Listen_CodeEntitys[5].Capacity = decCapacity5;
+            this.Listen_CodeEntitys[5].R = decR5;
+            this.Listen_CodeEntitys[5].V = decV5;
+            this.Listen_CodeEntitys[6].Capacity = decCapacity6;
+            this.Listen_CodeEntitys[6].R = decR6;
+            this.Listen_CodeEntitys[6].V = decV6;
+            this.Listen_CodeEntitys[7].Capacity = decCapacity7;
+            this.Listen_CodeEntitys[7].R = decR7;
+            this.Listen_CodeEntitys[7].V = decV7;
+            this.Listen_CodeEntitys[8].Capacity = decCapacity8;
+            this.Listen_CodeEntitys[8].R = decR8;
+            this.Listen_CodeEntitys[8].V = decV8;
+            this.Listen_CodeEntitys[9].Capacity = decCapacity9;
+            this.Listen_CodeEntitys[9].R = decR9;
+            this.Listen_CodeEntitys[9].V = decV9;
+            #endregion
+            return true;
+        }
         private bool Listen_WriteIntoPLC_CheckChongfu()
         {
             this.Listen_CodeEntitys[0].IsChongFu = false;
@@ -1635,6 +1751,61 @@ namespace AutoAssign.JPSEntity
                 return true;
             }
         }
+        private bool Listen_WriteIntoPLC_OPC_DxOrgData()
+        {
+            //该函数从车之翼项目拷贝过来，因为需要1把扫描枪扫描2次。2020-04-20 jiangpengsong
+            if (this._OPCHelpBat == null)
+            {
+                this.ShowErrAsyn(string.Format("扫描枪{0}:电池信息OPC对象为空，无法写入数据！", this._ScannerNo));
+                return false;
+            }
+            //利用OPC写入到PLC指定的电池地址中
+            string strErr;
+          
+            //通过Listen_BlockNo的值来确定存入哪个地址
+            if (this.Listen_BlockNo == 1)
+            {
+                if (!this._OPCHelpBat.WriteDXOrg1(this.Listen_CodeEntitys[0].Capacity, this.Listen_CodeEntitys[0].R, this.Listen_CodeEntitys[0].V
+                    , this.Listen_CodeEntitys[1].Capacity, this.Listen_CodeEntitys[1].R, this.Listen_CodeEntitys[1].V
+                    , this.Listen_CodeEntitys[2].Capacity, this.Listen_CodeEntitys[2].R, this.Listen_CodeEntitys[2].V
+                    , this.Listen_CodeEntitys[3].Capacity, this.Listen_CodeEntitys[3].R, this.Listen_CodeEntitys[3].V
+                    , this.Listen_CodeEntitys[4].Capacity, this.Listen_CodeEntitys[4].R, this.Listen_CodeEntitys[4].V
+                    , this.Listen_CodeEntitys[5].Capacity, this.Listen_CodeEntitys[5].R, this.Listen_CodeEntitys[5].V
+                    , this.Listen_CodeEntitys[6].Capacity, this.Listen_CodeEntitys[6].R, this.Listen_CodeEntitys[6].V
+                    , this.Listen_CodeEntitys[7].Capacity, this.Listen_CodeEntitys[7].R, this.Listen_CodeEntitys[7].V
+                    , out strErr))
+                {
+                    this.ShowErrAsyn("电池组1写入原始电芯数据失败：" + strErr);
+                    return false;
+                }
+                else
+                {
+                    this.ShowLogAsyn($"扫描枪{this._ScannerNo}:OPC成功写入电池原始信息成功。");
+                }
+                return true;
+            }
+            else
+            {
+                if (!this._OPCHelpBat.WriteDXOrg2(this.Listen_CodeEntitys[0].Capacity, this.Listen_CodeEntitys[0].R, this.Listen_CodeEntitys[0].V
+                    , this.Listen_CodeEntitys[1].Capacity, this.Listen_CodeEntitys[1].R, this.Listen_CodeEntitys[1].V
+                    , this.Listen_CodeEntitys[2].Capacity, this.Listen_CodeEntitys[2].R, this.Listen_CodeEntitys[2].V
+                    , this.Listen_CodeEntitys[3].Capacity, this.Listen_CodeEntitys[3].R, this.Listen_CodeEntitys[3].V
+                    , this.Listen_CodeEntitys[4].Capacity, this.Listen_CodeEntitys[4].R, this.Listen_CodeEntitys[4].V
+                    , this.Listen_CodeEntitys[5].Capacity, this.Listen_CodeEntitys[5].R, this.Listen_CodeEntitys[5].V
+                    , this.Listen_CodeEntitys[6].Capacity, this.Listen_CodeEntitys[6].R, this.Listen_CodeEntitys[6].V
+                    , this.Listen_CodeEntitys[7].Capacity, this.Listen_CodeEntitys[7].R, this.Listen_CodeEntitys[7].V
+                    , out strErr))
+                {
+                    this.ShowErrAsyn("电池组2写入原始电芯数据失败：" + strErr);
+                    return false;
+                }
+                else
+                {
+                    this.ShowLogAsyn($"扫描枪{this._ScannerNo}:OPC成功写入电池原始信息成功。");
+                }
+                return true;
+            }
+        }
         public bool SendText(string sText)
         {
             try
@@ -1807,6 +1978,20 @@ namespace AutoAssign.JPSEntity
         /// 系统自编号，传给PLC的
         /// </summary>
         public string MyCode = string.Empty;
+        #region 南京中比追加的电芯原始信息，来自供货方
+        /// <summary>
+        /// 电芯原始容量
+        /// </summary>
+        public decimal Capacity = 0M;
+        /// <summary>
+        /// 电芯原始内阻
+        /// </summary>
+        public decimal R = 0M;
+        /// <summary>
+        /// 电芯原始电压
+        /// </summary>
+        public decimal V = 0M;
+        #endregion
     }
     #endregion
     #region 实时结果知道读取
@@ -7006,6 +7191,326 @@ namespace AutoAssign.JPSEntity
             /// </summary>
             SaveDianxins = 5
         }
+        #endregion
+    }
+    #endregion
+    #region 首检线程
+    public class SJListen
+    {
+        public event SJResultCompeletedCallBack SJResultCompeletedNotice = null;
+        public event SJCompeletedCallBack SJCompeletedNotice = null;
+        public event ShowMsgAsynCallBack ShowLogNotice = null;
+        public event ShowMsgAsynCallBack ShowErrNotice = null;
+        public JpsOPC.OPCHelperNanJingZhongBi _OPCHelper = null;
+        public NanJingZB.frmSj MyForm = null;
+        public bool Interrupt = false;
+        Thread _thread = null;
+        public bool Running = false;
+        public SJListenSteps _Steps = SJListenSteps.None;
+        NanJingZB_SJRVRange _NanJingZB_SJRVRange = null;
+        public SJListen(NanJingZB.frmSj mform)
+        {
+            this.MyForm = mform;
+        }
+        public bool StartListenning(NanJingZB_SJRVRange setData,out string sErr)
+        {
+            if (this.Running)
+            {
+                sErr = "线程已经开启，请勿重复打开。";
+                return false;
+            }
+            if (setData == null)
+            {
+                sErr = "传入的设置对象为空！";
+                return false;
+            }
+            //初始化对象
+            if (_OPCHelper==null)
+            {
+                this._OPCHelper = new JpsOPC.OPCHelperNanJingZhongBi();
+                try
+                {
+                    if(!this._OPCHelper.InitServer(out sErr))
+                    {
+                        _OPCHelper = null;
+                        return false;
+                    }
+                }
+                catch(Exception ex)
+                {
+                    sErr = $"初始化OPC出错：{ex.Message}({ex.Source})。";
+                    return false;
+                }
+            }
+            this._NanJingZB_SJRVRange = setData;
+            this._Steps = SJListenSteps.Setting;//首先进入后直接设置参数
+            _thread = new System.Threading.Thread(new System.Threading.ThreadStart(Listen));
+            _thread.IsBackground = true;
+            try
+            {
+                _thread.Start();
+            }
+            catch (Exception ex)
+            {
+                sErr = string.Format("首检控制线程启动时出错：{0}({1})", ex.Message, ex.Source);
+                this.Running = false;
+                return false;
+            }
+            sErr = string.Empty;
+            return true;
+        }
+        private void Listen()
+        {
+            this.Running = true;
+            Listeniing();
+            this.Running = false;
+        }
+        private void Listeniing()
+        {
+            while (true)
+            {
+                if (!this.Running)
+                {
+                    this.ShowLogAsyn("自动插装已强制停止。");
+                    break;
+                }
+                this.Doing();
+                Thread.Sleep(1000);
+            }
+        }
+        private void Doing()
+        {
+            if (this._Steps == SJListenSteps.Setting)
+            {
+                //设置信息
+                string sErr;
+                try
+                {
+                    this._OPCHelper.WriteSjRange(this._NanJingZB_SJRVRange, out sErr, false);
+                }
+                catch (Exception ex)
+                {
+                    this.ShowErrAsyn($"写入OPC出错：{ex.Message}({ex.Source})");
+                    return;
+                }
+                Thread.Sleep(1000);//等待一秒，因为这个oPC组扫描率比较低
+                this._Steps = SJListenSteps.Start;
+            }
+            if (this._Steps == SJListenSteps.Start)
+            {
+                //通知下位机可以开始检测了
+                string sErr;
+                try
+                {
+                    if(!this._OPCHelper.SetWorkState(1, out sErr))
+                    {
+                        this.ShowErrAsyn($"通知下位机开始检测时写入OPC出错：{sErr}");
+                        return;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    this.ShowErrAsyn($"通知下位机开始检测时写入OPC出错：{ex.Message}({ex.Source})");
+                    return;
+                }
+                this._Steps = SJListenSteps.Waitting;
+                Thread.Sleep(2000);
+            }
+            if (this._Steps == SJListenSteps.Waitting)
+            {
+                //等待下位机，判断是否已经写入了
+                string sErr;
+                short iValue;
+                try
+                {
+                    if (!this._OPCHelper.ReadWrkState(out iValue, out sErr))
+                    {
+                        this.ShowErrAsyn($"读取下位机状态出错：{sErr}");
+                        return;
+                    }
+                    if(iValue==2)
+                    {
+                        //此时已经检测完了。则开始读取结果
+                        this._Steps = SJListenSteps.Reading;
+                        Thread.Sleep(1000);
+                    }
+                    this.ShowLogAsyn($"设备检测进度值:{iValue}，继续等待。");
+                    Thread.Sleep(1000);
+                    return;
+                }
+                catch (Exception ex)
+                {
+                    this.ShowErrAsyn($"读取下位机状态出错：{ex.Message}({ex.Source})");
+                    return;
+                }
+            }
+            if (this._Steps == SJListenSteps.Reading)
+            {
+                //读取结果值
+                string sErr;
+                NanJingZB_SJResult result = new NanJingZB_SJResult();
+                try
+                {
+                    if (!this._OPCHelper.ReadResult(ref result, out sErr))
+                    {
+                        this.ShowErrAsyn($"读取下位机首检结果出错：{sErr}");
+                        return;
+                    }
+                    if (result == null)
+                    {
+                        ; this.ShowErrAsyn($"读取下位机首检结果出错：result值为NULL！");
+                        return;
+                    }
+                    if (!result.IsOK())
+                    {
+                        ; this.ShowLog($"下位机返回的结果有-1，继续等待。");
+                        return;
+                    }
+                    this.ShowLogAsyn($"数据读取成功。");
+                    //通知主界面显示数据
+                    this.CallSJResultCompeletedAsyn(result);
+                    this._Steps = SJListenSteps.Restet;
+                }
+                catch (Exception ex)
+                {
+                    this.ShowErrAsyn($"读取下位机首检结果出错：{ex.Message}({ex.Source})");
+                    return;
+                }
+            }
+            if (this._Steps == SJListenSteps.Restet)
+            {
+                //复位
+                string sErr;
+                try
+                {
+                    if (!this._OPCHelper.SetWorkState(0, out sErr))
+                    {
+                        this.ShowErrAsyn($"复位下位机状态时写入OPC出错：{sErr}");
+                        return;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    this.ShowErrAsyn($"复位下位机状态时写入OPC出错：{ex.Message}({ex.Source})");
+                    return;
+                }
+                //将结果值设置为-1
+                try
+                {
+                    if (!this._OPCHelper.ResetResult(false, out sErr))
+                    {
+                        this.ShowErrAsyn($"复位下位机结果值时写入OPC出错：{sErr}");
+                        return;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    this.ShowErrAsyn($"复位下位机结果值时写入OPC出错：{ex.Message}({ex.Source})");
+                    return;
+                }
+                this.StopListenning();
+                this._Steps = SJListenSteps.None;
+                //此时完成了，则通知主界面
+                this.CallSJCompeletedAsyn();
+            }
+        }
+        public void StopListenning()
+        {
+            this.Running = false;
+        }
+        #region 消息
+        
+        /// <summary>
+        /// 异步消息显示
+        /// </summary>
+        /// <param name="sMsg">消息内容</param>
+        public void ShowErrAsyn(string sMsg)
+        {
+            this.SetInterrupt(true);
+            ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowErr);
+            try
+            {
+                this.MyForm.Invoke(cb, new object[1] { sMsg });
+            }
+            catch (Exception ex)
+            {
+                return;
+            }
+        }
+        private void ShowErr(string sMsg)
+        {
+            if (this.ShowErrNotice != null)
+                this.ShowErrNotice(sMsg);
+        }
+        public void ShowLogAsyn(string sMsg)
+        {
+            ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowLog);
+            try
+            {
+                this.MyForm.Invoke(cb, new object[1] { sMsg });
+            }
+            catch (Exception ex)
+            {
+                return;
+            }
+        }
+        public void ShowLog(string sMsg)
+        {
+            if (this.ShowLogNotice != null)
+                this.ShowLogNotice(sMsg);
+        }
+        private void CallSJResultCompeletedAsyn(NanJingZB_SJResult result)
+        {
+            SJResultCompeletedCallBack cb = new SJResultCompeletedCallBack(CallSJResultCompeleted);
+            try
+            {
+                this.MyForm.Invoke(cb, new object[1] { result });
+            }
+            catch (Exception ex)
+            {
+                return;
+            }
+        }
+        private void CallSJResultCompeleted(NanJingZB_SJResult result)
+        {
+            if (this.SJResultCompeletedNotice != null)
+                this.SJResultCompeletedNotice(result);
+        }
+        private void CallSJCompeletedAsyn()
+        {
+            SJCompeletedCallBack cb = new SJCompeletedCallBack(CallSJCompeleted);
+            try
+            {
+                this.MyForm.Invoke(cb);
+            }
+            catch (Exception ex)
+            {
+                return;
+            }
+        }
+        private void CallSJCompeleted()
+        {
+            if (this.SJCompeletedNotice != null)
+                this.SJCompeletedNotice();
+        }
+        private void SetInterrupt(bool blInterrupt)
+        {
+            if (this.Interrupt != blInterrupt)
+                this.Interrupt = blInterrupt;
+        }
+        #endregion
+        #region 相关类及枚举
+        public enum SJListenSteps
+        {
+            None=0,
+            Setting=1,
+            Start=2,
+            Waitting=3,
+            Reading=4,
+            Restet=5
+        }
+        public delegate void SJResultCompeletedCallBack(NanJingZB_SJResult result);
+        public delegate void SJCompeletedCallBack();
         #endregion
     }
     #endregion

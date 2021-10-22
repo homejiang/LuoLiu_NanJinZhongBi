@@ -770,6 +770,7 @@ namespace Common
             else if (iIndex3 == -1)
                 rtb.AppendText(strText);
         }
+       
         private static string GetCorlorHex(string stext)
         {
             return stext.Substring(2, 6);

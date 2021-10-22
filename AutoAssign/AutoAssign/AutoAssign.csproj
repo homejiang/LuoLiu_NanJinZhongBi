@@ -177,6 +177,7 @@
     <Compile Include="BLLDAL\RemoteMES.cs" />
     <Compile Include="BLLDAL\Testing.cs" />
     <Compile Include="BLLDAL\PeiFang.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="ClearData\frmByCaoIndex.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -499,6 +500,12 @@
     </Compile>
     <Compile Include="MK\frmClearRealMKData.Designer.cs">
       <DependentUpon>frmClearRealMKData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NanJingZB\frmSj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NanJingZB\frmSj.Designer.cs">
+      <DependentUpon>frmSj.cs</DependentUpon>
     </Compile>
     <Compile Include="NanJingZB\frmSwitchEdit.cs">
       <SubType>Form</SubType>
@@ -889,6 +896,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MK\frmClearRealMKData.resx">
       <DependentUpon>frmClearRealMKData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NanJingZB\frmSj.resx">
+      <DependentUpon>frmSj.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NanJingZB\frmSwitchEdit.resx">
       <DependentUpon>frmSwitchEdit.cs</DependentUpon>

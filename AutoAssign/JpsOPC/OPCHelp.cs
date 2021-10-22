@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OPCAutomation;
+using JpsOPC.OPCEntitys;
 
 namespace JpsOPC
 {
@@ -24,6 +25,1443 @@ namespace JpsOPC
         public int _ClientHandle = 0;
         public bool IsDebug = false;
         public bool InitSucessfully = false;
+    }
+    
+    public class OPCHelperNanJingZhongBi : OPCHelperBase
+    {
+        OPCServer _Server = null;
+        OPCGroups _ServerGroups = null;
+        public OPCGroup _MyGroup_DoNow = null;
+        public OPCGroup _MyGroup_Result = null;
+        #region 用于读取的对象
+        public JpsOPC.MyItemValue SJ_Work = null;
+        public JpsOPC.MyItemValue SJ_V1min = null;
+        public JpsOPC.MyItemValue SJ_V1max = null;
+        public JpsOPC.MyItemValue SJ_R1min = null;
+        public JpsOPC.MyItemValue SJ_R1max = null;
+        public JpsOPC.MyItemValue SJ_V2min = null;
+        public JpsOPC.MyItemValue SJ_V2max = null;
+        public JpsOPC.MyItemValue SJ_R2min = null;
+        public JpsOPC.MyItemValue SJ_R2max = null;
+        public JpsOPC.MyItemValue SJ_V3min = null;
+        public JpsOPC.MyItemValue SJ_V3max = null;
+        public JpsOPC.MyItemValue SJ_R3min = null;
+        public JpsOPC.MyItemValue SJ_R3max = null;
+        public JpsOPC.MyItemValue SJ_V4min = null;
+        public JpsOPC.MyItemValue SJ_V4max = null;
+        public JpsOPC.MyItemValue SJ_R4min = null;
+        public JpsOPC.MyItemValue SJ_R4max = null;
+        public JpsOPC.MyItemValue SJ_V5min = null;
+        public JpsOPC.MyItemValue SJ_V5max = null;
+        public JpsOPC.MyItemValue SJ_R5min = null;
+        public JpsOPC.MyItemValue SJ_R5max = null;
+        public JpsOPC.MyItemValue SJ_V6min = null;
+        public JpsOPC.MyItemValue SJ_V6max = null;
+        public JpsOPC.MyItemValue SJ_R6min = null;
+        public JpsOPC.MyItemValue SJ_R6max = null;
+        public JpsOPC.MyItemValue SJ_V7min = null;
+        public JpsOPC.MyItemValue SJ_V7max = null;
+        public JpsOPC.MyItemValue SJ_R7min = null;
+        public JpsOPC.MyItemValue SJ_R7max = null;
+        public JpsOPC.MyItemValue SJ_V8min = null;
+        public JpsOPC.MyItemValue SJ_V8max = null;
+        public JpsOPC.MyItemValue SJ_R8min = null;
+        public JpsOPC.MyItemValue SJ_R8max = null;
+        public JpsOPC.MyItemValue SJ_V9min = null;
+        public JpsOPC.MyItemValue SJ_V9max = null;
+        public JpsOPC.MyItemValue SJ_R9min = null;
+        public JpsOPC.MyItemValue SJ_R9max = null;
+        public JpsOPC.MyItemValue SJ_V10min = null;
+        public JpsOPC.MyItemValue SJ_V10max = null;
+        public JpsOPC.MyItemValue SJ_R10min = null;
+        public JpsOPC.MyItemValue SJ_R10max = null;
+        public JpsOPC.MyItemValue SJ_V11min = null;
+        public JpsOPC.MyItemValue SJ_V11max = null;
+        public JpsOPC.MyItemValue SJ_R11min = null;
+        public JpsOPC.MyItemValue SJ_R11max = null;
+        public JpsOPC.MyItemValue SJ_V12min = null;
+        public JpsOPC.MyItemValue SJ_V12max = null;
+        public JpsOPC.MyItemValue SJ_R12min = null;
+        public JpsOPC.MyItemValue SJ_R12max = null;
+        public JpsOPC.MyItemValue SJ_V13min = null;
+        public JpsOPC.MyItemValue SJ_V13max = null;
+        public JpsOPC.MyItemValue SJ_R13min = null;
+        public JpsOPC.MyItemValue SJ_R13max = null;
+        public JpsOPC.MyItemValue SJ_V14min = null;
+        public JpsOPC.MyItemValue SJ_V14max = null;
+        public JpsOPC.MyItemValue SJ_R14min = null;
+        public JpsOPC.MyItemValue SJ_R14max = null;
+        public JpsOPC.MyItemValue SJ_V15min = null;
+        public JpsOPC.MyItemValue SJ_V15max = null;
+        public JpsOPC.MyItemValue SJ_R15min = null;
+        public JpsOPC.MyItemValue SJ_R15max = null;
+        public JpsOPC.MyItemValue SJ_V16min = null;
+        public JpsOPC.MyItemValue SJ_V16max = null;
+        public JpsOPC.MyItemValue SJ_R16min = null;
+        public JpsOPC.MyItemValue SJ_R16max = null;
+        //读取结果值
+        public JpsOPC.MyItemValue SJ_Resut1 = null;
+        public JpsOPC.MyItemValue SJ_Resut2 = null;
+        public JpsOPC.MyItemValue SJ_Resut3 = null;
+        public JpsOPC.MyItemValue SJ_Resut4 = null;
+        public JpsOPC.MyItemValue SJ_Resut5 = null;
+        public JpsOPC.MyItemValue SJ_Resut6 = null;
+        public JpsOPC.MyItemValue SJ_Resut7 = null;
+        public JpsOPC.MyItemValue SJ_Resut8 = null;
+        public JpsOPC.MyItemValue SJ_Resut9 = null;
+        public JpsOPC.MyItemValue SJ_Resut10 = null;
+        public JpsOPC.MyItemValue SJ_Resut11 = null;
+        public JpsOPC.MyItemValue SJ_Resut12 = null;
+        public JpsOPC.MyItemValue SJ_Resut13 = null;
+        public JpsOPC.MyItemValue SJ_Resut14 = null;
+        public JpsOPC.MyItemValue SJ_Resut15 = null;
+        public JpsOPC.MyItemValue SJ_Resut16 = null;
+
+        #endregion
+        #region 公共函数
+        public bool InitServer(out string sErr)
+        {
+            if (this.IsDebug)
+            {
+                sErr = "";
+                return true;
+            }
+            if (_Server == null)
+            {
+                try
+                {
+                    this._Server = new OPCServer();
+                }
+                catch (Exception ex)
+                {
+                    sErr = "ResultOPC：初始化Server出错：" + ex.Message + "(" + ex.Source + ")";
+                    return false;
+                }
+            }
+            if (this._Server.ServerState != (int)OPCServerState.OPCRunning)
+            {
+                try
+                {
+                    this._Server.Connect("KEPware.KEPServerEx.V6", "");
+                }
+                catch (Exception ex)
+                {
+                    sErr = string.Format("ResultOPC：server初始化出错：{0}({1})", ex.Message, ex.Source);
+                    return false;
+                }
+                //重新连接过的话重新定义组
+                _ServerGroups = null;
+                if (this.SJ_Work != null)
+                    this.SJ_Work.InitItem();
+                if (this.SJ_V1min != null)
+                    this.SJ_V1min.InitItem();
+                if (this.SJ_V1max != null)
+                    this.SJ_V1max.InitItem();
+                if (this.SJ_R1min != null)
+                    this.SJ_R1min.InitItem();
+                if (this.SJ_R1max != null)
+                    this.SJ_R1max.InitItem();
+                if (this.SJ_V2min != null)
+                    this.SJ_V2min.InitItem();
+                if (this.SJ_V2max != null)
+                    this.SJ_V2max.InitItem();
+                if (this.SJ_R2min != null)
+                    this.SJ_R2min.InitItem();
+                if (this.SJ_R2max != null)
+                    this.SJ_R2max.InitItem();
+                if (this.SJ_V3min != null)
+                    this.SJ_V3min.InitItem();
+                if (this.SJ_V3max != null)
+                    this.SJ_V3max.InitItem();
+                if (this.SJ_R3min != null)
+                    this.SJ_R3min.InitItem();
+                if (this.SJ_R3max != null)
+                    this.SJ_R3max.InitItem();
+                if (this.SJ_V4min != null)
+                    this.SJ_V4min.InitItem();
+                if (this.SJ_V4max != null)
+                    this.SJ_V4max.InitItem();
+                if (this.SJ_R4min != null)
+                    this.SJ_R4min.InitItem();
+                if (this.SJ_R4max != null)
+                    this.SJ_R4max.InitItem();
+                if (this.SJ_V5min != null)
+                    this.SJ_V5min.InitItem();
+                if (this.SJ_V5max != null)
+                    this.SJ_V5max.InitItem();
+                if (this.SJ_R5min != null)
+                    this.SJ_R5min.InitItem();
+                if (this.SJ_R5max != null)
+                    this.SJ_R5max.InitItem();
+                if (this.SJ_V6min != null)
+                    this.SJ_V6min.InitItem();
+                if (this.SJ_V6max != null)
+                    this.SJ_V6max.InitItem();
+                if (this.SJ_R6min != null)
+                    this.SJ_R6min.InitItem();
+                if (this.SJ_R6max != null)
+                    this.SJ_R6max.InitItem();
+                if (this.SJ_V7min != null)
+                    this.SJ_V7min.InitItem();
+                if (this.SJ_V7max != null)
+                    this.SJ_V7max.InitItem();
+                if (this.SJ_R7min != null)
+                    this.SJ_R7min.InitItem();
+                if (this.SJ_R7max != null)
+                    this.SJ_R7max.InitItem();
+                if (this.SJ_V8min != null)
+                    this.SJ_V8min.InitItem();
+                if (this.SJ_V8max != null)
+                    this.SJ_V8max.InitItem();
+                if (this.SJ_R8min != null)
+                    this.SJ_R8min.InitItem();
+                if (this.SJ_R8max != null)
+                    this.SJ_R8max.InitItem();
+                if (this.SJ_V9min != null)
+                    this.SJ_V9min.InitItem();
+                if (this.SJ_V9max != null)
+                    this.SJ_V9max.InitItem();
+                if (this.SJ_R9min != null)
+                    this.SJ_R9min.InitItem();
+                if (this.SJ_R9max != null)
+                    this.SJ_R9max.InitItem();
+                if (this.SJ_V10min != null)
+                    this.SJ_V10min.InitItem();
+                if (this.SJ_V10max != null)
+                    this.SJ_V10max.InitItem();
+                if (this.SJ_R10min != null)
+                    this.SJ_R10min.InitItem();
+                if (this.SJ_R10max != null)
+                    this.SJ_R10max.InitItem();
+                if (this.SJ_V11min != null)
+                    this.SJ_V11min.InitItem();
+                if (this.SJ_V11max != null)
+                    this.SJ_V11max.InitItem();
+                if (this.SJ_R11min != null)
+                    this.SJ_R11min.InitItem();
+                if (this.SJ_R11max != null)
+                    this.SJ_R11max.InitItem();
+                if (this.SJ_V12min != null)
+                    this.SJ_V12min.InitItem();
+                if (this.SJ_V12max != null)
+                    this.SJ_V12max.InitItem();
+                if (this.SJ_R12min != null)
+                    this.SJ_R12min.InitItem();
+                if (this.SJ_R12max != null)
+                    this.SJ_R12max.InitItem();
+                if (this.SJ_V13min != null)
+                    this.SJ_V13min.InitItem();
+                if (this.SJ_V13max != null)
+                    this.SJ_V13max.InitItem();
+                if (this.SJ_R13min != null)
+                    this.SJ_R13min.InitItem();
+                if (this.SJ_R13max != null)
+                    this.SJ_R13max.InitItem();
+                if (this.SJ_V14min != null)
+                    this.SJ_V14min.InitItem();
+                if (this.SJ_V14max != null)
+                    this.SJ_V14max.InitItem();
+                if (this.SJ_R14min != null)
+                    this.SJ_R14min.InitItem();
+                if (this.SJ_R14max != null)
+                    this.SJ_R14max.InitItem();
+                if (this.SJ_V15min != null)
+                    this.SJ_V15min.InitItem();
+                if (this.SJ_V15max != null)
+                    this.SJ_V15max.InitItem();
+                if (this.SJ_R15min != null)
+                    this.SJ_R15min.InitItem();
+                if (this.SJ_R15max != null)
+                    this.SJ_R15max.InitItem();
+                if (this.SJ_V16min != null)
+                    this.SJ_V16min.InitItem();
+                if (this.SJ_V16max != null)
+                    this.SJ_V16max.InitItem();
+                if (this.SJ_R16min != null)
+                    this.SJ_R16min.InitItem();
+                if (this.SJ_R16max != null)
+                    this.SJ_R16max.InitItem();
+
+                if (this.SJ_Resut1 != null)
+                    this.SJ_Resut1.InitItem();
+                if (this.SJ_Resut2 != null)
+                    this.SJ_Resut2.InitItem();
+                if (this.SJ_Resut3 != null)
+                    this.SJ_Resut3.InitItem();
+                if (this.SJ_Resut4 != null)
+                    this.SJ_Resut4.InitItem();
+                if (this.SJ_Resut5 != null)
+                    this.SJ_Resut5.InitItem();
+                if (this.SJ_Resut6 != null)
+                    this.SJ_Resut6.InitItem();
+                if (this.SJ_Resut7 != null)
+                    this.SJ_Resut7.InitItem();
+                if (this.SJ_Resut8 != null)
+                    this.SJ_Resut8.InitItem();
+                if (this.SJ_Resut9 != null)
+                    this.SJ_Resut9.InitItem();
+                if (this.SJ_Resut10 != null)
+                    this.SJ_Resut10.InitItem();
+                if (this.SJ_Resut11 != null)
+                    this.SJ_Resut11.InitItem();
+                if (this.SJ_Resut12 != null)
+                    this.SJ_Resut12.InitItem();
+                if (this.SJ_Resut13 != null)
+                    this.SJ_Resut13.InitItem();
+                if (this.SJ_Resut14 != null)
+                    this.SJ_Resut14.InitItem();
+                if (this.SJ_Resut15 != null)
+                    this.SJ_Resut15.InitItem();
+                if (this.SJ_Resut16 != null)
+                    this.SJ_Resut16.InitItem();
+            }
+            //添加组
+            if (_ServerGroups == null)
+            {
+                _ServerGroups = this._Server.OPCGroups;
+                _ServerGroups.DefaultGroupIsActive = true; //设置组集合默认为激活状态
+                //下面这个几个暂时不设定，看看是否有异常，因为DefaultGroupUpdateRate这个值很关键，估计是与写入和读取的频率相关了，应该设置到某个单一的节点为好。
+                _ServerGroups.DefaultGroupDeadband = 0;    //设置死区
+                _ServerGroups.DefaultGroupUpdateRate = 100;//设置更新频率
+                try
+                {
+                    //电池组1
+                    this._MyGroup_DoNow = _ServerGroups.Add("NanJingGroup1");
+                    this._MyGroup_DoNow.UpdateRate = 200; //刷新频率
+                    this._MyGroup_DoNow.IsActive = true;
+                    //电池组2
+                    this._MyGroup_Result = _ServerGroups.Add("NanJingGroup2");
+                    this._MyGroup_Result.UpdateRate = 1000;
+                    this._MyGroup_Result.IsActive = true;
+                }
+                catch (Exception ex)
+                {
+                    sErr = string.Format("创建各组失败：{0}({1})", ex.Message, ex.Source);
+                    return false;
+                }
+            }
+            if (!this.InitMyItems(out sErr))
+            {
+                return false;
+            }
+            sErr = string.Empty;
+            return true;
+        }
+        public bool InitMyItems(out string sErr)
+        {
+            if (this.SJ_Work == null)
+                SJ_Work = new MyItemValue(OPCItemTitle + "SJ_Work");
+            if (this.SJ_V1min == null)
+                SJ_V1min = new MyItemValue(OPCItemTitle + "SJ_V1min");
+            if (this.SJ_V1max == null)
+                SJ_V1max = new MyItemValue(OPCItemTitle + "SJ_V1max");
+            if (this.SJ_R1min == null)
+                SJ_R1min = new MyItemValue(OPCItemTitle + "SJ_R1min");
+            if (this.SJ_R1max == null)
+                SJ_R1max = new MyItemValue(OPCItemTitle + "SJ_R1max");
+            if (this.SJ_V2min == null)
+                SJ_V2min = new MyItemValue(OPCItemTitle + "SJ_V2min");
+            if (this.SJ_V2max == null)
+                SJ_V2max = new MyItemValue(OPCItemTitle + "SJ_V2max");
+            if (this.SJ_R2min == null)
+                SJ_R2min = new MyItemValue(OPCItemTitle + "SJ_R2min");
+            if (this.SJ_R2max == null)
+                SJ_R2max = new MyItemValue(OPCItemTitle + "SJ_R2max");
+            if (this.SJ_V3min == null)
+                SJ_V3min = new MyItemValue(OPCItemTitle + "SJ_V3min");
+            if (this.SJ_V3max == null)
+                SJ_V3max = new MyItemValue(OPCItemTitle + "SJ_V3max");
+            if (this.SJ_R3min == null)
+                SJ_R3min = new MyItemValue(OPCItemTitle + "SJ_R3min");
+            if (this.SJ_R3max == null)
+                SJ_R3max = new MyItemValue(OPCItemTitle + "SJ_R3max");
+            if (this.SJ_V4min == null)
+                SJ_V4min = new MyItemValue(OPCItemTitle + "SJ_V4min");
+            if (this.SJ_V4max == null)
+                SJ_V4max = new MyItemValue(OPCItemTitle + "SJ_V4max");
+            if (this.SJ_R4min == null)
+                SJ_R4min = new MyItemValue(OPCItemTitle + "SJ_R4min");
+            if (this.SJ_R4max == null)
+                SJ_R4max = new MyItemValue(OPCItemTitle + "SJ_R4max");
+            if (this.SJ_V5min == null)
+                SJ_V5min = new MyItemValue(OPCItemTitle + "SJ_V5min");
+            if (this.SJ_V5max == null)
+                SJ_V5max = new MyItemValue(OPCItemTitle + "SJ_V5max");
+            if (this.SJ_R5min == null)
+                SJ_R5min = new MyItemValue(OPCItemTitle + "SJ_R5min");
+            if (this.SJ_R5max == null)
+                SJ_R5max = new MyItemValue(OPCItemTitle + "SJ_R5max");
+            if (this.SJ_V6min == null)
+                SJ_V6min = new MyItemValue(OPCItemTitle + "SJ_V6min");
+            if (this.SJ_V6max == null)
+                SJ_V6max = new MyItemValue(OPCItemTitle + "SJ_V6max");
+            if (this.SJ_R6min == null)
+                SJ_R6min = new MyItemValue(OPCItemTitle + "SJ_R6min");
+            if (this.SJ_R6max == null)
+                SJ_R6max = new MyItemValue(OPCItemTitle + "SJ_R6max");
+            if (this.SJ_V7min == null)
+                SJ_V7min = new MyItemValue(OPCItemTitle + "SJ_V7min");
+            if (this.SJ_V7max == null)
+                SJ_V7max = new MyItemValue(OPCItemTitle + "SJ_V7max");
+            if (this.SJ_R7min == null)
+                SJ_R7min = new MyItemValue(OPCItemTitle + "SJ_R7min");
+            if (this.SJ_R7max == null)
+                SJ_R7max = new MyItemValue(OPCItemTitle + "SJ_R7max");
+            if (this.SJ_V8min == null)
+                SJ_V8min = new MyItemValue(OPCItemTitle + "SJ_V8min");
+            if (this.SJ_V8max == null)
+                SJ_V8max = new MyItemValue(OPCItemTitle + "SJ_V8max");
+            if (this.SJ_R8min == null)
+                SJ_R8min = new MyItemValue(OPCItemTitle + "SJ_R8min");
+            if (this.SJ_R8max == null)
+                SJ_R8max = new MyItemValue(OPCItemTitle + "SJ_R8max");
+            if (this.SJ_V9min == null)
+                SJ_V9min = new MyItemValue(OPCItemTitle + "SJ_V9min");
+            if (this.SJ_V9max == null)
+                SJ_V9max = new MyItemValue(OPCItemTitle + "SJ_V9max");
+            if (this.SJ_R9min == null)
+                SJ_R9min = new MyItemValue(OPCItemTitle + "SJ_R9min");
+            if (this.SJ_R9max == null)
+                SJ_R9max = new MyItemValue(OPCItemTitle + "SJ_R9max");
+            if (this.SJ_V10min == null)
+                SJ_V10min = new MyItemValue(OPCItemTitle + "SJ_V10min");
+            if (this.SJ_V10max == null)
+                SJ_V10max = new MyItemValue(OPCItemTitle + "SJ_V10max");
+            if (this.SJ_R10min == null)
+                SJ_R10min = new MyItemValue(OPCItemTitle + "SJ_R10min");
+            if (this.SJ_R10max == null)
+                SJ_R10max = new MyItemValue(OPCItemTitle + "SJ_R10max");
+            if (this.SJ_V11min == null)
+                SJ_V11min = new MyItemValue(OPCItemTitle + "SJ_V11min");
+            if (this.SJ_V11max == null)
+                SJ_V11max = new MyItemValue(OPCItemTitle + "SJ_V11max");
+            if (this.SJ_R11min == null)
+                SJ_R11min = new MyItemValue(OPCItemTitle + "SJ_R11min");
+            if (this.SJ_R11max == null)
+                SJ_R11max = new MyItemValue(OPCItemTitle + "SJ_R11max");
+            if (this.SJ_V12min == null)
+                SJ_V12min = new MyItemValue(OPCItemTitle + "SJ_V12min");
+            if (this.SJ_V12max == null)
+                SJ_V12max = new MyItemValue(OPCItemTitle + "SJ_V12max");
+            if (this.SJ_R12min == null)
+                SJ_R12min = new MyItemValue(OPCItemTitle + "SJ_R12min");
+            if (this.SJ_R12max == null)
+                SJ_R12max = new MyItemValue(OPCItemTitle + "SJ_R12max");
+            if (this.SJ_V13min == null)
+                SJ_V13min = new MyItemValue(OPCItemTitle + "SJ_V13min");
+            if (this.SJ_V13max == null)
+                SJ_V13max = new MyItemValue(OPCItemTitle + "SJ_V13max");
+            if (this.SJ_R13min == null)
+                SJ_R13min = new MyItemValue(OPCItemTitle + "SJ_R13min");
+            if (this.SJ_R13max == null)
+                SJ_R13max = new MyItemValue(OPCItemTitle + "SJ_R13max");
+            if (this.SJ_V14min == null)
+                SJ_V14min = new MyItemValue(OPCItemTitle + "SJ_V14min");
+            if (this.SJ_V14max == null)
+                SJ_V14max = new MyItemValue(OPCItemTitle + "SJ_V14max");
+            if (this.SJ_R14min == null)
+                SJ_R14min = new MyItemValue(OPCItemTitle + "SJ_R14min");
+            if (this.SJ_R14max == null)
+                SJ_R14max = new MyItemValue(OPCItemTitle + "SJ_R14max");
+            if (this.SJ_V15min == null)
+                SJ_V15min = new MyItemValue(OPCItemTitle + "SJ_V15min");
+            if (this.SJ_V15max == null)
+                SJ_V15max = new MyItemValue(OPCItemTitle + "SJ_V15max");
+            if (this.SJ_R15min == null)
+                SJ_R15min = new MyItemValue(OPCItemTitle + "SJ_R15min");
+            if (this.SJ_R15max == null)
+                SJ_R15max = new MyItemValue(OPCItemTitle + "SJ_R15max");
+            if (this.SJ_V16min == null)
+                SJ_V16min = new MyItemValue(OPCItemTitle + "SJ_V16min");
+            if (this.SJ_V16max == null)
+                SJ_V16max = new MyItemValue(OPCItemTitle + "SJ_V16max");
+            if (this.SJ_R16min == null)
+                SJ_R16min = new MyItemValue(OPCItemTitle + "SJ_R16min");
+            if (this.SJ_R16max == null)
+                SJ_R16max = new MyItemValue(OPCItemTitle + "SJ_R16max");
+
+            if (this.SJ_Resut1 == null)
+                SJ_Resut1 = new MyItemValue(OPCItemTitle + "SJ_Resut1");
+            if (this.SJ_Resut2 == null)
+                SJ_Resut2 = new MyItemValue(OPCItemTitle + "SJ_Resut2");
+            if (this.SJ_Resut3 == null)
+                SJ_Resut3 = new MyItemValue(OPCItemTitle + "SJ_Resut3");
+            if (this.SJ_Resut4 == null)
+                SJ_Resut4 = new MyItemValue(OPCItemTitle + "SJ_Resut4");
+            if (this.SJ_Resut5 == null)
+                SJ_Resut5 = new MyItemValue(OPCItemTitle + "SJ_Resut5");
+            if (this.SJ_Resut6 == null)
+                SJ_Resut6 = new MyItemValue(OPCItemTitle + "SJ_Resut6");
+            if (this.SJ_Resut7 == null)
+                SJ_Resut7 = new MyItemValue(OPCItemTitle + "SJ_Resut7");
+            if (this.SJ_Resut8 == null)
+                SJ_Resut8 = new MyItemValue(OPCItemTitle + "SJ_Resut8");
+            if (this.SJ_Resut9 == null)
+                SJ_Resut9 = new MyItemValue(OPCItemTitle + "SJ_Resut9");
+            if (this.SJ_Resut10 == null)
+                SJ_Resut10 = new MyItemValue(OPCItemTitle + "SJ_Resut10");
+            if (this.SJ_Resut11 == null)
+                SJ_Resut11 = new MyItemValue(OPCItemTitle + "SJ_Resut11");
+            if (this.SJ_Resut12 == null)
+                SJ_Resut12 = new MyItemValue(OPCItemTitle + "SJ_Resut12");
+            if (this.SJ_Resut13 == null)
+                SJ_Resut13 = new MyItemValue(OPCItemTitle + "SJ_Resut13");
+            if (this.SJ_Resut14 == null)
+                SJ_Resut14 = new MyItemValue(OPCItemTitle + "SJ_Resut14");
+            if (this.SJ_Resut15 == null)
+                SJ_Resut15 = new MyItemValue(OPCItemTitle + "SJ_Resut15");
+            if (this.SJ_Resut16 == null)
+                SJ_Resut16 = new MyItemValue(OPCItemTitle + "SJ_Resut16");
+
+
+            //在OPCGroup中添加IOPCItem
+            if (this._MyGroup_DoNow == null)
+            {
+                sErr = "初始化电池组item时失败，因为group1为空。";
+                return false;
+            }
+            if (this._MyGroup_Result == null)
+            {
+                sErr = "初始化电池组item时失败，因为group2为空。";
+                return false;
+            }
+            if (_MyGroup_DoNow.OPCItems == null)
+            {
+                sErr = "初始化电池组item时失败，因为group1.OPCItems为空。";
+                return false;
+            }
+            if (_MyGroup_Result.OPCItems == null)
+            {
+                sErr = "初始化电池组item时失败，因为group2.OPCItems为空。";
+                return false;
+            }
+            #region 加入到group中
+            if (!InitMyItems_AddItem(this.SJ_Work, this._MyGroup_DoNow, true, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V1min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V1max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R1min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R1max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V2min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V2max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R2min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R2max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V3min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V3max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R3min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R3max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V4min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V4max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R4min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R4max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V5min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V5max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R5min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R5max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V6min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V6max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R6min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R6max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V7min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V7max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R7min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R7max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V8min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V8max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R8min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R8max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V9min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V9max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R9min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R9max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V10min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V10max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R10min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R10max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V11min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V11max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R11min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R11max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V12min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V12max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R12min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R12max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V13min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V13max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R13min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R13max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V14min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V14max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R14min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R14max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V15min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V15max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R15min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R15max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V16min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_V16max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R16min, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_R16max, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+
+            if (!InitMyItems_AddItem(this.SJ_Resut1, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_Resut2, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_Resut3, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_Resut4, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_Resut5, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_Resut6, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_Resut7, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_Resut8, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_Resut9, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_Resut10, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_Resut11, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_Resut12, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_Resut13, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_Resut14, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_Resut15, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.SJ_Resut16, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+            #endregion
+            return true;
+        }
+        private bool InitMyItems_AddItem(MyItemValue myItem, OPCGroup targetGroup, bool saveItem, out string sErr)
+        {
+            if (myItem.ServerHandle <= 0)
+            {
+                if (this.IsDebug)
+                {
+                    sErr = string.Empty;
+                    return true;
+                }
+                //此时添加Item
+                _ClientHandle++;
+                OPCItem item = null;
+                string strTagName = myItem.TagName;
+                try
+                {
+                    item = targetGroup.OPCItems.AddItem(strTagName, _ClientHandle);
+                }
+                catch (Exception ex)
+                {
+                    sErr = string.Format("添加Item：{0}，出错:{1}({2})", myItem.TagName, ex.Message, ex.Source);
+                    return false;
+                }
+                if (item == null)
+                {
+                    sErr = string.Format("添加Item：{0}失败，返回为空。", myItem.TagName);
+                    return false;
+                }
+                if (item.ServerHandle <= 0)
+                {
+                    sErr = string.Format("添加Item：{0}失败，返回值ServerHandle为{1}。", myItem.TagName, myItem.ServerHandle);
+                    return false;
+                }
+                myItem.ServerHandle = item.ServerHandle;
+                myItem.ClientHandle = this._ClientHandle;
+                if (saveItem)
+                    myItem._OPCItem = item;
+            }
+            sErr = string.Empty;
+            return true;
+        }
+        public bool CloseOPC(out string sErr)
+        {
+            sErr = "";
+            if (this._Server == null) return true;
+            try
+            {
+                this._Server.Disconnect();
+            }
+            catch (Exception ex)
+            {
+                sErr = ex.Message;
+                return false;
+            }
+            return true;
+        }
+        #endregion
+        #region 功能函数
+        public bool ReadWrkState(out short iValue,out string sErr)
+        {
+            iValue = 0;
+            if (this.SJ_Work == null)
+            {
+                sErr = "OPC字段SJ_Work为空！";
+                return false;
+            }
+            else if (this.SJ_Work._OPCItem == null)
+            {
+                //此时还未初始化
+                if (!this.InitServer(out sErr))
+                {
+                    sErr = "OPC字段SJ_Work为空，且初始化出错：" + sErr;
+                    return false;
+                }
+            }
+            if (this.SJ_Work.ServerHandle <= 0)
+            {
+                //此时还未初始化
+                if (!this.InitServer(out sErr))
+                {
+                    sErr = "OPC字段SJ_Work的OPCItemHandle值为0，但重新初始化时出错：" + sErr;
+                    return false;
+                }
+            }
+            //此时有效了，直接读取值
+            object objValue;
+            if (!this.SJ_Work.ReadData(out objValue, out sErr))
+            {
+                sErr = "OPCItem(SJ_Work)读取出错：" + sErr;
+                return false;
+            }
+            if (objValue == null)
+            {
+                sErr = string.Format("OPCItem(SJ_Work)读取出错：item对象[{0}]的返回值NULL。", this.SJ_Work.TagName);
+                return false;
+            }
+            //此时读取成功了，则转换
+            if(!short.TryParse(objValue.ToString(),out iValue))
+            {
+                sErr = $"OPCItem(SJ_Work)读取出错：返回值[{objValue.ToString()}]不是预期的16位整型。";
+                return false;
+            }
+            return true;
+        }
+        #endregion
+        #region 写入功能函数
+        public bool WriteSjRange(NanJingZB_SJRVRange data, out string sErr, bool blReWrite = false)
+        {
+            //sErr = string.Format("数量serverID:{0}，数量值:{1}", this.St_Cao1DxCnt.ServerHandle, grooves[0].St_CaoDxCnt);
+            //return false;
+            if (this.IsDebug)
+            {
+                sErr = string.Empty;
+                return true;
+            }
+            //写入数据
+            Array serverHandles = new int[65] { 0,
+                this.SJ_V1min.ServerHandle,
+                this.SJ_V1max.ServerHandle,
+                this.SJ_R1min.ServerHandle,
+                this.SJ_R1max.ServerHandle,
+                this.SJ_V2min.ServerHandle,
+                this.SJ_V2max.ServerHandle,
+                this.SJ_R2min.ServerHandle,
+                this.SJ_R2max.ServerHandle,
+                this.SJ_V3min.ServerHandle,
+                this.SJ_V3max.ServerHandle,
+                this.SJ_R3min.ServerHandle,
+                this.SJ_R3max.ServerHandle,
+                this.SJ_V4min.ServerHandle,
+                this.SJ_V4max.ServerHandle,
+                this.SJ_R4min.ServerHandle,
+                this.SJ_R4max.ServerHandle,
+                this.SJ_V5min.ServerHandle,
+                this.SJ_V5max.ServerHandle,
+                this.SJ_R5min.ServerHandle,
+                this.SJ_R5max.ServerHandle,
+                this.SJ_V6min.ServerHandle,
+                this.SJ_V6max.ServerHandle,
+                this.SJ_R6min.ServerHandle,
+                this.SJ_R6max.ServerHandle,
+                this.SJ_V7min.ServerHandle,
+                this.SJ_V7max.ServerHandle,
+                this.SJ_R7min.ServerHandle,
+                this.SJ_R7max.ServerHandle,
+                this.SJ_V8min.ServerHandle,
+                this.SJ_V8max.ServerHandle,
+                this.SJ_R8min.ServerHandle,
+                this.SJ_R8max.ServerHandle,
+                this.SJ_V9min.ServerHandle,
+                this.SJ_V9max.ServerHandle,
+                this.SJ_R9min.ServerHandle,
+                this.SJ_R9max.ServerHandle,
+                this.SJ_V10min.ServerHandle,
+                this.SJ_V10max.ServerHandle,
+                this.SJ_R10min.ServerHandle,
+                this.SJ_R10max.ServerHandle,
+                this.SJ_V11min.ServerHandle,
+                this.SJ_V11max.ServerHandle,
+                this.SJ_R11min.ServerHandle,
+                this.SJ_R11max.ServerHandle,
+                this.SJ_V12min.ServerHandle,
+                this.SJ_V12max.ServerHandle,
+                this.SJ_R12min.ServerHandle,
+                this.SJ_R12max.ServerHandle,
+                this.SJ_V13min.ServerHandle,
+                this.SJ_V13max.ServerHandle,
+                this.SJ_R13min.ServerHandle,
+                this.SJ_R13max.ServerHandle,
+                this.SJ_V14min.ServerHandle,
+                this.SJ_V14max.ServerHandle,
+                this.SJ_R14min.ServerHandle,
+                this.SJ_R14max.ServerHandle,
+                this.SJ_V15min.ServerHandle,
+                this.SJ_V15max.ServerHandle,
+                this.SJ_R15min.ServerHandle,
+                this.SJ_R15max.ServerHandle,
+                this.SJ_V16min.ServerHandle,
+                this.SJ_V16max.ServerHandle,
+                this.SJ_R16min.ServerHandle,
+                this.SJ_R16max.ServerHandle,
+            };
+            Array values = new object[65] { ""
+               ,data.SJ_V1min
+                ,data.SJ_V1max
+                ,data.SJ_R1min
+                ,data.SJ_R1max
+                ,data.SJ_V2min
+                ,data.SJ_V2max
+                ,data.SJ_R2min
+                ,data.SJ_R2max
+                ,data.SJ_V3min
+                ,data.SJ_V3max
+                ,data.SJ_R3min
+                ,data.SJ_R3max
+                ,data.SJ_V4min
+                ,data.SJ_V4max
+                ,data.SJ_R4min
+                ,data.SJ_R4max
+                ,data.SJ_V5min
+                ,data.SJ_V5max
+                ,data.SJ_R5min
+                ,data.SJ_R5max
+                ,data.SJ_V6min
+                ,data.SJ_V6max
+                ,data.SJ_R6min
+                ,data.SJ_R6max
+                ,data.SJ_V7min
+                ,data.SJ_V7max
+                ,data.SJ_R7min
+                ,data.SJ_R7max
+                ,data.SJ_V8min
+                ,data.SJ_V8max
+                ,data.SJ_R8min
+                ,data.SJ_R8max
+                ,data.SJ_V9min
+                ,data.SJ_V9max
+                ,data.SJ_R9min
+                ,data.SJ_R9max
+                ,data.SJ_V10min
+                ,data.SJ_V10max
+                ,data.SJ_R10min
+                ,data.SJ_R10max
+                ,data.SJ_V11min
+                ,data.SJ_V11max
+                ,data.SJ_R11min
+                ,data.SJ_R11max
+                ,data.SJ_V12min
+                ,data.SJ_V12max
+                ,data.SJ_R12min
+                ,data.SJ_R12max
+                ,data.SJ_V13min
+                ,data.SJ_V13max
+                ,data.SJ_R13min
+                ,data.SJ_R13max
+                ,data.SJ_V14min
+                ,data.SJ_V14max
+                ,data.SJ_R14min
+                ,data.SJ_R14max
+                ,data.SJ_V15min
+                ,data.SJ_V15max
+                ,data.SJ_R15min
+                ,data.SJ_R15max
+                ,data.SJ_V16min
+                ,data.SJ_V16max
+                ,data.SJ_R16min
+                ,data.SJ_R16max
+            };
+            Array errors;
+            try
+            {
+                this._MyGroup_Result.SyncWrite(64, ref serverHandles, ref values, out errors);
+            }
+            catch (Exception ex)
+            {
+                if (!blReWrite)
+                {
+                    //此时不是第二次调用了
+                    if (!this.InitServer(out sErr)) return false;
+                    return this.WriteSjRange(data, out sErr, true);
+                }
+                else
+                {
+                    sErr = string.Format("首检范围参数写入出错：{0}({1})", ex.Message, ex.Source);
+                }
+                return false;
+            }
+            sErr = string.Empty;
+            return true;
+        }
+        #endregion
+        #region 读取结果
+        public bool ReadResult(ref NanJingZB_SJResult data,out string sErr)
+        {
+
+            Array values = null;
+            #region serverHandles
+            Array serverHandles = new int[17] { 0
+                , this.SJ_Resut1.ServerHandle
+                , this.SJ_Resut2.ServerHandle
+                , this.SJ_Resut3.ServerHandle
+                , this.SJ_Resut4.ServerHandle
+                , this.SJ_Resut5.ServerHandle
+                , this.SJ_Resut6.ServerHandle
+                , this.SJ_Resut7.ServerHandle
+                , this.SJ_Resut8.ServerHandle
+                , this.SJ_Resut9.ServerHandle
+                , this.SJ_Resut10.ServerHandle
+                , this.SJ_Resut11.ServerHandle
+                , this.SJ_Resut12.ServerHandle
+                , this.SJ_Resut13.ServerHandle
+                , this.SJ_Resut14.ServerHandle
+                , this.SJ_Resut15.ServerHandle
+                , this.SJ_Resut16.ServerHandle
+            };
+            #endregion
+            object objQ;
+            object objT;
+            Array errors;
+            try
+            {
+                this._MyGroup_Result.SyncRead(1, 16, ref serverHandles, out values, out errors, out objQ, out objT);
+            }
+            catch (Exception ex)
+            {
+                sErr = string.Format("首检结果OPC读取出错01：{0}({1})", ex.Message, ex.Source);
+                return false;
+            }
+            if (values == null)
+            {
+                sErr = "首检结果OPC读取出错:values为空！";
+                return false;
+            }
+            if (values.Length != 16)
+            {
+                sErr = string.Format("首检结果OPC读取出错:values长度为{0}，不是预期的16！", values.Length);
+                return false;
+            }
+            Array arrQ = objQ as Array;
+            if (arrQ == null)
+            {
+                sErr = "首检结果OPC读取出错:qualitys为空！";
+                return false;
+            }
+            if (arrQ.Length != 16)
+            {
+                sErr = string.Format("首检结果OPC读取出错:qualitys长度为{0}，不是预期的16！", values.Length);
+                return false;
+            }
+            //解析数值
+            int iIndex = 1;
+            object objValue;
+            object objQItem;
+            decimal decValue;
+            objValue = values.GetValue(iIndex);
+            objQItem = arrQ.GetValue(iIndex);
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.SJ_Resut2 = decValue;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.SJ_Resut3 = decValue;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.SJ_Resut4 = decValue;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.SJ_Resut5 = decValue;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.SJ_Resut6 = decValue;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.SJ_Resut7 = decValue;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.SJ_Resut8 = decValue;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.SJ_Resut9 = decValue;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.SJ_Resut10 = decValue;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.SJ_Resut11 = decValue;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.SJ_Resut12 = decValue;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.SJ_Resut13 = decValue;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.SJ_Resut14 = decValue;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.SJ_Resut15 = decValue;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.SJ_Resut16 = decValue;
+            //iIndex++;
+            return true;
+            
+        }
+        private bool GetMyDecimal(out decimal decValue,int iIndex, object objQItem,object objValue, out string sErr)
+        {
+            decValue = 0M;
+            if (objQItem == null)
+            {
+                sErr = $"首检结果值[index={iIndex}]返回的Quality为空！";
+                return false;
+            }
+            else if (objQItem.ToString() != "192")
+            {
+                sErr = $"首检结果值[index={iIndex}]返回的Quality为{objQItem.ToString()}不是预期的192！";
+                return false;
+            }
+            else
+            {
+                if (objValue == null)
+                {
+                    decValue = 0M;
+                }
+                else
+                {
+                    float fValue;
+                    if (!float.TryParse(objValue.ToString(), out fValue))
+                    {
+                        sErr = $"返回的值为[{objValue.ToString()}]不是数值类型！";
+                        return false;
+                    }
+                    decValue = (decimal)fValue;
+                }
+                sErr = string.Empty;
+                return true;
+            }
+        }
+        #endregion
+        #region 设置WorkState
+        public bool SetWorkState(short iValue,out string sErr)
+        {
+            if (this.SJ_Work == null)
+            {
+                sErr = "SJ_Work复位失败：opc为空！";
+                return false;
+            }
+            else if (this.SJ_Work._OPCItem == null)
+            {
+                //此时还未初始化
+                if (!this.InitServer(out sErr))
+                {
+                    sErr = "SJ_Work复位失败：OPCItem为空，且初始化出错：" + sErr;
+                    return false;
+                }
+            }
+            if (this.SJ_Work.ServerHandle <= 0)
+            {
+                //此时还未初始化
+                if (!this.InitServer(out sErr))
+                {
+                    sErr = "SJ_Work复位失败：OPCItemHandle值为0，但重新初始化时出错：" + sErr;
+                    return false;
+                }
+            }
+            if (!this.SJ_Work.WriteData(iValue, out sErr))
+            {
+                sErr = "SJ_Work复位出错：" + sErr;
+                return false;
+            }
+            return true;
+        }
+        #endregion
+        #region 设置结果值为-1
+        public bool ResetResult(bool blReWrite, out string sErr)
+        {
+            if (this.IsDebug)
+            {
+                sErr = string.Empty;
+                return true;
+            }
+            Array serverHandles = new int[17] { 0
+                , this.SJ_Resut1.ServerHandle
+                , this.SJ_Resut2.ServerHandle
+                , this.SJ_Resut3.ServerHandle
+                , this.SJ_Resut4.ServerHandle
+                , this.SJ_Resut5.ServerHandle
+                , this.SJ_Resut6.ServerHandle
+                , this.SJ_Resut7.ServerHandle
+                , this.SJ_Resut8.ServerHandle
+                , this.SJ_Resut9.ServerHandle
+                , this.SJ_Resut10.ServerHandle
+                , this.SJ_Resut11.ServerHandle
+                , this.SJ_Resut12.ServerHandle
+                , this.SJ_Resut13.ServerHandle
+                , this.SJ_Resut14.ServerHandle
+                , this.SJ_Resut15.ServerHandle
+                , this.SJ_Resut16.ServerHandle
+            };
+            Array values = new object[17] { "",
+                -1F,
+                -1F,
+                -1F,
+                -1F,
+                -1F,
+                -1F,
+                -1F,
+                -1F,
+                -1F,
+                -1F,
+                -1F,
+                -1F,
+                -1F,
+                -1F,
+                -1F,
+                -1F
+                 };
+            Array errors;
+            try
+            {
+                this._MyGroup_Result.SyncWrite(16, ref serverHandles, ref values, out errors);
+            }
+            catch (Exception ex)
+            {
+                if (!blReWrite)
+                {
+                    //此时不是第二次调用了
+                    if (!this.InitServer(out sErr)) return false;
+                    return this.ResetResult(true, out sErr);
+                }
+                else
+                {
+                    sErr = string.Format("复位首检结果出错：{0}({1})", ex.Message, ex.Source);
+                }
+                return false;
+            }
+            sErr = string.Empty;
+            return true;
+        }
+        #endregion
     }
     public class OPCHelperBat : OPCHelperBase
     {
@@ -48,6 +1486,57 @@ namespace JpsOPC
 
         //告知上位机将电池信息存储至Bat_Bool1还是Bat_Bool2（short类型）
         public JpsOPC.MyItemValue _Bat_BlockNo = null;//关键字段，标识存入1还是2的
+        #endregion
+        #region 南京中比添加电芯原始数据
+        public JpsOPC.MyItemValue Exp_DxCapacity1 = null;
+        public JpsOPC.MyItemValue Exp_DxCapacity2 = null;
+        public JpsOPC.MyItemValue Exp_DxCapacity3 = null;
+        public JpsOPC.MyItemValue Exp_DxCapacity4 = null;
+        public JpsOPC.MyItemValue Exp_DxCapacity5 = null;
+        public JpsOPC.MyItemValue Exp_DxCapacity6 = null;
+        public JpsOPC.MyItemValue Exp_DxCapacity7 = null;
+        public JpsOPC.MyItemValue Exp_DxCapacity8 = null;
+        public JpsOPC.MyItemValue Exp_DxCapacity9 = null;
+        public JpsOPC.MyItemValue Exp_DxCapacity10 = null;
+        public JpsOPC.MyItemValue Exp_DxCapacity11 = null;
+        public JpsOPC.MyItemValue Exp_DxCapacity12 = null;
+        public JpsOPC.MyItemValue Exp_DxCapacity13 = null;
+        public JpsOPC.MyItemValue Exp_DxCapacity14 = null;
+        public JpsOPC.MyItemValue Exp_DxCapacity15 = null;
+        public JpsOPC.MyItemValue Exp_DxCapacity16 = null;
+        //内阻电压
+        public JpsOPC.MyItemValue Exp_DxV1 = null;
+        public JpsOPC.MyItemValue Exp_DxR1 = null;
+        public JpsOPC.MyItemValue Exp_DxV2 = null;
+        public JpsOPC.MyItemValue Exp_DxR2 = null;
+        public JpsOPC.MyItemValue Exp_DxV3 = null;
+        public JpsOPC.MyItemValue Exp_DxR3 = null;
+        public JpsOPC.MyItemValue Exp_DxV4 = null;
+        public JpsOPC.MyItemValue Exp_DxR4 = null;
+        public JpsOPC.MyItemValue Exp_DxV5 = null;
+        public JpsOPC.MyItemValue Exp_DxR5 = null;
+        public JpsOPC.MyItemValue Exp_DxV6 = null;
+        public JpsOPC.MyItemValue Exp_DxR6 = null;
+        public JpsOPC.MyItemValue Exp_DxV7 = null;
+        public JpsOPC.MyItemValue Exp_DxR7 = null;
+        public JpsOPC.MyItemValue Exp_DxV8 = null;
+        public JpsOPC.MyItemValue Exp_DxR8 = null;
+        public JpsOPC.MyItemValue Exp_DxV9 = null;
+        public JpsOPC.MyItemValue Exp_DxR9 = null;
+        public JpsOPC.MyItemValue Exp_DxV10 = null;
+        public JpsOPC.MyItemValue Exp_DxR10 = null;
+        public JpsOPC.MyItemValue Exp_DxV11 = null;
+        public JpsOPC.MyItemValue Exp_DxR11 = null;
+        public JpsOPC.MyItemValue Exp_DxV12 = null;
+        public JpsOPC.MyItemValue Exp_DxR12 = null;
+        public JpsOPC.MyItemValue Exp_DxV13 = null;
+        public JpsOPC.MyItemValue Exp_DxR13 = null;
+        public JpsOPC.MyItemValue Exp_DxV14 = null;
+        public JpsOPC.MyItemValue Exp_DxR14 = null;
+        public JpsOPC.MyItemValue Exp_DxV15 = null;
+        public JpsOPC.MyItemValue Exp_DxR15 = null;
+        public JpsOPC.MyItemValue Exp_DxV16 = null;
+        public JpsOPC.MyItemValue Exp_DxR16 = null;
         #endregion
         public OPCHelperBat()
         {
@@ -102,7 +1591,106 @@ namespace JpsOPC
 
                 if (this._Bat_BlockNo != null)
                     this._Bat_BlockNo.InitItem();
-                
+                #region 南京中比添加
+                if (this.Exp_DxCapacity1 != null)
+                    this.Exp_DxCapacity1.InitItem();
+                if (this.Exp_DxCapacity2 != null)
+                    this.Exp_DxCapacity2.InitItem();
+                if (this.Exp_DxCapacity3 != null)
+                    this.Exp_DxCapacity3.InitItem();
+                if (this.Exp_DxCapacity4 != null)
+                    this.Exp_DxCapacity4.InitItem();
+                if (this.Exp_DxCapacity5 != null)
+                    this.Exp_DxCapacity5.InitItem();
+                if (this.Exp_DxCapacity6 != null)
+                    this.Exp_DxCapacity6.InitItem();
+                if (this.Exp_DxCapacity7 != null)
+                    this.Exp_DxCapacity7.InitItem();
+                if (this.Exp_DxCapacity8 != null)
+                    this.Exp_DxCapacity8.InitItem();
+                if (this.Exp_DxCapacity9 != null)
+                    this.Exp_DxCapacity9.InitItem();
+                if (this.Exp_DxCapacity10 != null)
+                    this.Exp_DxCapacity10.InitItem();
+                if (this.Exp_DxCapacity11 != null)
+                    this.Exp_DxCapacity11.InitItem();
+                if (this.Exp_DxCapacity12 != null)
+                    this.Exp_DxCapacity12.InitItem();
+                if (this.Exp_DxCapacity13 != null)
+                    this.Exp_DxCapacity13.InitItem();
+                if (this.Exp_DxCapacity14 != null)
+                    this.Exp_DxCapacity14.InitItem();
+                if (this.Exp_DxCapacity15 != null)
+                    this.Exp_DxCapacity15.InitItem();
+                if (this.Exp_DxCapacity16 != null)
+                    this.Exp_DxCapacity16.InitItem();
+                //内阻电压
+                if (this.Exp_DxV1 != null)
+                    this.Exp_DxV1.InitItem();
+                if (this.Exp_DxR1 != null)
+                    this.Exp_DxR1.InitItem();
+                if (this.Exp_DxV2 != null)
+                    this.Exp_DxV2.InitItem();
+                if (this.Exp_DxR2 != null)
+                    this.Exp_DxR2.InitItem();
+                if (this.Exp_DxV3 != null)
+                    this.Exp_DxV3.InitItem();
+                if (this.Exp_DxR3 != null)
+                    this.Exp_DxR3.InitItem();
+                if (this.Exp_DxV4 != null)
+                    this.Exp_DxV4.InitItem();
+                if (this.Exp_DxR4 != null)
+                    this.Exp_DxR4.InitItem();
+                if (this.Exp_DxV5 != null)
+                    this.Exp_DxV5.InitItem();
+                if (this.Exp_DxR5 != null)
+                    this.Exp_DxR5.InitItem();
+                if (this.Exp_DxV6 != null)
+                    this.Exp_DxV6.InitItem();
+                if (this.Exp_DxR6 != null)
+                    this.Exp_DxR6.InitItem();
+                if (this.Exp_DxV7 != null)
+                    this.Exp_DxV7.InitItem();
+                if (this.Exp_DxR7 != null)
+                    this.Exp_DxR7.InitItem();
+                if (this.Exp_DxV8 != null)
+                    this.Exp_DxV8.InitItem();
+                if (this.Exp_DxR8 != null)
+                    this.Exp_DxR8.InitItem();
+                if (this.Exp_DxV9 != null)
+                    this.Exp_DxV9.InitItem();
+                if (this.Exp_DxR9 != null)
+                    this.Exp_DxR9.InitItem();
+                if (this.Exp_DxV10 != null)
+                    this.Exp_DxV10.InitItem();
+                if (this.Exp_DxR10 != null)
+                    this.Exp_DxR10.InitItem();
+                if (this.Exp_DxV11 != null)
+                    this.Exp_DxV11.InitItem();
+                if (this.Exp_DxR11 != null)
+                    this.Exp_DxR11.InitItem();
+                if (this.Exp_DxV12 != null)
+                    this.Exp_DxV12.InitItem();
+                if (this.Exp_DxR12 != null)
+                    this.Exp_DxR12.InitItem();
+                if (this.Exp_DxV13 != null)
+                    this.Exp_DxV13.InitItem();
+                if (this.Exp_DxR13 != null)
+                    this.Exp_DxR13.InitItem();
+                if (this.Exp_DxV14 != null)
+                    this.Exp_DxV14.InitItem();
+                if (this.Exp_DxR14 != null)
+                    this.Exp_DxR14.InitItem();
+                if (this.Exp_DxV15 != null)
+                    this.Exp_DxV15.InitItem();
+                if (this.Exp_DxR15 != null)
+                    this.Exp_DxR15.InitItem();
+                if (this.Exp_DxV16 != null)
+                    this.Exp_DxV16.InitItem();
+                if (this.Exp_DxR16 != null)
+                    this.Exp_DxR16.InitItem();
+
+                #endregion
             }
             //添加组
             if (_ServerGroups == null)
@@ -155,7 +1743,106 @@ namespace JpsOPC
 
             if (this._Bat_BlockNo == null)
                 _Bat_BlockNo = new MyItemValue(OPCItemTitle + "Bat_BlockNo");
+            #region 南京中比添加
+            if (this.Exp_DxCapacity1 == null)
+                Exp_DxCapacity1 = new MyItemValue(OPCItemTitle + "Exp_DxCapacity1");
+            if (this.Exp_DxCapacity2 == null)
+                Exp_DxCapacity2 = new MyItemValue(OPCItemTitle + "Exp_DxCapacity2");
+            if (this.Exp_DxCapacity3 == null)
+                Exp_DxCapacity3 = new MyItemValue(OPCItemTitle + "Exp_DxCapacity3");
+            if (this.Exp_DxCapacity4 == null)
+                Exp_DxCapacity4 = new MyItemValue(OPCItemTitle + "Exp_DxCapacity4");
+            if (this.Exp_DxCapacity5 == null)
+                Exp_DxCapacity5 = new MyItemValue(OPCItemTitle + "Exp_DxCapacity5");
+            if (this.Exp_DxCapacity6 == null)
+                Exp_DxCapacity6 = new MyItemValue(OPCItemTitle + "Exp_DxCapacity6");
+            if (this.Exp_DxCapacity7 == null)
+                Exp_DxCapacity7 = new MyItemValue(OPCItemTitle + "Exp_DxCapacity7");
+            if (this.Exp_DxCapacity8 == null)
+                Exp_DxCapacity8 = new MyItemValue(OPCItemTitle + "Exp_DxCapacity8");
+            if (this.Exp_DxCapacity9 == null)
+                Exp_DxCapacity9 = new MyItemValue(OPCItemTitle + "Exp_DxCapacity9");
+            if (this.Exp_DxCapacity10 == null)
+                Exp_DxCapacity10 = new MyItemValue(OPCItemTitle + "Exp_DxCapacity10");
+            if (this.Exp_DxCapacity11 == null)
+                Exp_DxCapacity11 = new MyItemValue(OPCItemTitle + "Exp_DxCapacity11");
+            if (this.Exp_DxCapacity12 == null)
+                Exp_DxCapacity12 = new MyItemValue(OPCItemTitle + "Exp_DxCapacity12");
+            if (this.Exp_DxCapacity13 == null)
+                Exp_DxCapacity13 = new MyItemValue(OPCItemTitle + "Exp_DxCapacity13");
+            if (this.Exp_DxCapacity14 == null)
+                Exp_DxCapacity14 = new MyItemValue(OPCItemTitle + "Exp_DxCapacity14");
+            if (this.Exp_DxCapacity15 == null)
+                Exp_DxCapacity15 = new MyItemValue(OPCItemTitle + "Exp_DxCapacity15");
+            if (this.Exp_DxCapacity16 == null)
+                Exp_DxCapacity16 = new MyItemValue(OPCItemTitle + "Exp_DxCapacity16");
+            //内阻电压
+            if (this.Exp_DxV1 == null)
+                Exp_DxV1 = new MyItemValue(OPCItemTitle + "Exp_DxV1");
+            if (this.Exp_DxR1 == null)
+                Exp_DxR1 = new MyItemValue(OPCItemTitle + "Exp_DxR1");
+            if (this.Exp_DxV2 == null)
+                Exp_DxV2 = new MyItemValue(OPCItemTitle + "Exp_DxV2");
+            if (this.Exp_DxR2 == null)
+                Exp_DxR2 = new MyItemValue(OPCItemTitle + "Exp_DxR2");
+            if (this.Exp_DxV3 == null)
+                Exp_DxV3 = new MyItemValue(OPCItemTitle + "Exp_DxV3");
+            if (this.Exp_DxR3 == null)
+                Exp_DxR3 = new MyItemValue(OPCItemTitle + "Exp_DxR3");
+            if (this.Exp_DxV4 == null)
+                Exp_DxV4 = new MyItemValue(OPCItemTitle + "Exp_DxV4");
+            if (this.Exp_DxR4 == null)
+                Exp_DxR4 = new MyItemValue(OPCItemTitle + "Exp_DxR4");
+            if (this.Exp_DxV5 == null)
+                Exp_DxV5 = new MyItemValue(OPCItemTitle + "Exp_DxV5");
+            if (this.Exp_DxR5 == null)
+                Exp_DxR5 = new MyItemValue(OPCItemTitle + "Exp_DxR5");
+            if (this.Exp_DxV6 == null)
+                Exp_DxV6 = new MyItemValue(OPCItemTitle + "Exp_DxV6");
+            if (this.Exp_DxR6 == null)
+                Exp_DxR6 = new MyItemValue(OPCItemTitle + "Exp_DxR6");
+            if (this.Exp_DxV7 == null)
+                Exp_DxV7 = new MyItemValue(OPCItemTitle + "Exp_DxV7");
+            if (this.Exp_DxR7 == null)
+                Exp_DxR7 = new MyItemValue(OPCItemTitle + "Exp_DxR7");
+            if (this.Exp_DxV8 == null)
+                Exp_DxV8 = new MyItemValue(OPCItemTitle + "Exp_DxV8");
+            if (this.Exp_DxR8 == null)
+                Exp_DxR8 = new MyItemValue(OPCItemTitle + "Exp_DxR8");
+            if (this.Exp_DxV9 == null)
+                Exp_DxV9 = new MyItemValue(OPCItemTitle + "Exp_DxV9");
+            if (this.Exp_DxR9 == null)
+                Exp_DxR9 = new MyItemValue(OPCItemTitle + "Exp_DxR9");
+            if (this.Exp_DxV10 == null)
+                Exp_DxV10 = new MyItemValue(OPCItemTitle + "Exp_DxV10");
+            if (this.Exp_DxR10 == null)
+                Exp_DxR10 = new MyItemValue(OPCItemTitle + "Exp_DxR10");
+            if (this.Exp_DxV11 == null)
+                Exp_DxV11 = new MyItemValue(OPCItemTitle + "Exp_DxV11");
+            if (this.Exp_DxR11 == null)
+                Exp_DxR11 = new MyItemValue(OPCItemTitle + "Exp_DxR11");
+            if (this.Exp_DxV12 == null)
+                Exp_DxV12 = new MyItemValue(OPCItemTitle + "Exp_DxV12");
+            if (this.Exp_DxR12 == null)
+                Exp_DxR12 = new MyItemValue(OPCItemTitle + "Exp_DxR12");
+            if (this.Exp_DxV13 == null)
+                Exp_DxV13 = new MyItemValue(OPCItemTitle + "Exp_DxV13");
+            if (this.Exp_DxR13 == null)
+                Exp_DxR13 = new MyItemValue(OPCItemTitle + "Exp_DxR13");
+            if (this.Exp_DxV14 == null)
+                Exp_DxV14 = new MyItemValue(OPCItemTitle + "Exp_DxV14");
+            if (this.Exp_DxR14 == null)
+                Exp_DxR14 = new MyItemValue(OPCItemTitle + "Exp_DxR14");
+            if (this.Exp_DxV15 == null)
+                Exp_DxV15 = new MyItemValue(OPCItemTitle + "Exp_DxV15");
+            if (this.Exp_DxR15 == null)
+                Exp_DxR15 = new MyItemValue(OPCItemTitle + "Exp_DxR15");
+            if (this.Exp_DxV16 == null)
+                Exp_DxV16 = new MyItemValue(OPCItemTitle + "Exp_DxV16");
+            if (this.Exp_DxR16 == null)
+                Exp_DxR16 = new MyItemValue(OPCItemTitle + "Exp_DxR16");
 
+            #endregion
             //在OPCGroup中添加IOPCItem
             if (this._MyGroup_Bat1 == null)
             {
@@ -208,6 +1895,251 @@ namespace JpsOPC
             {
                 return false;
             }
+            #region 南京中比添加
+            if (!InitMyItems_AddItem(this.Exp_DxCapacity1, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxCapacity2, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxCapacity3, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxCapacity4, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxCapacity5, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxCapacity6, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxCapacity7, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxCapacity8, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxCapacity9, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxCapacity10, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxCapacity11, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxCapacity12, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxCapacity13, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxCapacity14, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxCapacity15, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxCapacity16, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+
+
+
+
+            if (!InitMyItems_AddItem(this.Exp_DxV1, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxR1, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxV2, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxR2, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxV3, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxR3, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxV4, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxR4, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxV5, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxR5, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxV6, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxR6, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxV7, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxR7, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxV8, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxR8, this._MyGroup_Bat1, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxV9, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxR9, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxV10, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxR10, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxV11, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxR11, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxV12, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxR12, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxV13, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxR13, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxV14, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxR14, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxV15, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxR15, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxV16, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_DxR16, this._MyGroup_Bat2, false, out sErr))
+            {
+                return false;
+            }
+            #endregion
             return true;
         }
         private bool InitMyItems_AddItem(MyItemValue myItem, OPCGroup targetGroup, bool saveItem, out string sErr)
@@ -323,6 +2255,203 @@ namespace JpsOPC
                 else
                 {
                     sErr = string.Format("电池组2Group写入出错：{0}({1})", ex.Message, ex.Source);
+                }
+                return false;
+            }
+            sErr = string.Empty;
+            return true;
+        }
+
+        #endregion
+        #region 南京中比写入电芯原始数据
+        public bool WriteDXOrg1(decimal decCapacity1,decimal decR1,decimal decV1
+            , decimal decCapacity2, decimal decR2, decimal decV2
+            , decimal decCapacity3, decimal decR3, decimal decV3
+            , decimal decCapacity4, decimal decR4, decimal decV4
+            , decimal decCapacity5, decimal decR5, decimal decV5
+            , decimal decCapacity6, decimal decR6, decimal decV6
+            , decimal decCapacity7, decimal decR7, decimal decV7
+            , decimal decCapacity8, decimal decR8, decimal decV8
+            , out string sErr, bool blReWrite = false)
+        {
+            if (this.IsDebug)
+            {
+                sErr = string.Empty;
+                return true;
+            }
+            //写入数据
+            Array serverHandles = new int[25] { 0,
+                this.Exp_DxCapacity1.ServerHandle,
+                this.Exp_DxCapacity2.ServerHandle,
+                this.Exp_DxCapacity3.ServerHandle,
+                this.Exp_DxCapacity4.ServerHandle,
+                this.Exp_DxCapacity5.ServerHandle,
+                this.Exp_DxCapacity6.ServerHandle,
+                this.Exp_DxCapacity7.ServerHandle,
+                this.Exp_DxCapacity8.ServerHandle,
+                this.Exp_DxR1.ServerHandle,
+                this.Exp_DxR2.ServerHandle,
+                this.Exp_DxR3.ServerHandle,
+                this.Exp_DxR4.ServerHandle,
+                this.Exp_DxR5.ServerHandle,
+                this.Exp_DxR6.ServerHandle,
+                this.Exp_DxR7.ServerHandle,
+                this.Exp_DxR8.ServerHandle,
+                this.Exp_DxV1.ServerHandle,
+                this.Exp_DxV2.ServerHandle,
+                this.Exp_DxV3.ServerHandle,
+                this.Exp_DxV4.ServerHandle,
+                this.Exp_DxV5.ServerHandle,
+                this.Exp_DxV6.ServerHandle,
+                this.Exp_DxV7.ServerHandle,
+                this.Exp_DxV8.ServerHandle,
+            };
+            Array values = new object[25] {""
+            ,decCapacity1
+            ,decCapacity2
+            ,decCapacity3
+            ,decCapacity4
+            ,decCapacity5
+            ,decCapacity6
+            ,decCapacity7
+            ,decCapacity8
+            ,decR1
+            ,decR2
+            ,decR3
+            ,decR4
+            ,decR5
+            ,decR6
+            ,decR7
+            ,decR8
+            ,decV1
+            ,decV2
+            ,decV3
+            ,decV4
+            ,decV5
+            ,decV6
+            ,decV7
+            ,decV8
+            };
+            Array errors;
+            try
+            {
+                this._MyGroup_Bat1.SyncWrite(24, ref serverHandles, ref values, out errors);
+            }
+            catch (Exception ex)
+            {
+                if (!blReWrite)
+                {
+                    //此时不是第二次调用了
+                    if (!this.InitServer(out sErr)) return false;
+                    return this.WriteDXOrg1(decCapacity1, decR1, decV1
+            , decCapacity2, decR2, decV2
+            , decCapacity3, decR3, decV3
+            , decCapacity4, decR4, decV4
+            , decCapacity5, decR5, decV5
+            , decCapacity6, decR6, decV6
+            , decCapacity7, decR7, decV7
+            , decCapacity8, decR8, decV8, out sErr, true);
+                }
+                else
+                {
+                    sErr = string.Format("电池组1的原始电芯数据写入出错：{0}({1})", ex.Message, ex.Source);
+                }
+                return false;
+            }
+            sErr = string.Empty;
+            return true;
+        }
+        public bool WriteDXOrg2(decimal decCapacity1, decimal decR1, decimal decV1
+            , decimal decCapacity2, decimal decR2, decimal decV2
+            , decimal decCapacity3, decimal decR3, decimal decV3
+            , decimal decCapacity4, decimal decR4, decimal decV4
+            , decimal decCapacity5, decimal decR5, decimal decV5
+            , decimal decCapacity6, decimal decR6, decimal decV6
+            , decimal decCapacity7, decimal decR7, decimal decV7
+            , decimal decCapacity8, decimal decR8, decimal decV8
+            , out string sErr, bool blReWrite = false)
+        {
+            if (this.IsDebug)
+            {
+                sErr = string.Empty;
+                return true;
+            }
+            //写入数据
+            Array serverHandles = new int[25] { 0,
+            this.Exp_DxCapacity9.ServerHandle,
+            this.Exp_DxCapacity10.ServerHandle,
+            this.Exp_DxCapacity11.ServerHandle,
+            this.Exp_DxCapacity12.ServerHandle,
+            this.Exp_DxCapacity13.ServerHandle,
+            this.Exp_DxCapacity14.ServerHandle,
+            this.Exp_DxCapacity15.ServerHandle,
+            this.Exp_DxCapacity16.ServerHandle,
+            this.Exp_DxR9.ServerHandle,
+            this.Exp_DxR10.ServerHandle,
+            this.Exp_DxR11.ServerHandle,
+            this.Exp_DxR12.ServerHandle,
+            this.Exp_DxR13.ServerHandle,
+            this.Exp_DxR14.ServerHandle,
+            this.Exp_DxR15.ServerHandle,
+            this.Exp_DxR16.ServerHandle,
+            this.Exp_DxV9.ServerHandle,
+            this.Exp_DxV10.ServerHandle,
+            this.Exp_DxV11.ServerHandle,
+            this.Exp_DxV12.ServerHandle,
+            this.Exp_DxV13.ServerHandle,
+            this.Exp_DxV14.ServerHandle,
+            this.Exp_DxV15.ServerHandle,
+            this.Exp_DxV16.ServerHandle,
+            };
+            Array values = new object[25] {""
+            ,decCapacity1
+            ,decCapacity2
+            ,decCapacity3
+            ,decCapacity4
+            ,decCapacity5
+            ,decCapacity6
+            ,decCapacity7
+            ,decCapacity8
+            ,decR1
+            ,decR2
+            ,decR3
+            ,decR4
+            ,decR5
+            ,decR6
+            ,decR7
+            ,decR8
+            ,decV1
+            ,decV2
+            ,decV3
+            ,decV4
+            ,decV5
+            ,decV6
+            ,decV7
+            ,decV8
+            };
+            Array errors;
+            try
+            {
+                this._MyGroup_Bat2.SyncWrite(24, ref serverHandles, ref values, out errors);
+            }
+            catch (Exception ex)
+            {
+                if (!blReWrite)
+                {
+                    //此时不是第二次调用了
+                    if (!this.InitServer(out sErr)) return false;
+                    return this.WriteDXOrg2(decCapacity1, decR1, decV1
+            , decCapacity2, decR2, decV2
+            , decCapacity3, decR3, decV3
+            , decCapacity4, decR4, decV4
+            , decCapacity5, decR5, decV5
+            , decCapacity6, decR6, decV6
+            , decCapacity7, decR7, decV7
+            , decCapacity8, decR8, decV8, out sErr, true);
+                }
+                else
+                {
+                    sErr = string.Format("电池组2的原始电芯数据写入出错：{0}({1})", ex.Message, ex.Source);
                 }
                 return false;
             }
@@ -4166,6 +6295,378 @@ namespace JpsOPC
             {
                 return false;
             }
+            #region 南京中比添加
+            if (!InitMyItems_AddItem(this.Exp_Cao1ACapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao1ACapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao1BCapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao1BCapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao2ACapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao2ACapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao2BCapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao2BCapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao3ACapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao3ACapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao3BCapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao3BCapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao4ACapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao4ACapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao4BCapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao4BCapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao5ACapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao5ACapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao5BCapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao5BCapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao6ACapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao6ACapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao6BCapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao6BCapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao7ACapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao7ACapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao7BCapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao7BCapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao8ACapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao8ACapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao8BCapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao8BCapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao9ACapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao9ACapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao9BCapMax, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao9BCapMin, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+
+            if (!InitMyItems_AddItem(this.Exp_Cao1AQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao1BQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao2AQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao2BQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao3AQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao3BQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao4AQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao4BQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao5AQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao5BQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao6AQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao6BQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao7AQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao7BQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao8AQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao8BQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao9AQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Cao9BQty, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+            //压差
+            if (!InitMyItems_AddItem(this.Exp_Yc1, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc2, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc3, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc4, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc5, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc6, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc7, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc8, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc9, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc10, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc11, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc12, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc13, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc14, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc15, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc16, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc17, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc18, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc19, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc20, this._MyGroup_Gongyi, false, out sErr))
+            {
+                return false;
+            }
+            #endregion
             return true;
         }
         private bool InitMyItems_AddItem(MyItemValue myItem, OPCGroup targetGroup, bool saveItem, out string sErr)
