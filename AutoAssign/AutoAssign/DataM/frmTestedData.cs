@@ -31,6 +31,7 @@ namespace AutoAssign.DataM
         {
             InitializeComponent();
             _TestCode = sTestCode;
+            this.dgvSwitch.AutoGenerateColumns = false;
             this.tbTestCode.Text = _TestCode;
             this.dgvGroove.AutoGenerateColumns = false;
             this.dgvList.AutoGenerateColumns = false;
@@ -38,6 +39,25 @@ namespace AutoAssign.DataM
             this._GrooveDetialBtyStatisticControler = new GrooveDetialBtyStatisticControler(this);
             this._GrooveDetialBtyStatisticControler.GrooveStatisticFnisheNotice += _GrooveDetialBtyStatisticControler_GrooveStatisticFnisheNotice;
             this._GrooveDetialBtyStatisticControler.TuoPanStatisticFnishedNotice += _GrooveDetialBtyStatisticControler_TuoPanStatisticFnishedNotice;
+            tvTuoPan.Nodes[0].Tag = 1;
+            tvTuoPan.Nodes[1].Tag = 2;
+            tvTuoPan.Nodes[2].Tag = 3;
+            tvTuoPan.Nodes[3].Tag = 4;
+            tvTuoPan.Nodes[4].Tag = 5;
+            tvTuoPan.Nodes[5].Tag = 6;
+            tvTuoPan.Nodes[6].Tag = 7;
+            tvTuoPan.Nodes[7].Tag = 8;
+            tvTuoPan.Nodes[8].Tag = 9;
+            tvTuoPan.Nodes[9].Tag = 10;
+            tvTuoPan.Nodes[10].Tag = 11;
+            tvTuoPan.Nodes[11].Tag = 12;
+            tvTuoPan.Nodes[12].Tag = 13;
+            tvTuoPan.Nodes[13].Tag = 14;
+            tvTuoPan.Nodes[14].Tag = 15;
+            tvTuoPan.Nodes[15].Tag = 16;
+            tvTuoPan.Nodes[16].Tag = 17;
+            tvTuoPan.Nodes[17].Tag = 18;
+
         }
 
         private void _GrooveDetialBtyStatisticControler_TuoPanStatisticFnishedNotice(bool blSucessful, List<TuoPanData> tuoPans1, List<TuoPanData> tuoPans2, List<TuoPanData> tuoPans3, List<TuoPanData> tuoPans4, List<TuoPanData> tuoPans5, List<TuoPanData> tuoPans6, List<TuoPanData> tuoPans7, List<TuoPanData> tuoPans8, List<TuoPanData> tuoPans9, List<TuoPanData> tuoPans10, List<TuoPanData> tuoPans11, List<TuoPanData> tuoPans12, List<TuoPanData> tuoPans13, List<TuoPanData> tuoPans14, List<TuoPanData> tuoPans15, List<TuoPanData> tuoPans16, List<TuoPanData> tuoPans17, List<TuoPanData> tuoPans18)
@@ -193,6 +213,8 @@ namespace AutoAssign.DataM
                 this.ShowMsg(strErr);
             }
             SetDataGridViewRowStyle();
+            this.BindSwitch(_TestCode);
+            this.BindYaCha(_TestCode);
             return true;
         }
         private void SetDataGridViewRowStyle()
@@ -301,6 +323,28 @@ namespace AutoAssign.DataM
 
         private void tvTuoPan_AfterSelect(object sender, TreeViewEventArgs e)
         {
+            string sOrgTableName = this._RealTable_Result + "_YuanShi";
+            DataTable dt;
+            try
+            {
+                dt = Common.CommonDAL.DoSqlCommand.GetDateTable($"SELECT name FROM SYSOBJECTS WHERE xtype='u' and name='{sOrgTableName}'");
+            }
+            catch (Exception ex)
+            {
+                wErrorMessage.ShowErrorDialog(this, ex);
+                return;
+            }
+            if(dt.Rows.Count>0)
+            {
+                BindResult_ContainOrgDxInfo(sOrgTableName);
+            }
+            else
+            {
+                BindResult();
+            }
+        }
+        private void BindResult()
+        {
             TreeNode tn = this.tvTuoPan.SelectedNode;
             if (tn == null || tn.Tag == null)
             {
@@ -308,8 +352,20 @@ namespace AutoAssign.DataM
             }
             else
             {
+                string strSql = string.Empty;
+                if (tn.Tag.ToString().Length == 0)
+                {
+                    TreeNode tnP = tn.Parent;
+                    if (tnP != null && tnP.Tag != null && tnP.Tag.ToString().Length > 0)
+                    {
+                        strSql = string.Format("select A.*,dbo.GetQualityView(a.Quality) as QualityView,B.SN from {0} A LEFT JOIN {1} B ON B.Code=A.MyCode where ISNULL(A.CaoIndex,'')={2}", this._RealTable_Result, this._RealTable_Batterys, tnP.Tag.ToString().Replace("'", "''"));
+                    }
+                }
+                if (strSql.Length == 0)
+                {
+                    strSql = string.Format("select A.*,dbo.GetQualityView(a.Quality) as QualityView,B.SN from {0} A LEFT JOIN {1} B ON B.Code=A.MyCode where ISNULL(A.TuoCode,'')='{2}'", this._RealTable_Result, this._RealTable_Batterys, tn.Tag.ToString().Replace("'", "''"));
+                }
                 DataTable dt;
-                string strSql = string.Format("select A.*,dbo.GetQualityView(a.Quality) as QualityView,B.SN from {0} A LEFT JOIN {1} B ON B.Code=A.MyCode where ISNULL(A.TuoCode,'')='{2}'", this._RealTable_Result,this._RealTable_Batterys, tn.Tag.ToString().Replace("'", "''"));
                 try
                 {
                     dt = Common.CommonDAL.DoSqlCommand.GetDateTable(strSql);
@@ -322,7 +378,41 @@ namespace AutoAssign.DataM
                 this.dgvList.DataSource = dt;
             }
         }
-
+        private void BindResult_ContainOrgDxInfo(string sOrgTable)
+        {
+            TreeNode tn = this.tvTuoPan.SelectedNode;
+            if (tn == null || tn.Tag == null)
+            {
+                this.dgvList.DataSource = null;
+            }
+            else
+            {
+                string strSql = string.Empty;
+                if (tn.Tag.ToString().Length == 0)
+                {
+                    TreeNode tnP = tn.Parent;
+                    if (tnP != null && tnP.Tag != null && tnP.Tag.ToString().Length > 0)
+                    {
+                        strSql = string.Format("select A.*,dbo.GetQualityView(a.Quality) as QualityView,B.SN,c.SN as OrgSN,C.OrgCap,C.OrgR,C.OrgV from {0} A LEFT JOIN {1} B ON B.Code=A.MyCode LEFT JOIN {2} C ON C.MyCode=a.MyCode where ISNULL(A.CaoIndex,'')={3}", this._RealTable_Result, this._RealTable_Batterys,sOrgTable, tnP.Tag.ToString().Replace("'", "''"));
+                    }
+                }
+                if (strSql.Length == 0)
+                {
+                    strSql = string.Format("select A.*,dbo.GetQualityView(a.Quality) as QualityView,B.SN,c.SN as OrgSN,C.OrgCap,C.OrgR,C.OrgV  from {0} A LEFT JOIN {1} B ON B.Code=A.MyCode LEFT JOIN {2} C ON C.MyCode=a.MyCode where ISNULL(A.TuoCode,'')='{3}'", this._RealTable_Result, this._RealTable_Batterys, sOrgTable, tn.Tag.ToString().Replace("'", "''"));
+                }
+                DataTable dt;
+                try
+                {
+                    dt = Common.CommonDAL.DoSqlCommand.GetDateTable(strSql);
+                }
+                catch (Exception ex)
+                {
+                    wErrorMessage.ShowErrorDialog(this, ex);
+                    return;
+                }
+                this.dgvList.DataSource = dt;
+            }
+        }
         private void btSearchSNCode_Click(object sender, EventArgs e)
         {
             if(this.tbSnCode.Text.Length==0)
@@ -368,6 +458,36 @@ namespace AutoAssign.DataM
         {
             ExpFuns.frmCSVTestResult frm = new ExpFuns.frmCSVTestResult(this._TestCode, this._RealTable_Batterys, this._RealTable_Result);
             frm.ShowDialog(this);
+        }
+        private void BindSwitch(string sTestCode)
+        {
+            try
+            {
+                this.dgvSwitch.DataSource = Common.CommonDAL.DoSqlCommand.GetDateTable($"select * from Testing_GroovesAB where Code='{sTestCode.Replace("'", "''")}' order by GrooveNo asc");
+            }
+            catch(Exception ex)
+            {
+                this.ShowMsg(ex.Message);
+            }
+        }
+        private void BindYaCha(string sTestCode)
+        {
+            DataTable dt;
+            try
+            {
+                dt = Common.CommonDAL.DoSqlCommand.GetDateTable($"select * from Testing_YaCha where Code='{sTestCode.Replace("'", "''")}'");
+            }
+            catch (Exception ex)
+            {
+                this.ShowMsg(ex.Message);
+                return;
+            }
+            if (dt.Rows.Count == 0)
+                this.tbYacha.Clear();
+            else
+            {
+                this.tbYacha.Text = Common.CommonFuns.FormatData.GetStringByDecimal(dt.Rows[0]["YaCha"], "#########0.######");
+            }
         }
     }
 }

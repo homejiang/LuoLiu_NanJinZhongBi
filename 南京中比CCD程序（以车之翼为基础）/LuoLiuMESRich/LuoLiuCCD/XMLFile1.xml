@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="gb2312"?>
+<MPT_Data Version="1.3">
+  <Record Begin="2019/07/06 15:08:40" Operator="" LotNumber="" Model="中铁1批1号" Result="Pass" End="2019/07/06 15:10:08">
+    <CellCount>13</CellCount>
+    <Data>
+      <Cons>
+        <Cell Index="0" Result="Pass">0.00004294</Cell>
+        <Cell Index="1" Result="Pass">0.00004359</Cell>
+        <Cell Index="2" Result="Pass">0.00004268</Cell>
+        <Cell Index="3" Result="Pass">0.00004382</Cell>
+        <Cell Index="4" Result="Pass">0.00004285</Cell>
+        <Cell Index="5" Result="Pass">0.00004189</Cell>
+        <Cell Index="6" Result="Pass">0.00004177</Cell>
+        <Cell Index="7" Result="Pass">0.00004172</Cell>
+        <Cell Index="8" Result="Pass">0.00003989</Cell>
+        <Cell Index="9" Result="Pass">0.00004180</Cell>
+        <Cell Index="10" Result="Pass">0.00004078</Cell>
+        <Cell Index="11" Result="Pass">0.00003994</Cell>
+        <Cell Index="12" Result="Pass">0.00004081</Cell>
+      </Cons>
+      <ConsStandby>
+        <Cell Index="0" Result="Pass">25.0uA</Cell>
+        <Cell Index="1" Result="Pass">25.8uA</Cell>
+        <Cell Index="2" Result="Pass">24.8uA</Cell>
+        <Cell Index="3" Result="Pass">25.9uA</Cell>
+        <Cell Index="4" Result="Pass">25.9uA</Cell>
+        <Cell Index="5" Result="Pass">24.9uA</Cell>
+        <Cell Index="6" Result="Pass">23.9uA</Cell>
+        <Cell Index="7" Result="Pass">21.9uA</Cell>
+        <Cell Index="8" Result="Pass">20.9uA</Cell>
+        <Cell Index="9" Result="Pass">23.9uA</Cell>
+        <Cell Index="10" Result="Pass">23.9uA</Cell>
+        <Cell Index="11" Result="Pass">23.0uA</Cell>
+        <Cell Index="12" Result="Pass">22.9uA</Cell>
+      </ConsStandby>
+      <FOC_UnProtected Result="Pass">4.150</FOC_UnProtected>
+      <OC>
+        <Cell Index="0" Result="Pass">4.250</Cell>
+        <Cell Index="1" Result="Pass">4.250</Cell>
+        <Cell Index="2" Result="Pass">4.250</Cell>
+        <Cell Index="3" Result="Pass">4.250</Cell>
+        <Cell Index="4" Result="Pass">4.250</Cell>
+        <Cell Index="5" Result="Pass">4.250</Cell>
+        <Cell Index="6" Result="Pass">4.250</Cell>
+        <Cell Index="7" Result="Pass">4.250</Cell>
+        <Cell Index="8" Result="Pass">4.250</Cell>
+        <Cell Index="9" Result="Pass">4.250</Cell>
+        <Cell Index="10" Result="Pass">4.250</Cell>
+        <Cell Index="11" Result="Pass">4.250</Cell>
+        <Cell Index="12" Result="Pass">4.250</Cell>
+      </OC>
+      <FOCD>
+        <Cell Index="0" Result="Pass">1060</Cell>
+        <Cell Index="1" Result="Pass">1040</Cell>
+        <Cell Index="2" Result="Pass">1079</Cell>
+        <Cell Index="3" Result="Pass">1040</Cell>
+        <Cell Index="4" Result="Pass">1016</Cell>
+        <Cell Index="5" Result="Pass">1036</Cell>
+        <Cell Index="6" Result="Pass">1039</Cell>
+        <Cell Index="7" Result="Pass">2505</Cell>
+        <Cell Index="8" Result="Pass">2507</Cell>
+        <Cell Index="9" Result="Pass">2486</Cell>
+        <Cell Index="10" Result="Pass">2488</Cell>
+        <Cell Index="11" Result="Pass">2488</Cell>
+        <Cell Index="12" Result="Pass">2489</Cell>
+      </FOCD>
+      <Balance Index="0">
+        <BLV>
+          <Cell Index="0" Result="Pass">4.175</Cell>
+          <Cell Index="1" Result="Pass">4.075</Cell>
+          <Cell Index="2" Result="Pass">4.075</Cell>
+          <Cell Index="3" Result="Pass">4.075</Cell>
+          <Cell Index="4" Result="Pass">4.075</Cell>
+          <Cell Index="5" Result="Pass">4.075</Cell>
+          <Cell Index="6" Result="Pass">4.075</Cell>
+          <Cell Index="7" Result="Pass">4.075</Cell>
+          <Cell Index="8" Result="Pass">4.075</Cell>
+          <Cell Index="9" Result="Pass">4.075</Cell>
+          <Cell Index="10" Result="Pass">4.075</Cell>
+          <Cell Index="11" Result="Pass">4.075</Cell>
+          <Cell Index="12" Result="Pass">4.075</Cell>
+        </BLV>
+        <BLC>
+          <Cell Index="0" Result="Pass">0.04190458</Cell>
+          <Cell Index="1" Result="Pass">0</Cell>
+          <Cell Index="2" Result="Pass">0</Cell>
+          <Cell Index="3" Result="Pass">0</Cell>
+          <Cell Index="4" Result="Pass">0</Cell>
+          <Cell Index="5" Result="Pass">0</Cell>
+          <Cell Index="6" Result="Pass">0</Cell>
+          <Cell Index="7" Result="Pass">0</Cell>
+          <Cell Index="8" Result="Pass">0</Cell>
+          <Cell Index="9" Result="Pass">0</Cell>
+          <Cell Index="10" Result="Pass">0</Cell>
+          <Cell Index="11" Result="Pass">0</Cell>
+          <Cell Index="12" Result="Pass">0</Cell>
+        </BLC>
+      </Balance>
+      <Balance Index="1">
+        <BLV>
+          <Cell Index="0" Result="Pass">4.075</Cell>
+          <Cell Index="1" Result="Pass">4.175</Cell>
+          <Cell Index="2" Result="Pass">4.075</Cell>
+          <Cell Index="3" Result="Pass">4.075</Cell>
+          <Cell Index="4" Result="Pass">4.075</Cell>
+          <Cell Index="5" Result="Pass">4.075</Cell>
+          <Cell Index="6" Result="Pass">4.075</Cell>
+          <Cell Index="7" Result="Pass">4.075</Cell>
+          <Cell Index="8" Result="Pass">4.075</Cell>
+          <Cell Index="9" Result="Pass">4.075</Cell>
+          <Cell Index="10" Result="Pass">4.075</Cell>
+          <Cell Index="11" Result="Pass">4.075</Cell>
+          <Cell Index="12" Result="Pass">4.075</Cell>
+        </BLV>
+        <BLC>
+          <Cell Index="0" Result="Pass">0</Cell>
+          <Cell Index="1" Result="Pass">0.04097971</Cell>
+          <Cell Index="2" Result="Pass">0</Cell>
+          <Cell Index="3" Result="Pass">0</Cell>
+          <Cell Index="4" Result="Pass">0</Cell>
+          <Cell Index="5" Result="Pass">0</Cell>
+          <Cell Index="6" Result="Pass">0</Cell>
+          <Cell Index="7" Result="Pass">0</Cell>
+          <Cell Index="8" Result="Pass">0</Cell>
+          <Cell Index="9" Result="Pass">0</Cell>
+          <Cell Index="10" Result="Pass">0</Cell>
+          <Cell Index="11" Result="Pass">0</Cell>
+          <Cell Index="12" Result="Pass">0</Cell>
+        </BLC>
+      </Balance>
+      <Balance Index="2">
+        <BLV>
+          <Cell Index="0" Result="Pass">4.075</Cell>
+          <Cell Index="1" Result="Pass">4.075</Cell>
+          <Cell Index="2" Result="Pass">4.175</Cell>
+          <Cell Index="3" Result="Pass">4.075</Cell>
+          <Cell Index="4" Result="Pass">4.075</Cell>
+          <Cell Index="5" Result="Pass">4.075</Cell>
+          <Cell Index="6" Result="Pass">4.075</Cell>
+          <Cell Index="7" Result="Pass">4.075</Cell>
+          <Cell Index="8" Result="Pass">4.075</Cell>
+          <Cell Index="9" Result="Pass">4.075</Cell>
+          <Cell Index="10" Result="Pass">4.075</Cell>
+          <Cell Index="11" Result="Pass">4.075</Cell>
+          <Cell Index="12" Result="Pass">4.075</Cell>
+        </BLV>
+        <BLC>
+          <Cell Index="0" Result="Pass">0</Cell>
+          <Cell Index="1" Result="Pass">0</Cell>
+          <Cell Index="2" Result="Pass">0.04086489</Cell>
+          <Cell Index="3" Result="Pass">0</Cell>
+          <Cell Index="4" Result="Pass">0</Cell>
+          <Cell Index="5" Result="Pass">0</Cell>
+          <Cell Index="6" Result="Pass">0</Cell>
+          <Cell Index="7" Result="Pass">0</Cell>
+          <Cell Index="8" Result="Pass">0</Cell>
+          <Cell Index="9" Result="Pass">0</Cell>
+          <Cell Index="10" Result="Pass">0</Cell>
+          <Cell Index="11" Result="Pass">0</Cell>
+          <Cell Index="12" Result="Pass">0</Cell>
+        </BLC>
+      </Balance>
+      <Balance Index="3">
+        <BLV>
+          <Cell Index="0" Result="Pass">4.075</Cell>
+          <Cell Index="1" Result="Pass">4.075</Cell>
+          <Cell Index="2" Result="Pass">4.075</Cell>
+          <Cell Index="3" Result="Pass">4.175</Cell>
+          <Cell Index="4" Result="Pass">4.075</Cell>
+          <Cell Index="5" Result="Pass">4.075</Cell>
+          <Cell Index="6" Result="Pass">4.075</Cell>
+          <Cell Index="7" Result="Pass">4.075</Cell>
+          <Cell Index="8" Result="Pass">4.075</Cell>
+          <Cell Index="9" Result="Pass">4.075</Cell>
+          <Cell Index="10" Result="Pass">4.075</Cell>
+          <Cell Index="11" Result="Pass">4.075</Cell>
+          <Cell Index="12" Result="Pass">4.075</Cell>
+        </BLV>
+        <BLC>
+          <Cell Index="0" Result="Pass">0</Cell>
+          <Cell Index="1" Result="Pass">0</Cell>
+          <Cell Index="2" Result="Pass">0</Cell>
+          <Cell Index="3" Result="Pass">0.04159463</Cell>
+          <Cell Index="4" Result="Pass">0</Cell>
+          <Cell Index="5" Result="Pass">0</Cell>
+          <Cell Index="6" Result="Pass">0</Cell>
+          <Cell Index="7" Result="Pass">0</Cell>
+          <Cell Index="8" Result="Pass">0</Cell>
+          <Cell Index="9" Result="Pass">0</Cell>
+          <Cell Index="10" Result="Pass">0</Cell>
+          <Cell Index="11" Result="Pass">0</Cell>
+          <Cell Index="12" Result="Pass">0</Cell>
+        </BLC>
+      </Balance>
+      <Balance Index="4">
+        <BLV>
+          <Cell Index="0" Result="Pass">4.075</Cell>
+          <Cell Index="1" Result="Pass">4.075</Cell>
+          <Cell Index="2" Result="Pass">4.075</Cell>
+          <Cell Index="3" Result="Pass">4.075</Cell>
+          <Cell Index="4" Result="Pass">4.175</Cell>
+          <Cell Index="5" Result="Pass">4.075</Cell>
+          <Cell Index="6" Result="Pass">4.075</Cell>
+          <Cell Index="7" Result="Pass">4.075</Cell>
+          <Cell Index="8" Result="Pass">4.075</Cell>
+          <Cell Index="9" Result="Pass">4.075</Cell>
+          <Cell Index="10" Result="Pass">4.075</Cell>
+          <Cell Index="11" Result="Pass">4.075</Cell>
+          <Cell Index="12" Result="Pass">4.075</Cell>
+        </BLV>
+        <BLC>
+          <Cell Index="0" Result="Pass">0</Cell>
+          <Cell Index="1" Result="Pass">0</Cell>
+          <Cell Index="2" Result="Pass">0</Cell>
+          <Cell Index="3" Result="Pass">0</Cell>
+          <Cell Index="4" Result="Pass">0.03835995</Cell>
+          <Cell Index="5" Result="Pass">0</Cell>
+          <Cell Index="6" Result="Pass">0</Cell>
+          <Cell Index="7" Result="Pass">0</Cell>
+          <Cell Index="8" Result="Pass">0</Cell>
+          <Cell Index="9" Result="Pass">0</Cell>
+          <Cell Index="10" Result="Pass">0</Cell>
+          <Cell Index="11" Result="Pass">0</Cell>
+          <Cell Index="12" Result="Pass">0</Cell>
+        </BLC>
+      </Balance>
+      <Balance Index="5">
+        <BLV>
+          <Cell Index="0" Result="Pass">4.075</Cell>
+          <Cell Index="1" Result="Pass">4.075</Cell>
+          <Cell Index="2" Result="Pass">4.075</Cell>
+          <Cell Index="3" Result="Pass">4.075</Cell>
+          <Cell Index="4" Result="Pass">4.075</Cell>
+          <Cell Index="5" Result="Pass">4.175</Cell>
+          <Cell Index="6" Result="Pass">4.075</Cell>
+          <Cell Index="7" Result="Pass">4.075</Cell>
+          <Cell Index="8" Result="Pass">4.075</Cell>
+          <Cell Index="9" Result="Pass">4.075</Cell>
+          <Cell Index="10" Result="Pass">4.075</Cell>
+          <Cell Index="11" Result="Pass">4.075</Cell>
+          <Cell Index="12" Result="Pass">4.075</Cell>
+        </BLV>
+        <BLC>
+          <Cell Index="0" Result="Pass">0</Cell>
+          <Cell Index="1" Result="Pass">0</Cell>
+          <Cell Index="2" Result="Pass">0</Cell>
+          <Cell Index="3" Result="Pass">0</Cell>
+          <Cell Index="4" Result="Pass">0</Cell>
+          <Cell Index="5" Result="Pass">0.03996862</Cell>
+          <Cell Index="6" Result="Pass">0</Cell>
+          <Cell Index="7" Result="Pass">0</Cell>
+          <Cell Index="8" Result="Pass">0</Cell>
+          <Cell Index="9" Result="Pass">0</Cell>
+          <Cell Index="10" Result="Pass">0</Cell>
+          <Cell Index="11" Result="Pass">0</Cell>
+          <Cell Index="12" Result="Pass">0</Cell>
+        </BLC>
+      </Balance>
+      <Balance Index="6">
+        <BLV>
+          <Cell Index="0" Result="Pass">4.075</Cell>
+          <Cell Index="1" Result="Pass">4.075</Cell>
+          <Cell Index="2" Result="Pass">4.075</Cell>
+          <Cell Index="3" Result="Pass">4.075</Cell>
+          <Cell Index="4" Result="Pass">4.075</Cell>
+          <Cell Index="5" Result="Pass">4.075</Cell>
+          <Cell Index="6" Result="Pass">4.175</Cell>
+          <Cell Index="7" Result="Pass">4.075</Cell>
+          <Cell Index="8" Result="Pass">4.075</Cell>
+          <Cell Index="9" Result="Pass">4.075</Cell>
+          <Cell Index="10" Result="Pass">4.075</Cell>
+          <Cell Index="11" Result="Pass">4.075</Cell>
+          <Cell Index="12" Result="Pass">4.075</Cell>
+        </BLV>
+        <BLC>
+          <Cell Index="0" Result="Pass">0</Cell>
+          <Cell Index="1" Result="Pass">0</Cell>
+          <Cell Index="2" Result="Pass">0</Cell>
+          <Cell Index="3" Result="Pass">0</Cell>
+          <Cell Index="4" Result="Pass">0</Cell>
+          <Cell Index="5" Result="Pass">0</Cell>
+          <Cell Index="6" Result="Pass">0.03157355</Cell>
+          <Cell Index="7" Result="Pass">0.006010661</Cell>
+          <Cell Index="8" Result="Pass">0</Cell>
+          <Cell Index="9" Result="Pass">0</Cell>
+          <Cell Index="10" Result="Pass">0</Cell>
+          <Cell Index="11" Result="Pass">0</Cell>
+          <Cell Index="12" Result="Pass">0</Cell>
+        </BLC>
+      </Balance>
+      <Balance Index="7">
+        <BLV>
+          <Cell Index="0" Result="Pass">4.075</Cell>
+          <Cell Index="1" Result="Pass">4.075</Cell>
+          <Cell Index="2" Result="Pass">4.075</Cell>
+          <Cell Index="3" Result="Pass">4.075</Cell>
+          <Cell Index="4" Result="Pass">4.075</Cell>
+          <Cell Index="5" Result="Pass">4.075</Cell>
+          <Cell Index="6" Result="Pass">4.075</Cell>
+          <Cell Index="7" Result="Pass">4.175</Cell>
+          <Cell Index="8" Result="Pass">4.075</Cell>
+          <Cell Index="9" Result="Pass">4.075</Cell>
+          <Cell Index="10" Result="Pass">4.075</Cell>
+          <Cell Index="11" Result="Pass">4.075</Cell>
+          <Cell Index="12" Result="Pass">4.075</Cell>
+        </BLV>
+        <BLC>
+          <Cell Index="0" Result="Pass">0</Cell>
+          <Cell Index="1" Result="Pass">0</Cell>
+          <Cell Index="2" Result="Pass">0</Cell>
+          <Cell Index="3" Result="Pass">0</Cell>
+          <Cell Index="4" Result="Pass">0</Cell>
+          <Cell Index="5" Result="Pass">0</Cell>
+          <Cell Index="6" Result="Pass">0</Cell>
+          <Cell Index="7" Result="Pass">0.04118781</Cell>
+          <Cell Index="8" Result="Pass">0</Cell>
+          <Cell Index="9" Result="Pass">0</Cell>
+          <Cell Index="10" Result="Pass">0</Cell>
+          <Cell Index="11" Result="Pass">0</Cell>
+          <Cell Index="12" Result="Pass">0</Cell>
+        </BLC>
+      </Balance>
+      <Balance Index="8">
+        <BLV>
+          <Cell Index="0" Result="Pass">4.075</Cell>
+          <Cell Index="1" Result="Pass">4.075</Cell>
+          <Cell Index="2" Result="Pass">4.075</Cell>
+          <Cell Index="3" Result="Pass">4.075</Cell>
+          <Cell Index="4" Result="Pass">4.075</Cell>
+          <Cell Index="5" Result="Pass">4.075</Cell>
+          <Cell Index="6" Result="Pass">4.075</Cell>
+          <Cell Index="7" Result="Pass">4.075</Cell>
+          <Cell Index="8" Result="Pass">4.175</Cell>
+          <Cell Index="9" Result="Pass">4.075</Cell>
+          <Cell Index="10" Result="Pass">4.075</Cell>
+          <Cell Index="11" Result="Pass">4.075</Cell>
+          <Cell Index="12" Result="Pass">4.075</Cell>
+        </BLV>
+        <BLC>
+          <Cell Index="0" Result="Pass">0</Cell>
+          <Cell Index="1" Result="Pass">0</Cell>
+          <Cell Index="2" Result="Pass">0</Cell>
+          <Cell Index="3" Result="Pass">0</Cell>
+          <Cell Index="4" Result="Pass">0</Cell>
+          <Cell Index="5" Result="Pass">0</Cell>
+          <Cell Index="6" Result="Pass">0</Cell>
+          <Cell Index="7" Result="Pass">0</Cell>
+          <Cell Index="8" Result="Pass">0.0359124</Cell>
+          <Cell Index="9" Result="Pass">0</Cell>
+          <Cell Index="10" Result="Pass">0</Cell>
+          <Cell Index="11" Result="Pass">0</Cell>
+          <Cell Index="12" Result="Pass">0</Cell>
+        </BLC>
+      </Balance>
+      <Balance Index="9">
+        <BLV>
+          <Cell Index="0" Result="Pass">4.075</Cell>
+          <Cell Index="1" Result="Pass">4.075</Cell>
+          <Cell Index="2" Result="Pass">4.075</Cell>
+          <Cell Index="3" Result="Pass">4.075</Cell>
+          <Cell Index="4" Result="Pass">4.075</Cell>
+          <Cell Index="5" Result="Pass">4.075</Cell>
+          <Cell Index="6" Result="Pass">4.075</Cell>
+          <Cell Index="7" Result="Pass">4.075</Cell>
+          <Cell Index="8" Result="Pass">4.075</Cell>
+          <Cell Index="9" Result="Pass">4.175</Cell>
+          <Cell Index="10" Result="Pass">4.075</Cell>
+          <Cell Index="11" Result="Pass">4.075</Cell>
+          <Cell Index="12" Result="Pass">4.075</Cell>
+        </BLV>
+        <BLC>
+          <Cell Index="0" Result="Pass">0</Cell>
+          <Cell Index="1" Result="Pass">0</Cell>
+          <Cell Index="2" Result="Pass">0</Cell>
+          <Cell Index="3" Result="Pass">0</Cell>
+          <Cell Index="4" Result="Pass">0</Cell>
+          <Cell Index="5" Result="Pass">0</Cell>
+          <Cell Index="6" Result="Pass">0</Cell>
+          <Cell Index="7" Result="Pass">0</Cell>
+          <Cell Index="8" Result="Pass">0</Cell>
+          <Cell Index="9" Result="Pass">0.04067817</Cell>
+          <Cell Index="10" Result="Pass">0</Cell>
+          <Cell Index="11" Result="Pass">0</Cell>
+          <Cell Index="12" Result="Pass">0</Cell>
+        </BLC>
+      </Balance>
+      <Balance Index="10">
+        <BLV>
+          <Cell Index="0" Result="Pass">4.075</Cell>
+          <Cell Index="1" Result="Pass">4.075</Cell>
+          <Cell Index="2" Result="Pass">4.075</Cell>
+          <Cell Index="3" Result="Pass">4.075</Cell>
+          <Cell Index="4" Result="Pass">4.075</Cell>
+          <Cell Index="5" Result="Pass">4.075</Cell>
+          <Cell Index="6" Result="Pass">4.075</Cell>
+          <Cell Index="7" Result="Pass">4.075</Cell>
+          <Cell Index="8" Result="Pass">4.075</Cell>
+          <Cell Index="9" Result="Pass">4.075</Cell>
+          <Cell Index="10" Result="Pass">4.175</Cell>
+          <Cell Index="11" Result="Pass">4.075</Cell>
+          <Cell Index="12" Result="Pass">4.075</Cell>
+        </BLV>
+        <BLC>
+          <Cell Index="0" Result="Pass">0</Cell>
+          <Cell Index="1" Result="Pass">0</Cell>
+          <Cell Index="2" Result="Pass">0</Cell>
+          <Cell Index="3" Result="Pass">0</Cell>
+          <Cell Index="4" Result="Pass">0</Cell>
+          <Cell Index="5" Result="Pass">0</Cell>
+          <Cell Index="6" Result="Pass">0</Cell>
+          <Cell Index="7" Result="Pass">0</Cell>
+          <Cell Index="8" Result="Pass">0</Cell>
+          <Cell Index="9" Result="Pass">0</Cell>
+          <Cell Index="10" Result="Pass">0.03976294</Cell>
+          <Cell Index="11" Result="Pass">0</Cell>
+          <Cell Index="12" Result="Pass">0</Cell>
+        </BLC>
+      </Balance>
+      <Balance Index="11">
+        <BLV>
+          <Cell Index="0" Result="Pass">4.075</Cell>
+          <Cell Index="1" Result="Pass">4.075</Cell>
+          <Cell Index="2" Result="Pass">4.075</Cell>
+          <Cell Index="3" Result="Pass">4.075</Cell>
+          <Cell Index="4" Result="Pass">4.075</Cell>
+          <Cell Index="5" Result="Pass">4.075</Cell>
+          <Cell Index="6" Result="Pass">4.075</Cell>
+          <Cell Index="7" Result="Pass">4.075</Cell>
+          <Cell Index="8" Result="Pass">4.075</Cell>
+          <Cell Index="9" Result="Pass">4.075</Cell>
+          <Cell Index="10" Result="Pass">4.075</Cell>
+          <Cell Index="11" Result="Pass">4.175</Cell>
+          <Cell Index="12" Result="Pass">4.075</Cell>
+        </BLV>
+        <BLC>
+          <Cell Index="0" Result="Pass">0</Cell>
+          <Cell Index="1" Result="Pass">0</Cell>
+          <Cell Index="2" Result="Pass">0</Cell>
+          <Cell Index="3" Result="Pass">0</Cell>
+          <Cell Index="4" Result="Pass">0</Cell>
+          <Cell Index="5" Result="Pass">0</Cell>
+          <Cell Index="6" Result="Pass">0</Cell>
+          <Cell Index="7" Result="Pass">0</Cell>
+          <Cell Index="8" Result="Pass">0</Cell>
+          <Cell Index="9" Result="Pass">0</Cell>
+          <Cell Index="10" Result="Pass">0</Cell>
+          <Cell Index="11" Result="Pass">0.03952701</Cell>
+          <Cell Index="12" Result="Pass">0</Cell>
+        </BLC>
+      </Balance>
+      <Balance Index="12">
+        <BLV>
+          <Cell Index="0" Result="Pass">4.075</Cell>
+          <Cell Index="1" Result="Pass">4.075</Cell>
+          <Cell Index="2" Result="Pass">4.075</Cell>
+          <Cell Index="3" Result="Pass">4.075</Cell>
+          <Cell Index="4" Result="Pass">4.075</Cell>
+          <Cell Index="5" Result="Pass">4.075</Cell>
+          <Cell Index="6" Result="Pass">4.075</Cell>
+          <Cell Index="7" Result="Pass">4.075</Cell>
+          <Cell Index="8" Result="Pass">4.075</Cell>
+          <Cell Index="9" Result="Pass">4.075</Cell>
+          <Cell Index="10" Result="Pass">4.075</Cell>
+          <Cell Index="11" Result="Pass">4.075</Cell>
+          <Cell Index="12" Result="Pass">4.175</Cell>
+        </BLV>
+        <BLC>
+          <Cell Index="0" Result="Pass">0</Cell>
+          <Cell Index="1" Result="Pass">0</Cell>
+          <Cell Index="2" Result="Pass">0</Cell>
+          <Cell Index="3" Result="Pass">0</Cell>
+          <Cell Index="4" Result="Pass">0</Cell>
+          <Cell Index="5" Result="Pass">0</Cell>
+          <Cell Index="6" Result="Pass">0</Cell>
+          <Cell Index="7" Result="Pass">0</Cell>
+          <Cell Index="8" Result="Pass">0</Cell>
+          <Cell Index="9" Result="Pass">0</Cell>
+          <Cell Index="10" Result="Pass">0</Cell>
+          <Cell Index="11" Result="Pass">0</Cell>
+          <Cell Index="12" Result="Pass">0.0357415</Cell>
+        </BLC>
+      </Balance>
+      <FOD_UnProtected Result="Pass">2.750</FOD_UnProtected>
+      <OD>
+        <Cell Index="0" Result="Pass">2.650</Cell>
+        <Cell Index="1" Result="Pass">2.650</Cell>
+        <Cell Index="2" Result="Pass">2.650</Cell>
+        <Cell Index="3" Result="Pass">2.650</Cell>
+        <Cell Index="4" Result="Pass">2.650</Cell>
+        <Cell Index="5" Result="Pass">2.650</Cell>
+        <Cell Index="6" Result="Pass">2.650</Cell>
+        <Cell Index="7" Result="Pass">2.650</Cell>
+        <Cell Index="8" Result="Pass">2.650</Cell>
+        <Cell Index="9" Result="Pass">2.650</Cell>
+        <Cell Index="10" Result="Pass">2.650</Cell>
+        <Cell Index="11" Result="Pass">2.650</Cell>
+        <Cell Index="12" Result="Pass">2.650</Cell>
+      </OD>
+      <FODD>
+        <Cell Index="0" Result="Pass">1038</Cell>
+        <Cell Index="1" Result="Pass">1016</Cell>
+        <Cell Index="2" Result="Pass">1008</Cell>
+        <Cell Index="3" Result="Pass">1022</Cell>
+        <Cell Index="4" Result="Pass">1020</Cell>
+        <Cell Index="5" Result="Pass">1021</Cell>
+        <Cell Index="6" Result="Pass">1021</Cell>
+        <Cell Index="7" Result="Pass">1137</Cell>
+        <Cell Index="8" Result="Pass">1117</Cell>
+        <Cell Index="9" Result="Pass">1118</Cell>
+        <Cell Index="10" Result="Pass">1118</Cell>
+        <Cell Index="11" Result="Pass">1117</Cell>
+        <Cell Index="12" Result="Pass">1118</Cell>
+      </FODD>
+      <OVCD Result="Pass">1193.7</OVCD>
+      <OVC Result="Pass">75</OVC>
+      <OVCT1 Result="Pass">1197.2</OVCT1>
+      <IRN Result="Pass">32.15</IRN>
+      <SpendTime>87.963</SpendTime>
+    </Data>
+    <Barcode Length="24">
+    </Barcode>
+    <LogDate>2019-07-06</LogDate>
+    <LogTime>15:10:08</LogTime>
+  </Record>
+</MPT_Data>

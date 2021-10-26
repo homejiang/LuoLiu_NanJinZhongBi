@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51AE42F1-091F-4481-9541-79D4F77669DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LuoLiuDianHan</RootNamespace>
+    <AssemblyName>LuoLiuDianHan</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\luoliu.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLLDAL\HanJie.cs" />
+    <Compile Include="Communication\frmDebug4Pf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Communication\frmDebug4Pf.Designer.cs">
+      <DependentUpon>frmDebug4Pf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Communication\frmDebugPeiFang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Communication\frmDebugPeiFang.Designer.cs">
+      <DependentUpon>frmDebugPeiFang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Communication\frmDebug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Communication\frmDebug.Designer.cs">
+      <DependentUpon>frmDebug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Communication\MyHanJie.cs" />
+    <Compile Include="Communication\PeiFangManager.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="DataM\frmDianHanPoints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataM\frmDianHanPoints.designer.cs">
+      <DependentUpon>frmDianHanPoints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataM\frmDianHanHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataM\frmDianHanHistory.designer.cs">
+      <DependentUpon>frmDianHanHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmErrMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmErrMsg.designer.cs">
+      <DependentUpon>frmErrMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeiFang\frmPfSendPLC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeiFang\frmPfSendPLC.Designer.cs">
+      <DependentUpon>frmPfSendPLC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeiFang\frmAddPf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeiFang\frmAddPf.Designer.cs">
+      <DependentUpon>frmAddPf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeiFang\frmPfList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeiFang\frmPfList.designer.cs">
+      <DependentUpon>frmPfList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDianHan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDianHan.Designer.cs">
+      <DependentUpon>frmDianHan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMyLogB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMyLogB.designer.cs">
+      <DependentUpon>frmMyLogB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMyLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMyLog.designer.cs">
+      <DependentUpon>frmMyLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStationConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStationConfig.Designer.cs">
+      <DependentUpon>frmStationConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMyException.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMyException.designer.cs">
+      <DependentUpon>frmMyException.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeiFang\frmPfSendPLCProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeiFang\frmPfSendPLCProcess.Designer.cs">
+      <DependentUpon>frmPfSendPLCProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Communication\frmDebug4Pf.resx">
+      <DependentUpon>frmDebug4Pf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Communication\frmDebugPeiFang.resx">
+      <DependentUpon>frmDebugPeiFang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Communication\frmDebug.resx">
+      <DependentUpon>frmDebug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataM\frmDianHanPoints.resx">
+      <DependentUpon>frmDianHanPoints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataM\frmDianHanHistory.resx">
+      <DependentUpon>frmDianHanHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmErrMsg.resx">
+      <DependentUpon>frmErrMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeiFang\frmPfSendPLC.resx">
+      <DependentUpon>frmPfSendPLC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeiFang\frmAddPf.resx">
+      <DependentUpon>frmAddPf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeiFang\frmPfList.resx">
+      <DependentUpon>frmPfList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDianHan.resx">
+      <DependentUpon>frmDianHan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMyLogB.resx">
+      <DependentUpon>frmMyLogB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMyLog.resx">
+      <DependentUpon>frmMyLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStationConfig.resx">
+      <DependentUpon>frmStationConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMyException.resx">
+      <DependentUpon>frmMyException.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeiFang\frmPfSendPLCProcess.resx">
+      <DependentUpon>frmPfSendPLCProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BasicData\BasicData.csproj">
+      <Project>{7c7b6d2c-2eef-42c0-aeba-9bf63d12cec3}</Project>
+      <Name>BasicData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{980dbfe0-c5d7-4c8d-b69c-51833b7bb373}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ErrorService\ErrorService.csproj">
+      <Project>{70651698-b645-4437-a64c-768873e24b2e}</Project>
+      <Name>ErrorService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HanJieOPC\HanJieOPC.csproj">
+      <Project>{2bd67fe4-44e4-4839-a027-f513275cff92}</Project>
+      <Name>HanJieOPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyColorName\MyColorName.csproj">
+      <Project>{94dc0738-c948-448c-8f42-170c329677f6}</Project>
+      <Name>MyColorName</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyDataGridView\MyDataGridView.csproj">
+      <Project>{ff013d50-25b7-4baf-960d-05d6d6223978}</Project>
+      <Name>MyDataGridView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyLabelEx\MyLabelEx.csproj">
+      <Project>{536b18c2-f0cc-4255-badb-5000abdc2e1e}</Project>
+      <Name>MyLabelEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyTextBox\MyTextBox.csproj">
+      <Project>{3b82d2a8-ff5c-45ea-81df-e513c30cd315}</Project>
+      <Name>MyTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NumericBox\NumericBox.csproj">
+      <Project>{b5efedcf-0e6b-49b5-903c-6a5b97ab5241}</Project>
+      <Name>NumericBox</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\Close.gif" />
+    <Content Include="Images\Icon.ico" />
+    <Content Include="Images\Icon_125.ico" />
+    <Content Include="Images\JianTouDown.png" />
+    <Content Include="Images\luoliu.ico" />
+    <Content Include="Images\UnUse.png" />
+    <None Include="Images\luoliu.png" />
+    <Content Include="Images\S16\create.gif" />
+    <Content Include="Images\S16\del.gif" />
+    <Content Include="Images\S16\down.png" />
+    <Content Include="Images\S16\edit.gif" />
+    <Content Include="Images\S16\insert.PNG" />
+    <Content Include="Images\S16\Mac16.png" />
+    <Content Include="Images\S16\print16.png" />
+    <Content Include="Images\S16\refresh_18.gif" />
+    <Content Include="Images\S16\up.png" />
+    <Content Include="Images\S25\Audited.png" />
+    <Content Include="Images\S25\bhg25.png" />
+    <Content Include="Images\S25\completed.png" />
+    <Content Include="Images\S25\copy.png" />
+    <Content Include="Images\S25\Del25.png" />
+    <Content Include="Images\S25\edit25.png" />
+    <Content Include="Images\S25\EXCEL.png" />
+    <Content Include="Images\S25\exit25.png" />
+    <Content Include="Images\S25\expExe.png" />
+    <Content Include="Images\S25\jiaojieban.png" />
+    <Content Include="Images\S25\JingGao.png" />
+    <Content Include="Images\S25\mac25.png" />
+    <Content Include="Images\S25\new25.png" />
+    <Content Include="Images\S25\onMouse.png" />
+    <Content Include="Images\S25\Order25.png" />
+    <Content Include="Images\S25\PanNoEdit.png" />
+    <Content Include="Images\S25\print.png" />
+    <Content Include="Images\S25\refresh_25.gif" />
+    <Content Include="Images\S25\Save.bmp" />
+    <Content Include="Images\S25\search25.png" />
+    <Content Include="Images\S25\Special.png" />
+    <Content Include="Images\S25\user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

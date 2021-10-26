@@ -1,0 +1,868 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C7B6D2C-2EEF-42C0-AEBA-9BF63D12CEC3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BasicData</RootNamespace>
+    <AssemblyName>BasicData</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\DLL\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaoFeiCase\frmBaoFeiCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoFeiCase\frmBaoFeiCase.designer.cs">
+      <DependentUpon>frmBaoFeiCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoFeiCase\frmBaoFeiCaseEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoFeiCase\frmBaoFeiCaseEdit.designer.cs">
+      <DependentUpon>frmBaoFeiCaseEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoFeiCase\frmSelectBaoFeiCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoFeiCase\frmSelectBaoFeiCase.Designer.cs">
+      <DependentUpon>frmSelectBaoFeiCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicEntitys\SysDefaultValues.cs" />
+    <Compile Include="BLLDAL\BOM.cs" />
+    <Compile Include="BLLDAL\Client.cs" />
+    <Compile Include="BLLDAL\Computer.cs" />
+    <Compile Include="BLLDAL\Contacter.cs" />
+    <Compile Include="BLLDAL\Contacters.cs" />
+    <Compile Include="BLLDAL\Country.cs" />
+    <Compile Include="BLLDAL\CountryAndProvince.cs" />
+    <Compile Include="BLLDAL\BaoFeiCase.cs" />
+    <Compile Include="BLLDAL\FactoryCode.cs" />
+    <Compile Include="BLLDAL\MacBreakdown.cs" />
+    <Compile Include="BLLDAL\MacBreakdownCase.cs" />
+    <Compile Include="BLLDAL\MacBreakdownCaseClass.cs" />
+    <Compile Include="BLLDAL\MacBreakdownCaseLevel.cs" />
+    <Compile Include="BLLDAL\Material.cs" />
+    <Compile Include="BLLDAL\MaterialClass.cs" />
+    <Compile Include="BLLDAL\MyCompany.cs" />
+    <Compile Include="BLLDAL\OutputFile.cs" />
+    <Compile Include="BLLDAL\PackTypeCode.cs" />
+    <Compile Include="BLLDAL\PrintFile.cs" />
+    <Compile Include="BLLDAL\ProcessMacs.cs" />
+    <Compile Include="BLLDAL\Process.cs" />
+    <Compile Include="BLLDAL\Province.cs" />
+    <Compile Include="BLLDAL\Supplier.cs" />
+    <Compile Include="BLLDAL\Unit.cs" />
+    <Compile Include="BOM\BOMVersion\frmBOMVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\BOMVersion\frmBOMVersion.designer.cs">
+      <DependentUpon>frmBOMVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\frmBOM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\frmBOM.designer.cs">
+      <DependentUpon>frmBOM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\frmBOMStructDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\frmBOMStructDetail.designer.cs">
+      <DependentUpon>frmBOMStructDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\frmChildAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\frmChildAdd.designer.cs">
+      <DependentUpon>frmChildAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\frmMaterialAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\frmMaterialAdd.designer.cs">
+      <DependentUpon>frmMaterialAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\frmMSelProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\frmMSelProcess.designer.cs">
+      <DependentUpon>frmMSelProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\frmMuKuai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\frmMuKuai.designer.cs">
+      <DependentUpon>frmMuKuai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\frmMuKuaiList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\frmMuKuaiList.designer.cs">
+      <DependentUpon>frmMuKuaiList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\frmMuZu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\frmMuZu.designer.cs">
+      <DependentUpon>frmMuZu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\frmMuZuList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\frmMuZuList.designer.cs">
+      <DependentUpon>frmMuZuList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\frmPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\frmPackage.designer.cs">
+      <DependentUpon>frmPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\frmPackageList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\frmPackageList.designer.cs">
+      <DependentUpon>frmPackageList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\frmParentBOM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\frmParentBOM.designer.cs">
+      <DependentUpon>frmParentBOM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\frmProcessAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\frmProcessAdd.designer.cs">
+      <DependentUpon>frmProcessAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\frmSelectBomVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\frmSelectBomVersion.designer.cs">
+      <DependentUpon>frmSelectBomVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\frmSelectBOMClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOM\frmSelectBOMClass.designer.cs">
+      <DependentUpon>frmSelectBOMClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\frmClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\frmClient.Designer.cs">
+      <DependentUpon>frmClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\frmClientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\frmClientList.Designer.cs">
+      <DependentUpon>frmClientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\frmSelectClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\frmSelectClient.designer.cs">
+      <DependentUpon>frmSelectClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\frmCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\frmCompany.Designer.cs">
+      <DependentUpon>frmCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\frmCompanyEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\frmCompanyEdit.Designer.cs">
+      <DependentUpon>frmCompanyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\frmSelectCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\frmSelectCompany.Designer.cs">
+      <DependentUpon>frmSelectCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contacters\frmContacter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contacters\frmContacter.designer.cs">
+      <DependentUpon>frmContacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contacters\frmSelectContacter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contacters\frmSelectContacter.designer.cs">
+      <DependentUpon>frmSelectContacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Country\frmCountryEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Country\frmCountryEdit.designer.cs">
+      <DependentUpon>frmCountryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Country\frmProvince.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Country\frmProvince.Designer.cs">
+      <DependentUpon>frmProvince.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Country\frmProvinceEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Country\frmProvinceEdit.designer.cs">
+      <DependentUpon>frmProvinceEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FartoryCode\frmFactoryCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FartoryCode\frmFactoryCode.designer.cs">
+      <DependentUpon>frmFactoryCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FartoryCode\frmFactoryCodeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FartoryCode\frmFactoryCodeEdit.designer.cs">
+      <DependentUpon>frmFactoryCodeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\frmMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material\frmMaterial.designer.cs">
+      <DependentUpon>frmMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\frmMaterialClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material\frmMaterialClass.designer.cs">
+      <DependentUpon>frmMaterialClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\frmMaterialList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material\frmMaterialList.designer.cs">
+      <DependentUpon>frmMaterialList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\frmMaterialspec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material\frmMaterialspec.designer.cs">
+      <DependentUpon>frmMaterialspec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\frmSelectMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material\frmSelectMaterial.designer.cs">
+      <DependentUpon>frmSelectMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\frmSelectMaterialOnly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material\frmSelectMaterialOnly.designer.cs">
+      <DependentUpon>frmSelectMaterialOnly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\frmSelectMClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material\frmSelectMClass.designer.cs">
+      <DependentUpon>frmSelectMClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleFiles\frmOutputFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleFiles\frmOutputFile.designer.cs">
+      <DependentUpon>frmOutputFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleFiles\frmOutputFileEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleFiles\frmOutputFileEdit.designer.cs">
+      <DependentUpon>frmOutputFileEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleFiles\frmPrintFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleFiles\frmPrintFile.designer.cs">
+      <DependentUpon>frmPrintFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleFiles\frmPrintFileEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleFiles\frmPrintFileEdit.designer.cs">
+      <DependentUpon>frmPrintFileEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleFiles\frmSelPrintModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleFiles\frmSelPrintModule.designer.cs">
+      <DependentUpon>frmSelPrintModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackTypeCode\frmPackTypeCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackTypeCode\frmPackTypeCode.designer.cs">
+      <DependentUpon>frmPackTypeCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackTypeCode\frmPackTypeCodeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackTypeCode\frmPackTypeCodeEdit.designer.cs">
+      <DependentUpon>frmPackTypeCodeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessMacs\frmBdownCaseClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessMacs\frmBdownCaseClass.designer.cs">
+      <DependentUpon>frmBdownCaseClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessMacs\frmBdownCaseClassEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessMacs\frmBdownCaseClassEdit.designer.cs">
+      <DependentUpon>frmBdownCaseClassEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessMacs\frmBdownCaseLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessMacs\frmBdownCaseLevel.designer.cs">
+      <DependentUpon>frmBdownCaseLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessMacs\frmBdownCaseLevelEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessMacs\frmBdownCaseLevelEdit.designer.cs">
+      <DependentUpon>frmBdownCaseLevelEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessMacs\frmBreakdownCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessMacs\frmBreakdownCase.designer.cs">
+      <DependentUpon>frmBreakdownCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessMacs\frmBreakdownCaseEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessMacs\frmBreakdownCaseEdit.designer.cs">
+      <DependentUpon>frmBreakdownCaseEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessMacs\frmMBdownEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessMacs\frmMBdownEdit.designer.cs">
+      <DependentUpon>frmMBdownEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessMacs\frmMBdownEditSelTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessMacs\frmMBdownEditSelTime.designer.cs">
+      <DependentUpon>frmMBdownEditSelTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessMacs\frmMBdownList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessMacs\frmMBdownList.designer.cs">
+      <DependentUpon>frmMBdownList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessMacs\frmProcessMacs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessMacs\frmProcessMacs.designer.cs">
+      <DependentUpon>frmProcessMacs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessMacs\frmProcessMacsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessMacs\frmProcessMacsEdit.designer.cs">
+      <DependentUpon>frmProcessMacsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessMacs\frmSelectBdownCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessMacs\frmSelectBdownCase.designer.cs">
+      <DependentUpon>frmSelectBdownCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessMacs\frmSelectMacs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessMacs\frmSelectMacs.designer.cs">
+      <DependentUpon>frmSelectMacs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\frmProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\frmProcess.designer.cs">
+      <DependentUpon>frmProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\frmProcessEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\frmProcessEdit.designer.cs">
+      <DependentUpon>frmProcessEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\frmSelectProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\frmSelectProcess.designer.cs">
+      <DependentUpon>frmSelectProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Station\frmSelectStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Station\frmSelectStation.designer.cs">
+      <DependentUpon>frmSelectStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\frmSelectSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\frmSelectSupplier.designer.cs">
+      <DependentUpon>frmSelectSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\frmSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\frmSupplier.designer.cs">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\frmSupplierList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\frmSupplierList.designer.cs">
+      <DependentUpon>frmSupplierList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\SelectForm\frmSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\SelectForm\frmSupplier.designer.cs">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\SelectForm\frmSupplierWithMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\SelectForm\frmSupplierWithMaterial.designer.cs">
+      <DependentUpon>frmSupplierWithMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit\frmSelectUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit\frmSelectUnit.designer.cs">
+      <DependentUpon>frmSelectUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit\frmUnitEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit\frmUnitEdit.designer.cs">
+      <DependentUpon>frmUnitEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit\frmUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit\frmUnits.designer.cs">
+      <DependentUpon>frmUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucBOMVersion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucBOMVersion.designer.cs">
+      <DependentUpon>ucBOMVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucMateiralItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucMateiralItem.designer.cs">
+      <DependentUpon>ucMateiralItem.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaoFeiCase\frmBaoFeiCase.resx">
+      <DependentUpon>frmBaoFeiCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoFeiCase\frmBaoFeiCaseEdit.resx">
+      <DependentUpon>frmBaoFeiCaseEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoFeiCase\frmSelectBaoFeiCase.resx">
+      <DependentUpon>frmSelectBaoFeiCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\BOMVersion\frmBOMVersion.resx">
+      <DependentUpon>frmBOMVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\frmBOMStructDetail.resx">
+      <DependentUpon>frmBOMStructDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\frmChildAdd.resx">
+      <DependentUpon>frmChildAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\frmMaterialAdd.resx">
+      <DependentUpon>frmMaterialAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\frmMSelProcess.resx">
+      <DependentUpon>frmMSelProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\frmMuKuai.resx">
+      <DependentUpon>frmMuKuai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\frmMuKuaiList.resx">
+      <DependentUpon>frmMuKuaiList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\frmMuZu.resx">
+      <DependentUpon>frmMuZu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\frmMuZuList.resx">
+      <DependentUpon>frmMuZuList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\frmPackage.resx">
+      <DependentUpon>frmPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\frmPackageList.resx">
+      <DependentUpon>frmPackageList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\frmParentBOM.resx">
+      <DependentUpon>frmParentBOM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\frmProcessAdd.resx">
+      <DependentUpon>frmProcessAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\frmSelectBomVersion.resx">
+      <DependentUpon>frmSelectBomVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOM\frmSelectBOMClass.resx">
+      <DependentUpon>frmSelectBOMClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\frmClient.resx">
+      <DependentUpon>frmClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\frmClientList.resx">
+      <DependentUpon>frmClientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\frmSelectClient.resx">
+      <DependentUpon>frmSelectClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\frmCompany.resx">
+      <DependentUpon>frmCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\frmCompanyEdit.resx">
+      <DependentUpon>frmCompanyEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\frmSelectCompany.resx">
+      <DependentUpon>frmSelectCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contacters\frmContacter.resx">
+      <DependentUpon>frmContacter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contacters\frmSelectContacter.resx">
+      <DependentUpon>frmSelectContacter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Country\frmCountryEdit.resx">
+      <DependentUpon>frmCountryEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Country\frmProvince.resx">
+      <DependentUpon>frmProvince.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Country\frmProvinceEdit.resx">
+      <DependentUpon>frmProvinceEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FartoryCode\frmFactoryCode.resx">
+      <DependentUpon>frmFactoryCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FartoryCode\frmFactoryCodeEdit.resx">
+      <DependentUpon>frmFactoryCodeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\frmMaterial.resx">
+      <DependentUpon>frmMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\frmMaterialClass.resx">
+      <DependentUpon>frmMaterialClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\frmMaterialList.resx">
+      <DependentUpon>frmMaterialList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\frmMaterialspec.resx">
+      <DependentUpon>frmMaterialspec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\frmSelectMaterial.resx">
+      <DependentUpon>frmSelectMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\frmSelectMaterialOnly.resx">
+      <DependentUpon>frmSelectMaterialOnly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\frmSelectMClass.resx">
+      <DependentUpon>frmSelectMClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleFiles\frmOutputFile.resx">
+      <DependentUpon>frmOutputFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleFiles\frmOutputFileEdit.resx">
+      <DependentUpon>frmOutputFileEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleFiles\frmPrintFile.resx">
+      <DependentUpon>frmPrintFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleFiles\frmPrintFileEdit.resx">
+      <DependentUpon>frmPrintFileEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleFiles\frmSelPrintModule.resx">
+      <DependentUpon>frmSelPrintModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackTypeCode\frmPackTypeCode.resx">
+      <DependentUpon>frmPackTypeCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackTypeCode\frmPackTypeCodeEdit.resx">
+      <DependentUpon>frmPackTypeCodeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessMacs\frmBdownCaseClass.resx">
+      <DependentUpon>frmBdownCaseClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessMacs\frmBdownCaseClassEdit.resx">
+      <DependentUpon>frmBdownCaseClassEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessMacs\frmBdownCaseLevel.resx">
+      <DependentUpon>frmBdownCaseLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessMacs\frmBdownCaseLevelEdit.resx">
+      <DependentUpon>frmBdownCaseLevelEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessMacs\frmBreakdownCase.resx">
+      <DependentUpon>frmBreakdownCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessMacs\frmBreakdownCaseEdit.resx">
+      <DependentUpon>frmBreakdownCaseEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessMacs\frmMBdownEdit.resx">
+      <DependentUpon>frmMBdownEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessMacs\frmMBdownEditSelTime.resx">
+      <DependentUpon>frmMBdownEditSelTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessMacs\frmMBdownList.resx">
+      <DependentUpon>frmMBdownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessMacs\frmProcessMacs.resx">
+      <DependentUpon>frmProcessMacs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessMacs\frmProcessMacsEdit.resx">
+      <DependentUpon>frmProcessMacsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessMacs\frmSelectBdownCase.resx">
+      <DependentUpon>frmSelectBdownCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessMacs\frmSelectMacs.resx">
+      <DependentUpon>frmSelectMacs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\frmProcess.resx">
+      <DependentUpon>frmProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\frmProcessEdit.resx">
+      <DependentUpon>frmProcessEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\frmSelectProcess.resx">
+      <DependentUpon>frmSelectProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Station\frmSelectStation.resx">
+      <DependentUpon>frmSelectStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\frmSelectSupplier.resx">
+      <DependentUpon>frmSelectSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\frmSupplier.resx">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\frmSupplierList.resx">
+      <DependentUpon>frmSupplierList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\SelectForm\frmSupplier.resx">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\SelectForm\frmSupplierWithMaterial.resx">
+      <DependentUpon>frmSupplierWithMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit\frmSelectUnit.resx">
+      <DependentUpon>frmSelectUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit\frmUnitEdit.resx">
+      <DependentUpon>frmUnitEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit\frmUnits.resx">
+      <DependentUpon>frmUnits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucBOMVersion.resx">
+      <DependentUpon>ucBOMVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucMateiralItem.resx">
+      <DependentUpon>ucMateiralItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{980dbfe0-c5d7-4c8d-b69c-51833b7bb373}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ErrorService\ErrorService.csproj">
+      <Project>{70651698-b645-4437-a64c-768873e24b2e}</Project>
+      <Name>ErrorService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyColorName\MyColorName.csproj">
+      <Project>{94dc0738-c948-448c-8f42-170c329677f6}</Project>
+      <Name>MyColorName</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyDataGridView\MyDataGridView.csproj">
+      <Project>{ff013d50-25b7-4baf-960d-05d6d6223978}</Project>
+      <Name>MyDataGridView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyLabelEx\MyLabelEx.csproj">
+      <Project>{536b18c2-f0cc-4255-badb-5000abdc2e1e}</Project>
+      <Name>MyLabelEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyTextBox\MyTextBox.csproj">
+      <Project>{3b82d2a8-ff5c-45ea-81df-e513c30cd315}</Project>
+      <Name>MyTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NumericBox\NumericBox.csproj">
+      <Project>{b5efedcf-0e6b-49b5-903c-6a5b97ab5241}</Project>
+      <Name>NumericBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SysSetting\SysSetting.csproj">
+      <Project>{3266bbb1-4c2f-4650-89dd-ac533445dda6}</Project>
+      <Name>SysSetting</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\S16\create.gif" />
+    <Content Include="Images\S16\del.gif" />
+    <Content Include="Images\S16\down.png" />
+    <Content Include="Images\S16\edit.gif" />
+    <Content Include="Images\S16\insert.PNG" />
+    <Content Include="Images\S16\Mac16.png" />
+    <Content Include="Images\S16\print16.png" />
+    <Content Include="Images\S16\refresh_18.gif" />
+    <Content Include="Images\S16\up.png" />
+    <Content Include="Images\S25\Audited.png" />
+    <Content Include="Images\S25\bhg25.png" />
+    <Content Include="Images\S25\completed.png" />
+    <Content Include="Images\S25\copy.png" />
+    <Content Include="Images\S25\Del25.png" />
+    <Content Include="Images\S25\edit25.png" />
+    <Content Include="Images\S25\EXCEL.png" />
+    <Content Include="Images\S25\exit25.png" />
+    <Content Include="Images\S25\expExe.png" />
+    <Content Include="Images\S25\file.png" />
+    <Content Include="Images\S25\jiaojieban.png" />
+    <Content Include="Images\S25\JingGao.png" />
+    <Content Include="Images\S25\mac25.png" />
+    <Content Include="Images\S25\new25.png" />
+    <Content Include="Images\S25\onMouse.png" />
+    <Content Include="Images\S25\Order25.png" />
+    <Content Include="Images\S25\PanNoEdit.png" />
+    <Content Include="Images\S25\print.png" />
+    <Content Include="Images\S25\refresh_25.gif" />
+    <Content Include="Images\S25\Save.bmp" />
+    <Content Include="Images\S25\search25.png" />
+    <Content Include="Images\S25\Special.png" />
+    <Content Include="Images\S25\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

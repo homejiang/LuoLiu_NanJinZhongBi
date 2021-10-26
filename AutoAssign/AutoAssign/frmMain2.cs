@@ -194,7 +194,7 @@ namespace AutoAssign
         JPSEnum.OnOff _MBatchOnOff = JPSEnum.OnOff.Off;//来料工单号是否检查
         JPSEnum.OnOff _SNOnOff = JPSEnum.OnOff.None;//电芯条码重复性是否检查
         JPSEnum.OnOff _CharOnOff = JPSEnum.OnOff.None;//电芯条码字符检查
-        public JPSEnum.AotuMkMode _AutoMKOnOff = JPSEnum.AotuMkMode.None;//自动插装模式
+        public JPSEnum.AotuMkMode _AutoMKOnOff = JPSEnum.AotuMkMode.TuoPanOnly;//自动插装模式
         public string _RealTable_Batterys = string.Empty;
         public string _RealTable_Result = string.Empty;
         public JPSEntity.MainControl _MainControl = null;
@@ -654,6 +654,7 @@ namespace AutoAssign
             else if (dr["GongYiType"].ToString() == "2")
                 this._SwitchMode = SwitchModes.分AB档;
             else this._SwitchMode = SwitchModes.未定义;
+            SetSwitchMode(this._SwitchMode);
             if (!dr["Value"].Equals(DBNull.Value))
                 _ProductClassValue = short.Parse(dr["Value"].ToString());
             else _ProductClassValue = -1;
@@ -812,6 +813,11 @@ namespace AutoAssign
         #endregion
         private void frmMain1_Load(object sender, EventArgs e)
         {
+            string sErr;
+            if (!AppLogger.InitLogger(string.Empty, out sErr))
+            {
+                this.ShowMsg(sErr);
+            }
             this.SetUserPower();
             Perinit();
             this.BindTuoPanCodeInfo();
@@ -821,6 +827,8 @@ namespace AutoAssign
             this.timer2.Enabled = true;
             if (JPSEntity.Debug.PLCResultReader.IsDebug)
                 JPSEntity.Debug.PLCResultReader.Init();
+            
+            
         }
         protected override void OnClosing(CancelEventArgs e)
         {
@@ -1123,6 +1131,12 @@ namespace AutoAssign
                 this.ShowMsg("请输入测试编号！");
                 return false;
             }
+            this.tbTuopanCode.Text = this.tbTuopanCode.Text.Trim();
+            if (this.tbTuopanCode.Text.Length !=7)
+            {
+                this.ShowMsg("请正确输入托盘编号，长度为7个字符。");
+                return false;
+            }
             DataTable dtSource = null;
            
             try
@@ -1167,11 +1181,11 @@ namespace AutoAssign
                 this.ShowMsg("请选择扫码还是不扫码。");
                 return false;
             }
-            if (this._ProductSpecGuid.Length == 0)
-            {
-                this.ShowMsg("请选择电芯型号。");
-                return false;
-            }
+            //if (this._ProductSpecGuid.Length == 0)
+            //{
+            //    this.ShowMsg("请选择电芯型号。");
+            //    return false;
+            //}
             if (this._SwitchMode==null || this._SwitchMode == SwitchModes.未定义)
             {
                 this.ShowMsg("请选择分档模式。");
@@ -1191,21 +1205,21 @@ namespace AutoAssign
             //    //    return false;
             //    //}
             //}
-            if (this._SNOnOff == OnOff.None)
-            {
-                this.ShowMsg("请选择是否电芯条码重复性校验。");
-                return false;
-            }
+            //if (this._SNOnOff == OnOff.None)
+            //{
+            //    this.ShowMsg("请选择是否电芯条码重复性校验。");
+            //    return false;
+            //}
             //if (this._CharOnOff == OnOff.None)
             //{
             //    this.ShowMsg("请选择是否开启电芯条码非法字符校验。");
             //    return false;
             //}
-            if (this._AutoMKOnOff == JPSEnum.AotuMkMode.None)
-            {
-                this.ShowMsg("请选择是否开启自动插装功能。");
-                return false;
-            }
+            //if (this._AutoMKOnOff == JPSEnum.AotuMkMode.None)
+            //{
+            //    this.ShowMsg("请选择是否开启自动插装功能。");
+            //    return false;
+            //}
             //if (this.tbCapacity.Text.Length == 0)
             //{
             //    this.ShowMsg("请输入电池容量范围的最小值。");
@@ -1244,6 +1258,7 @@ namespace AutoAssign
             //    this.ShowMsg("请正确输入电池容量范围，最小值不能大于最大值！");
             //    return false;
             //}
+            dr["TuopanCode"] = this.tbTuopanCode.Text.Trim();
             dr["TargetMKCnt"] = iPlancnt;
             dr["Code"] = this.tbTestCode.Text;
             dr["Operator"] = Common.CurrentUserInfo.UserCode;
@@ -1364,50 +1379,34 @@ namespace AutoAssign
         }
         public bool WriteNanjingZBIntoPLc()
         {
+            //不是分档不用写入
+            if (this._SwitchMode != SwitchModes.分AB档) return true;
             /******************
              * 将南京中比特有的分档信息写入PLC
              * ***************/
             DataTable dt;
             try
             {
-                dt = Common.CommonDAL.DoSqlCommandBasic.GetDateTable("select * from NanJingZB_YaCha");
+                dt = Common.CommonDAL.DoSqlCommand.GetDateTable($"SELECT * FROM Testing_YaCha WHERE CODE='{this._TestCode.Replace("'", "''")}'");
             }
             catch(Exception ex)
             {
                 this.ShowMsg($"获取压差值出错：{ex.Message}");
                 return false;
             }
-            JpsOPC.OPCEntitys.YaChaEntity yacha = new JpsOPC.OPCEntitys.YaChaEntity();
-            int iMyIndex;
-            float decValue;
-            foreach (DataRow dr in dt.Rows)
+            if(dt.Rows.Count==0)
             {
-                if (dr["MyIndex"].Equals(DBNull.Value)) continue;
-                if (dr["YcValue"].Equals(DBNull.Value)) continue;
-                iMyIndex = int.Parse(dr["MyIndex"].ToString());
-                decValue = (float)decimal.Parse(dr["YcValue"].ToString());
-                if (iMyIndex == 1)
-                    yacha.Yc1 = decValue;
-                else if (iMyIndex == 2) yacha.Yc2 = decValue;
-                else if (iMyIndex == 3) yacha.Yc3 = decValue;
-                else if (iMyIndex == 4) yacha.Yc4 = decValue;
-                else if (iMyIndex == 5) yacha.Yc5 = decValue;
-                else if (iMyIndex == 6) yacha.Yc6 = decValue;
-                else if (iMyIndex == 7) yacha.Yc7 = decValue;
-                else if (iMyIndex == 8) yacha.Yc8 = decValue;
-                else if (iMyIndex == 9) yacha.Yc9 = decValue;
-                else if (iMyIndex == 10) yacha.Yc10 = decValue;
-                else if (iMyIndex == 11) yacha.Yc11 = decValue;
-                else if (iMyIndex == 12) yacha.Yc12 = decValue;
-                else if (iMyIndex == 13) yacha.Yc13 = decValue;
-                else if (iMyIndex == 14) yacha.Yc14 = decValue;
-                else if (iMyIndex == 15) yacha.Yc15 = decValue;
-                else if (iMyIndex == 16) yacha.Yc16 = decValue;
-                else if (iMyIndex == 17) yacha.Yc17 = decValue;
-                else if (iMyIndex == 18) yacha.Yc18 = decValue;
-                else if (iMyIndex == 19) yacha.Yc19 = decValue;
-                else if (iMyIndex == 20) yacha.Yc20 = decValue;
+                this.ShowMsg("无法读取压差数据！");
+                return false;
             }
+            if(dt.Rows[0]["YaCha"].Equals(DBNull.Value))
+            {
+                this.ShowMsg("压差数据为空！");
+                return false;
+            }
+
+            float decValue = (float)decimal.Parse(dt.Rows[0]["YaCha"].ToString());
+            
             if (this._MainControl == null)
             {
                 this.ShowMsg("写入压差数据出错：程序控制对象为空，请重新打开窗口！");
@@ -1419,16 +1418,14 @@ namespace AutoAssign
                 return false;
             }
             string strErr;
-            if (!this._MainControl._OPCHelperGongYi.WriteYaCha(false,yacha, out strErr))
+           if(!this._MainControl._OPCHelperGongYi.SetExp_YcSet(decValue,out strErr))
             {
-                this.ShowMsg($"写入压差数据出错：{strErr}");
+                this.ShowMsg($"写入压差出错：{strErr}");
                 return false;
             }
-            //不是分档不用写入
-            if (this._SwitchMode != SwitchModes.分AB档) return true;
             try
             {
-                dt = Common.CommonDAL.DoSqlCommandBasic.GetDateTable($"SELECT * FROM Testing_GroovesAB WHERE CODE='{this._TestCode.Replace("'", "''")}'");
+                dt = Common.CommonDAL.DoSqlCommand.GetDateTable($"SELECT * FROM Testing_GroovesAB WHERE CODE='{this._TestCode.Replace("'", "''")}'");
             }
             catch (Exception ex)
             {
@@ -1851,6 +1848,8 @@ namespace AutoAssign
                 this.ShowMsg(strErr);
                 return;
             }
+            //南京中比固定托盘模式
+            this._MainControl._PrinterControl.SetPrintType(PrinterControl.PrintTypes.TuoPanCode);
             #region 设备4专项处理
             if (JPSConfig.MacNo == 99)
             {
@@ -3475,7 +3474,7 @@ namespace AutoAssign
                 this.ShowMsg("当前分档模式不是AB档，无法编辑！");
                 return;
             }
-            NanJingZB.frmSwitchEdit frm = new NanJingZB.frmSwitchEdit();
+            NanJingZB.frmSwitchEdit frm = new NanJingZB.frmSwitchEdit(this.tbTestCode.Text);
             frm.ShowDialog();
         }
 
@@ -3495,6 +3494,15 @@ namespace AutoAssign
         {
             NanJingZB.frmNjzbDebug frm = new NanJingZB.frmNjzbDebug();
             frm.Show();
+        }
+
+        private void btTuopanCodeSettting_Click(object sender, EventArgs e)
+        {
+            NanJingZB.frmCreateTuopanCode frm = new NanJingZB.frmCreateTuopanCode();
+            frm._CodeHeader = this.tbTuopanCode.Text;
+            if (DialogResult.OK != frm.ShowDialog()) return;
+            this.tbTuopanCode.Text = frm._CodeHeader;
+            BindTuoPanCodeInfo();
         }
     }
 }

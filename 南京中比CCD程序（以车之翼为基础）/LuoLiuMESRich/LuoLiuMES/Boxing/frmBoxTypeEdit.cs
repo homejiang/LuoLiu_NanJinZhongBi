@@ -1,0 +1,209 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using ErrorService;
+using Common;
+
+namespace LuoLiuMES.Boxing
+{
+    public partial class frmBoxTypeEdit : frmBase
+    {
+        public frmBoxTypeEdit()
+        {
+            InitializeComponent();
+        }
+        #region 打开窗口
+        public static void OpenEditFormByTester(IWin32Window owner,string sCode)
+        {
+            frmBoxTypeEdit frm = new frmBoxTypeEdit();
+            frm._OpenFromTester = true;
+            frmMainBase frmbase = new frmMainBase();
+            List<Common.MyEnums.OperatePower> listPower = frmbase.GetOperatePower(Common.MyEnums.Modules.BoxType);
+            if (listPower.Contains(Common.MyEnums.OperatePower.Eidt))
+            {
+                frm.FormState = Common.MyEnums.FormStates.Edit;
+            }
+            else
+            {
+                frm.FormState = Common.MyEnums.FormStates.Readonly;
+                frm.Text += "（只读）";
+            }
+            frm.PrimaryValue = sCode;
+            frm.ShowDialog(owner);
+        }
+        #endregion
+        #region 窗体数据连接实例
+        private BLLDAL.BoxType _dal = null;
+        /// <summary>
+        /// 窗体数据连接实例
+        /// </summary>
+        private BLLDAL.BoxType BllDAL
+        {
+            get
+            {
+                if (_dal == null)
+                    _dal = new BLLDAL.BoxType();
+                return _dal;
+            }
+        }
+        #endregion
+        #region 公共属性
+        public bool _OpenFromTester = false;
+        #endregion
+        #region 处理函数
+        private bool PerInit()
+        {
+            this.tbCode.ReadOnly = _OpenFromTester;
+            this.tbTypeName.ReadOnly = _OpenFromTester;
+            this.tbQty.ReadOnly = _OpenFromTester;
+            this.tbMyWeight.ReadOnly = _OpenFromTester;
+            this.chkTerminated.Enabled = !_OpenFromTester;
+            this.btTrue.Enabled = this.FormState == Common.MyEnums.FormStates.Edit;
+            return true;
+        }
+        private bool BindData(string strCode)
+        {
+            DataSet ds=null;
+            List<Common.CommonDAL.SqlSearchEntiy> listSql = new List<Common.CommonDAL.SqlSearchEntiy>();
+            string strSql = "SELECT * FROM JC_BoxType WHERE Code='" + strCode.Replace("'", "''") + "'";
+            listSql.Add(new Common.CommonDAL.SqlSearchEntiy(strSql, "JC_BoxType", true));
+            try
+            {
+                ds = Common.CommonDAL.DoSqlCommand.GetDateSet(listSql);
+            }
+            catch (Exception ex)
+            {
+                wErrorMessage.ShowErrorDialog(this, ex);
+                return false;
+            }
+            if (ds.Tables["JC_BoxType"].DefaultView.Count == 0)
+            {
+                this.ShowMsg("传入的托盘类型不存在或已经被删除，请检查！");
+                return false;
+            }
+            DataRow dr=ds.Tables["JC_BoxType"].DefaultView[0].Row;
+            this.tbCode.Text = dr["Code"].ToString();
+            this.tbTypeName.Text = dr["TypeName"].ToString();
+            this.chkTerminated.Checked = !dr["Terminated"].Equals(DBNull.Value) && (bool)dr["Terminated"];
+            this.tbQty.Text= dr["Qty"].ToString();
+            this.tbMyWeight.Text = Common.CommonFuns.FormatData.GetStringByDecimal(dr["MyWeight"], "#########0.###");
+            this.DataSource = ds;
+            SetFormState();
+            return true;
+        }
+        private void SetFormState()
+        {
+            
+        }
+        #endregion
+        #region 保存数据
+        private bool SaveCheck()
+        {
+            if (this.DataSource == null)
+            {
+                this.ShowMsg("数据源丢失！");
+                return false;
+            }
+            if (this.DataSource.Tables["JC_BoxType"].DefaultView.Count == 0)
+            {
+                this.ShowMsg("数据未能加载，请重新打开窗口！");
+                return false;
+            }
+            if (string.Compare(this.DataSource.Tables["JC_BoxType"].DefaultView[0].Row["Code"].ToString(), this.tbCode.Text, true) != 0)
+            {
+                //如果编码已经修改过，则要判断是否编码已经存在了
+                DataTable dt = null;
+                try
+                {
+                    dt = Common.CommonDAL.DoSqlCommand.GetDateTable(string.Format("SELECT Code FROM JC_BoxType WHERE Code='{0}'", this.tbCode.Text.Replace("'", "''")));
+                }
+                catch (Exception ex)
+                {
+                    wErrorMessage.ShowErrorDialog(this, ex);
+                    return false;
+                }
+                if (dt.Rows.Count > 0)
+                {
+                    this.ShowMsg("托盘类型编码“" + this.tbCode.Text + "”已经存在，请更换");
+                    return false;
+                }
+            }
+            return true;
+        }
+        private bool Save(DataSet dsSource)
+        {
+            DataRow dr = dsSource.Tables["JC_BoxType"].DefaultView[0].Row;
+            if (dr["Code"].ToString() != this.tbCode.Text)
+                dr["Code"] = this.tbCode.Text;
+            if (dr["TypeName"].ToString() != this.tbTypeName.Text)
+                dr["TypeName"] = this.tbTypeName.Text;
+            if ((!dr["Terminated"].Equals(DBNull.Value) && (bool)dr["Terminated"]) ^ this.chkTerminated.Checked)
+                dr["Terminated"] = this.chkTerminated.Checked;
+
+            int iQty;
+            if(!int.TryParse(this.tbQty.Text,out iQty))
+            {
+                this.ShowMsg("请正确输入成品数量。");
+                return false;
+            }
+            decimal decMyWeight;
+            if(!decimal.TryParse(this.tbMyWeight.Text,out decMyWeight))
+            {
+                this.ShowMsg("请正确输入托盘的重量。");
+                return false;
+            }
+            if (dr["Qty"].ToString() != iQty.ToString())
+                dr["Qty"] = iQty;
+            if (!dr["MyWeight"].Equals(decMyWeight))
+                dr["MyWeight"] = decMyWeight;
+            if (dsSource.GetChanges() == null)
+                return true;
+            try
+            {
+                this.BllDAL.Save(dsSource);
+            }
+            catch (Exception ex)
+            {
+                wErrorMessage.ShowErrorDialog(this, ex);
+                return false;
+            }
+            return true;
+        }
+        #endregion
+        #region 窗体按钮事件
+        private void btTrue_Click(object sender, EventArgs e)
+        {
+            if (this.DataSource == null)
+            {
+                this.ShowMsg("数据源丢失，请重新打开窗体");
+                return;
+            } 
+            if (this.FormState !=Common.MyEnums.FormStates.Edit )
+            {
+                this.ShowMsg("当前窗体状态不能编辑。");
+                return;
+            }
+            if (!this.SaveCheck()) return;
+            DataSet dsSource = this.DataSource.Copy();
+            if (this.Save(dsSource))
+            {
+                this.DialogResult = DialogResult.OK;
+            }
+        }
+        private void btClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        #endregion
+        private void frmUnitEdit_Load(object sender, EventArgs e)
+        {
+            if (!this.PerInit()) return;
+            this.btTrue.Enabled = this.BindData(this.PrimaryValue == null ? "" : this.PrimaryValue.ToString());
+        }
+    }
+
+}

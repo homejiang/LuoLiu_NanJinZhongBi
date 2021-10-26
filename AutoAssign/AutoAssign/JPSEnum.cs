@@ -191,6 +191,6 @@ namespace AutoAssign.JPSEnum
         /// <summary>
         /// 分AB档
         /// </summary>
-        分AB档=1
+        分AB档=2
     }
 }

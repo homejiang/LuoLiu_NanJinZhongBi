@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A379ABA8-AF7D-4589-BCFD-C397CA5C2E6F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UpdateERP</RootNamespace>
+    <AssemblyName>UpdateERP</AssemblyName>
+    <ApplicationIcon>Images\ico.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>UpdateERP.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLLDAL\UpdateVersion.cs" />
+    <Compile Include="frmUpdateExe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateExe.Designer.cs">
+      <DependentUpon>frmUpdateExe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateVersion.Designer.cs">
+      <DependentUpon>frmUpdateVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmUpdateExe.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUpdateExe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateVersion.resx">
+      <DependentUpon>frmUpdateVersion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateVersion\frmCurrentRemark.resx">
+      <DependentUpon>frmCurrentRemark.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateVersion\frmRemark.resx">
+      <DependentUpon>frmRemark.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateVersion\frmDelFiles.resx">
+      <DependentUpon>frmDelFiles.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UpdateVersion\frmCurrentRemark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateVersion\frmCurrentRemark.Designer.cs">
+      <DependentUpon>frmCurrentRemark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateVersion\frmRemark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateVersion\frmRemark.Designer.cs">
+      <DependentUpon>frmRemark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateVersion\frmDelFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateVersion\frmDelFiles.Designer.cs">
+      <DependentUpon>frmDelFiles.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutoPrint\AutoPrint.csproj">
+      <Project>{96237b2d-e1d7-4796-84fa-a711eb2ac755}</Project>
+      <Name>AutoPrint</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BasicData\BasicData.csproj">
+      <Project>{7c7b6d2c-2eef-42c0-aeba-9bf63d12cec3}</Project>
+      <Name>BasicData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{980dbfe0-c5d7-4c8d-b69c-51833b7bb373}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DropdownMultiSelect\DropdownMultiSelect.csproj">
+      <Project>{9cf482c9-164e-4052-86e1-a2d48f8f4693}</Project>
+      <Name>DropdownMultiSelect</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EleCardComposing\EleCardComposing.csproj">
+      <Project>{7253feba-82e0-4f76-a513-79c8b057cc6f}</Project>
+      <Name>EleCardComposing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ErrorService\ErrorService.csproj">
+      <Project>{70651698-b645-4437-a64c-768873e24b2e}</Project>
+      <Name>ErrorService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HanJieOPC\HanJieOPC.csproj">
+      <Project>{2bd67fe4-44e4-4839-a027-f513275cff92}</Project>
+      <Name>HanJieOPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JpsOPC\JpsOPC.csproj">
+      <Project>{99161d4b-2d76-4242-9e91-b1cef3dbdebc}</Project>
+      <Name>JpsOPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LuoLiuAgingTest\LuoLiuAgingTest.csproj">
+      <Project>{6b17078a-101e-4916-919b-7d3ffb572085}</Project>
+      <Name>LuoLiuAgingTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LuoLiuAirtightnessTest\LuoLiuAirtightnessTest.csproj">
+      <Project>{aa892fda-273a-46c9-bfb4-b87e60817240}</Project>
+      <Name>LuoLiuAirtightnessTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LuoLiuCCD\LuoLiuCCD.csproj">
+      <Project>{df010f3f-f42c-4948-b219-92e606e069e7}</Project>
+      <Name>LuoLiuCCD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LuoLiuDianHan\LuoLiuDianHan.csproj">
+      <Project>{51ae42f1-091f-4481-9541-79d4f77669dd}</Project>
+      <Name>LuoLiuDianHan</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LuoLiuEOLTest\LuoLiuEOLTest.csproj">
+      <Project>{5425898e-d1b8-4633-973a-f71ee542a7cf}</Project>
+      <Name>LuoLiuEOLTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LuoLiuMESPrinter\LuoLiuMESPrinter.csproj">
+      <Project>{28f7fe63-03a2-4efb-9ab0-6822d63e2dfc}</Project>
+      <Name>LuoLiuMESPrinter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LuoLiuMES\LuoLiuMES.csproj">
+      <Project>{54d91659-50d6-42fe-9161-38bca726a23b}</Project>
+      <Name>LuoLiuMES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LuoLiuPCBTest\LuoLiuPCBTest.csproj">
+      <Project>{2bd58b98-3815-45ac-8c5e-efd7cc87f6c2}</Project>
+      <Name>LuoLiuPCBTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LuoLiuTesting\LuoLiuTesting.csproj">
+      <Project>{a069de9f-06b0-4a49-a92e-d7aa3977eb4d}</Project>
+      <Name>LuoLiuTesting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyColorName\MyColorName.csproj">
+      <Project>{94dc0738-c948-448c-8f42-170c329677f6}</Project>
+      <Name>MyColorName</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyDataGridView\MyDataGridView.csproj">
+      <Project>{ff013d50-25b7-4baf-960d-05d6d6223978}</Project>
+      <Name>MyDataGridView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyLabelEx\MyLabelEx.csproj">
+      <Project>{536b18c2-f0cc-4255-badb-5000abdc2e1e}</Project>
+      <Name>MyLabelEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyTextBox\MyTextBox.csproj">
+      <Project>{3b82d2a8-ff5c-45ea-81df-e513c30cd315}</Project>
+      <Name>MyTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NumericBox\NumericBox.csproj">
+      <Project>{b5efedcf-0e6b-49b5-903c-6a5b97ab5241}</Project>
+      <Name>NumericBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SysSetting\SysSetting.csproj">
+      <Project>{3266bbb1-4c2f-4650-89dd-ac533445dda6}</Project>
+      <Name>SysSetting</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

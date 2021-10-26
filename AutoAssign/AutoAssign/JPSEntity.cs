@@ -14,6 +14,40 @@ using System.Threading.Tasks;
 
 namespace AutoAssign.JPSEntity
 {
+    public class AppLogger
+    {
+        public static NLog.Logger Logger = null;
+        public static bool InitLogger(string sLogName,out string sErr)
+        {
+            try
+            {
+                if (sLogName.Length > 0)
+                    Logger = NLog.LogManager.GetLogger(sLogName);
+                else Logger = NLog.LogManager.GetCurrentClassLogger();
+            }
+            catch(Exception ex)
+            {
+                sErr = $"创建日志失败：{ex.Message}({ex.Source})";
+                return false;
+            }
+            sErr = string.Empty;
+            return true;
+        }
+        public static void ShowLog(string sLog)
+        {
+            if(Logger!=null)
+            {
+                Logger.Debug(sLog);
+            }
+        }
+        public static void ShowErr(string sErr)
+        {
+            if (Logger != null)
+            {
+                Logger.Error(sErr);
+            }
+        }
+    }
     public class ModeView
     {
         public object ModeIsNeter = DBNull.Value;
@@ -255,6 +289,7 @@ namespace AutoAssign.JPSEntity
         /// <param name="sMsg">消息内容</param>
         public void ShowErrAsyn(string sMsg)
         {
+            AppLogger.ShowErr(sMsg);
             ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowErr);
             try
             {
@@ -276,6 +311,7 @@ namespace AutoAssign.JPSEntity
         }
         public void ShowLogAsyn(string sMsg)
         {
+            AppLogger.ShowLog(sMsg);
             ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowLog);
             try
             {
@@ -538,6 +574,7 @@ namespace AutoAssign.JPSEntity
                 }
                 if (this._State == JPSEnum.ScannerStates.ReadBlockNo)
                 {
+                    Thread.Sleep(100);
                     if (!this.Listen_ReadBlockNo()) continue;
                     this._State = JPSEnum.ScannerStates.NoticeScannerReadBarCode;
                 }
@@ -577,8 +614,10 @@ namespace AutoAssign.JPSEntity
                 }
                 if (this._State == JPSEnum.ScannerStates.WriteInotPLC_OPC)
                 {
-                    if (!this.Listen_WriteIntoPLC_OPC()) continue;
                     if (!Listen_WriteIntoPLC_OPC_DxOrgData()) continue;
+                    this.SaveOrgDxData2DB();//保存原始电芯数据
+                    Thread.Sleep(50);
+                    if (!this.Listen_WriteIntoPLC_OPC()) continue;
                     //写入成功，延时
                     this._State = JPSEnum.ScannerStates.ReadingPLCIOValue;
                     //这里存储电芯数据，但出错了就不用管了，毕竟与逻辑无关联
@@ -1047,6 +1086,7 @@ namespace AutoAssign.JPSEntity
                 Thread.Sleep(100);//基本上是不可能的，OPC不会这么慢的，除非PLC没有正确赋值
                 return false;
             }
+            this.ShowLogAsyn($"BlockNo读取到为{Listen_BlockNo}。");
             return true;
         }
         private bool Listen_Socket()
@@ -1070,7 +1110,7 @@ namespace AutoAssign.JPSEntity
                     return false;
                 }
                 _State_SocketReceiving = true;
-                this.ShowLogAsyn(string.Format("扫描枪{0}：等待接收", this._ScannerNo));
+                this.ShowLogAsyn($"扫描枪{ this._ScannerNo},BlockNo={this.Listen_BlockNo}：等待接收");
                 int iReceived = this._client.Receive(Listen_Data);
                 _State_SocketReceiving = false;
                 if (iReceived == 0)
@@ -1084,7 +1124,7 @@ namespace AutoAssign.JPSEntity
                     return false;
                 }
                 string strData = Encoding.ASCII.GetString(Listen_Data, 0, iReceived);
-                this.ShowLogAsyn(string.Format("扫描枪{0}：收到数据[{1}]", this._ScannerNo, strData));
+                this.ShowLogAsyn($"扫描枪{this._ScannerNo},blockNo={this.Listen_BlockNo}：收到数据[{strData}]");
                 this.Listen_Socket_AnalyzeData(strData);//解析数据
                 //是有数据
                 if (this.Interrupt) Interrupt = false;
@@ -1219,10 +1259,10 @@ namespace AutoAssign.JPSEntity
             }
             catch (Exception ex)
             {
-                this.ShowErrAsyn(string.Format("扫描枪{0}存入电芯条码时出错：{1}{2}", this._ScannerNo, ex.Message, ex.Source));
+                this.ShowErrAsyn($"扫描枪{this._ScannerNo}[blockno={this.Listen_BlockNo}]存入电芯条码时出错：{ex.Message}({ex.Source})");
                 return false;
             }
-            this.ShowLogAsyn(string.Format("扫描枪{0}：获取数据库编号：{1}、{2}、{3}、{4}、{5}、{6}、{7}、{8}、{9}、{10}。", this._ScannerNo, sMyCode0, sMyCode1, sMyCode2, sMyCode3, sMyCode4, sMyCode5, sMyCode6, sMyCode7, sMyCode8, sMyCode9));
+            this.ShowLogAsyn(string.Format("扫描枪{0}：[bockNo=" + this.Listen_BlockNo.ToString() + "]获取数据库编号：{1}、{2}、{3}、{4}、{5}、{6}、{7}、{8}、{9}、{10}。", this._ScannerNo, sMyCode0, sMyCode1, sMyCode2, sMyCode3, sMyCode4, sMyCode5, sMyCode6, sMyCode7, sMyCode8, sMyCode9));
             this.Listen_CodeEntitys[0].MyCode = sMyCode0;
             this.Listen_CodeEntitys[1].MyCode = sMyCode1;
             this.Listen_CodeEntitys[2].MyCode = sMyCode2;
@@ -1235,7 +1275,7 @@ namespace AutoAssign.JPSEntity
             this.Listen_CodeEntitys[9].MyCode = sMyCode9;
             return true;
         }
-        private bool Listen_WriteIntoPLC_GetDxOrgInfo()
+        public bool Listen_WriteIntoPLC_GetDxOrgInfo()
         {
             #region 申明变量
             decimal decCapacity0;
@@ -1311,7 +1351,7 @@ namespace AutoAssign.JPSEntity
             }
             catch (Exception ex)
             {
-                this.ShowErrAsyn($"读取扫描枪[{this.Listen_BlockNo}]电芯原始数据出错：{ex.Message}({ex.Source})");
+                this.ShowErrAsyn($"读取blockNo[{this.Listen_BlockNo}]电芯原始数据出错：{ex.Message}({ex.Source})");
                 return false;
             }
             #region 赋值
@@ -1347,6 +1387,36 @@ namespace AutoAssign.JPSEntity
             this.Listen_CodeEntitys[9].V = decV9;
             #endregion
             return true;
+        }
+        private void SaveOrgDxData2DB()
+        {
+            /**************
+             * 存储电芯数据到数据库
+             * *****************/
+            if (String.IsNullOrEmpty(this._ResultTable))
+            {
+                this.ShowErrAsyn($"存储结果值的表为空！");
+                return;
+            }
+            string sOrgResultTable = $"{this._ResultTable}_YuanShi";
+            List<string> listSqlInsert = new List<string>();
+            foreach(ScannerDianXinData data in Listen_CodeEntitys)
+            {
+                if (data.MyCode.Length == 0) continue;
+                string sSqlInsert = $"INSERT INTO {sOrgResultTable}(MyCode,SN,OrgCap,OrgR,OrgV) VALUES('{data.MyCode}','{data.SNCode}',{data.Capacity},{data.R},{data.V})";
+                listSqlInsert.Add(sSqlInsert);
+            }
+            if(listSqlInsert.Count>0)
+            {
+                try
+                {
+                    Common.CommonDAL.DoSqlCommand.DoSql(listSqlInsert);
+                }
+                catch(Exception ex)
+                {
+                    this.ShowErrAsyn($"存储电芯原始值出错：{ex.Message}({ex.Source})");
+                }
+            }
         }
         private bool Listen_WriteIntoPLC_CheckChongfu()
         {
@@ -1733,7 +1803,7 @@ namespace AutoAssign.JPSEntity
                 }
                 else
                 {
-                    this.ShowLogAsyn(string.Format("扫描枪{0}:OPC成功写入电池组信息：{1},{2}！", this._ScannerNo, strCodes, iValue));
+                    this.ShowLogAsyn($"扫描枪{this._ScannerNo}[blockNo={this.Listen_BlockNo}]:OPC成功写入电池组信息：{strCodes},{iValue}！");
                 }
                 return true;
             }
@@ -1746,7 +1816,7 @@ namespace AutoAssign.JPSEntity
                 }
                 else
                 {
-                    this.ShowLogAsyn(string.Format("扫描枪{0}:OPC成功写入电池组信息：{1},{2}！", this._ScannerNo, strCodes, iValue));
+                    this.ShowLogAsyn($"扫描枪{this._ScannerNo}[blockNo={this.Listen_BlockNo}]:OPC成功写入电池组信息：{strCodes},{iValue}！");
                 }
                 return true;
             }
@@ -1775,12 +1845,22 @@ namespace AutoAssign.JPSEntity
                     , this.Listen_CodeEntitys[7].Capacity, this.Listen_CodeEntitys[7].R, this.Listen_CodeEntitys[7].V
                     , out strErr))
                 {
-                    this.ShowErrAsyn("电池组1写入原始电芯数据失败：" + strErr);
+                    this.ShowErrAsyn("电池组1,blockNo=1写入原始电芯数据失败：" + strErr);
                     return false;
                 }
                 else
                 {
-                    this.ShowLogAsyn($"扫描枪{this._ScannerNo}:OPC成功写入电池原始信息成功。");
+                    StringBuilder sb = new StringBuilder();
+                   sb.Append($"SN={this.Listen_CodeEntitys[0].SNCode},MyCode={this.Listen_CodeEntitys[0].MyCode},Capacity={this.Listen_CodeEntitys[0].Capacity},R={this.Listen_CodeEntitys[0].R},V={this.Listen_CodeEntitys[0].V}\r\n");
+                    sb.Append($"SN={this.Listen_CodeEntitys[1].SNCode},MyCode={this.Listen_CodeEntitys[1].MyCode},Capacity={this.Listen_CodeEntitys[1].Capacity},R={this.Listen_CodeEntitys[1].R},V={this.Listen_CodeEntitys[1].V}\r\n");
+                    sb.Append($"SN={this.Listen_CodeEntitys[2].SNCode},MyCode={this.Listen_CodeEntitys[2].MyCode},Capacity={this.Listen_CodeEntitys[2].Capacity},R={this.Listen_CodeEntitys[2].R},V={this.Listen_CodeEntitys[2].V}\r\n");
+                    sb.Append($"SN={this.Listen_CodeEntitys[3].SNCode},MyCode={this.Listen_CodeEntitys[3].MyCode},Capacity={this.Listen_CodeEntitys[3].Capacity},R={this.Listen_CodeEntitys[3].R},V={this.Listen_CodeEntitys[3].V}\r\n");
+                    sb.Append($"SN={this.Listen_CodeEntitys[4].SNCode},MyCode={this.Listen_CodeEntitys[4].MyCode},Capacity={this.Listen_CodeEntitys[4].Capacity},R={this.Listen_CodeEntitys[4].R},V={this.Listen_CodeEntitys[4].V}\r\n");
+                    sb.Append($"SN={this.Listen_CodeEntitys[5].SNCode},MyCode={this.Listen_CodeEntitys[5].MyCode},Capacity={this.Listen_CodeEntitys[5].Capacity},R={this.Listen_CodeEntitys[5].R},V={this.Listen_CodeEntitys[5].V}\r\n");
+                    sb.Append($"SN={this.Listen_CodeEntitys[6].SNCode},MyCode={this.Listen_CodeEntitys[6].MyCode},Capacity={this.Listen_CodeEntitys[6].Capacity},R={this.Listen_CodeEntitys[6].R},V={this.Listen_CodeEntitys[6].V}\r\n");
+                    sb.Append($"SN={this.Listen_CodeEntitys[7].SNCode},MyCode={this.Listen_CodeEntitys[7].MyCode},Capacity={this.Listen_CodeEntitys[7].Capacity},R={this.Listen_CodeEntitys[7].R},V={this.Listen_CodeEntitys[7].V}\r\n");
+                    this.ShowLogAsyn($"blckno=1写入PLC原始电芯数据：{sb.ToString()}");
+
                 }
                 return true;
             }
@@ -1796,12 +1876,21 @@ namespace AutoAssign.JPSEntity
                     , this.Listen_CodeEntitys[7].Capacity, this.Listen_CodeEntitys[7].R, this.Listen_CodeEntitys[7].V
                     , out strErr))
                 {
-                    this.ShowErrAsyn("电池组2写入原始电芯数据失败：" + strErr);
+                    this.ShowErrAsyn("blockno=2写入原始电芯数据失败：" + strErr);
                     return false;
                 }
                 else
                 {
-                    this.ShowLogAsyn($"扫描枪{this._ScannerNo}:OPC成功写入电池原始信息成功。");
+                    StringBuilder sb = new StringBuilder();
+                    sb.Append($"SN={this.Listen_CodeEntitys[0].SNCode},MyCode={this.Listen_CodeEntitys[0].MyCode},Capacity={this.Listen_CodeEntitys[0].Capacity},R={this.Listen_CodeEntitys[0].R},V={this.Listen_CodeEntitys[0].V}\r\n");
+                    sb.Append($"SN={this.Listen_CodeEntitys[1].SNCode},MyCode={this.Listen_CodeEntitys[1].MyCode},Capacity={this.Listen_CodeEntitys[1].Capacity},R={this.Listen_CodeEntitys[1].R},V={this.Listen_CodeEntitys[1].V}\r\n");
+                    sb.Append($"SN={this.Listen_CodeEntitys[2].SNCode},MyCode={this.Listen_CodeEntitys[2].MyCode},Capacity={this.Listen_CodeEntitys[2].Capacity},R={this.Listen_CodeEntitys[2].R},V={this.Listen_CodeEntitys[2].V}\r\n");
+                    sb.Append($"SN={this.Listen_CodeEntitys[3].SNCode},MyCode={this.Listen_CodeEntitys[3].MyCode},Capacity={this.Listen_CodeEntitys[3].Capacity},R={this.Listen_CodeEntitys[3].R},V={this.Listen_CodeEntitys[3].V}\r\n");
+                    sb.Append($"SN={this.Listen_CodeEntitys[4].SNCode},MyCode={this.Listen_CodeEntitys[4].MyCode},Capacity={this.Listen_CodeEntitys[4].Capacity},R={this.Listen_CodeEntitys[4].R},V={this.Listen_CodeEntitys[4].V}\r\n");
+                    sb.Append($"SN={this.Listen_CodeEntitys[5].SNCode},MyCode={this.Listen_CodeEntitys[5].MyCode},Capacity={this.Listen_CodeEntitys[5].Capacity},R={this.Listen_CodeEntitys[5].R},V={this.Listen_CodeEntitys[5].V}\r\n");
+                    sb.Append($"SN={this.Listen_CodeEntitys[6].SNCode},MyCode={this.Listen_CodeEntitys[6].MyCode},Capacity={this.Listen_CodeEntitys[6].Capacity},R={this.Listen_CodeEntitys[6].R},V={this.Listen_CodeEntitys[6].V}\r\n");
+                    sb.Append($"SN={this.Listen_CodeEntitys[7].SNCode},MyCode={this.Listen_CodeEntitys[7].MyCode},Capacity={this.Listen_CodeEntitys[7].Capacity},R={this.Listen_CodeEntitys[7].R},V={this.Listen_CodeEntitys[7].V}\r\n");
+                    this.ShowLogAsyn($"blockno=2写入PLC原始电芯数据：{sb.ToString()}");
                 }
                 return true;
             }
@@ -1884,6 +1973,7 @@ namespace AutoAssign.JPSEntity
         /// <param name="sMsg">消息内容</param>
         public void ShowErrAsyn(string sMsg)
         {
+            AppLogger.ShowErr(sMsg);
             ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowErr);
             try
             {
@@ -1906,6 +1996,7 @@ namespace AutoAssign.JPSEntity
         }
         public void ShowLogAsyn(string sMsg)
         {
+            AppLogger.ShowLog(sMsg);
             if (JPSConfig.ScannerLogSavetoDataBase)
             {
                 if (this._ScannerNo == 1)
@@ -2029,6 +2120,7 @@ namespace AutoAssign.JPSEntity
         public event TuopanPlanProgressCallBack TuopanPlanProgressNotice = null;
         public frmMain1 MyForm = null;
         public JpsOPC.OPCHelperResult _OPCHelperResult = null;
+        JpsOPC.OPCEntitys.YaChaEntity _YaChaData = null;
         /// <summary>
         /// 标识当前通讯是否中断状态
         /// </summary>
@@ -2166,7 +2258,7 @@ namespace AutoAssign.JPSEntity
                 }
                 if (this._State == JPSEnum.ResultStates.IsReadResult)
                 {
-                    this.ShowLogAsyn(string.Format("RunState:IsReadResult,休眠{0}毫秒后读取标识AT_ReadResult的值。", JPSConfig.DelayerMiilSecondsReadIsReadResult));
+                    //this.ShowLogAsyn(string.Format("RunState:IsReadResult,休眠{0}毫秒后读取标识AT_ReadResult的值。", JPSConfig.DelayerMiilSecondsReadIsReadResult));
                     Thread.Sleep(JPSConfig.DelayerMiilSecondsReadIsReadResult);
                     //此时实时读取P槽编号
                     if (!this.Listen_IsReadReusltNow()) continue;
@@ -2174,12 +2266,20 @@ namespace AutoAssign.JPSEntity
                 }
                 if (this._State == JPSEnum.ResultStates.ReadingPLCValue)
                 {
-                    this.ShowLogAsyn(string.Format("RunState:ReadingPLCValue，休眠{0}毫秒后读取结果值", JPSConfig.DelayerBeforReadResult));
+                   // this.ShowLogAsyn(string.Format("RunState:ReadingPLCValue，休眠{0}毫秒后读取结果值", JPSConfig.DelayerBeforReadResult));
                     Thread.Sleep(JPSConfig.DelayerBeforReadResult);
                     if (!Listen_GetReuslt())
                     {
                         this.SetInterrupt(true);
                         continue;
+                    }
+                    if(!Listen_GetYaChaReuslt())
+                    {
+                        Thread.Sleep(100);
+                        if (Listen_GetYaChaReuslt())
+                        {
+                            this.ShowLogAsyn($"压差连续两次失败，程序跳过压差");
+                        }
                     }
                     this.AddTime();
                     this._State = JPSEnum.ResultStates.SaveResult;//已经读取成功，可以复位了
@@ -2187,7 +2287,7 @@ namespace AutoAssign.JPSEntity
                 //这里改一下要先保存到数据库，然后再统计托盘下数量是否正确后才进行复位
                 if (this._State == JPSEnum.ResultStates.SaveResult)
                 {
-                    this.ShowLogAsyn("RunState:SaveResult");
+                   // this.ShowLogAsyn("RunState:SaveResult");
                     if (!Listen_SaveReuslt())
                     {
                         this.SetInterrupt(true);
@@ -2197,7 +2297,7 @@ namespace AutoAssign.JPSEntity
                 }
                 if (this._State == JPSEnum.ResultStates.Statistic)
                 {
-                    this.ShowLogAsyn("RunState:Statistic");
+                    //this.ShowLogAsyn("RunState:Statistic");
                     if (!this.Listen_Statistic())
                     {
                         this.SetInterrupt(true);
@@ -2207,12 +2307,13 @@ namespace AutoAssign.JPSEntity
                 }
                 if (this._State == JPSEnum.ResultStates.ResetAtFalse)
                 {
-                    this.ShowLogAsyn("RunState:ResetAtFalse");
+                    //this.ShowLogAsyn("RunState:ResetAtFalse");
                     if (!this.Listen_ResetAt_ReadResult())
                     {
                         this.SetInterrupt(true);
                         continue;
                     }
+                    this.Listen_ResetAt_ReadResult();//再重新写一次
                     this.ShowLogAsyn("已将AT_ReadResult设置为false，程序休眠" + JPSConfig.DelayerMillScdsAfterResultSaved + "毫秒。");
                     Thread.Sleep(JPSConfig.DelayerMillScdsAfterResultSaved);
                     this._State = JPSEnum.ResultStates.IsReadResult;//复位成功后，从头开始了
@@ -2294,7 +2395,28 @@ namespace AutoAssign.JPSEntity
                 this.ShowErrAsyn(string.Format("读取测试结果出错：{0}", strErr));
                 return false;
             }
-            this.ShowLogAsyn("成功读取测试结果。\r\n" + strErr);
+            this.ShowLogAsyn("成功读取测试结果：" + strErr);
+            return true;
+        }
+        private bool Listen_GetYaChaReuslt()
+        {
+            if (Debug.PLCResultReader.IsDebug)
+            {
+                return true;
+            }
+            string strErr;
+            if (this._OPCHelperResult == null)
+            {
+                this.ShowErrAsyn("结果集OPC对象为空，无法读取压差！");
+                return false;
+            }
+            if (_YaChaData == null) _YaChaData = new YaChaEntity();
+            if (!this._OPCHelperResult.GetYaChaResult(ref _YaChaData,out strErr))
+            {
+                this.ShowErrAsyn($"读取压差测试结果出错：{strErr}");
+                return false;
+            }
+            this.ShowLogAsyn($"成功读取压差测试结果：{Newtonsoft.Json.JsonConvert.SerializeObject(_YaChaData)}");
             return true;
         }
         public bool Listen_ResetAt_ReadResult()
@@ -2435,34 +2557,73 @@ namespace AutoAssign.JPSEntity
             int iBtyAddCount;
             try
             {
-                this.MyForm.BllDAL.SaveResult(this.MyForm._RealTable_Result
-                    , this._OPCHelperResult.Rt_Bat1Code.Value_String, this._OPCHelperResult.Rt_Bat1V.Value_Decimal, this._OPCHelperResult.Rt_Bat1Dz.Value_Decimal, iGrooveID1, this._OPCHelperResult.Rt_Bat1NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat2Code.Value_String, this._OPCHelperResult.Rt_Bat2V.Value_Decimal, this._OPCHelperResult.Rt_Bat2Dz.Value_Decimal, iGrooveID2, this._OPCHelperResult.Rt_Bat2NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat3Code.Value_String, this._OPCHelperResult.Rt_Bat3V.Value_Decimal, this._OPCHelperResult.Rt_Bat3Dz.Value_Decimal, iGrooveID3, this._OPCHelperResult.Rt_Bat3NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat4Code.Value_String, this._OPCHelperResult.Rt_Bat4V.Value_Decimal, this._OPCHelperResult.Rt_Bat4Dz.Value_Decimal, iGrooveID4, this._OPCHelperResult.Rt_Bat4NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat5Code.Value_String, this._OPCHelperResult.Rt_Bat5V.Value_Decimal, this._OPCHelperResult.Rt_Bat5Dz.Value_Decimal, iGrooveID5, this._OPCHelperResult.Rt_Bat5NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat6Code.Value_String, this._OPCHelperResult.Rt_Bat6V.Value_Decimal, this._OPCHelperResult.Rt_Bat6Dz.Value_Decimal, iGrooveID6, this._OPCHelperResult.Rt_Bat6NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat7Code.Value_String, this._OPCHelperResult.Rt_Bat7V.Value_Decimal, this._OPCHelperResult.Rt_Bat7Dz.Value_Decimal, iGrooveID7, this._OPCHelperResult.Rt_Bat7NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat8Code.Value_String, this._OPCHelperResult.Rt_Bat8V.Value_Decimal, this._OPCHelperResult.Rt_Bat8Dz.Value_Decimal, iGrooveID8, this._OPCHelperResult.Rt_Bat8NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat9Code.Value_String, this._OPCHelperResult.Rt_Bat9V.Value_Decimal, this._OPCHelperResult.Rt_Bat9Dz.Value_Decimal, iGrooveID9, this._OPCHelperResult.Rt_Bat9NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat10Code.Value_String, this._OPCHelperResult.Rt_Bat10V.Value_Decimal, this._OPCHelperResult.Rt_Bat10Dz.Value_Decimal, iGrooveID10, this._OPCHelperResult.Rt_Bat10NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat11Code.Value_String, this._OPCHelperResult.Rt_Bat11V.Value_Decimal, this._OPCHelperResult.Rt_Bat11Dz.Value_Decimal, iGrooveID11, this._OPCHelperResult.Rt_Bat11NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat12Code.Value_String, this._OPCHelperResult.Rt_Bat12V.Value_Decimal, this._OPCHelperResult.Rt_Bat12Dz.Value_Decimal, iGrooveID12, this._OPCHelperResult.Rt_Bat12NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat13Code.Value_String, this._OPCHelperResult.Rt_Bat13V.Value_Decimal, this._OPCHelperResult.Rt_Bat13Dz.Value_Decimal, iGrooveID13, this._OPCHelperResult.Rt_Bat13NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat14Code.Value_String, this._OPCHelperResult.Rt_Bat14V.Value_Decimal, this._OPCHelperResult.Rt_Bat14Dz.Value_Decimal, iGrooveID14, this._OPCHelperResult.Rt_Bat14NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat15Code.Value_String, this._OPCHelperResult.Rt_Bat15V.Value_Decimal, this._OPCHelperResult.Rt_Bat15Dz.Value_Decimal, iGrooveID15, this._OPCHelperResult.Rt_Bat15NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat16Code.Value_String, this._OPCHelperResult.Rt_Bat16V.Value_Decimal, this._OPCHelperResult.Rt_Bat16Dz.Value_Decimal, iGrooveID16, this._OPCHelperResult.Rt_Bat16NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat17Code.Value_String, this._OPCHelperResult.Rt_Bat17V.Value_Decimal, this._OPCHelperResult.Rt_Bat17Dz.Value_Decimal, iGrooveID17, this._OPCHelperResult.Rt_Bat17NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat18Code.Value_String, this._OPCHelperResult.Rt_Bat18V.Value_Decimal, this._OPCHelperResult.Rt_Bat18Dz.Value_Decimal, iGrooveID18, this._OPCHelperResult.Rt_Bat18NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat19Code.Value_String, this._OPCHelperResult.Rt_Bat19V.Value_Decimal, this._OPCHelperResult.Rt_Bat19Dz.Value_Decimal, iGrooveID19, this._OPCHelperResult.Rt_Bat19NGCase.Value_Short
-                    , this._OPCHelperResult.Rt_Bat20Code.Value_String, this._OPCHelperResult.Rt_Bat20V.Value_Decimal, this._OPCHelperResult.Rt_Bat20Dz.Value_Decimal, iGrooveID20, this._OPCHelperResult.Rt_Bat20NGCase.Value_Short
-                    , sTuoPanCode1, sTuoPanCode2, sTuoPanCode3, sTuoPanCode4, sTuoPanCode5, sTuoPanCode6, sTuoPanCode7, sTuoPanCode8, sTuoPanCode9, sTuoPanCode10,
-                    sTuoPanCode11, sTuoPanCode12, sTuoPanCode13, sTuoPanCode14, sTuoPanCode15, sTuoPanCode16, sTuoPanCode17, sTuoPanCode18, sTuoPanCode19, sTuoPanCode20
-                    , iCaoIndex1, iCaoIndex2, iCaoIndex3, iCaoIndex4, iCaoIndex5, iCaoIndex6, iCaoIndex7, iCaoIndex8, iCaoIndex9, iCaoIndex10,
-                    iCaoIndex11, iCaoIndex12, iCaoIndex13, iCaoIndex14, iCaoIndex15, iCaoIndex16, iCaoIndex17, iCaoIndex18, iCaoIndex19, iCaoIndex20
-                    , iQuality1, iQuality2, iQuality3, iQuality4, iQuality5, iQuality6, iQuality7, iQuality8, iQuality9, iQuality10,
-                    iQuality11, iQuality12, iQuality13, iQuality14, iQuality15, iQuality16, iQuality17, iQuality18, iQuality19, iQuality20
-                    , out iBtyAddCount);
+                if (this.SwitchMode == SwitchModes.分AB档)
+                {
+                    #region 分档的调用
+                    this.MyForm.BllDAL.NanJingZB_SaveResultAB(this.MyForm._RealTable_Result
+                        , this._OPCHelperResult.Rt_Bat1Code.Value_String, this._OPCHelperResult.Rt_Bat1V.Value_Decimal, this._OPCHelperResult.Rt_Bat1Dz.Value_Decimal, iGrooveID1, this._OPCHelperResult.Rt_Bat1NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat2Code.Value_String, this._OPCHelperResult.Rt_Bat2V.Value_Decimal, this._OPCHelperResult.Rt_Bat2Dz.Value_Decimal, iGrooveID2, this._OPCHelperResult.Rt_Bat2NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat3Code.Value_String, this._OPCHelperResult.Rt_Bat3V.Value_Decimal, this._OPCHelperResult.Rt_Bat3Dz.Value_Decimal, iGrooveID3, this._OPCHelperResult.Rt_Bat3NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat4Code.Value_String, this._OPCHelperResult.Rt_Bat4V.Value_Decimal, this._OPCHelperResult.Rt_Bat4Dz.Value_Decimal, iGrooveID4, this._OPCHelperResult.Rt_Bat4NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat5Code.Value_String, this._OPCHelperResult.Rt_Bat5V.Value_Decimal, this._OPCHelperResult.Rt_Bat5Dz.Value_Decimal, iGrooveID5, this._OPCHelperResult.Rt_Bat5NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat6Code.Value_String, this._OPCHelperResult.Rt_Bat6V.Value_Decimal, this._OPCHelperResult.Rt_Bat6Dz.Value_Decimal, iGrooveID6, this._OPCHelperResult.Rt_Bat6NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat7Code.Value_String, this._OPCHelperResult.Rt_Bat7V.Value_Decimal, this._OPCHelperResult.Rt_Bat7Dz.Value_Decimal, iGrooveID7, this._OPCHelperResult.Rt_Bat7NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat8Code.Value_String, this._OPCHelperResult.Rt_Bat8V.Value_Decimal, this._OPCHelperResult.Rt_Bat8Dz.Value_Decimal, iGrooveID8, this._OPCHelperResult.Rt_Bat8NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat9Code.Value_String, this._OPCHelperResult.Rt_Bat9V.Value_Decimal, this._OPCHelperResult.Rt_Bat9Dz.Value_Decimal, iGrooveID9, this._OPCHelperResult.Rt_Bat9NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat10Code.Value_String, this._OPCHelperResult.Rt_Bat10V.Value_Decimal, this._OPCHelperResult.Rt_Bat10Dz.Value_Decimal, iGrooveID10, this._OPCHelperResult.Rt_Bat10NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat11Code.Value_String, this._OPCHelperResult.Rt_Bat11V.Value_Decimal, this._OPCHelperResult.Rt_Bat11Dz.Value_Decimal, iGrooveID11, this._OPCHelperResult.Rt_Bat11NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat12Code.Value_String, this._OPCHelperResult.Rt_Bat12V.Value_Decimal, this._OPCHelperResult.Rt_Bat12Dz.Value_Decimal, iGrooveID12, this._OPCHelperResult.Rt_Bat12NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat13Code.Value_String, this._OPCHelperResult.Rt_Bat13V.Value_Decimal, this._OPCHelperResult.Rt_Bat13Dz.Value_Decimal, iGrooveID13, this._OPCHelperResult.Rt_Bat13NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat14Code.Value_String, this._OPCHelperResult.Rt_Bat14V.Value_Decimal, this._OPCHelperResult.Rt_Bat14Dz.Value_Decimal, iGrooveID14, this._OPCHelperResult.Rt_Bat14NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat15Code.Value_String, this._OPCHelperResult.Rt_Bat15V.Value_Decimal, this._OPCHelperResult.Rt_Bat15Dz.Value_Decimal, iGrooveID15, this._OPCHelperResult.Rt_Bat15NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat16Code.Value_String, this._OPCHelperResult.Rt_Bat16V.Value_Decimal, this._OPCHelperResult.Rt_Bat16Dz.Value_Decimal, iGrooveID16, this._OPCHelperResult.Rt_Bat16NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat17Code.Value_String, this._OPCHelperResult.Rt_Bat17V.Value_Decimal, this._OPCHelperResult.Rt_Bat17Dz.Value_Decimal, iGrooveID17, this._OPCHelperResult.Rt_Bat17NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat18Code.Value_String, this._OPCHelperResult.Rt_Bat18V.Value_Decimal, this._OPCHelperResult.Rt_Bat18Dz.Value_Decimal, iGrooveID18, this._OPCHelperResult.Rt_Bat18NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat19Code.Value_String, this._OPCHelperResult.Rt_Bat19V.Value_Decimal, this._OPCHelperResult.Rt_Bat19Dz.Value_Decimal, iGrooveID19, this._OPCHelperResult.Rt_Bat19NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat20Code.Value_String, this._OPCHelperResult.Rt_Bat20V.Value_Decimal, this._OPCHelperResult.Rt_Bat20Dz.Value_Decimal, iGrooveID20, this._OPCHelperResult.Rt_Bat20NGCase.Value_Short
+                        , sTuoPanCode1, sTuoPanCode2, sTuoPanCode3, sTuoPanCode4, sTuoPanCode5, sTuoPanCode6, sTuoPanCode7, sTuoPanCode8, sTuoPanCode9, sTuoPanCode10,
+                        sTuoPanCode11, sTuoPanCode12, sTuoPanCode13, sTuoPanCode14, sTuoPanCode15, sTuoPanCode16, sTuoPanCode17, sTuoPanCode18, sTuoPanCode19, sTuoPanCode20
+                        , iCaoIndex1, iCaoIndex2, iCaoIndex3, iCaoIndex4, iCaoIndex5, iCaoIndex6, iCaoIndex7, iCaoIndex8, iCaoIndex9, iCaoIndex10,
+                        iCaoIndex11, iCaoIndex12, iCaoIndex13, iCaoIndex14, iCaoIndex15, iCaoIndex16, iCaoIndex17, iCaoIndex18, iCaoIndex19, iCaoIndex20
+                        , iQuality1, iQuality2, iQuality3, iQuality4, iQuality5, iQuality6, iQuality7, iQuality8, iQuality9, iQuality10,
+                        iQuality11, iQuality12, iQuality13, iQuality14, iQuality15, iQuality16, iQuality17, iQuality18, iQuality19, iQuality20
+                        , out iBtyAddCount, this._YaChaData);
+                    #endregion
+                }
+                else
+                {
+                    #region 分档的调用
+                    this.MyForm.BllDAL.SaveResult(this.MyForm._RealTable_Result
+                        , this._OPCHelperResult.Rt_Bat1Code.Value_String, this._OPCHelperResult.Rt_Bat1V.Value_Decimal, this._OPCHelperResult.Rt_Bat1Dz.Value_Decimal, iGrooveID1, this._OPCHelperResult.Rt_Bat1NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat2Code.Value_String, this._OPCHelperResult.Rt_Bat2V.Value_Decimal, this._OPCHelperResult.Rt_Bat2Dz.Value_Decimal, iGrooveID2, this._OPCHelperResult.Rt_Bat2NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat3Code.Value_String, this._OPCHelperResult.Rt_Bat3V.Value_Decimal, this._OPCHelperResult.Rt_Bat3Dz.Value_Decimal, iGrooveID3, this._OPCHelperResult.Rt_Bat3NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat4Code.Value_String, this._OPCHelperResult.Rt_Bat4V.Value_Decimal, this._OPCHelperResult.Rt_Bat4Dz.Value_Decimal, iGrooveID4, this._OPCHelperResult.Rt_Bat4NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat5Code.Value_String, this._OPCHelperResult.Rt_Bat5V.Value_Decimal, this._OPCHelperResult.Rt_Bat5Dz.Value_Decimal, iGrooveID5, this._OPCHelperResult.Rt_Bat5NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat6Code.Value_String, this._OPCHelperResult.Rt_Bat6V.Value_Decimal, this._OPCHelperResult.Rt_Bat6Dz.Value_Decimal, iGrooveID6, this._OPCHelperResult.Rt_Bat6NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat7Code.Value_String, this._OPCHelperResult.Rt_Bat7V.Value_Decimal, this._OPCHelperResult.Rt_Bat7Dz.Value_Decimal, iGrooveID7, this._OPCHelperResult.Rt_Bat7NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat8Code.Value_String, this._OPCHelperResult.Rt_Bat8V.Value_Decimal, this._OPCHelperResult.Rt_Bat8Dz.Value_Decimal, iGrooveID8, this._OPCHelperResult.Rt_Bat8NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat9Code.Value_String, this._OPCHelperResult.Rt_Bat9V.Value_Decimal, this._OPCHelperResult.Rt_Bat9Dz.Value_Decimal, iGrooveID9, this._OPCHelperResult.Rt_Bat9NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat10Code.Value_String, this._OPCHelperResult.Rt_Bat10V.Value_Decimal, this._OPCHelperResult.Rt_Bat10Dz.Value_Decimal, iGrooveID10, this._OPCHelperResult.Rt_Bat10NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat11Code.Value_String, this._OPCHelperResult.Rt_Bat11V.Value_Decimal, this._OPCHelperResult.Rt_Bat11Dz.Value_Decimal, iGrooveID11, this._OPCHelperResult.Rt_Bat11NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat12Code.Value_String, this._OPCHelperResult.Rt_Bat12V.Value_Decimal, this._OPCHelperResult.Rt_Bat12Dz.Value_Decimal, iGrooveID12, this._OPCHelperResult.Rt_Bat12NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat13Code.Value_String, this._OPCHelperResult.Rt_Bat13V.Value_Decimal, this._OPCHelperResult.Rt_Bat13Dz.Value_Decimal, iGrooveID13, this._OPCHelperResult.Rt_Bat13NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat14Code.Value_String, this._OPCHelperResult.Rt_Bat14V.Value_Decimal, this._OPCHelperResult.Rt_Bat14Dz.Value_Decimal, iGrooveID14, this._OPCHelperResult.Rt_Bat14NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat15Code.Value_String, this._OPCHelperResult.Rt_Bat15V.Value_Decimal, this._OPCHelperResult.Rt_Bat15Dz.Value_Decimal, iGrooveID15, this._OPCHelperResult.Rt_Bat15NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat16Code.Value_String, this._OPCHelperResult.Rt_Bat16V.Value_Decimal, this._OPCHelperResult.Rt_Bat16Dz.Value_Decimal, iGrooveID16, this._OPCHelperResult.Rt_Bat16NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat17Code.Value_String, this._OPCHelperResult.Rt_Bat17V.Value_Decimal, this._OPCHelperResult.Rt_Bat17Dz.Value_Decimal, iGrooveID17, this._OPCHelperResult.Rt_Bat17NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat18Code.Value_String, this._OPCHelperResult.Rt_Bat18V.Value_Decimal, this._OPCHelperResult.Rt_Bat18Dz.Value_Decimal, iGrooveID18, this._OPCHelperResult.Rt_Bat18NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat19Code.Value_String, this._OPCHelperResult.Rt_Bat19V.Value_Decimal, this._OPCHelperResult.Rt_Bat19Dz.Value_Decimal, iGrooveID19, this._OPCHelperResult.Rt_Bat19NGCase.Value_Short
+                        , this._OPCHelperResult.Rt_Bat20Code.Value_String, this._OPCHelperResult.Rt_Bat20V.Value_Decimal, this._OPCHelperResult.Rt_Bat20Dz.Value_Decimal, iGrooveID20, this._OPCHelperResult.Rt_Bat20NGCase.Value_Short
+                        , sTuoPanCode1, sTuoPanCode2, sTuoPanCode3, sTuoPanCode4, sTuoPanCode5, sTuoPanCode6, sTuoPanCode7, sTuoPanCode8, sTuoPanCode9, sTuoPanCode10,
+                        sTuoPanCode11, sTuoPanCode12, sTuoPanCode13, sTuoPanCode14, sTuoPanCode15, sTuoPanCode16, sTuoPanCode17, sTuoPanCode18, sTuoPanCode19, sTuoPanCode20
+                        , iCaoIndex1, iCaoIndex2, iCaoIndex3, iCaoIndex4, iCaoIndex5, iCaoIndex6, iCaoIndex7, iCaoIndex8, iCaoIndex9, iCaoIndex10,
+                        iCaoIndex11, iCaoIndex12, iCaoIndex13, iCaoIndex14, iCaoIndex15, iCaoIndex16, iCaoIndex17, iCaoIndex18, iCaoIndex19, iCaoIndex20
+                        , iQuality1, iQuality2, iQuality3, iQuality4, iQuality5, iQuality6, iQuality7, iQuality8, iQuality9, iQuality10,
+                        iQuality11, iQuality12, iQuality13, iQuality14, iQuality15, iQuality16, iQuality17, iQuality18, iQuality19, iQuality20
+                        , out iBtyAddCount);
+                    #endregion
+                }
+
             }
             catch (Exception ex)
             {
@@ -2680,6 +2841,30 @@ namespace AutoAssign.JPSEntity
                     if (drsSn.Length > 0)
                         data20.SN = drsSn[0]["SN"].ToString();
                 }
+                /*
+                if(this.SwitchMode==SwitchModes.分AB档)
+                {
+                    data1.SetSwitchModeCaoIndex();
+                    data2.SetSwitchModeCaoIndex();
+                    data3.SetSwitchModeCaoIndex();
+                    data4.SetSwitchModeCaoIndex();
+                    data5.SetSwitchModeCaoIndex();
+                    data6.SetSwitchModeCaoIndex();
+                    data7.SetSwitchModeCaoIndex();
+                    data8.SetSwitchModeCaoIndex();
+                    data9.SetSwitchModeCaoIndex();
+                    data10.SetSwitchModeCaoIndex();
+                    data11.SetSwitchModeCaoIndex();
+                    data12.SetSwitchModeCaoIndex();
+                    data13.SetSwitchModeCaoIndex();
+                    data14.SetSwitchModeCaoIndex();
+                    data15.SetSwitchModeCaoIndex();
+                    data16.SetSwitchModeCaoIndex();
+                    data17.SetSwitchModeCaoIndex();
+                    data18.SetSwitchModeCaoIndex();
+                    data19.SetSwitchModeCaoIndex();
+                    data20.SetSwitchModeCaoIndex();
+                }*/
                 this.RealDataShowNotice(data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18, data19, data20);
                 #endregion
             }
@@ -2735,14 +2920,17 @@ namespace AutoAssign.JPSEntity
                 iQuality = 0;
                 return true;
             }
-            if (Rt_BatCao.Value_Short > 18)
+            if (this.SwitchMode != SwitchModes.分AB档)
             {
-                iGrooveID = 0;
-                sTuoPanCode = string.Empty;
-                sErr = string.Format("结果数据槽地址:{0}的值{1}不是预期的1~18！", Rt_BatCao.TagName, Rt_BatCao.Value_Short);
-                iCaoIndex = 0;
-                iQuality = 0;
-                return false;
+                if (Rt_BatCao.Value_Short > 18)
+                {
+                    iGrooveID = 0;
+                    sTuoPanCode = string.Empty;
+                    sErr = string.Format("结果数据槽地址:{0}的值{1}不是预期的1~18！", Rt_BatCao.TagName, Rt_BatCao.Value_Short);
+                    iCaoIndex = 0;
+                    iQuality = 0;
+                    return false;
+                }
             }
             iCaoIndex = Rt_BatCao.Value_Short;
             GrooveData groove = this.FindGroove(iCaoIndex);
@@ -3435,6 +3623,10 @@ namespace AutoAssign.JPSEntity
         
         private GrooveData FindGroove(short iCaoIndex)
         {
+            if(this.SwitchMode==SwitchModes.分AB档)
+            {
+                iCaoIndex = (short)(iCaoIndex / 10);
+            }
             if (iCaoIndex == 1) return this.Groove1;
             if (iCaoIndex == 2) return this.Groove2;
             if (iCaoIndex == 3) return this.Groove3;
@@ -3464,14 +3656,15 @@ namespace AutoAssign.JPSEntity
         /// <param name="sMsg">消息内容</param>
         public void ShowErrAsyn(string sMsg)
         {
-            try
-            {
-                BLLDAL.Testing.SaveResultLog("结果集执行出错：" + sMsg);
-            }
-            catch (Exception ex)
-            {
-                this.ShowErrAsyn(ex.Message);
-            }
+            AppLogger.ShowErr(sMsg);
+            //try
+            //{
+            //    BLLDAL.Testing.SaveResultLog("结果集执行出错：" + sMsg);
+            //}
+            //catch (Exception ex)
+            //{
+            //    this.ShowErrAsyn(ex.Message);
+            //}
             ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowErr);
             try
             {
@@ -3494,28 +3687,15 @@ namespace AutoAssign.JPSEntity
         }
         public void ShowLogAsyn(string sMsg)
         {
-            if (JPSConfig.ResultLogSavetoDataBase)
+            AppLogger.ShowLog(sMsg);
+            ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowLog);
+            try
             {
-                try
-                {
-                    BLLDAL.Testing.SaveResultLog(sMsg);
-                }
-                catch (Exception ex)
-                {
-                    this.ShowErrAsyn(ex.Message);
-                }
+                this.MyForm.Invoke(cb, new object[1] { sMsg });
             }
-            else
+            catch (Exception ex)
             {
-                ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowLog);
-                try
-                {
-                    this.MyForm.Invoke(cb, new object[1] { sMsg });
-                }
-                catch (Exception ex)
-                {
-                    return;
-                }
+                return;
             }
             //ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowLog);
             //try
@@ -3612,6 +3792,10 @@ namespace AutoAssign.JPSEntity
             this.DianZu = decDianZu;
             this.V = decV;
             this.TestIndex = iTestIndex;
+        }
+        public void SetSwitchModeCaoIndex()
+        {
+            this.CaoIndex = (short)(this.CaoIndex / 10);
         }
     }
 
@@ -4696,6 +4880,7 @@ namespace AutoAssign.JPSEntity
         /// <param name="sMsg">消息内容</param>
         public void ShowErrAsyn(string sMsg)
         {
+            AppLogger.ShowErr(sMsg);
             ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowErr);
             try
             {
@@ -4718,6 +4903,7 @@ namespace AutoAssign.JPSEntity
         }
         public void ShowLogAsyn(string sMsg)
         {
+            AppLogger.ShowLog(sMsg);
             ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowLog);
             try
             {
@@ -5883,10 +6069,12 @@ namespace AutoAssign.JPSEntity
         /// <param name="sMsg">消息内容</param>
         public void ShowErrAsyn(string sMsg)
         {
+            AppLogger.ShowErr(sMsg);
             ShowLogAsyn("Error:" + sMsg);
         }
         public void ShowLogAsyn(string sMsg)
         {
+            AppLogger.ShowLog(sMsg);
             ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowLog);
             try
             {
@@ -6146,10 +6334,12 @@ namespace AutoAssign.JPSEntity
         /// <param name="sMsg">消息内容</param>
         public void ShowErrAsyn(string sMsg)
         {
+            AppLogger.ShowErr(sMsg);
             ShowLogAsyn("Error:" + sMsg);
         }
         public void ShowLogAsyn(string sMsg)
         {
+            AppLogger.ShowLog(sMsg);
             ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowLog);
             try
             {
@@ -6524,6 +6714,7 @@ namespace AutoAssign.JPSEntity
         /// <param name="sMsg">消息内容</param>
         public void ShowErrAsyn(string sMsg)
         {
+            AppLogger.ShowErr(sMsg);
             ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowErr);
             try
             {
@@ -6546,6 +6737,7 @@ namespace AutoAssign.JPSEntity
         }
         public void ShowLogAsyn(string sMsg)
         {
+            AppLogger.ShowLog(sMsg);
             ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowLog);
             try
             {
@@ -7108,7 +7300,7 @@ namespace AutoAssign.JPSEntity
         }
         #endregion
         #region 消息
-        public bool IsShowLog = false;
+        public bool IsShowLog = true;
         public bool IsShowLog_ReadAll = false;
         /// <summary>
         /// 异步消息显示
@@ -7117,6 +7309,7 @@ namespace AutoAssign.JPSEntity
         public void ShowErrAsyn(string sMsg)
         {
             this.SetInterrupt(true);
+            AppLogger.ShowErr(sMsg);
             ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowErr);
             try
             {
@@ -7133,6 +7326,7 @@ namespace AutoAssign.JPSEntity
         }
         public void ShowLogAsyn(string sMsg)
         {
+            AppLogger.ShowLog(sMsg);
             ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowLog);
             try
             {
@@ -7454,6 +7648,7 @@ namespace AutoAssign.JPSEntity
         public void ShowErrAsyn(string sMsg)
         {
             this.SetInterrupt(true);
+            AppLogger.ShowErr(sMsg);
             ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowErr);
             try
             {
@@ -7471,6 +7666,7 @@ namespace AutoAssign.JPSEntity
         }
         public void ShowLogAsyn(string sMsg)
         {
+            AppLogger.ShowLog(sMsg);
             ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowLog);
             try
             {
@@ -7708,6 +7904,7 @@ namespace AutoAssign.JPSEntity
                 this._StatisticControler.StatisticUnQualityRateFinisehdNotice += _StatisticControler_StatisticUnQualityRateFinisehdNotice;
                 this._StatisticControler.SnStatisticReadedNotice += _StatisticControler_SnStatisticReadedNotice;
             }
+            AppLogger.ShowLog($"程序已启动，对象OPCHelperBat内容({Newtonsoft.Json.JsonConvert.SerializeObject(this._OPCHelperBat)})");
             this.Actived = true;
             return true;
         }

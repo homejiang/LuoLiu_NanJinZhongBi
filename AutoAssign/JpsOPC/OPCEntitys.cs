@@ -57,10 +57,10 @@ namespace JpsOPC.OPCEntitys
         public float Yc14 = 0F;
         public float Yc15 = 0F;
         public float Yc16 = 0F;
-        public float Yc17 = 0F;
-        public float Yc18 = 0F;
-        public float Yc19 = 0F;
-        public float Yc20 = 0F;
+        //public float Yc17 = 0F;
+        //public float Yc18 = 0F;
+        //public float Yc19 = 0F;
+        //public float Yc20 = 0F;
     }
     public class NanJingZB_SJRVRange
     {

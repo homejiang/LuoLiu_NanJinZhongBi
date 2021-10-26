@@ -32,7 +32,7 @@ namespace AutoAssign
         /// <summary>
         /// 电芯结果数据读取完成后等待多少时间,作业和DelayerMillScdsAfterBatDataWriteIntoOPC一样，单位：毫秒
         /// </summary>
-        public static int DelayerMillScdsAfterResultSaved = 300;
+        public static int DelayerMillScdsAfterResultSaved = 700;//2020-10-23从300改成700，因为发现后面还是会读取到结果标识为true的情况
         /// <summary>
         /// 主界面底部状态刷新频率，单位：毫秒
         /// </summary>

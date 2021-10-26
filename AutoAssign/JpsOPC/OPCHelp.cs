@@ -27,7 +27,7 @@ namespace JpsOPC
         public bool InitSucessfully = false;
     }
     
-    public class OPCHelperNanJingZhongBi : OPCHelperBase
+    public class OPCHelperNanJingZhongBi : OPCHelperSJBase
     {
         OPCServer _Server = null;
         OPCGroups _ServerGroups = null;
@@ -1300,11 +1300,11 @@ namespace JpsOPC
             }
             //解析数值
             int iIndex = 1;
-            object objValue;
-            object objQItem;
+            
             decimal decValue;
-            objValue = values.GetValue(iIndex);
-            objQItem = arrQ.GetValue(iIndex);
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.SJ_Resut1 = decValue;
+            iIndex++;
             if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
             data.SJ_Resut2 = decValue;
             iIndex++;
@@ -2719,6 +2719,25 @@ namespace JpsOPC
         public JpsOPC.MyItemValue Rt_Bat20Cao = null;
         public JpsOPC.MyItemValue Rt_Bat20NGCase = null;
         #endregion
+        #region 南京中比的
+        //通道的压差
+        public JpsOPC.MyItemValue Exp_Yc1 = null;
+        public JpsOPC.MyItemValue Exp_Yc2 = null;
+        public JpsOPC.MyItemValue Exp_Yc3 = null;
+        public JpsOPC.MyItemValue Exp_Yc4 = null;
+        public JpsOPC.MyItemValue Exp_Yc5 = null;
+        public JpsOPC.MyItemValue Exp_Yc6 = null;
+        public JpsOPC.MyItemValue Exp_Yc7 = null;
+        public JpsOPC.MyItemValue Exp_Yc8 = null;
+        public JpsOPC.MyItemValue Exp_Yc9 = null;
+        public JpsOPC.MyItemValue Exp_Yc10 = null;
+        public JpsOPC.MyItemValue Exp_Yc11 = null;
+        public JpsOPC.MyItemValue Exp_Yc12 = null;
+        public JpsOPC.MyItemValue Exp_Yc13 = null;
+        public JpsOPC.MyItemValue Exp_Yc14 = null;
+        public JpsOPC.MyItemValue Exp_Yc15 = null;
+        public JpsOPC.MyItemValue Exp_Yc16 = null;
+        #endregion
         #region 公共函数
         public bool InitServer(out string sErr)
         {
@@ -2960,6 +2979,39 @@ namespace JpsOPC
                     this.Rt_Bat20Cao.InitItem();
                 if (this.Rt_Bat20NGCase != null)
                     this.Rt_Bat20NGCase.InitItem();
+                //南京中比的压差
+                if (this.Exp_Yc1 != null)
+                    this.Exp_Yc1.InitItem();
+                if (this.Exp_Yc2 != null)
+                    this.Exp_Yc2.InitItem();
+                if (this.Exp_Yc3 != null)
+                    this.Exp_Yc3.InitItem();
+                if (this.Exp_Yc4 != null)
+                    this.Exp_Yc4.InitItem();
+                if (this.Exp_Yc5 != null)
+                    this.Exp_Yc5.InitItem();
+                if (this.Exp_Yc6 != null)
+                    this.Exp_Yc6.InitItem();
+                if (this.Exp_Yc7 != null)
+                    this.Exp_Yc7.InitItem();
+                if (this.Exp_Yc8 != null)
+                    this.Exp_Yc8.InitItem();
+                if (this.Exp_Yc9 != null)
+                    this.Exp_Yc9.InitItem();
+                if (this.Exp_Yc10 != null)
+                    this.Exp_Yc10.InitItem();
+                if (this.Exp_Yc11 != null)
+                    this.Exp_Yc11.InitItem();
+                if (this.Exp_Yc12 != null)
+                    this.Exp_Yc12.InitItem();
+                if (this.Exp_Yc13 != null)
+                    this.Exp_Yc13.InitItem();
+                if (this.Exp_Yc14 != null)
+                    this.Exp_Yc14.InitItem();
+                if (this.Exp_Yc15 != null)
+                    this.Exp_Yc15.InitItem();
+                if (this.Exp_Yc16 != null)
+                    this.Exp_Yc16.InitItem();
             }
             //添加组
             if (_ServerGroups == null)
@@ -3202,7 +3254,39 @@ namespace JpsOPC
                 Rt_Bat20Cao = new MyItemValue(OPCItemTitle + "Rt_Bat20Cao");
             if (this.Rt_Bat20NGCase == null)
                 Rt_Bat20NGCase = new MyItemValue(OPCItemTitle + "Rt_Bat20NGCase");
-
+            //南京中比压差
+            if (this.Exp_Yc1 == null)
+                Exp_Yc1 = new MyItemValue(OPCItemTitle + "Exp_Yc1");
+            if (this.Exp_Yc2 == null)
+                Exp_Yc2 = new MyItemValue(OPCItemTitle + "Exp_Yc2");
+            if (this.Exp_Yc3 == null)
+                Exp_Yc3 = new MyItemValue(OPCItemTitle + "Exp_Yc3");
+            if (this.Exp_Yc4 == null)
+                Exp_Yc4 = new MyItemValue(OPCItemTitle + "Exp_Yc4");
+            if (this.Exp_Yc5 == null)
+                Exp_Yc5 = new MyItemValue(OPCItemTitle + "Exp_Yc5");
+            if (this.Exp_Yc6 == null)
+                Exp_Yc6 = new MyItemValue(OPCItemTitle + "Exp_Yc6");
+            if (this.Exp_Yc7 == null)
+                Exp_Yc7 = new MyItemValue(OPCItemTitle + "Exp_Yc7");
+            if (this.Exp_Yc8 == null)
+                Exp_Yc8 = new MyItemValue(OPCItemTitle + "Exp_Yc8");
+            if (this.Exp_Yc9 == null)
+                Exp_Yc9 = new MyItemValue(OPCItemTitle + "Exp_Yc9");
+            if (this.Exp_Yc10 == null)
+                Exp_Yc10 = new MyItemValue(OPCItemTitle + "Exp_Yc10");
+            if (this.Exp_Yc11 == null)
+                Exp_Yc11 = new MyItemValue(OPCItemTitle + "Exp_Yc11");
+            if (this.Exp_Yc12 == null)
+                Exp_Yc12 = new MyItemValue(OPCItemTitle + "Exp_Yc12");
+            if (this.Exp_Yc13 == null)
+                Exp_Yc13 = new MyItemValue(OPCItemTitle + "Exp_Yc13");
+            if (this.Exp_Yc14 == null)
+                Exp_Yc14 = new MyItemValue(OPCItemTitle + "Exp_Yc14");
+            if (this.Exp_Yc15 == null)
+                Exp_Yc15 = new MyItemValue(OPCItemTitle + "Exp_Yc15");
+            if (this.Exp_Yc16 == null)
+                Exp_Yc16 = new MyItemValue(OPCItemTitle + "Exp_Yc16");
 
             //在OPCGroup中添加IOPCItem
             if (this._MyGroup_DoNow == null)
@@ -3739,7 +3823,86 @@ namespace JpsOPC
             {
                 return false;
             }
+            //压差
+            if (!InitMyItems_AddItem(this.Exp_Yc1, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
 
+            if (!InitMyItems_AddItem(this.Exp_Yc2, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc3, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc4, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc5, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc6, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc7, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc8, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc9, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc10, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc11, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc12, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc13, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc14, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc15, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
+
+            if (!InitMyItems_AddItem(this.Exp_Yc16, this._MyGroup_Result, false, out sErr))
+            {
+                return false;
+            }
             return true;
         }
         private bool InitMyItems_AddItem(MyItemValue myItem, OPCGroup targetGroup, bool saveItem, out string sErr)
@@ -4052,45 +4215,45 @@ namespace JpsOPC
             //解析数值
             int iIndex = 1;//注意Arrary的GetValue序号从1开始，这与c#中不一样
             if (!this.SetResult(this.Rt_Bat1Code, this.Rt_Bat1V, this.Rt_Bat1Dz, this.Rt_Bat1Cao, this.Rt_Bat1NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat1Code:{0},Rt_Bat1V:{1},Rt_Bat1Dz{2},Rt_Bat1Cao:{3}\r\n", Rt_Bat1Code.Value_String, Rt_Bat1V.Value_Decimal, Rt_Bat1Dz.Value_Decimal, Rt_Bat1Cao.Value_Short);
+            sErr += string.Format("Rt_Bat1Code:{0},Rt_Bat1V:{1},Rt_Bat1Dz{2},Rt_Bat1Cao:{3}\r\n", Rt_Bat1Code.Value_String, Rt_Bat1V.Value_Decimal, Rt_Bat1Dz.Value_Decimal, Rt_Bat1Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat2Code, this.Rt_Bat2V, this.Rt_Bat2Dz, this.Rt_Bat2Cao, this.Rt_Bat2NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat2Code:{0},Rt_Bat2V:{1},Rt_Bat2Dz{2},Rt_Bat2Cao:{3}\r\n", Rt_Bat2Code.Value_String, Rt_Bat2V.Value_Decimal, Rt_Bat2Dz.Value_Decimal, Rt_Bat2Cao.Value_Short);
+            sErr += string.Format("Rt_Bat2Code:{0},Rt_Bat2V:{1},Rt_Bat2Dz{2},Rt_Bat2Cao:{3}\r\n", Rt_Bat2Code.Value_String, Rt_Bat2V.Value_Decimal, Rt_Bat2Dz.Value_Decimal, Rt_Bat2Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat3Code, this.Rt_Bat3V, this.Rt_Bat3Dz, this.Rt_Bat3Cao, this.Rt_Bat3NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat3Code:{0},Rt_Bat3V:{1},Rt_Bat3Dz{2},Rt_Bat3Cao:{3}\r\n", Rt_Bat3Code.Value_String, Rt_Bat3V.Value_Decimal, Rt_Bat3Dz.Value_Decimal, Rt_Bat3Cao.Value_Short);
+            sErr += string.Format("Rt_Bat3Code:{0},Rt_Bat3V:{1},Rt_Bat3Dz{2},Rt_Bat3Cao:{3}\r\n", Rt_Bat3Code.Value_String, Rt_Bat3V.Value_Decimal, Rt_Bat3Dz.Value_Decimal, Rt_Bat3Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat4Code, this.Rt_Bat4V, this.Rt_Bat4Dz, this.Rt_Bat4Cao, this.Rt_Bat4NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat4Code:{0},Rt_Bat4V:{1},Rt_Bat4Dz{2},Rt_Bat4Cao:{3}\r\n", Rt_Bat4Code.Value_String, Rt_Bat4V.Value_Decimal, Rt_Bat4Dz.Value_Decimal, Rt_Bat4Cao.Value_Short);
+            sErr += string.Format("Rt_Bat4Code:{0},Rt_Bat4V:{1},Rt_Bat4Dz{2},Rt_Bat4Cao:{3}\r\n", Rt_Bat4Code.Value_String, Rt_Bat4V.Value_Decimal, Rt_Bat4Dz.Value_Decimal, Rt_Bat4Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat5Code, this.Rt_Bat5V, this.Rt_Bat5Dz, this.Rt_Bat5Cao, this.Rt_Bat5NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat5Code:{0},Rt_Bat5V:{1},Rt_Bat5Dz{2},Rt_Bat5Cao:{3}\r\n", Rt_Bat5Code.Value_String, Rt_Bat5V.Value_Decimal, Rt_Bat5Dz.Value_Decimal, Rt_Bat5Cao.Value_Short);
+            sErr += string.Format("Rt_Bat5Code:{0},Rt_Bat5V:{1},Rt_Bat5Dz{2},Rt_Bat5Cao:{3}\r\n", Rt_Bat5Code.Value_String, Rt_Bat5V.Value_Decimal, Rt_Bat5Dz.Value_Decimal, Rt_Bat5Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat6Code, this.Rt_Bat6V, this.Rt_Bat6Dz, this.Rt_Bat6Cao, this.Rt_Bat6NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat6Code:{0},Rt_Bat6V:{1},Rt_Bat6Dz{2},Rt_Bat6Cao:{3}\r\n", Rt_Bat6Code.Value_String, Rt_Bat6V.Value_Decimal, Rt_Bat6Dz.Value_Decimal, Rt_Bat6Cao.Value_Short);
+            sErr += string.Format("Rt_Bat6Code:{0},Rt_Bat6V:{1},Rt_Bat6Dz{2},Rt_Bat6Cao:{3}\r\n", Rt_Bat6Code.Value_String, Rt_Bat6V.Value_Decimal, Rt_Bat6Dz.Value_Decimal, Rt_Bat6Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat7Code, this.Rt_Bat7V, this.Rt_Bat7Dz, this.Rt_Bat7Cao, this.Rt_Bat7NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat7Code:{0},Rt_Bat7V:{1},Rt_Bat7Dz{2},Rt_Bat7Cao:{3}\r\n", Rt_Bat7Code.Value_String, Rt_Bat7V.Value_Decimal, Rt_Bat7Dz.Value_Decimal, Rt_Bat7Cao.Value_Short);
+            sErr += string.Format("Rt_Bat7Code:{0},Rt_Bat7V:{1},Rt_Bat7Dz{2},Rt_Bat7Cao:{3}\r\n", Rt_Bat7Code.Value_String, Rt_Bat7V.Value_Decimal, Rt_Bat7Dz.Value_Decimal, Rt_Bat7Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat8Code, this.Rt_Bat8V, this.Rt_Bat8Dz, this.Rt_Bat8Cao, this.Rt_Bat8NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat8Code:{0},Rt_Bat8V:{1},Rt_Bat8Dz{2},Rt_Bat8Cao:{3}\r\n", Rt_Bat8Code.Value_String, Rt_Bat8V.Value_Decimal, Rt_Bat8Dz.Value_Decimal, Rt_Bat8Cao.Value_Short);
+            sErr += string.Format("Rt_Bat8Code:{0},Rt_Bat8V:{1},Rt_Bat8Dz{2},Rt_Bat8Cao:{3}\r\n", Rt_Bat8Code.Value_String, Rt_Bat8V.Value_Decimal, Rt_Bat8Dz.Value_Decimal, Rt_Bat8Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat9Code, this.Rt_Bat9V, this.Rt_Bat9Dz, this.Rt_Bat9Cao, this.Rt_Bat9NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat9Code:{0},Rt_Bat9V:{1},Rt_Bat9Dz{2},Rt_Bat9Cao:{3}\r\n", Rt_Bat9Code.Value_String, Rt_Bat9V.Value_Decimal, Rt_Bat9Dz.Value_Decimal, Rt_Bat9Cao.Value_Short);
+            sErr += string.Format("Rt_Bat9Code:{0},Rt_Bat9V:{1},Rt_Bat9Dz{2},Rt_Bat9Cao:{3}\r\n", Rt_Bat9Code.Value_String, Rt_Bat9V.Value_Decimal, Rt_Bat9Dz.Value_Decimal, Rt_Bat9Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat10Code, this.Rt_Bat10V, this.Rt_Bat10Dz, this.Rt_Bat10Cao, this.Rt_Bat10NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat10Code:{0},Rt_Bat10V:{1},Rt_Bat10Dz{2},Rt_Bat10Cao:{3}\r\n", Rt_Bat10Code.Value_String, Rt_Bat10V.Value_Decimal, Rt_Bat10Dz.Value_Decimal, Rt_Bat10Cao.Value_Short);
+            sErr += string.Format("Rt_Bat10Code:{0},Rt_Bat10V:{1},Rt_Bat10Dz{2},Rt_Bat10Cao:{3}\r\n", Rt_Bat10Code.Value_String, Rt_Bat10V.Value_Decimal, Rt_Bat10Dz.Value_Decimal, Rt_Bat10Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat11Code, this.Rt_Bat11V, this.Rt_Bat11Dz, this.Rt_Bat11Cao, this.Rt_Bat11NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat11Code:{0},Rt_Bat11V:{1},Rt_Bat11Dz{2},Rt_Bat11Cao:{3}\r\n", Rt_Bat11Code.Value_String, Rt_Bat11V.Value_Decimal, Rt_Bat11Dz.Value_Decimal, Rt_Bat11Cao.Value_Short);
+            sErr += string.Format("Rt_Bat11Code:{0},Rt_Bat11V:{1},Rt_Bat11Dz{2},Rt_Bat11Cao:{3}\r\n", Rt_Bat11Code.Value_String, Rt_Bat11V.Value_Decimal, Rt_Bat11Dz.Value_Decimal, Rt_Bat11Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat12Code, this.Rt_Bat12V, this.Rt_Bat12Dz, this.Rt_Bat12Cao, this.Rt_Bat12NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat12Code:{0},Rt_Bat12V:{1},Rt_Bat12Dz{2},Rt_Bat12Cao:{3}\r\n", Rt_Bat12Code.Value_String, Rt_Bat12V.Value_Decimal, Rt_Bat12Dz.Value_Decimal, Rt_Bat12Cao.Value_Short);
+            sErr += string.Format("Rt_Bat12Code:{0},Rt_Bat12V:{1},Rt_Bat12Dz{2},Rt_Bat12Cao:{3}\r\n", Rt_Bat12Code.Value_String, Rt_Bat12V.Value_Decimal, Rt_Bat12Dz.Value_Decimal, Rt_Bat12Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat13Code, this.Rt_Bat13V, this.Rt_Bat13Dz, this.Rt_Bat13Cao, this.Rt_Bat13NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat13Code:{0},Rt_Bat13V:{1},Rt_Bat13Dz{2},Rt_Bat13Cao:{3}\r\n", Rt_Bat13Code.Value_String, Rt_Bat13V.Value_Decimal, Rt_Bat13Dz.Value_Decimal, Rt_Bat13Cao.Value_Short);
+            sErr += string.Format("Rt_Bat13Code:{0},Rt_Bat13V:{1},Rt_Bat13Dz{2},Rt_Bat13Cao:{3}\r\n", Rt_Bat13Code.Value_String, Rt_Bat13V.Value_Decimal, Rt_Bat13Dz.Value_Decimal, Rt_Bat13Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat14Code, this.Rt_Bat14V, this.Rt_Bat14Dz, this.Rt_Bat14Cao, this.Rt_Bat14NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat14Code:{0},Rt_Bat14V:{1},Rt_Bat14Dz{2},Rt_Bat14Cao:{3}\r\n", Rt_Bat14Code.Value_String, Rt_Bat14V.Value_Decimal, Rt_Bat14Dz.Value_Decimal, Rt_Bat14Cao.Value_Short);
+            sErr += string.Format("Rt_Bat14Code:{0},Rt_Bat14V:{1},Rt_Bat14Dz{2},Rt_Bat14Cao:{3}\r\n", Rt_Bat14Code.Value_String, Rt_Bat14V.Value_Decimal, Rt_Bat14Dz.Value_Decimal, Rt_Bat14Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat15Code, this.Rt_Bat15V, this.Rt_Bat15Dz, this.Rt_Bat15Cao, this.Rt_Bat15NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat15Code:{0},Rt_Bat15V:{1},Rt_Bat15Dz{2},Rt_Bat15Cao:{3}\r\n", Rt_Bat15Code.Value_String, Rt_Bat15V.Value_Decimal, Rt_Bat15Dz.Value_Decimal, Rt_Bat15Cao.Value_Short);
+            sErr += string.Format("Rt_Bat15Code:{0},Rt_Bat15V:{1},Rt_Bat15Dz{2},Rt_Bat15Cao:{3}\r\n", Rt_Bat15Code.Value_String, Rt_Bat15V.Value_Decimal, Rt_Bat15Dz.Value_Decimal, Rt_Bat15Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat16Code, this.Rt_Bat16V, this.Rt_Bat16Dz, this.Rt_Bat16Cao, this.Rt_Bat16NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat16Code:{0},Rt_Bat16V:{1},Rt_Bat16Dz{2},Rt_Bat16Cao:{3}\r\n", Rt_Bat16Code.Value_String, Rt_Bat16V.Value_Decimal, Rt_Bat16Dz.Value_Decimal, Rt_Bat16Cao.Value_Short);
+            sErr += string.Format("Rt_Bat16Code:{0},Rt_Bat16V:{1},Rt_Bat16Dz{2},Rt_Bat16Cao:{3}\r\n", Rt_Bat16Code.Value_String, Rt_Bat16V.Value_Decimal, Rt_Bat16Dz.Value_Decimal, Rt_Bat16Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat17Code, this.Rt_Bat17V, this.Rt_Bat17Dz, this.Rt_Bat17Cao, this.Rt_Bat17NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat17Code:{0},Rt_Bat17V:{1},Rt_Bat17Dz{2},Rt_Bat17Cao:{3}\r\n", Rt_Bat17Code.Value_String, Rt_Bat17V.Value_Decimal, Rt_Bat17Dz.Value_Decimal, Rt_Bat17Cao.Value_Short);
+            sErr += string.Format("Rt_Bat17Code:{0},Rt_Bat17V:{1},Rt_Bat17Dz{2},Rt_Bat17Cao:{3}\r\n", Rt_Bat17Code.Value_String, Rt_Bat17V.Value_Decimal, Rt_Bat17Dz.Value_Decimal, Rt_Bat17Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat18Code, this.Rt_Bat18V, this.Rt_Bat18Dz, this.Rt_Bat18Cao, this.Rt_Bat18NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat18Code:{0},Rt_Bat18V:{1},Rt_Bat18Dz{2},Rt_Bat18Cao:{3}\r\n", Rt_Bat18Code.Value_String, Rt_Bat18V.Value_Decimal, Rt_Bat18Dz.Value_Decimal, Rt_Bat18Cao.Value_Short);
+            sErr += string.Format("Rt_Bat18Code:{0},Rt_Bat18V:{1},Rt_Bat18Dz{2},Rt_Bat18Cao:{3}\r\n", Rt_Bat18Code.Value_String, Rt_Bat18V.Value_Decimal, Rt_Bat18Dz.Value_Decimal, Rt_Bat18Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat19Code, this.Rt_Bat19V, this.Rt_Bat19Dz, this.Rt_Bat19Cao, this.Rt_Bat19NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat19Code:{0},Rt_Bat19V:{1},Rt_Bat19Dz{2},Rt_Bat19Cao:{3}\r\n", Rt_Bat19Code.Value_String, Rt_Bat19V.Value_Decimal, Rt_Bat19Dz.Value_Decimal, Rt_Bat19Cao.Value_Short);
+            sErr += string.Format("Rt_Bat19Code:{0},Rt_Bat19V:{1},Rt_Bat19Dz{2},Rt_Bat19Cao:{3}\r\n", Rt_Bat19Code.Value_String, Rt_Bat19V.Value_Decimal, Rt_Bat19Dz.Value_Decimal, Rt_Bat19Cao.Value_Short);
             if (!this.SetResult(this.Rt_Bat20Code, this.Rt_Bat20V, this.Rt_Bat20Dz, this.Rt_Bat20Cao, this.Rt_Bat20NGCase, values, arrQ, ref iIndex, out sErr)) return false;
-            //sErr += string.Format("Rt_Bat20Code:{0},Rt_Bat20V:{1},Rt_Bat20Dz{2},Rt_Bat20Cao:{3}\r\n", Rt_Bat20Code.Value_String, Rt_Bat20V.Value_Decimal, Rt_Bat20Dz.Value_Decimal, Rt_Bat20Cao.Value_Short);
+            sErr += string.Format("Rt_Bat20Code:{0},Rt_Bat20V:{1},Rt_Bat20Dz{2},Rt_Bat20Cao:{3}\r\n", Rt_Bat20Code.Value_String, Rt_Bat20V.Value_Decimal, Rt_Bat20Dz.Value_Decimal, Rt_Bat20Cao.Value_Short);
             return true;
         }
         
@@ -4214,6 +4377,149 @@ namespace JpsOPC
             iIndex++;
             sErr = string.Empty;
             return true;
+        }
+        #endregion
+        #region 南京中比读取压差
+        public bool GetYaChaResult(ref YaChaEntity data, out string sErr)
+        {
+            Array values = null;
+            #region serverHandles
+            Array serverHandles = new int[17] { 0
+                , this.Exp_Yc1.ServerHandle
+                , this.Exp_Yc2.ServerHandle
+                , this.Exp_Yc3.ServerHandle
+                , this.Exp_Yc4.ServerHandle
+                , this.Exp_Yc5.ServerHandle
+                , this.Exp_Yc6.ServerHandle
+                , this.Exp_Yc7.ServerHandle
+                , this.Exp_Yc8.ServerHandle
+                , this.Exp_Yc9.ServerHandle
+                , this.Exp_Yc10.ServerHandle
+                , this.Exp_Yc11.ServerHandle
+                , this.Exp_Yc12.ServerHandle
+                , this.Exp_Yc13.ServerHandle
+                , this.Exp_Yc14.ServerHandle
+                , this.Exp_Yc15.ServerHandle
+                , this.Exp_Yc16.ServerHandle
+            };
+            #endregion
+            object objQ;
+            object objT;
+            Array errors;
+            try
+            {
+                this._MyGroup_Result.SyncRead(1, 16, ref serverHandles, out values, out errors, out objQ, out objT);
+            }
+            catch (Exception ex)
+            {
+                sErr = string.Format("压差OPC读取出错01：{0}({1})", ex.Message, ex.Source);
+                return false;
+            }
+            if (values == null)
+            {
+                sErr = "压差OPC读取出错:values为空！";
+                return false;
+            }
+            if (values.Length != 16)
+            {
+                sErr = string.Format("压差OPC读取出错:values长度为{0}，不是预期的16！", values.Length);
+                return false;
+            }
+            Array arrQ = objQ as Array;
+            if (arrQ == null)
+            {
+                sErr = "压差OPC读取出错:qualitys为空！";
+                return false;
+            }
+            if (arrQ.Length != 16)
+            {
+                sErr = string.Format("压差OPC读取出错:qualitys长度为{0}，不是预期的16！", values.Length);
+                return false;
+            }
+            //解析数值
+            int iIndex = 1;//注意Arrary的GetValue序号从1开始，这与c#中不一样
+            decimal decValue;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.Yc1 = (float)decValue;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.Yc2 = (float)decValue;;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.Yc3 = (float)decValue;;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.Yc4 = (float)decValue;;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.Yc5 = (float)decValue;;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.Yc6 = (float)decValue;;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.Yc7 = (float)decValue;;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.Yc8 = (float)decValue;;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.Yc9 = (float)decValue;;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.Yc10 = (float)decValue;;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.Yc11 = (float)decValue;;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.Yc12 = (float)decValue;;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.Yc13 = (float)decValue;;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.Yc14 = (float)decValue;;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.Yc15 = (float)decValue;;
+            iIndex++;
+            if (!this.GetMyDecimal(out decValue, iIndex, arrQ.GetValue(iIndex), values.GetValue(iIndex), out sErr)) return false;
+            data.Yc16 = (float)decValue;;
+            return true;
+        }
+        private bool GetMyDecimal(out decimal decValue, int iIndex, object objQItem, object objValue, out string sErr)
+        {
+            decValue = 0M;
+            if (objQItem == null)
+            {
+                sErr = $"压差结果值[index={iIndex}]返回的Quality为空！";
+                return false;
+            }
+            else if (objQItem.ToString() != "192")
+            {
+                sErr = $"压差结果值[index={iIndex}]返回的Quality为{objQItem.ToString()}不是预期的192！";
+                return false;
+            }
+            else
+            {
+                if (objValue == null)
+                {
+                    decValue = 0M;
+                }
+                else
+                {
+                    float fValue;
+                    if (!float.TryParse(objValue.ToString(), out fValue))
+                    {
+                        sErr = $"压差OPC读取的返回值为[{objValue.ToString()}]不是数值类型！";
+                        return false;
+                    }
+                    decValue = (decimal)fValue;
+                }
+                sErr = string.Empty;
+                return true;
+            }
         }
         #endregion
     }
@@ -4869,26 +5175,24 @@ namespace JpsOPC
         public JpsOPC.MyItemValue Exp_Cao9AQty = null;
         public JpsOPC.MyItemValue Exp_Cao9BQty = null;
         //通道的压差
-        public JpsOPC.MyItemValue Exp_Yc1 = null;
-        public JpsOPC.MyItemValue Exp_Yc2 = null;
-        public JpsOPC.MyItemValue Exp_Yc3 = null;
-        public JpsOPC.MyItemValue Exp_Yc4 = null;
-        public JpsOPC.MyItemValue Exp_Yc5 = null;
-        public JpsOPC.MyItemValue Exp_Yc6 = null;
-        public JpsOPC.MyItemValue Exp_Yc7 = null;
-        public JpsOPC.MyItemValue Exp_Yc8 = null;
-        public JpsOPC.MyItemValue Exp_Yc9 = null;
-        public JpsOPC.MyItemValue Exp_Yc10 = null;
-        public JpsOPC.MyItemValue Exp_Yc11 = null;
-        public JpsOPC.MyItemValue Exp_Yc12 = null;
-        public JpsOPC.MyItemValue Exp_Yc13 = null;
-        public JpsOPC.MyItemValue Exp_Yc14 = null;
-        public JpsOPC.MyItemValue Exp_Yc15 = null;
-        public JpsOPC.MyItemValue Exp_Yc16 = null;
-        public JpsOPC.MyItemValue Exp_Yc17 = null;
-        public JpsOPC.MyItemValue Exp_Yc18 = null;
-        public JpsOPC.MyItemValue Exp_Yc19 = null;
-        public JpsOPC.MyItemValue Exp_Yc20 = null;
+        //public JpsOPC.MyItemValue Exp_Yc1 = null;
+        //public JpsOPC.MyItemValue Exp_Yc2 = null;
+        //public JpsOPC.MyItemValue Exp_Yc3 = null;
+        //public JpsOPC.MyItemValue Exp_Yc4 = null;
+        //public JpsOPC.MyItemValue Exp_Yc5 = null;
+        //public JpsOPC.MyItemValue Exp_Yc6 = null;
+        //public JpsOPC.MyItemValue Exp_Yc7 = null;
+        //public JpsOPC.MyItemValue Exp_Yc8 = null;
+        //public JpsOPC.MyItemValue Exp_Yc9 = null;
+        //public JpsOPC.MyItemValue Exp_Yc10 = null;
+        //public JpsOPC.MyItemValue Exp_Yc11 = null;
+        //public JpsOPC.MyItemValue Exp_Yc12 = null;
+        //public JpsOPC.MyItemValue Exp_Yc13 = null;
+        //public JpsOPC.MyItemValue Exp_Yc14 = null;
+        //public JpsOPC.MyItemValue Exp_Yc15 = null;
+        //public JpsOPC.MyItemValue Exp_Yc16 = null;
+        //压差设置
+        public JpsOPC.MyItemValue Exp_YcSet = null;
 
         #endregion
         #region 公共函数
@@ -5270,46 +5574,9 @@ namespace JpsOPC
                 if (this.Exp_Cao9BQty != null)
                     this.Exp_Cao9BQty.InitItem();
                 //南京中比的压差
-                if (this.Exp_Yc1 != null)
-                    this.Exp_Yc1.InitItem();
-                if (this.Exp_Yc2 != null)
-                    this.Exp_Yc2.InitItem();
-                if (this.Exp_Yc3 != null)
-                    this.Exp_Yc3.InitItem();
-                if (this.Exp_Yc4 != null)
-                    this.Exp_Yc4.InitItem();
-                if (this.Exp_Yc5 != null)
-                    this.Exp_Yc5.InitItem();
-                if (this.Exp_Yc6 != null)
-                    this.Exp_Yc6.InitItem();
-                if (this.Exp_Yc7 != null)
-                    this.Exp_Yc7.InitItem();
-                if (this.Exp_Yc8 != null)
-                    this.Exp_Yc8.InitItem();
-                if (this.Exp_Yc9 != null)
-                    this.Exp_Yc9.InitItem();
-                if (this.Exp_Yc10 != null)
-                    this.Exp_Yc10.InitItem();
-                if (this.Exp_Yc11 != null)
-                    this.Exp_Yc11.InitItem();
-                if (this.Exp_Yc12 != null)
-                    this.Exp_Yc12.InitItem();
-                if (this.Exp_Yc13 != null)
-                    this.Exp_Yc13.InitItem();
-                if (this.Exp_Yc14 != null)
-                    this.Exp_Yc14.InitItem();
-                if (this.Exp_Yc15 != null)
-                    this.Exp_Yc15.InitItem();
-                if (this.Exp_Yc16 != null)
-                    this.Exp_Yc16.InitItem();
-                if (this.Exp_Yc17 != null)
-                    this.Exp_Yc17.InitItem();
-                if (this.Exp_Yc18 != null)
-                    this.Exp_Yc18.InitItem();
-                if (this.Exp_Yc19 != null)
-                    this.Exp_Yc19.InitItem();
-                if (this.Exp_Yc20 != null)
-                    this.Exp_Yc20.InitItem();
+                
+                if (this.Exp_YcSet != null)
+                    this.Exp_YcSet.InitItem();
 
             }
             //添加组
@@ -5694,46 +5961,9 @@ namespace JpsOPC
                 Exp_Cao9BQty = new MyItemValue(OPCItemTitle + "Exp_Cao9BQty");
 
             //南京中比压差
-            if (this.Exp_Yc1 == null)
-                Exp_Yc1 = new MyItemValue(OPCItemTitle + "Exp_Yc1");
-            if (this.Exp_Yc2 == null)
-                Exp_Yc2 = new MyItemValue(OPCItemTitle + "Exp_Yc2");
-            if (this.Exp_Yc3 == null)
-                Exp_Yc3 = new MyItemValue(OPCItemTitle + "Exp_Yc3");
-            if (this.Exp_Yc4 == null)
-                Exp_Yc4 = new MyItemValue(OPCItemTitle + "Exp_Yc4");
-            if (this.Exp_Yc5 == null)
-                Exp_Yc5 = new MyItemValue(OPCItemTitle + "Exp_Yc5");
-            if (this.Exp_Yc6 == null)
-                Exp_Yc6 = new MyItemValue(OPCItemTitle + "Exp_Yc6");
-            if (this.Exp_Yc7 == null)
-                Exp_Yc7 = new MyItemValue(OPCItemTitle + "Exp_Yc7");
-            if (this.Exp_Yc8 == null)
-                Exp_Yc8 = new MyItemValue(OPCItemTitle + "Exp_Yc8");
-            if (this.Exp_Yc9 == null)
-                Exp_Yc9 = new MyItemValue(OPCItemTitle + "Exp_Yc9");
-            if (this.Exp_Yc10 == null)
-                Exp_Yc10 = new MyItemValue(OPCItemTitle + "Exp_Yc10");
-            if (this.Exp_Yc11 == null)
-                Exp_Yc11 = new MyItemValue(OPCItemTitle + "Exp_Yc11");
-            if (this.Exp_Yc12 == null)
-                Exp_Yc12 = new MyItemValue(OPCItemTitle + "Exp_Yc12");
-            if (this.Exp_Yc13 == null)
-                Exp_Yc13 = new MyItemValue(OPCItemTitle + "Exp_Yc13");
-            if (this.Exp_Yc14 == null)
-                Exp_Yc14 = new MyItemValue(OPCItemTitle + "Exp_Yc14");
-            if (this.Exp_Yc15 == null)
-                Exp_Yc15 = new MyItemValue(OPCItemTitle + "Exp_Yc15");
-            if (this.Exp_Yc16 == null)
-                Exp_Yc16 = new MyItemValue(OPCItemTitle + "Exp_Yc16");
-            if (this.Exp_Yc17 == null)
-                Exp_Yc17 = new MyItemValue(OPCItemTitle + "Exp_Yc17");
-            if (this.Exp_Yc18 == null)
-                Exp_Yc18 = new MyItemValue(OPCItemTitle + "Exp_Yc18");
-            if (this.Exp_Yc19 == null)
-                Exp_Yc19 = new MyItemValue(OPCItemTitle + "Exp_Yc19");
-            if (this.Exp_Yc20 == null)
-                Exp_Yc20 = new MyItemValue(OPCItemTitle + "Exp_Yc20");
+           
+            if (this.Exp_YcSet == null)
+                Exp_YcSet = new MyItemValue(OPCItemTitle + "Exp_YcSet");
 
             if (this._MyGroup_Gongyi == null)
             {
@@ -6328,6 +6558,7 @@ namespace JpsOPC
             {
                 return false;
             }
+
             #region 南京中比添加
             if (!InitMyItems_AddItem(this.Exp_Cao1ACapMax, this._MyGroup_Gongyi, false, out sErr))
             {
@@ -6600,102 +6831,8 @@ namespace JpsOPC
                 return false;
             }
             //压差
-            if (!InitMyItems_AddItem(this.Exp_Yc1, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc2, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc3, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc4, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc5, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc6, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc7, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc8, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc9, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc10, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc11, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc12, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc13, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc14, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc15, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc16, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc17, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc18, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc19, this._MyGroup_Gongyi, false, out sErr))
-            {
-                return false;
-            }
-
-            if (!InitMyItems_AddItem(this.Exp_Yc20, this._MyGroup_Gongyi, false, out sErr))
+            
+            if (!InitMyItems_AddItem(this.Exp_YcSet, this._MyGroup_Gongyi, true, out sErr))
             {
                 return false;
             }
@@ -7273,6 +7410,43 @@ namespace JpsOPC
 
         #endregion
         #region 南京中比AB档操作
+        public bool SetExp_YcSet(float fValue,out string sErr)
+        {
+            if (this.IsDebug)
+            {
+                sErr = "";
+                return true;
+            }
+            if (this.Exp_YcSet == null)
+            {
+                sErr = "Exp_YcSet设置失败：opc为空！";
+                return false;
+            }
+            else if (this.Exp_YcSet._OPCItem == null)
+            {
+                //此时还未初始化
+                if (!this.InitServer(out sErr))
+                {
+                    sErr = string.Format("Exp_YcSet设置失败：opcItem为空，且初始化出错：{0}", sErr);
+                    return false;
+                }
+            }
+            if (this.Exp_YcSet.ServerHandle <= 0)
+            {
+                //此时还未初始化
+                if (!this.InitServer(out sErr))
+                {
+                    sErr = string.Format("Exp_YcSet设置失败：opcItem的serverhandle，且初始化出错：{0}", sErr);
+                    return false;
+                }
+            }
+            if (!this.Exp_YcSet.WriteData(fValue, out sErr))
+            {
+                sErr = string.Format("Exp_YcSet设置时出错：{0}", sErr);
+                return false;
+            }
+            return true;
+        }
         /// <summary>
         /// 南京中比追加的，写入分档模式
         /// </summary>
@@ -7478,91 +7652,7 @@ namespace JpsOPC
             sErr = string.Empty;
             return true;
         }
-        public bool WriteYaCha(bool blReWrite, OPCEntitys.YaChaEntity yacha, out string sErr)
-        {
-            //sErr = string.Format("数量serverID:{0}，数量值:{1}", this.St_Cao1DxCnt.ServerHandle, grooves[0].St_CaoDxCnt);
-            //return false;
-            if (this.IsDebug)
-            {
-                sErr = string.Empty;
-                return true;
-            }
-            if (yacha == null) yacha = new OPCEntitys.YaChaEntity();
-            //foreach(GrooveGongyiEntity entity in grooves)
-            //{
-            //    if(entity.St_CaoUsed && entity.St_CaoDxCnt>0)
-            //    {
-            //        iCaoBtyCnt = entity.St_CaoDxCnt;
-            //        break;
-            //    }
-            //}
-            //写入数据
-            Array serverHandles = new int[21] { 0,
-                this.Exp_Yc1.ServerHandle,
-                this.Exp_Yc2.ServerHandle,
-                this.Exp_Yc3.ServerHandle,
-                this.Exp_Yc4.ServerHandle,
-                this.Exp_Yc5.ServerHandle,
-                this.Exp_Yc6.ServerHandle,
-                this.Exp_Yc7.ServerHandle,
-                this.Exp_Yc8.ServerHandle,
-                this.Exp_Yc9.ServerHandle,
-                this.Exp_Yc10.ServerHandle,
-                this.Exp_Yc11.ServerHandle,
-                this.Exp_Yc12.ServerHandle,
-                this.Exp_Yc13.ServerHandle,
-                this.Exp_Yc14.ServerHandle,
-                this.Exp_Yc15.ServerHandle,
-                this.Exp_Yc16.ServerHandle,
-                this.Exp_Yc17.ServerHandle,
-                this.Exp_Yc18.ServerHandle,
-                this.Exp_Yc19.ServerHandle,
-                this.Exp_Yc20.ServerHandle
-            };
-            Array values = new object[21] { "",
-                yacha.Yc1,
-                yacha.Yc2,
-                yacha.Yc3,
-                yacha.Yc4,
-                yacha.Yc5,
-                yacha.Yc6,
-                yacha.Yc7,
-                yacha.Yc8,
-                yacha.Yc9,
-                yacha.Yc10,
-                yacha.Yc11,
-                yacha.Yc12,
-                yacha.Yc13,
-                yacha.Yc14,
-                yacha.Yc15,
-                yacha.Yc16,
-                yacha.Yc17,
-                yacha.Yc18,
-                yacha.Yc19,
-                yacha.Yc20
-                 };
-            Array errors;
-            try
-            {
-                this._MyGroup_Gongyi.SyncWrite(20, ref serverHandles, ref values, out errors);
-            }
-            catch (Exception ex)
-            {
-                if (!blReWrite)
-                {
-                    //此时不是第二次调用了
-                    if (!this.InitServer(out sErr)) return false;
-                    return this.WriteYaCha(true, yacha, out sErr);
-                }
-                else
-                {
-                    sErr = string.Format("各通道压差设定参数写入出错：{0}({1})", ex.Message, ex.Source);
-                }
-                return false;
-            }
-            sErr = string.Empty;
-            return true;
-        }
+        
         #endregion
     }
     public class OPCHelperCorrect : OPCHelperBase

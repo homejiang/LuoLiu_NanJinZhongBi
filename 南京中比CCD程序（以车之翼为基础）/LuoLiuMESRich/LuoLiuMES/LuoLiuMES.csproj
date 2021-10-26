@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54D91659-50D6-42FE-9161-38BCA726A23B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LuoLiuMES</RootNamespace>
+    <AssemblyName>LuoLiuMES</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\Icon_125.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\洛柳MES\LuoLiuMES\DLL\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zxing, Version=0.16.4.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.4\lib\net45\zxing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.4.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.4\lib\net45\zxing.presentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoAssign\frmAutoAssignData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoAssign\frmAutoAssignData.designer.cs">
+      <DependentUpon>frmAutoAssignData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoAssign\frmAutoAssignList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoAssign\frmAutoAssignList.designer.cs">
+      <DependentUpon>frmAutoAssignList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoAssign\frmFindTuoPanBySN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoAssign\frmFindTuoPanBySN.Designer.cs">
+      <DependentUpon>frmFindTuoPanBySN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmDesignList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmDesignList.designer.cs">
+      <DependentUpon>frmDesignList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmFormNameTongbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmFormNameTongbu.designer.cs">
+      <DependentUpon>frmFormNameTongbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmSelectSysForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmSelectSysForms.designer.cs">
+      <DependentUpon>frmSelectSysForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmSelSysGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmSelSysGroup.designer.cs">
+      <DependentUpon>frmSelSysGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmSelUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmSelUsers.designer.cs">
+      <DependentUpon>frmSelUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmSelYdy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmSelYdy.designer.cs">
+      <DependentUpon>frmSelYdy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmSysFormEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmSysFormEdit.designer.cs">
+      <DependentUpon>frmSysFormEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmSysFormEditPara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmSysFormEditPara.designer.cs">
+      <DependentUpon>frmSysFormEditPara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmSysFormEditPower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmSysFormEditPower.designer.cs">
+      <DependentUpon>frmSysFormEditPower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmSysFormEditRemark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmSysFormEditRemark.designer.cs">
+      <DependentUpon>frmSysFormEditRemark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmSysFormModifyGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmSysFormModifyGroup.designer.cs">
+      <DependentUpon>frmSysFormModifyGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmSysForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmSysForms.designer.cs">
+      <DependentUpon>frmSysForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmSysGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmSysGroup.designer.cs">
+      <DependentUpon>frmSysGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmUserDesignList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmUserDesignList.designer.cs">
+      <DependentUpon>frmUserDesignList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmUserFormEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmUserFormEdit.designer.cs">
+      <DependentUpon>frmUserFormEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmUserForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmUserForms.designer.cs">
+      <DependentUpon>frmUserForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmUserFormSelGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmUserFormSelGroup.designer.cs">
+      <DependentUpon>frmUserFormSelGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmUserGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmUserGroup.designer.cs">
+      <DependentUpon>frmUserGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmUserTongbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmUserTongbu.designer.cs">
+      <DependentUpon>frmUserTongbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoExe\frmYdyDesignList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoExe\frmYdyDesignList.designer.cs">
+      <DependentUpon>frmYdyDesignList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLLDAL\AutoAssign.cs" />
+    <Compile Include="BLLDAL\AutoExe.cs" />
+    <Compile Include="BLLDAL\PackInput.cs" />
+    <Compile Include="BLLDAL\PactM.cs" />
+    <Compile Include="BLLDAL\Boxing.cs" />
+    <Compile Include="BLLDAL\PlanM.cs" />
+    <Compile Include="BLLDAL\BoxType.cs" />
+    <Compile Include="BLLDAL\SFGRemove.cs" />
+    <Compile Include="Boxing\BoxPrinter.cs" />
+    <Compile Include="Boxing\frmBoxedData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxing\frmBoxedData.Designer.cs">
+      <DependentUpon>frmBoxedData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boxing\frmBoxingErrMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxing\frmBoxingErrMsg.Designer.cs">
+      <DependentUpon>frmBoxingErrMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boxing\frmBoxing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxing\frmBoxing.Designer.cs">
+      <DependentUpon>frmBoxing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boxing\frmItemDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxing\frmItemDetail.Designer.cs">
+      <DependentUpon>frmItemDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boxing\frmBoxedList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxing\frmBoxedList.designer.cs">
+      <DependentUpon>frmBoxedList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boxing\frmPrinterSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxing\frmPrinterSetting.designer.cs">
+      <DependentUpon>frmPrinterSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boxing\frmPrintFaild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxing\frmPrintFaild.designer.cs">
+      <DependentUpon>frmPrintFaild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boxing\frmBoxType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxing\frmBoxType.designer.cs">
+      <DependentUpon>frmBoxType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boxing\frmBoxTypeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxing\frmBoxTypeEdit.designer.cs">
+      <DependentUpon>frmBoxTypeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boxing\frmRemoveItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxing\frmRemoveItem.Designer.cs">
+      <DependentUpon>frmRemoveItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boxing\frmSelectBOM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxing\frmSelectBOM.Designer.cs">
+      <DependentUpon>frmSelectBOM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boxing\frmSelectBoxType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxing\frmSelectBoxType.designer.cs">
+      <DependentUpon>frmSelectBoxType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boxing\frmSelectPact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxing\frmSelectPact.Designer.cs">
+      <DependentUpon>frmSelectPact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVersion.designer.cs">
+      <DependentUpon>frmVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdiMyERP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiMyERP.designer.cs">
+      <DependentUpon>mdiMyERP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MESConfig.cs" />
+    <Compile Include="PactM\frmModifyState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PactM\frmModifyState.designer.cs">
+      <DependentUpon>frmModifyState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PactM\frmModifyDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PactM\frmModifyDetail.designer.cs">
+      <DependentUpon>frmModifyDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PactM\frmModifyDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PactM\frmModifyDate.designer.cs">
+      <DependentUpon>frmModifyDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PactM\frmModifyBOM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PactM\frmModifyBOM.designer.cs">
+      <DependentUpon>frmModifyBOM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PactM\frmModifyRemark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PactM\frmModifyRemark.designer.cs">
+      <DependentUpon>frmModifyRemark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PactM\frmPact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PactM\frmPact.designer.cs">
+      <DependentUpon>frmPact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PactM\frmPactDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PactM\frmPactDetail.designer.cs">
+      <DependentUpon>frmPactDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PactM\frmPactList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PactM\frmPactList.designer.cs">
+      <DependentUpon>frmPactList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanM\frmModifyPlanTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanM\frmModifyPlanTime.designer.cs">
+      <DependentUpon>frmModifyPlanTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanM\frmModifyPlanDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanM\frmModifyPlanDetail.designer.cs">
+      <DependentUpon>frmModifyPlanDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanM\frmPlanSimpleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanM\frmPlanSimpleEdit.designer.cs">
+      <DependentUpon>frmPlanSimpleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanM\frmPlanSmiple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanM\frmPlanSmiple.designer.cs">
+      <DependentUpon>frmPlanSmiple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProduceMoKuai\frmProMkMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProduceMoKuai\frmProMkMain.designer.cs">
+      <DependentUpon>frmProMkMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProduceMoZu\frmProMzMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProduceMoZu\frmProMzMain.designer.cs">
+      <DependentUpon>frmProMzMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produces\frmProduces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produces\frmProduces.designer.cs">
+      <DependentUpon>frmProduces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoreM\frmInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreM\frmInput.designer.cs">
+      <DependentUpon>frmInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreM\frmInputList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreM\frmInputList.designer.cs">
+      <DependentUpon>frmInputList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreM\frmInputType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreM\frmInputType.designer.cs">
+      <DependentUpon>frmInputType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreM\frmPackCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreM\frmPackCode.designer.cs">
+      <DependentUpon>frmPackCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreM\frmRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreM\frmRemove.designer.cs">
+      <DependentUpon>frmRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreM\frmRemoveList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreM\frmRemoveList.designer.cs">
+      <DependentUpon>frmRemoveList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraceBack\frmTraceBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraceBack\frmTraceBack.designer.cs">
+      <DependentUpon>frmTraceBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraceBack\frmTraceBackRich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraceBack\frmTraceBackRich.designer.cs">
+      <DependentUpon>frmTraceBackRich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraceBack\ucChengPin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TraceBack\ucChengPin.Designer.cs">
+      <DependentUpon>ucChengPin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraceBack\ucMk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TraceBack\ucMk.designer.cs">
+      <DependentUpon>ucMk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraceBack\ucMz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TraceBack\ucMz.designer.cs">
+      <DependentUpon>ucMz.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AutoAssign\frmAutoAssignData.resx">
+      <DependentUpon>frmAutoAssignData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoAssign\frmAutoAssignList.resx">
+      <DependentUpon>frmAutoAssignList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoAssign\frmFindTuoPanBySN.resx">
+      <DependentUpon>frmFindTuoPanBySN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmDesignList.resx">
+      <DependentUpon>frmDesignList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmFormNameTongbu.resx">
+      <DependentUpon>frmFormNameTongbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmSelectSysForms.resx">
+      <DependentUpon>frmSelectSysForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmSelSysGroup.resx">
+      <DependentUpon>frmSelSysGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmSelUsers.resx">
+      <DependentUpon>frmSelUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmSelYdy.resx">
+      <DependentUpon>frmSelYdy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmSysFormEdit.resx">
+      <DependentUpon>frmSysFormEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmSysFormEditPara.resx">
+      <DependentUpon>frmSysFormEditPara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmSysFormEditPower.resx">
+      <DependentUpon>frmSysFormEditPower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmSysFormEditRemark.resx">
+      <DependentUpon>frmSysFormEditRemark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmSysFormModifyGroup.resx">
+      <DependentUpon>frmSysFormModifyGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmSysForms.resx">
+      <DependentUpon>frmSysForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmSysGroup.resx">
+      <DependentUpon>frmSysGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmUserDesignList.resx">
+      <DependentUpon>frmUserDesignList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmUserFormEdit.resx">
+      <DependentUpon>frmUserFormEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmUserForms.resx">
+      <DependentUpon>frmUserForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmUserFormSelGroup.resx">
+      <DependentUpon>frmUserFormSelGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmUserGroup.resx">
+      <DependentUpon>frmUserGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmUserTongbu.resx">
+      <DependentUpon>frmUserTongbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoExe\frmYdyDesignList.resx">
+      <DependentUpon>frmYdyDesignList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boxing\frmBoxedData.resx">
+      <DependentUpon>frmBoxedData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boxing\frmBoxingErrMsg.resx">
+      <DependentUpon>frmBoxingErrMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boxing\frmBoxing.resx">
+      <DependentUpon>frmBoxing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boxing\frmItemDetail.resx">
+      <DependentUpon>frmItemDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boxing\frmBoxedList.resx">
+      <DependentUpon>frmBoxedList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boxing\frmPrinterSetting.resx">
+      <DependentUpon>frmPrinterSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boxing\frmPrintFaild.resx">
+      <DependentUpon>frmPrintFaild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boxing\frmBoxType.resx">
+      <DependentUpon>frmBoxType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boxing\frmBoxTypeEdit.resx">
+      <DependentUpon>frmBoxTypeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boxing\frmRemoveItem.resx">
+      <DependentUpon>frmRemoveItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boxing\frmSelectBOM.resx">
+      <DependentUpon>frmSelectBOM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boxing\frmSelectBoxType.resx">
+      <DependentUpon>frmSelectBoxType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boxing\frmSelectPact.resx">
+      <DependentUpon>frmSelectPact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVersion.resx">
+      <DependentUpon>frmVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiMyERP.resx">
+      <DependentUpon>mdiMyERP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PactM\frmModifyState.resx">
+      <DependentUpon>frmModifyState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PactM\frmModifyDetail.resx">
+      <DependentUpon>frmModifyDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PactM\frmModifyDate.resx">
+      <DependentUpon>frmModifyDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PactM\frmModifyBOM.resx">
+      <DependentUpon>frmModifyBOM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PactM\frmModifyRemark.resx">
+      <DependentUpon>frmModifyRemark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PactM\frmPact.resx">
+      <DependentUpon>frmPact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PactM\frmPactDetail.resx">
+      <DependentUpon>frmPactDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PactM\frmPactList.resx">
+      <DependentUpon>frmPactList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanM\frmModifyPlanTime.resx">
+      <DependentUpon>frmModifyPlanTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanM\frmModifyPlanDetail.resx">
+      <DependentUpon>frmModifyPlanDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanM\frmPlanSimpleEdit.resx">
+      <DependentUpon>frmPlanSimpleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanM\frmPlanSmiple.resx">
+      <DependentUpon>frmPlanSmiple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProduceMoKuai\frmProMkMain.resx">
+      <DependentUpon>frmProMkMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProduceMoZu\frmProMzMain.resx">
+      <DependentUpon>frmProMzMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produces\frmProduces.resx">
+      <DependentUpon>frmProduces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StoreM\frmInput.resx">
+      <DependentUpon>frmInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreM\frmInputList.resx">
+      <DependentUpon>frmInputList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreM\frmInputType.resx">
+      <DependentUpon>frmInputType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreM\frmPackCode.resx">
+      <DependentUpon>frmPackCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreM\frmRemove.resx">
+      <DependentUpon>frmRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreM\frmRemoveList.resx">
+      <DependentUpon>frmRemoveList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraceBack\frmTraceBack.resx">
+      <DependentUpon>frmTraceBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraceBack\frmTraceBackRich.resx">
+      <DependentUpon>frmTraceBackRich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraceBack\ucChengPin.resx">
+      <DependentUpon>ucChengPin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraceBack\ucMk.resx">
+      <DependentUpon>ucMk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraceBack\ucMz.resx">
+      <DependentUpon>ucMz.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DesignM\" />
+    <Folder Include="Printer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BasicData\BasicData.csproj">
+      <Project>{7c7b6d2c-2eef-42c0-aeba-9bf63d12cec3}</Project>
+      <Name>BasicData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{980dbfe0-c5d7-4c8d-b69c-51833b7bb373}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DropdownMultiSelect\DropdownMultiSelect.csproj">
+      <Project>{9cf482c9-164e-4052-86e1-a2d48f8f4693}</Project>
+      <Name>DropdownMultiSelect</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EleCardComposing\EleCardComposing.csproj">
+      <Project>{7253feba-82e0-4f76-a513-79c8b057cc6f}</Project>
+      <Name>EleCardComposing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ErrorService\ErrorService.csproj">
+      <Project>{70651698-b645-4437-a64c-768873e24b2e}</Project>
+      <Name>ErrorService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LuoLiuCCD\LuoLiuCCD.csproj">
+      <Project>{df010f3f-f42c-4948-b219-92e606e069e7}</Project>
+      <Name>LuoLiuCCD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LuoLiuDianHan\LuoLiuDianHan.csproj">
+      <Project>{51ae42f1-091f-4481-9541-79d4f77669dd}</Project>
+      <Name>LuoLiuDianHan</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LuoLiuEOLTest\LuoLiuEOLTest.csproj">
+      <Project>{5425898e-d1b8-4633-973a-f71ee542a7cf}</Project>
+      <Name>LuoLiuEOLTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LuoLiuMESPrinter\LuoLiuMESPrinter.csproj">
+      <Project>{28f7fe63-03a2-4efb-9ab0-6822d63e2dfc}</Project>
+      <Name>LuoLiuMESPrinter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LuoLiuPCBTest\LuoLiuPCBTest.csproj">
+      <Project>{2bd58b98-3815-45ac-8c5e-efd7cc87f6c2}</Project>
+      <Name>LuoLiuPCBTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LuoLiuTesting\LuoLiuTesting.csproj">
+      <Project>{a069de9f-06b0-4a49-a92e-d7aa3977eb4d}</Project>
+      <Name>LuoLiuTesting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyColorName\MyColorName.csproj">
+      <Project>{94dc0738-c948-448c-8f42-170c329677f6}</Project>
+      <Name>MyColorName</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyDataGridView\MyDataGridView.csproj">
+      <Project>{ff013d50-25b7-4baf-960d-05d6d6223978}</Project>
+      <Name>MyDataGridView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyLabelEx\MyLabelEx.csproj">
+      <Project>{536b18c2-f0cc-4255-badb-5000abdc2e1e}</Project>
+      <Name>MyLabelEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyTextBox\MyTextBox.csproj">
+      <Project>{3b82d2a8-ff5c-45ea-81df-e513c30cd315}</Project>
+      <Name>MyTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NumericBox\NumericBox.csproj">
+      <Project>{b5efedcf-0e6b-49b5-903c-6a5b97ab5241}</Project>
+      <Name>NumericBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SysSetting\SysSetting.csproj">
+      <Project>{3266bbb1-4c2f-4650-89dd-ac533445dda6}</Project>
+      <Name>SysSetting</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Close.gif" />
+    <Content Include="Images\Icon.ico" />
+    <Content Include="Images\Icon_125.ico" />
+    <Content Include="Images\JianTouDown.png" />
+    <None Include="Images\luoliu.png" />
+    <Content Include="Images\S16\create.gif" />
+    <Content Include="Images\S16\del.gif" />
+    <Content Include="Images\S16\down.png" />
+    <Content Include="Images\S16\edit.gif" />
+    <Content Include="Images\S16\insert.PNG" />
+    <Content Include="Images\S16\Mac16.png" />
+    <Content Include="Images\S16\print16.png" />
+    <Content Include="Images\S16\refresh_18.gif" />
+    <Content Include="Images\S16\up.png" />
+    <Content Include="Images\S25\Audited.png" />
+    <Content Include="Images\S25\bhg25.png" />
+    <Content Include="Images\S25\completed.png" />
+    <Content Include="Images\S25\copy.png" />
+    <Content Include="Images\S25\Del25.png" />
+    <Content Include="Images\S25\edit25.png" />
+    <Content Include="Images\S25\EXCEL.png" />
+    <Content Include="Images\S25\exit25.png" />
+    <Content Include="Images\S25\expExe.png" />
+    <Content Include="Images\S25\jiaojieban.png" />
+    <Content Include="Images\S25\JingGao.png" />
+    <Content Include="Images\S25\mac25.png" />
+    <Content Include="Images\S25\new25.png" />
+    <Content Include="Images\S25\onMouse.png" />
+    <Content Include="Images\S25\Order25.png" />
+    <Content Include="Images\S25\PanNoEdit.png" />
+    <Content Include="Images\S25\print.png" />
+    <Content Include="Images\S25\refresh_25.gif" />
+    <Content Include="Images\S25\Save.bmp" />
+    <Content Include="Images\S25\search25.png" />
+    <Content Include="Images\S25\Special.png" />
+    <Content Include="Images\S25\user.png" />
+    <Content Include="Images\UnUse.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

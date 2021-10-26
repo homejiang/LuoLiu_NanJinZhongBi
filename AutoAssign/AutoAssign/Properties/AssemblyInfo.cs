@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("AutoAssign")]
-[assembly: AssemblyDescription("域统新能源自动分选系统")]
+[assembly: AssemblyDescription("新能源电池自动分选系统")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("域统新能源")]
+[assembly: AssemblyCompany("洛柳")]
 [assembly: AssemblyProduct("AutoAssign")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
@@ -32,8 +32,8 @@ using System.Runtime.InteropServices;
 //可以指定所有这些值，也可以使用“生成号”和“修订号”的默认值，
 // 方法是按如下所示使用“*”: :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("86.20.1114.80")]
-[assembly: AssemblyFileVersion("86.20.1114.80")]
+[assembly: AssemblyVersion("86.21.1025.90")]
+[assembly: AssemblyFileVersion("86.21.1025.90")]
 /**********
  * 86.19.222.13：
  * 1、添加订单号
@@ -142,4 +142,24 @@ using System.Runtime.InteropServices;
     修改界面frmSetTuoPanCode1代码，机台超过10的时候用英文字母替代。和存储过程GetNewTuoPanCode1一致
     86.20.1114.80：
     解决了软件加载一直会去连接扫描枪，即便设置为停用也会连接。原因是会读取jc_processClass里面有扫描枪设置，如果设置1，则停用也给你开起来。窗口加载时是在v_testingmain视图中去读的应该
+    86.21.1023.81：
+    南京中比初始化版本，添加首检，分档，压差功能
+    86.21.1023.82:
+    固定为仅托盘模式
+    86.21.1023.83:
+    读取结果分AB档保存，同步添加存储过程86.21.1023.83
+    86.21.1023.84：
+    AB分档的历史记录显示
+    86.21.1023.85：
+    添加了日志NLog；同步添加日志配置文件NLog.config
+    86.21.1023.86：
+    修复bug：从数据库output decimal类型时 ，如果不指定小数位数，那就会四筛五入了，变成没有小数点了，设置方法是：sqlParam.Scale = 6;
+    86.21.1024.87 ：
+    添加压差写入，就一个值
+    86.21.1024.88:
+    修复bug：frmTestedData界面显示NG的槽是用了托盘号来查，结果把所有NG槽的数据都加载了，现在这种改为CaoIndex去过滤
+    86.21.1024.89：
+    关键修改，读取blockno之前等待100毫秒，因为从日志上看，连续2次收到blockNo=1，这个是不对的
+    86.21.1025.90：
+    修复不能打印的问题，原因是之前有选择自动插装和仅托盘，选择后会设置打印模式，那南京中比固定设置为了仅托盘模式，在开始测试事件中添加了
  * *******************/

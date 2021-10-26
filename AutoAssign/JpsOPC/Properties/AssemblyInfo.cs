@@ -32,8 +32,8 @@ using System.Runtime.InteropServices;
 //可以指定所有这些值，也可以使用“生成号”和“修订号”的默认值，
 // 方法是按如下所示使用“*”: :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("86.20.517.20")]
-[assembly: AssemblyFileVersion("86.20.517.20")]
+[assembly: AssemblyVersion("86.21.1024.23")]
+[assembly: AssemblyFileVersion("86.21.1024.23")]
 /********
  * 添加了新建字段AT_SysNew的OPCitem
  * 86.19.227.7：
@@ -54,4 +54,10 @@ using System.Runtime.InteropServices;
  * 将OPC字段Asb_Finished改成Asb_AFinished
  * 86.20.517.20:
  * 之前项目把所槽的电芯数量设置成一样的，所以只写入一个槽1的，现在改回来了，全部18个写u人
+ * 86.21.1023.21：
+ * 南京中比初始化版本
+ * 86.21.1023.22:
+ * 修复首检读取数据的小bug
+ * 86.21.1024.23：
+ * 添加压差值写入，单个值的
  * ************/

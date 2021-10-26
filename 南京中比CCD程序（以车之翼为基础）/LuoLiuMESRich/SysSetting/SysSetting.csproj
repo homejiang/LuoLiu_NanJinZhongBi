@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3266BBB1-4C2F-4650-89DD-AC533445DDA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SysSetting</RootNamespace>
+    <AssemblyName>SysSetting</AssemblyName>
+    <StartupObject>SysSetting.Program</StartupObject>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\洛柳MES\LuoLiuMES\DLL\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuditDetail\frmAddAuditItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuditDetail\frmAddAuditItem.Designer.cs">
+      <DependentUpon>frmAddAuditItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuditDetail\frmAuditDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuditDetail\frmAuditDetail.designer.cs">
+      <DependentUpon>frmAuditDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuditDetail\ucAuditControlItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AuditDetail\ucAuditControlItem.designer.cs">
+      <DependentUpon>ucAuditControlItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoCode\frmAutoCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoCode\frmAutoCode.designer.cs">
+      <DependentUpon>frmAutoCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLLDAL\ModuleSetting.cs" />
+    <Compile Include="BLLDAL\DeptUsers.cs" />
+    <Compile Include="BLLDAL\AutoCode.cs" />
+    <Compile Include="BLLDAL\UserPowers.cs" />
+    <Compile Include="BLLDAL\ModuleAuditSetting.cs" />
+    <Compile Include="DeptUsers\frmDeptEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeptUsers\frmDeptEdit.designer.cs">
+      <DependentUpon>frmDeptEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeptUsers\frmDeptUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeptUsers\frmDeptUser.designer.cs">
+      <DependentUpon>frmDeptUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeptUsers\frmPowerGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeptUsers\frmPowerGroup.designer.cs">
+      <DependentUpon>frmPowerGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeptUsers\frmUserCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeptUsers\frmUserCode.Designer.cs">
+      <DependentUpon>frmUserCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeptUsers\frmSelectDeptSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeptUsers\frmSelectDeptSample.Designer.cs">
+      <DependentUpon>frmSelectDeptSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeptUsers\frmSelectUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeptUsers\frmSelectUser.designer.cs">
+      <DependentUpon>frmSelectUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeptUsers\frmSelectUserSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeptUsers\frmSelectUserSample.Designer.cs">
+      <DependentUpon>frmSelectUserSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeptUsers\frmUserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeptUsers\frmUserEdit.designer.cs">
+      <DependentUpon>frmUserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeptUsers\ucDeptsAndUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeptUsers\ucDeptsAndUsers.Designer.cs">
+      <DependentUpon>ucDeptsAndUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleSetting\frmModuleAuditSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleSetting\frmModuleAuditSetting.designer.cs">
+      <DependentUpon>frmModuleAuditSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleSetting\frmModuleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleSetting\frmModuleEdit.designer.cs">
+      <DependentUpon>frmModuleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleSetting\frmModuleGroupEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleSetting\frmModuleGroupEdit.designer.cs">
+      <DependentUpon>frmModuleGroupEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleSetting\frmModuleSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleSetting\frmModuleSetting.designer.cs">
+      <DependentUpon>frmModuleSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AuditDetail\frmAddAuditItem.resx">
+      <DependentUpon>frmAddAuditItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuditDetail\frmAuditDetail.resx">
+      <DependentUpon>frmAuditDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuditDetail\ucAuditControlItem.resx">
+      <DependentUpon>ucAuditControlItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoCode\frmAutoCode.resx">
+      <DependentUpon>frmAutoCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeptUsers\frmDeptEdit.resx">
+      <DependentUpon>frmDeptEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeptUsers\frmDeptUser.resx">
+      <DependentUpon>frmDeptUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeptUsers\frmPowerGroup.resx">
+      <DependentUpon>frmPowerGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeptUsers\frmSelectUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSelectUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeptUsers\frmUserCode.resx">
+      <DependentUpon>frmUserCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeptUsers\frmSelectDeptSample.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSelectDeptSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeptUsers\frmSelectUserSample.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSelectUserSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeptUsers\frmUserEdit.resx">
+      <DependentUpon>frmUserEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeptUsers\ucDeptsAndUsers.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDeptsAndUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleSetting\frmModuleAuditSetting.resx">
+      <DependentUpon>frmModuleAuditSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleSetting\frmModuleEdit.resx">
+      <DependentUpon>frmModuleEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleSetting\frmModuleGroupEdit.resx">
+      <DependentUpon>frmModuleGroupEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleSetting\frmModuleSetting.resx">
+      <DependentUpon>frmModuleSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\ucModuleAudit.resx">
+      <DependentUpon>ucModuleAudit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\ucModuleAuditItem.resx">
+      <DependentUpon>ucModuleAuditItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SysSettingMConfig.cs" />
+    <Compile Include="UserControl\ucModuleAudit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucModuleAudit.designer.cs">
+      <DependentUpon>ucModuleAudit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ucModuleAuditItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucModuleAuditItem.designer.cs">
+      <DependentUpon>ucModuleAuditItem.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\S16\create.gif" />
+    <Content Include="Images\S16\del.gif" />
+    <Content Include="Images\S16\down.png" />
+    <Content Include="Images\S16\edit.gif" />
+    <Content Include="Images\S16\insert.PNG" />
+    <Content Include="Images\S16\up.png" />
+    <Content Include="Images\S16\user.png" />
+    <Content Include="Images\treeviewimages\deptment.png" />
+    <Content Include="Images\treeviewimages\user.png" />
+    <Content Include="Images\treeviewimages\userPower.png" />
+    <Content Include="Images\treeviewimages\dept.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SysEntitys\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{980dbfe0-c5d7-4c8d-b69c-51833b7bb373}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ErrorService\ErrorService.csproj">
+      <Project>{70651698-b645-4437-a64c-768873e24b2e}</Project>
+      <Name>ErrorService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyDataGridView\MyDataGridView.csproj">
+      <Project>{ff013d50-25b7-4baf-960d-05d6d6223978}</Project>
+      <Name>MyDataGridView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyLabelEx\MyLabelEx.csproj">
+      <Project>{536b18c2-f0cc-4255-badb-5000abdc2e1e}</Project>
+      <Name>MyLabelEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyTextBox\MyTextBox.csproj">
+      <Project>{3b82d2a8-ff5c-45ea-81df-e513c30cd315}</Project>
+      <Name>MyTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NumericBox\NumericBox.csproj">
+      <Project>{b5efedcf-0e6b-49b5-903c-6a5b97ab5241}</Project>
+      <Name>NumericBox</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
