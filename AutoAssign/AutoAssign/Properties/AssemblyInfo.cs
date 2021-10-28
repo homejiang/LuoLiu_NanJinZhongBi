@@ -32,8 +32,8 @@ using System.Runtime.InteropServices;
 //可以指定所有这些值，也可以使用“生成号”和“修订号”的默认值，
 // 方法是按如下所示使用“*”: :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("86.21.1025.90")]
-[assembly: AssemblyFileVersion("86.21.1025.90")]
+[assembly: AssemblyVersion("86.21.1027.92")]
+[assembly: AssemblyFileVersion("86.21.1027.92")]
 /**********
  * 86.19.222.13：
  * 1、添加订单号
@@ -162,4 +162,8 @@ using System.Runtime.InteropServices;
     关键修改，读取blockno之前等待100毫秒，因为从日志上看，连续2次收到blockNo=1，这个是不对的
     86.21.1025.90：
     修复不能打印的问题，原因是之前有选择自动插装和仅托盘，选择后会设置打印模式，那南京中比固定设置为了仅托盘模式，在开始测试事件中添加了
+    86.21.1027.91：
+    添加条码规则设置，以及打印时添加上槽号显示
+    86.21.1027.92：
+    条码规则改成14位的，后面7个追溯码也加上去了
  * *******************/

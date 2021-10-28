@@ -61,6 +61,9 @@ namespace AutoAssign.NanJingZB
             DataTable dt = new DataTable();
             dt.Columns.Add("GrooveNo", Type.GetType("System.Int16"));
             dt.Columns.Add("ResultValue", Type.GetType("System.Decimal"));
+            DataColumn dc = new DataColumn("ResultDesc", typeof(string));
+            dc.Expression = "IIF(ResultValue=1,'Pass','Fail')";
+            dt.Columns.Add(dc);
             DataRow drNew;
             drNew = dt.NewRow();
             drNew["GrooveNo"] = 1;

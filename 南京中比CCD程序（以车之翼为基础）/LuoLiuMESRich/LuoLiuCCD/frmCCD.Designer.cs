@@ -87,12 +87,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dgDxs = new MyControl.MyDataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.ucStatistic11 = new Common.UserControls.ucStatistic1();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -677,28 +677,6 @@
             this.dgDxs.Size = new System.Drawing.Size(959, 130);
             this.dgDxs.TabIndex = 218;
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "DxSN";
-            this.Column1.HeaderText = "电芯编号";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 240;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "DianZu";
-            this.Column2.HeaderText = "内阻值(Ω)";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "V";
-            this.Column3.HeaderText = "电压(uV)";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.ucStatistic11);
@@ -722,6 +700,28 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "DxSn";
+            this.Column1.HeaderText = "电芯编号";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 240;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "DianZu";
+            this.Column2.HeaderText = "内阻值(Ω)";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "V";
+            this.Column3.HeaderText = "电压(uV)";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // frmCCD
             // 
@@ -801,9 +801,6 @@
         private MyControl.MyTextBox tbMkCode;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripMenuItem 撤销模块领用ToolStripMenuItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.ToolStripMenuItem 自动读取测试结果ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 注销ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 切换用户ToolStripMenuItem;
@@ -813,5 +810,8 @@
         private System.Windows.Forms.RichTextBox rtbErrMsg;
         private System.Windows.Forms.CheckBox chkStopShowErr;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }

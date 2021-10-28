@@ -32,9 +32,11 @@ using System.Runtime.InteropServices;
 //可以指定所有这些值，也可以使用“生成号”和“修订号”的默认值，
 // 方法是按如下所示使用“*”: :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.19.1206.3")]
-[assembly: AssemblyFileVersion("1.19.1206.3")]
+[assembly: AssemblyVersion("1.21.1027.4")]
+[assembly: AssemblyFileVersion("1.21.1027.4")]
 /**************
  * 1.19.1206.2：1.19.1206.3:
  * 类MyHanJieA中if (!this._OPCHelperA.ReadMKCode(this._Data, out Listening_Err))添加对Listening_Err的调整，即便函数执行正确也是可以由返回值的，并显示在界面
+ * 从车之翼版本中更改过来，因为车之翼的数据库没有。
+ * 
  * ****************************/

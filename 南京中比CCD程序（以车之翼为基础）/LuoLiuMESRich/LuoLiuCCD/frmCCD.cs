@@ -155,7 +155,7 @@ namespace LuoLiuCCD
             DataTable dt;
             try
             {
-                dt = Common.CommonDAL.DoSqlCommand.GetDateTable(string.Format("SELECT * FROM LuoLiuMESDynamicTable.dbo.{0} WHERE TuoPan='{1}'"
+                dt = Common.CommonDAL.DoSqlCommand.GetDateTable(string.Format("SELECT * FROM LuoLiuMESDynamicTable.dbo.{0} WHERE Code='{1}'"
                     , sDxTable, sTuopanCode.Replace("'", "''")));
             }
             catch (Exception ex)

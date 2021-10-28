@@ -46,6 +46,9 @@
             this.btSave = new System.Windows.Forms.Button();
             this.btRefreshSerial = new System.Windows.Forms.Button();
             this.labErr = new System.Windows.Forms.Label();
+            this.tbCode5_7 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -162,7 +165,7 @@
             // 
             // tbSerial
             // 
-            this.tbSerial.Location = new System.Drawing.Point(426, 55);
+            this.tbSerial.Location = new System.Drawing.Point(547, 50);
             this.tbSerial.Name = "tbSerial";
             this.tbSerial.Size = new System.Drawing.Size(109, 26);
             this.tbSerial.TabIndex = 4;
@@ -172,7 +175,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.Location = new System.Drawing.Point(435, 32);
+            this.label9.Location = new System.Drawing.Point(556, 27);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(79, 20);
             this.label9.TabIndex = 12;
@@ -182,15 +185,15 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label10.Location = new System.Drawing.Point(422, 84);
+            this.label10.Location = new System.Drawing.Point(543, 79);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(134, 21);
+            this.label10.Size = new System.Drawing.Size(143, 21);
             this.label10.TabIndex = 14;
-            this.label10.Text = "7位(自动前面补0)";
+            this.label10.Text = "10位(自动前面补0)";
             // 
             // btSave
             // 
-            this.btSave.Location = new System.Drawing.Point(181, 112);
+            this.btSave.Location = new System.Drawing.Point(268, 124);
             this.btSave.Name = "btSave";
             this.btSave.Size = new System.Drawing.Size(120, 39);
             this.btSave.TabIndex = 5;
@@ -201,7 +204,7 @@
             // btRefreshSerial
             // 
             this.btRefreshSerial.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btRefreshSerial.Location = new System.Drawing.Point(420, 108);
+            this.btRefreshSerial.Location = new System.Drawing.Point(541, 103);
             this.btRefreshSerial.Name = "btRefreshSerial";
             this.btRefreshSerial.Size = new System.Drawing.Size(120, 34);
             this.btRefreshSerial.TabIndex = 15;
@@ -216,15 +219,47 @@
             this.labErr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.labErr.Location = new System.Drawing.Point(0, 166);
             this.labErr.Name = "labErr";
-            this.labErr.Size = new System.Drawing.Size(572, 20);
+            this.labErr.Size = new System.Drawing.Size(703, 20);
             this.labErr.TabIndex = 16;
             this.labErr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tbCode5_7
+            // 
+            this.tbCode5_7.Location = new System.Drawing.Point(396, 55);
+            this.tbCode5_7.Name = "tbCode5_7";
+            this.tbCode5_7.Size = new System.Drawing.Size(96, 26);
+            this.tbCode5_7.TabIndex = 17;
+            this.tbCode5_7.Text = "0000000";
+            this.tbCode5_7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label11.Location = new System.Drawing.Point(399, 32);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(93, 20);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "追溯信息代码";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label12.Location = new System.Drawing.Point(422, 86);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(35, 21);
+            this.label12.TabIndex = 19;
+            this.label12.Text = "7位";
             // 
             // frmCreateTuopanCode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(572, 186);
+            this.ClientSize = new System.Drawing.Size(703, 186);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.tbCode5_7);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.labErr);
             this.Controls.Add(this.btRefreshSerial);
             this.Controls.Add(this.btSave);
@@ -275,5 +310,8 @@
         private System.Windows.Forms.Button btSave;
         private System.Windows.Forms.Button btRefreshSerial;
         private System.Windows.Forms.Label labErr;
+        private System.Windows.Forms.TextBox tbCode5_7;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }

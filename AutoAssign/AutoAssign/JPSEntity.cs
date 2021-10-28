@@ -2103,7 +2103,7 @@ namespace AutoAssign.JPSEntity
         /// <summary>
         /// 用于计算速度的，表示每次多少节电池
         /// </summary>
-        public static double SpeedCalculator_DxCount = 10;
+        public static double SpeedCalculator_DxCount = 16;//2021-10-27从10改成16，按照唐工的意思改的，原因不清楚
         public event RealDataShowCallBack RealDataShowNotice = null;
         /// <summary>
         /// 目标托盘数量

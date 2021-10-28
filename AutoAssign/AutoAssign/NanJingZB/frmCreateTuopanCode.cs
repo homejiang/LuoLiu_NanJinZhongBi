@@ -29,24 +29,47 @@ namespace AutoAssign.NanJingZB
         }
         #endregion 
         List<TextBox> _Textbox = null;
-        public frmCreateTuopanCode()
+        public frmCreateTuopanCode(string sCodeHeader)
         {
             InitializeComponent();
+           
             this.tbCode1_3.Tag = 3;
             this.tbCode2_1.Tag = 1;
             this.tbCode3_1.Tag = 1;
             this.tbCode4_2.Tag = 2;
+            this.tbCode5_7.Tag = 7;
             _Textbox = new List<TextBox>();
             _Textbox.Add(tbCode1_3);
             _Textbox.Add(tbCode2_1);
             _Textbox.Add(tbCode3_1);
             _Textbox.Add(tbCode4_2);
+            _Textbox.Add(tbCode5_7);
+            #region 分配已有数据
+            int iStartPos = 0;
             foreach(TextBox tb in _Textbox)
+            {
+                int iLen = int.Parse(tb.Tag.ToString());
+                string sMyCode;
+                if (sCodeHeader.Length < iStartPos)
+                    sMyCode = string.Empty;
+                else
+                {
+                    if (sCodeHeader.Length < (iStartPos + iLen))
+                        sMyCode = sCodeHeader.Substring(iStartPos, sCodeHeader.Length - iStartPos);
+                    else sMyCode = sCodeHeader.Substring(iStartPos, iLen);
+                }
+                tb.Text = sMyCode;
+                iStartPos += iLen;
+            }
+            if (this.tbCode5_7.Text.Length == 0)
+                this.tbCode5_7.Text = "0000000";
+            this.BindSerial();
+            #endregion
+            foreach (TextBox tb in _Textbox)
             {
                 tb.TextChanged += Tb_TextChanged;
             }
         }
-
         private void Tb_TextChanged(object sender, EventArgs e)
         {
             TextBox tb = sender as TextBox;
@@ -70,6 +93,7 @@ namespace AutoAssign.NanJingZB
             if (tb.Equals(tbCode1_3)) return tbCode2_1;
             if (tb.Equals(tbCode2_1)) return tbCode3_1;
             if (tb.Equals(tbCode3_1)) return tbCode4_2;
+            if (tb.Equals(tbCode4_2)) return tbCode5_7;
             return null;
         }
         private void ShowErr(string sMsg)
@@ -85,9 +109,9 @@ namespace AutoAssign.NanJingZB
             {
                 sCode += tb.Text;
             }
-            if (sCode.Length != 7)
+            if (sCode.Length != 14)
             {
-                ShowErr("编码总长度不是7位");
+                ShowErr("编码总长度不是14位");
                 return false;
             }
             DataTable dt;
@@ -108,6 +132,7 @@ namespace AutoAssign.NanJingZB
                 iSerial++;
             }
             this.tbSerial.Text = iSerial.ToString();
+            this.ShowErr("");
             return true;
         }
         #endregion
@@ -117,11 +142,17 @@ namespace AutoAssign.NanJingZB
             string sCode = string.Empty;
             foreach (TextBox tb in this._Textbox)
             {
+                int i = int.Parse(tb.Tag.ToString());
+                if (i != tb.Text.Length)
+                {
+                    this.ShowMsg("编码长度填写不对！");
+                    return;
+                }
                 sCode += tb.Text;
             }
-            if (sCode.Length != 7)
+            if (sCode.Length != 14)
             {
-                this.ShowMsg("编码总长度不是7位");
+                this.ShowMsg("编码总长度不是14位");
                 return ;
             }
             //更新
@@ -148,7 +179,7 @@ namespace AutoAssign.NanJingZB
                     }
                     if(iReturnValue!=1)
                     {
-                        if(sErr.Length==0)sErr="序列号更新失败，原因未知。"
+                        if (sErr.Length == 0) sErr = "序列号更新失败，原因未知。";
                         this.ShowMsg(sErr);
                         return;
                     }

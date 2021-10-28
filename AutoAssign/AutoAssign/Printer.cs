@@ -112,7 +112,7 @@ namespace AutoAssign
                 Rectangle destRect = new Rectangle(MyPrinter.QRSet_Left, MyPrinter.QRSet_Top, QRSet_Rectangle, QRSet_Rectangle);
                 ImageAttributes imageAttributes = new ImageAttributes();
                 e.Graphics.DrawImage(map, destRect, 0, 0, QRSet_Inch, QRSet_Inch, GraphicsUnit.Inch, imageAttributes);
-                e.Graphics.DrawString(this.MyTuoPanCode, evFont, System.Drawing.Brushes.Black, new Point(MyPrinter.WordsSet_Left, MyPrinter.WordsSet_Top));
+                e.Graphics.DrawString($"{this.MyCaoIndex}#{this.MyTuoPanCode}", evFont, System.Drawing.Brushes.Black, new Point(MyPrinter.WordsSet_Left, MyPrinter.WordsSet_Top));
                 this.PrintFinishedNoticeAsyn(this.MyCaoIndex, this.MyTuoPanCode, true, string.Empty);
             }
             catch (Exception ex)

@@ -213,8 +213,8 @@ namespace AutoAssign
             this._MBatchOnOff = JPSEnum.OnOff.Off;
             this.ucSpeed.SetMyReelSatus(UserControls.DrawingReelSatus.Pen_Free);
             this.ucTotalSn.SetMyReelSatus(UserControls.DrawingReelSatus.Pen_Free);
-            this.ucTotalLpl.SetMyReelSatus(UserControls.DrawingReelSatus.Pen_Free);
-            this.ucTotalScannerLpl.SetMyReelSatus(UserControls.DrawingReelSatus.Pen_Free);
+            //this.ucTotalLpl.SetMyReelSatus(UserControls.DrawingReelSatus.Pen_Free);
+            //this.ucTotalScannerLpl.SetMyReelSatus(UserControls.DrawingReelSatus.Pen_Free);
             this.FormClear();
            // SetOnOffControlStyle(this.labMbatchNumCheckOnView, OnOff.None);
             //SetOnOffControlStyle(this.labSNContainCheckOnView, OnOff.None);
@@ -350,6 +350,8 @@ namespace AutoAssign
             this.btStop.Enabled = this._TestState == TestStates.Testing || this._TestState == TestStates.Pause;
             bool blReadOnly = this._TestState != TestStates.Free;
             this.tbTestCode.ReadOnly = blReadOnly;
+            this.tbTuopanCode.ReadOnly = this.tbTestCode.ReadOnly;
+            this.btTuopanCodeSettting.Enabled = !this.tbTuopanCode.ReadOnly;
             //this.tbOrderNo.ReadOnly = blReadOnly;
             SetFormStyle_SetLinkArea(this.linkModeView, blReadOnly);
             SetFormStyle_SetLinkArea(this.linkProductSpec, blReadOnly);
@@ -634,7 +636,7 @@ namespace AutoAssign
             DataRow dr = dt.DefaultView[0].Row;
             this.tbModeView.Text = JPSFuns.GetModeView(dr["ModeIsNeter"], dr["ModeIsScaner"]);
             this.tbProductSpec.Text = string.Format("{0}({1})-{2}[扫描枪{3}]", dr["ClassName"].ToString(), dr["Value"].ToString(), dr["Spec"].ToString(), dr["Scanner"].ToString());
-            
+            this.tbTuopanCode.Text = dr["Tuopancode"].ToString();
             //this.tbGongYiType.Text = dr["GongYiTypeName"].ToString();
             //this.tbCapacity.Text = Common.CommonFuns.FormatData.GetStringByDecimal(dr["Capacity"], "#########0.######");
             //this.tbCapacity1.Text = Common.CommonFuns.FormatData.GetStringByDecimal(dr["Capacity1"], "#########0.######");
@@ -738,30 +740,7 @@ namespace AutoAssign
             #endregion
             return true;
 ;        }
-        private bool BindOrderInfo()
-        {
-            DataTable dt;
-            try
-            {
-                dt = Common.CommonDAL.DoSqlCommand.GetDateTable(string.Format("exec ExpFuns_GetTuopanCodeInfo '{0}'", JPSConfig.MacNo));
-            }
-            catch (Exception ex)
-            {
-                wErrorMessage.ShowErrorDialog(this, ex);
-                return false;
-            }
-            if (dt.Rows.Count == 0)
-            {
-                this.tbTuoPan1.Clear();
-                this.tbTuoPan2.Clear();
-            }
-            else
-            {
-                this.tbTuoPan1.Text = dt.Rows[0]["TuoPanCode"].ToString();
-                this.tbTuoPan2.Text = dt.Rows[0]["MxValue"].ToString();
-            }
-            return true;
-        }
+        
         private bool BindStatisticData()
         {
             DataTable dtDetail = this.dgvGroove.DataSource as DataTable;
@@ -787,26 +766,33 @@ namespace AutoAssign
         }
         private bool BindTuoPanCodeInfo()
         {
+            string sHeader = this.tbTuopanCode.Text.Trim();
+            if(sHeader.Length==0)
+            {
+                this.tbTuoPan2.Text = "----";
+                return true;
+            }
             DataTable dt;
             try
             {
-                dt = Common.CommonDAL.DoSqlCommand.GetDateTable(string.Format("exec ExpFuns_GetTuopanCodeInfo '{0}'", JPSConfig.MacNo));
+                dt = Common.CommonDAL.DoSqlCommand.GetDateTable($"SELECT * FROM Testing_MaxTuoPanCode WHERE YYM='{sHeader.Replace("'","''")}'");
             }
             catch (Exception ex)
             {
                 wErrorMessage.ShowErrorDialog(this, ex);
                 return false;
             }
+            int iSerial;
             if (dt.Rows.Count == 0)
             {
-                this.tbTuoPan1.Clear();
-                this.tbTuoPan2.Clear();
+                iSerial = 1;
             }
             else
             {
-                this.tbTuoPan1.Text = dt.Rows[0]["TuoPanCode"].ToString();
-                this.tbTuoPan2.Text = dt.Rows[0]["MxValue"].ToString();
+                iSerial = dt.Rows[0]["MaxCode"].Equals(DBNull.Value) ? 0 : int.Parse(dt.Rows[0]["MaxCode"].ToString());
+                iSerial++;
             }
+            this.tbTuoPan2.Text = iSerial.ToString();
             return true;
         }
         
@@ -1132,9 +1118,9 @@ namespace AutoAssign
                 return false;
             }
             this.tbTuopanCode.Text = this.tbTuopanCode.Text.Trim();
-            if (this.tbTuopanCode.Text.Length !=7)
+            if (this.tbTuopanCode.Text.Length !=14)
             {
-                this.ShowMsg("请正确输入托盘编号，长度为7个字符。");
+                this.ShowMsg("请正确输入托盘编号，长度为14个字符。");
                 return false;
             }
             DataTable dtSource = null;
@@ -2477,6 +2463,10 @@ namespace AutoAssign
         public void RefreshTuopanPlanProgress(bool blCompeleted, int iPlanFinishedCnt)
         {
             //通知主线程，当前计划完成情况
+            if (this.tbCompeletedCnt.Text != iPlanFinishedCnt.ToString())
+            {
+                this.BindTuoPanCodeInfo();
+            }
             if (!blCompeleted)
             {
                 this.tbCompeletedCnt.Text = iPlanFinishedCnt.ToString();
@@ -2633,22 +2623,22 @@ namespace AutoAssign
             if (blSucessfully)
             {
                 this.ucTotalSn.SetMyText(iSnCnt);
-                this.ucTotalScannerLpl.SetMyText(decScannLpl);
-                this.ucTotalLpl.SetMyText(decLpl);
-                
+                //this.ucTotalScannerLpl.SetMyText(decScannLpl);
+                //this.ucTotalLpl.SetMyText(decLpl);
+
                 this.ucTotalSn.SetMyReelSatus(UserControls.DrawingReelSatus.Pen_Free);
-                this.ucTotalScannerLpl.SetMyReelSatus(UserControls.DrawingReelSatus.Pen_Free);
-                this.ucTotalLpl.SetMyReelSatus(UserControls.DrawingReelSatus.Pen_Free);
+                // this.ucTotalScannerLpl.SetMyReelSatus(UserControls.DrawingReelSatus.Pen_Free);
+                //this.ucTotalLpl.SetMyReelSatus(UserControls.DrawingReelSatus.Pen_Free);
             }
             else
             {
                 this.ucTotalSn.SetMyText("Error");
-                this.ucTotalScannerLpl.SetMyText("Error");
-                this.ucTotalLpl.SetMyText("Error");
+                // this.ucTotalScannerLpl.SetMyText("Error");
+                //  this.ucTotalLpl.SetMyText("Error");
 
                 this.ucTotalSn.SetMyReelSatus(UserControls.DrawingReelSatus.Pen_BaoJing);
-                this.ucTotalScannerLpl.SetMyReelSatus(UserControls.DrawingReelSatus.Pen_BaoJing);
-                this.ucTotalLpl.SetMyReelSatus(UserControls.DrawingReelSatus.Pen_BaoJing);
+                // this.ucTotalScannerLpl.SetMyReelSatus(UserControls.DrawingReelSatus.Pen_BaoJing);
+                //this.ucTotalLpl.SetMyReelSatus(UserControls.DrawingReelSatus.Pen_BaoJing);
                 this.ShowErr(sErr);
             }
         }
@@ -3299,9 +3289,8 @@ namespace AutoAssign
                 this.ShowMsg("当前不是新建状态，不能修改。");
                 return;
             }
-            ExpFuns.frmSetTuoPanCode1 frm = new ExpFuns.frmSetTuoPanCode1();
-            if (DialogResult.OK != frm.ShowDialog(this)) return;
-            this.BindTuoPanCodeInfo();
+            this.btTuopanCodeSettting_Click(null, null);
+            
         }
 
         private void linkTuoPanCode2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -3498,11 +3487,11 @@ namespace AutoAssign
 
         private void btTuopanCodeSettting_Click(object sender, EventArgs e)
         {
-            NanJingZB.frmCreateTuopanCode frm = new NanJingZB.frmCreateTuopanCode();
-            frm._CodeHeader = this.tbTuopanCode.Text;
+            NanJingZB.frmCreateTuopanCode frm = new NanJingZB.frmCreateTuopanCode(this.tbTuopanCode.Text);
+   
             if (DialogResult.OK != frm.ShowDialog()) return;
             this.tbTuopanCode.Text = frm._CodeHeader;
-            BindTuoPanCodeInfo();
+            this.BindTuoPanCodeInfo();
         }
     }
 }
