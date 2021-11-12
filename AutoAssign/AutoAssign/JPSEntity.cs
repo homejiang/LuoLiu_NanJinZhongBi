@@ -7737,6 +7737,250 @@ namespace AutoAssign.JPSEntity
         #endregion
     }
     #endregion
+    #region 拷贝数据线程
+    public class ReadSNListen
+    {
+        public event InputSNCallBack InputSNNotice = null;
+        public event StopedListenCallBack StopedListenNotice = null;
+        public event ShowMsgAsynCallBack ShowLogNotice = null;
+        public event ShowMsgAsynCallBack ShowErrNotice = null;
+        public System.Windows.Forms.Form MyForm = null;
+        public bool Interrupt = false;
+        public int StopCase = 0;
+        Thread _thread = null;
+        public bool Running = false;
+        List<RemoteSNEntity> _Datas;
+        int Index = 0;
+        public ReadSNListen(System.Windows.Forms.Form mform)
+        {
+            this.MyForm = mform;
+        }
+        public bool StartListenning(List<RemoteSNEntity> datas, out string sErr)
+        {
+            if (this.Running)
+            {
+                sErr = "线程已经开启，请勿重复打开。";
+                return false;
+            }
+            if (datas == null || datas.Count==0)
+            {
+                sErr = "传入的数据为空！";
+                return false;
+            }
+            this._Datas = datas;
+            this.Interrupt = false;
+            this.StopCase = 0;
+            _thread = new System.Threading.Thread(new System.Threading.ThreadStart(Listen));
+            _thread.IsBackground = true;
+            try
+            {
+                _thread.Start();
+            }
+            catch (Exception ex)
+            {
+                sErr = string.Format("数据拷贝线程启动时出错：{0}({1})", ex.Message, ex.Source);
+                this.Running = false;
+                return false;
+            }
+            sErr = string.Empty;
+            return true;
+        }
+        private void Listen()
+        {
+            this.Running = true;
+            Listeniing();
+            this.Running = false;
+            CallStopedListenAsync(this.StopCase);
+        }
+        
+        private void Listeniing()
+        {
+            int iIndex = 0;
+            foreach (RemoteSNEntity sndata in this._Datas)
+            {
+                if(!this.Running)
+                {
+                    this.CallInputSNNoticeAsync(true, false, "强制终止", this._Datas.Count, iIndex);
+                    return;
+                }
+                List<string> listSql = new List<string>();
+                listSql.Add($"DELETE FROM NanJingZB_DXOrgData WHERE SN='{sndata.SN}'");
+                listSql.Add($"INSERT INTO NanJingZB_DXOrgData (SN,InputCode,Capacity,R,V,Times) VALUES('{sndata.SN}','{sndata.InputCode}',{sndata.Capacity},{sndata.R},{sndata.V},GETDATE())");
+                try
+                {
+                    Common.CommonDAL.DoSqlCommand.DoSql(listSql);
+                }
+                catch(Exception ex)
+                {
+                    this.CallInputSNNoticeAsync(true, false, ex.Message, this._Datas.Count, iIndex);
+                    return;
+                }
+                try
+                {
+                    Common.CommonDAL.DoSqlCommandRemoteMES.DoSql($"UPDATE DianXin_ListData SET Inputed=1 WHERE ItemCode='{sndata.SN}'");
+                }
+                catch (Exception ex)
+                {
+                    this.CallInputSNNoticeAsync(true, false, "远程数据库：" + ex.Message, this._Datas.Count, iIndex);
+                    return;
+                }
+                iIndex++;
+                this.CallInputSNNoticeAsync(false, true, string.Empty, this._Datas.Count, iIndex);
+                //通知界面
+            }
+            this.CallInputSNNoticeAsync(true, true, string.Empty, this._Datas.Count, iIndex);
+        }
+        /// <summary>
+        /// 关闭线程
+        /// </summary>
+        /// <param name="iStopCase">99意思是退出窗口</param>
+        public void CallInputSNNoticeAsync(bool blCompelted, bool blSucessful, string sErr, int iTotalCnt, int iInputedCnt)
+        {
+            InputSNCallBack call = new InputSNCallBack(CallInputSNNotice);
+            try
+            {
+                this.MyForm.Invoke(call, new object[] { blCompelted, blSucessful, sErr, iTotalCnt, iInputedCnt });
+            }
+            catch(Exception ex)
+            {
+
+            }
+        }
+        public void CallInputSNNotice(bool blCompelted, bool blSucessful, string sErr, int iTotalCnt, int iInputedCnt)
+        {
+            //通知界面
+            if (this.InputSNNotice != null)
+                this.InputSNNotice(blCompelted, blSucessful, sErr, iTotalCnt, iInputedCnt);
+        }
+        public void StopListenning(int iStopCase = 0)
+        {
+            StopCase = iStopCase;
+            this.Running = false;
+        }
+        #region 消息
+        private void CallStopedListenAsync(int iStopCase)
+        {
+            StopedListenCallBack call = new StopedListenCallBack(CallStopedListen);
+            try
+            {
+                this.MyForm.Invoke(call, new object[] { iStopCase });
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+        private void CallStopedListen(int iStopCase)
+        {
+            if (this.StopedListenNotice != null)
+                this.StopedListenNotice(iStopCase);
+        }
+
+        /// <summary>
+        /// 异步消息显示
+        /// </summary>
+        /// <param name="sMsg">消息内容</param>
+        public void ShowErrAsyn(string sMsg)
+        {
+            this.SetInterrupt(true);
+            AppLogger.ShowErr(sMsg);
+            ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowErr);
+            try
+            {
+                this.MyForm.Invoke(cb, new object[1] { sMsg });
+            }
+            catch (Exception ex)
+            {
+                return;
+            }
+        }
+        private void ShowErr(string sMsg)
+        {
+            if (this.ShowErrNotice != null)
+                this.ShowErrNotice(sMsg);
+        }
+        public void ShowLogAsyn(string sMsg)
+        {
+            AppLogger.ShowLog(sMsg);
+            ShowMsgAsynCallBack cb = new ShowMsgAsynCallBack(ShowLog);
+            try
+            {
+                this.MyForm.Invoke(cb, new object[1] { sMsg });
+            }
+            catch (Exception ex)
+            {
+                return;
+            }
+        }
+        public void ShowLog(string sMsg)
+        {
+            if (this.ShowLogNotice != null)
+                this.ShowLogNotice(sMsg);
+        }
+      
+        private void SetInterrupt(bool blInterrupt)
+        {
+            if (this.Interrupt != blInterrupt)
+                this.Interrupt = blInterrupt;
+        }
+        #endregion
+        #region 相关类
+        public delegate void InputSNCallBack(bool blCompelted, bool blSucessful, string sErr, int iTotalCnt, int iInputedCnt);
+        public class RemoteSNEntity
+        {
+            public RemoteSNEntity()
+            {
+            }
+            private string _strSN;
+            /// <summary>
+            ///
+            /// </summary>
+            public string SN
+            {
+                get { return this._strSN; }
+                set { this._strSN = value; }
+            }
+            private string _strInputCode;
+            /// <summary>
+            ///
+            /// </summary>
+            public string InputCode
+            {
+                get { return this._strInputCode; }
+                set { this._strInputCode = value; }
+            }
+            private decimal _decCapacity;
+            /// <summary>
+            ///
+            /// </summary>
+            public decimal Capacity
+            {
+                get { return this._decCapacity; }
+                set { this._decCapacity = value; }
+            }
+            private decimal _decR;
+            /// <summary>
+            ///
+            /// </summary>
+            public decimal R
+            {
+                get { return this._decR; }
+                set { this._decR = value; }
+            }
+            private decimal _decV;
+            /// <summary>
+            ///
+            /// </summary>
+            public decimal V
+            {
+                get { return this._decV; }
+                set { this._decV = value; }
+            }
+
+        }
+        #endregion
+    }
+    #endregion
     public delegate void ShowMsgAsynCallBack(string sMsg);
     public delegate void SocketClientReceveCallBack(List<string> listSn);
     public delegate void SocketClientReceveOrginalDataCallBack(string sData);

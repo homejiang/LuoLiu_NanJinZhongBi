@@ -89,6 +89,12 @@
     <Compile Include="BasicData\frmSelectAutoMKMode.Designer.cs">
       <DependentUpon>frmSelectAutoMKMode.cs</DependentUpon>
     </Compile>
+    <Compile Include="BasicData\frmSelectSN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicData\frmSelectSN.Designer.cs">
+      <DependentUpon>frmSelectSN.cs</DependentUpon>
+    </Compile>
     <Compile Include="BasicData\frmSelectSwitchMode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -408,6 +414,12 @@
     <Compile Include="frmErrMsg.Designer.cs">
       <DependentUpon>frmErrMsg.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInputingSN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputingSN.Designer.cs">
+      <DependentUpon>frmInputingSN.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNewTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -720,6 +732,9 @@
     <EmbeddedResource Include="BasicData\frmSelectAutoMKMode.resx">
       <DependentUpon>frmSelectAutoMKMode.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BasicData\frmSelectSN.resx">
+      <DependentUpon>frmSelectSN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BasicData\frmSelectSwitchMode.resx">
       <DependentUpon>frmSelectSwitchMode.cs</DependentUpon>
     </EmbeddedResource>
@@ -876,6 +891,9 @@
     <EmbeddedResource Include="frmErrMsg.resx">
       <DependentUpon>frmErrMsg.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputingSN.resx">
+      <DependentUpon>frmInputingSN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNewTest.resx">
       <DependentUpon>frmNewTest.cs</DependentUpon>

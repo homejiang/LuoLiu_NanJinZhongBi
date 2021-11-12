@@ -3493,5 +3493,27 @@ namespace AutoAssign
             this.tbTuopanCode.Text = frm._CodeHeader;
             this.BindTuoPanCodeInfo();
         }
+
+        private void btInputSN_Click(object sender, EventArgs e)
+        {
+            BasicData.frmSelectSN frm = new BasicData.frmSelectSN();
+            frm.MultiSelected = true;
+            if (DialogResult.OK != frm.ShowDialog(this)) return;
+            if (frm.SelectedData == null || frm.SelectedData.Count == 0) return;
+            List<ReadSNListen.RemoteSNEntity> datas = new List<ReadSNListen.RemoteSNEntity>();
+            foreach(BasicData.frmSelectSN.SelectedSNData seldata in frm.SelectedData)
+            {
+                ReadSNListen.RemoteSNEntity snData = new ReadSNListen.RemoteSNEntity();
+                snData.SN = seldata.ItemCode.ToString();
+                snData.InputCode = seldata.PatchCode.ToString();
+                snData.Capacity = seldata.Capacity.Equals(DBNull.Value) ? 0M : decimal.Parse(seldata.Capacity.ToString());
+                snData.R = seldata.Resistance.Equals(DBNull.Value) ? 0M : decimal.Parse(seldata.Resistance.ToString());
+                snData.V = seldata.Voltage.Equals(DBNull.Value) ? 0M : decimal.Parse(seldata.Voltage.ToString());
+                datas.Add(snData);
+            }
+            frmInputingSN frm1 = new frmInputingSN(datas);
+            frm1.TopMost = true;
+            frm1.ShowDialog();
+        }
     }
 }
