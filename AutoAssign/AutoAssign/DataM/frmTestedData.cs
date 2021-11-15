@@ -489,5 +489,12 @@ namespace AutoAssign.DataM
                 this.tbYacha.Text = Common.CommonFuns.FormatData.GetStringByDecimal(dt.Rows[0]["YaCha"], "#########0.######");
             }
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ExpFuns.frmToExcel frm = new ExpFuns.frmToExcel(this._TestCode);
+            frm.ShowDialog(this);
+
+        }
+
     }
 }
