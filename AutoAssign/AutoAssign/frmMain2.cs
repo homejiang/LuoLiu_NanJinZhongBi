@@ -3105,7 +3105,7 @@ namespace AutoAssign
 
         private void 继续未完成的测试ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(this._TestCode.Length==0)
+            if (this._TestCode.Length == 0)
             {
                 this.ShowMsg("当前没有测试。");
                 return;

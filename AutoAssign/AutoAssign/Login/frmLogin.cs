@@ -53,6 +53,7 @@ namespace AutoAssign.Login
             return true;
         }
         private bool BindUserName(string strUserCode)
+        
         {
             DataTable dt = null;
             try

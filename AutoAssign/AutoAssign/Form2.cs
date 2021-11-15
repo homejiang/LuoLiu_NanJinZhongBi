@@ -63,5 +63,11 @@ namespace AutoAssign
                 //this.tbBitsMoir.Text = this.tbBits.Text.Substring(this.tbBits.Text.Length - 1) + this.tbBitsMoir.Text;
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ExpFuns.frmToExcel frm = new ExpFuns.frmToExcel("1906140001");
+            frm.ShowDialog(this);
+        }
     }
 }

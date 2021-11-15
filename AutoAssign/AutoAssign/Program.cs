@@ -42,6 +42,7 @@ namespace AutoAssign
             //Application.Run(new Form1());return;
             //Application.Run(new PeiFang.frmPeiFangEdit()); return;
             Application.Run(new frmMain1());
+           // Application.Run(new Form2());
         }
 
     }
