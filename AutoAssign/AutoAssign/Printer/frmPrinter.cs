@@ -29,16 +29,26 @@ namespace AutoAssign.Printer
                 this.ShowMsg("请输入标签编号。");
                 return;
             }
+            int iNo;
+            if(!int.TryParse(this.comGrooveNo.Text,out iNo))
+            {
+                this.ShowMsg("请正确输入槽号！");
+                return;
+            }
             if (this._Printer == null)
             {
                 this.ShowMsg("打印机对象为空！");
                 return;
             }
-            this._Printer.Printing(this.textBox1.Text, 0);
+            this._Printer.Printing(this.textBox1.Text, (short)iNo);
         }
         AutoAssign.MyPrinter _Printer = null;
         private void frmPrinter_Load(object sender, EventArgs e)
         {
+            for(int i=1;i<=9;i++)
+            {
+                this.comGrooveNo.Items.Add(i.ToString());
+            }
             this._Printer = new MyPrinter();
             this._Printer.PrintFinishedNotice += _Printer_PrintFinishedNotice;
         }
