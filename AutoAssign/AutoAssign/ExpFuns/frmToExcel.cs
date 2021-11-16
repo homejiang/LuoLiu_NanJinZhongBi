@@ -25,14 +25,16 @@ namespace AutoAssign.ExpFuns
         const string BTText_Start = "开始导出";
         const string BTText_Stop = "终止";
         const string BTText_Exportting = "导出进行中";
-        const string BTText_complate = "完成";
+        const string BTText_complate = "重新导出";
         #endregion
         int _MaxValue = 0;
         int _Value = 0;
-        public frmToExcel(string sTestCode)
+        public frmToExcel(string sTestCode, string sBatTable, string sResultTable)
         {
             InitializeComponent();
             this._TestCode = sTestCode;
+            this._BatTableName = sBatTable;
+            this._ResultTableName = sResultTable;
             this.label1.Text = string.Format("分选批次{0}数据导出Excel", sTestCode);
         }
         public frmToExcel()
@@ -101,9 +103,10 @@ namespace AutoAssign.ExpFuns
                     this.ShowMsg(strErr);
                     return;
                 }
-
-                this.btTrue.Text = BTText_complate;
-                this.btTrue.Enabled = true;
+                this.Close();
+                this.ShowMsgRich("导出成功！");
+                //this.btTrue.Text = BTText_complate;
+                //this.btTrue.Enabled = true;
             }           
         }
 
@@ -112,9 +115,9 @@ namespace AutoAssign.ExpFuns
             strErr = "";
              DataSet ds = null;
             List<Common.CommonDAL.SqlSearchEntiy> listSql = new List<Common.CommonDAL.SqlSearchEntiy>();
-            listSql.Add(new Common.CommonDAL.SqlSearchEntiy(string.Format("select * from [dbo].[V_Tested_Grooves_1] WHERE 批次编号='{0}'", this._TestCode.Replace("'", "''")), "良品"));
-            listSql.Add(new Common.CommonDAL.SqlSearchEntiy(string.Format("select * from [dbo].[V_Tested_Grooves_2] WHERE 批次编号='{0}'", this._TestCode.Replace("'", "''")), "不良品"));
-            listSql.Add(new Common.CommonDAL.SqlSearchEntiy(string.Format("select * from [dbo].[V_Tested_Grooves_0] WHERE 批次编号='{0}'", this._TestCode.Replace("'", "''")), "其他"));
+            listSql.Add(new Common.CommonDAL.SqlSearchEntiy(string.Format("EXEC [dbo].[Tested_Grooves_1] '{0}' ,'{1}'", this._ResultTableName.Replace("'", "''"), this._BatTableName.Replace("'", "''")), "合格"));
+            listSql.Add(new Common.CommonDAL.SqlSearchEntiy(string.Format("EXEC [dbo].[Tested_Grooves_2] '{0}' ,'{1}'", this._ResultTableName.Replace("'", "''"), this._BatTableName.Replace("'", "''")), "不合格"));
+            listSql.Add(new Common.CommonDAL.SqlSearchEntiy(string.Format("EXEC [dbo].[Tested_Grooves_0] '{0}' ,'{1}'", this._ResultTableName.Replace("'", "''"), this._BatTableName.Replace("'", "''")), "其他"));
             try
             {
                 ds = Common.CommonDAL.DoSqlCommand.GetDateSet(listSql);
@@ -125,6 +128,16 @@ namespace AutoAssign.ExpFuns
                
             }
             _MyCsvWriter_CsvSaveFinishedNotice(false, false, 50);
+
+            //try
+            //{
+            //    ExcelRender.RenderToExcel(ds, strFile);
+            //}
+            //catch (Exception ex)
+            //{
+            //    strErr = string.Format("写入Excel数据时出错：{0}({1})", ex.Message, ex.Source);
+            //    return false;
+            //}
             Thread _thread = new Thread(() => ExcelRender.RenderToExcel(ds, strFile));
             _thread.IsBackground = true;
             try
@@ -136,7 +149,6 @@ namespace AutoAssign.ExpFuns
                 strErr = string.Format("写入Excel数据时出错：{0}({1})", ex.Message, ex.Source);
                 return false;
             }
-         //   ExcelRender.RenderToExcel(ds, strFile);
             _MyCsvWriter_CsvSaveFinishedNotice(true, true, 100);
             return true;
         }
