@@ -57,4 +57,3 @@ D:\ALZFiles\SLN\AutoAssign\JpsOPC\bin\Debug\JpsOPC.pdb
 D:\ALZFiles\SLN\AutoAssign\JpsOPC\obj\Debug\JpsOPC.csproj.CoreCompileInputs.cache
 D:\ALZFiles\SLN\AutoAssign\JpsOPC\obj\Debug\JpsOPC.dll
 D:\ALZFiles\SLN\AutoAssign\JpsOPC\obj\Debug\JpsOPC.pdb
-D:\ALZFiles\SLN\AutoAssign\JpsOPC\obj\Debug\JpsOPC.csproj.AssemblyReference.cache

@@ -56,5 +56,4 @@ D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\obj\Release\ConsoleTestr.csproj.CopyComp
 D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\obj\Release\ConsoleTestr.exe
 D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\obj\Release\ConsoleTestr.pdb
 D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Release\NPOI.dll
-D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Release\ICSharpCode.SharpZipLib.dll
 D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Release\NPOI.xml

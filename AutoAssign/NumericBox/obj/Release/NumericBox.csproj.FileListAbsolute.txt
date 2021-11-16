@@ -32,7 +32,6 @@ D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJi
 D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\NumericBox\obj\Release\NumericBox.csprojResolveAssemblyReference.cache
 D:\ALZFiles\SLN\AutoAssign\NumericBox\bin\Release\NumericBox.dll
 D:\ALZFiles\SLN\AutoAssign\NumericBox\bin\Release\NumericBox.pdb
-D:\ALZFiles\SLN\AutoAssign\NumericBox\obj\Release\NumericBox.csproj.AssemblyReference.cache
 D:\ALZFiles\SLN\AutoAssign\NumericBox\obj\Release\NumericBox.csproj.CoreCompileInputs.cache
 D:\ALZFiles\SLN\AutoAssign\NumericBox\obj\Release\NumericBox.dll
 D:\ALZFiles\SLN\AutoAssign\NumericBox\obj\Release\NumericBox.pdb

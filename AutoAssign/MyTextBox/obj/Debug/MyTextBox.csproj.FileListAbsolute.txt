@@ -30,3 +30,4 @@ D:\ALZFiles\SLN\AutoAssign\MyTextBox\bin\Debug\MyTextBox.pdb
 D:\ALZFiles\SLN\AutoAssign\MyTextBox\obj\Debug\MyTextBox.csproj.CoreCompileInputs.cache
 D:\ALZFiles\SLN\AutoAssign\MyTextBox\obj\Debug\MyTextBox.dll
 D:\ALZFiles\SLN\AutoAssign\MyTextBox\obj\Debug\MyTextBox.pdb
+D:\ALZFiles\SLN\AutoAssign\MyTextBox\obj\Debug\MyTextBox.csproj.AssemblyReference.cache

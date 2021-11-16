@@ -982,12 +982,11 @@ D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucMyGr
 D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.ucRecordPage.resources
 D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.GenerateResource.cache
 D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.CoreCompileInputs.cache
-D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.CopyComplete
 D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.exe
 D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.pdb
 D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\NPOI.dll
 D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\NPOI.OOXML.dll
 D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\NPOI.OpenXml4Net.dll
 D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\NPOI.OpenXmlFormats.dll
-D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\ICSharpCode.SharpZipLib.dll
 D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmToExcel.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.CopyComplete

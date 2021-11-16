@@ -866,4 +866,3 @@ D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Debug\AutoAssign.csproj.CoreCompileInp
 D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Debug\AutoAssign.exe
 D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Debug\AutoAssign.pdb
 D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Debug\AutoAssign.ExpFuns.frmToExcel.resources
-D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Debug\AutoAssign.csproj.CopyComplete

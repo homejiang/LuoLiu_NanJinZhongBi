@@ -318,6 +318,7 @@ namespace AutoAssign.DataM
         #endregion
         private void frmTestedData_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             this.BindData();
         }
 
@@ -491,7 +492,7 @@ namespace AutoAssign.DataM
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            ExpFuns.frmToExcel frm = new ExpFuns.frmToExcel(this._TestCode);
+            ExpFuns.frmToExcel frm = new ExpFuns.frmToExcel(this._TestCode, this._RealTable_Batterys, this._RealTable_Result);
             frm.ShowDialog(this);
 
         }

@@ -28,72 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("槽1", new System.Windows.Forms.TreeNode[] {
-            treeNode1});
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("槽2", new System.Windows.Forms.TreeNode[] {
-            treeNode3});
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("槽3", new System.Windows.Forms.TreeNode[] {
-            treeNode5});
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("槽4", new System.Windows.Forms.TreeNode[] {
-            treeNode7});
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("槽5", new System.Windows.Forms.TreeNode[] {
-            treeNode9});
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("槽6", new System.Windows.Forms.TreeNode[] {
-            treeNode11});
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("槽7", new System.Windows.Forms.TreeNode[] {
-            treeNode13});
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("槽8", new System.Windows.Forms.TreeNode[] {
-            treeNode15});
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("槽9", new System.Windows.Forms.TreeNode[] {
-            treeNode17});
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("槽10", new System.Windows.Forms.TreeNode[] {
-            treeNode19});
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("槽11", new System.Windows.Forms.TreeNode[] {
-            treeNode21});
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("槽12", new System.Windows.Forms.TreeNode[] {
-            treeNode23});
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("槽13", new System.Windows.Forms.TreeNode[] {
-            treeNode25});
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("槽14", new System.Windows.Forms.TreeNode[] {
-            treeNode27});
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("槽15", new System.Windows.Forms.TreeNode[] {
-            treeNode29});
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("槽16", new System.Windows.Forms.TreeNode[] {
-            treeNode31});
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("槽17", new System.Windows.Forms.TreeNode[] {
-            treeNode33});
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("加载中......");
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("槽18", new System.Windows.Forms.TreeNode[] {
-            treeNode35});
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("槽1", new System.Windows.Forms.TreeNode[] {
+            treeNode37});
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("槽2", new System.Windows.Forms.TreeNode[] {
+            treeNode39});
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("槽3", new System.Windows.Forms.TreeNode[] {
+            treeNode41});
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("槽4", new System.Windows.Forms.TreeNode[] {
+            treeNode43});
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("槽5", new System.Windows.Forms.TreeNode[] {
+            treeNode45});
+            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("槽6", new System.Windows.Forms.TreeNode[] {
+            treeNode47});
+            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("槽7", new System.Windows.Forms.TreeNode[] {
+            treeNode49});
+            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("槽8", new System.Windows.Forms.TreeNode[] {
+            treeNode51});
+            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("槽9", new System.Windows.Forms.TreeNode[] {
+            treeNode53});
+            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("槽10", new System.Windows.Forms.TreeNode[] {
+            treeNode55});
+            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("槽11", new System.Windows.Forms.TreeNode[] {
+            treeNode57});
+            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("槽12", new System.Windows.Forms.TreeNode[] {
+            treeNode59});
+            System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("槽13", new System.Windows.Forms.TreeNode[] {
+            treeNode61});
+            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("槽14", new System.Windows.Forms.TreeNode[] {
+            treeNode63});
+            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("槽15", new System.Windows.Forms.TreeNode[] {
+            treeNode65});
+            System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("槽16", new System.Windows.Forms.TreeNode[] {
+            treeNode67});
+            System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode70 = new System.Windows.Forms.TreeNode("槽17", new System.Windows.Forms.TreeNode[] {
+            treeNode69});
+            System.Windows.Forms.TreeNode treeNode71 = new System.Windows.Forms.TreeNode("加载中......");
+            System.Windows.Forms.TreeNode treeNode72 = new System.Windows.Forms.TreeNode("槽18", new System.Windows.Forms.TreeNode[] {
+            treeNode71});
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -699,14 +699,14 @@
             this.dgvGroove.AllowUserToAddRows = false;
             this.dgvGroove.AllowUserToDeleteRows = false;
             this.dgvGroove.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvGroove.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvGroove.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvGroove.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGroove.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -726,14 +726,14 @@
             this.dgvGroove.Margin = new System.Windows.Forms.Padding(0);
             this.dgvGroove.Name = "dgvGroove";
             this.dgvGroove.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvGroove.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvGroove.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dgvGroove.RowHeadersVisible = false;
             this.dgvGroove.RowHeadersWidth = 62;
             this.dgvGroove.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
@@ -744,9 +744,9 @@
             // Column1
             // 
             this.Column1.DataPropertyName = "GrooveNo";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle14;
             this.Column1.Frozen = true;
             this.Column1.HeaderText = "槽号";
             this.Column1.MinimumWidth = 8;
@@ -871,7 +871,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1504, 892);
+            this.tabPage2.Size = new System.Drawing.Size(1624, 892);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "测试结果";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -890,7 +890,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1496, 884);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1616, 884);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // splitContainer1
@@ -908,7 +908,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dgvList);
-            this.splitContainer1.Size = new System.Drawing.Size(1496, 844);
+            this.splitContainer1.Size = new System.Drawing.Size(1616, 844);
             this.splitContainer1.SplitterDistance = 179;
             this.splitContainer1.SplitterWidth = 6;
             this.splitContainer1.TabIndex = 0;
@@ -920,97 +920,97 @@
             this.tvTuoPan.Location = new System.Drawing.Point(0, 0);
             this.tvTuoPan.Margin = new System.Windows.Forms.Padding(4);
             this.tvTuoPan.Name = "tvTuoPan";
-            treeNode1.Name = "节点19";
-            treeNode1.Text = "加载中......";
-            treeNode2.Name = "tnRCao1";
-            treeNode2.Text = "槽1";
-            treeNode3.Name = "节点20";
-            treeNode3.Text = "加载中......";
-            treeNode4.Name = "tnRCao2";
-            treeNode4.Text = "槽2";
-            treeNode5.Name = "节点21";
-            treeNode5.Text = "加载中......";
-            treeNode6.Name = "tnRCao3";
-            treeNode6.Text = "槽3";
-            treeNode7.Name = "节点22";
-            treeNode7.Text = "加载中......";
-            treeNode8.Name = "tnRCao4";
-            treeNode8.Text = "槽4";
-            treeNode9.Name = "节点23";
-            treeNode9.Text = "加载中......";
-            treeNode10.Name = "tnRCao5";
-            treeNode10.Text = "槽5";
-            treeNode11.Name = "节点24";
-            treeNode11.Text = "加载中......";
-            treeNode12.Name = "tnRCao6";
-            treeNode12.Text = "槽6";
-            treeNode13.Name = "节点25";
-            treeNode13.Text = "加载中......";
-            treeNode14.Name = "tnRCao7";
-            treeNode14.Text = "槽7";
-            treeNode15.Name = "节点26";
-            treeNode15.Text = "加载中......";
-            treeNode16.Name = "tnRCao8";
-            treeNode16.Text = "槽8";
-            treeNode17.Name = "节点27";
-            treeNode17.Text = "加载中......";
-            treeNode18.Name = "tnRCao9";
-            treeNode18.Text = "槽9";
-            treeNode19.Name = "节点28";
-            treeNode19.Text = "加载中......";
-            treeNode20.Name = "tnRCao10";
-            treeNode20.Text = "槽10";
-            treeNode21.Name = "节点29";
-            treeNode21.Text = "加载中......";
-            treeNode22.Name = "tnRCao11";
-            treeNode22.Text = "槽11";
-            treeNode23.Name = "节点30";
-            treeNode23.Text = "加载中......";
-            treeNode24.Name = "tnRCao12";
-            treeNode24.Text = "槽12";
-            treeNode25.Name = "节点31";
-            treeNode25.Text = "加载中......";
-            treeNode26.Name = "tnRCao13";
-            treeNode26.Text = "槽13";
-            treeNode27.Name = "节点32";
-            treeNode27.Text = "加载中......";
-            treeNode28.Name = "tnRCao14";
-            treeNode28.Text = "槽14";
-            treeNode29.Name = "节点33";
-            treeNode29.Text = "加载中......";
-            treeNode30.Name = "tnRCao15";
-            treeNode30.Text = "槽15";
-            treeNode31.Name = "节点34";
-            treeNode31.Text = "加载中......";
-            treeNode32.Name = "tnRCao16";
-            treeNode32.Text = "槽16";
-            treeNode33.Name = "节点35";
-            treeNode33.Text = "加载中......";
-            treeNode34.Name = "tnRCao17";
-            treeNode34.Text = "槽17";
-            treeNode35.Name = "节点36";
-            treeNode35.Text = "加载中......";
-            treeNode36.Name = "tnRCao18";
-            treeNode36.Text = "槽18";
+            treeNode37.Name = "节点19";
+            treeNode37.Text = "加载中......";
+            treeNode38.Name = "tnRCao1";
+            treeNode38.Text = "槽1";
+            treeNode39.Name = "节点20";
+            treeNode39.Text = "加载中......";
+            treeNode40.Name = "tnRCao2";
+            treeNode40.Text = "槽2";
+            treeNode41.Name = "节点21";
+            treeNode41.Text = "加载中......";
+            treeNode42.Name = "tnRCao3";
+            treeNode42.Text = "槽3";
+            treeNode43.Name = "节点22";
+            treeNode43.Text = "加载中......";
+            treeNode44.Name = "tnRCao4";
+            treeNode44.Text = "槽4";
+            treeNode45.Name = "节点23";
+            treeNode45.Text = "加载中......";
+            treeNode46.Name = "tnRCao5";
+            treeNode46.Text = "槽5";
+            treeNode47.Name = "节点24";
+            treeNode47.Text = "加载中......";
+            treeNode48.Name = "tnRCao6";
+            treeNode48.Text = "槽6";
+            treeNode49.Name = "节点25";
+            treeNode49.Text = "加载中......";
+            treeNode50.Name = "tnRCao7";
+            treeNode50.Text = "槽7";
+            treeNode51.Name = "节点26";
+            treeNode51.Text = "加载中......";
+            treeNode52.Name = "tnRCao8";
+            treeNode52.Text = "槽8";
+            treeNode53.Name = "节点27";
+            treeNode53.Text = "加载中......";
+            treeNode54.Name = "tnRCao9";
+            treeNode54.Text = "槽9";
+            treeNode55.Name = "节点28";
+            treeNode55.Text = "加载中......";
+            treeNode56.Name = "tnRCao10";
+            treeNode56.Text = "槽10";
+            treeNode57.Name = "节点29";
+            treeNode57.Text = "加载中......";
+            treeNode58.Name = "tnRCao11";
+            treeNode58.Text = "槽11";
+            treeNode59.Name = "节点30";
+            treeNode59.Text = "加载中......";
+            treeNode60.Name = "tnRCao12";
+            treeNode60.Text = "槽12";
+            treeNode61.Name = "节点31";
+            treeNode61.Text = "加载中......";
+            treeNode62.Name = "tnRCao13";
+            treeNode62.Text = "槽13";
+            treeNode63.Name = "节点32";
+            treeNode63.Text = "加载中......";
+            treeNode64.Name = "tnRCao14";
+            treeNode64.Text = "槽14";
+            treeNode65.Name = "节点33";
+            treeNode65.Text = "加载中......";
+            treeNode66.Name = "tnRCao15";
+            treeNode66.Text = "槽15";
+            treeNode67.Name = "节点34";
+            treeNode67.Text = "加载中......";
+            treeNode68.Name = "tnRCao16";
+            treeNode68.Text = "槽16";
+            treeNode69.Name = "节点35";
+            treeNode69.Text = "加载中......";
+            treeNode70.Name = "tnRCao17";
+            treeNode70.Text = "槽17";
+            treeNode71.Name = "节点36";
+            treeNode71.Text = "加载中......";
+            treeNode72.Name = "tnRCao18";
+            treeNode72.Text = "槽18";
             this.tvTuoPan.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode2,
-            treeNode4,
-            treeNode6,
-            treeNode8,
-            treeNode10,
-            treeNode12,
-            treeNode14,
-            treeNode16,
-            treeNode18,
-            treeNode20,
-            treeNode22,
-            treeNode24,
-            treeNode26,
-            treeNode28,
-            treeNode30,
-            treeNode32,
-            treeNode34,
-            treeNode36});
+            treeNode38,
+            treeNode40,
+            treeNode42,
+            treeNode44,
+            treeNode46,
+            treeNode48,
+            treeNode50,
+            treeNode52,
+            treeNode54,
+            treeNode56,
+            treeNode58,
+            treeNode60,
+            treeNode62,
+            treeNode64,
+            treeNode66,
+            treeNode68,
+            treeNode70,
+            treeNode72});
             this.tvTuoPan.Size = new System.Drawing.Size(179, 844);
             this.tvTuoPan.TabIndex = 0;
             this.tvTuoPan.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvTuoPan_AfterSelect);
@@ -1046,7 +1046,7 @@
             this.dgvList.RowHeadersWidth = 62;
             this.dgvList.RowTemplate.Height = 23;
             this.dgvList.ShowLineNo = true;
-            this.dgvList.Size = new System.Drawing.Size(1311, 844);
+            this.dgvList.Size = new System.Drawing.Size(1431, 844);
             this.dgvList.TabIndex = 3;
             // 
             // Column15
@@ -1106,8 +1106,8 @@
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "V";
-            dataGridViewCellStyle4.Format = "#########0.0000";
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle16.Format = "#########0.0000";
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridViewTextBoxColumn6.HeaderText = "电压(V)";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
@@ -1117,8 +1117,8 @@
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "DianZu";
-            dataGridViewCellStyle5.Format = "#########0.0000";
-            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle17.Format = "#########0.0000";
+            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridViewTextBoxColumn7.HeaderText = "电阻(mΩ)";
             this.dataGridViewTextBoxColumn7.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
@@ -1137,8 +1137,8 @@
             // Column21
             // 
             this.Column21.DataPropertyName = "YaCha";
-            dataGridViewCellStyle6.Format = "#########0.######";
-            this.Column21.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle18.Format = "#########0.######";
+            this.Column21.DefaultCellStyle = dataGridViewCellStyle18;
             this.Column21.HeaderText = "压差";
             this.Column21.MinimumWidth = 8;
             this.Column21.Name = "Column21";
@@ -1157,8 +1157,8 @@
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "Times";
-            dataGridViewCellStyle7.Format = "yyyy-MM-dd HH:mm:ss";
-            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle19.Format = "yyyy-MM-dd HH:mm:ss";
+            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle19;
             this.dataGridViewTextBoxColumn8.HeaderText = "存入时间";
             this.dataGridViewTextBoxColumn8.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
@@ -1168,8 +1168,8 @@
             // Column22
             // 
             this.Column22.DataPropertyName = "OrgCap";
-            dataGridViewCellStyle8.Format = "#########0.###";
-            this.Column22.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle20.Format = "#########0.###";
+            this.Column22.DefaultCellStyle = dataGridViewCellStyle20;
             this.Column22.HeaderText = "原始容量";
             this.Column22.MinimumWidth = 8;
             this.Column22.Name = "Column22";
@@ -1179,8 +1179,8 @@
             // Column23
             // 
             this.Column23.DataPropertyName = "OrgV";
-            dataGridViewCellStyle9.Format = "#########0.###";
-            this.Column23.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle21.Format = "#########0.###";
+            this.Column23.DefaultCellStyle = dataGridViewCellStyle21;
             this.Column23.HeaderText = "原始电压";
             this.Column23.MinimumWidth = 8;
             this.Column23.Name = "Column23";
@@ -1190,8 +1190,8 @@
             // Column24
             // 
             this.Column24.DataPropertyName = "OrgR";
-            dataGridViewCellStyle10.Format = "#########0.###";
-            this.Column24.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle22.Format = "#########0.###";
+            this.Column24.DefaultCellStyle = dataGridViewCellStyle22;
             this.Column24.HeaderText = "原始内阻";
             this.Column24.MinimumWidth = 8;
             this.Column24.Name = "Column24";
@@ -1226,7 +1226,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1496, 40);
+            this.panel2.Size = new System.Drawing.Size(1616, 40);
             this.panel2.TabIndex = 1;
             // 
             // btClearDataByCaoIndex
@@ -1288,7 +1288,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(1504, 892);
+            this.tabPage3.Size = new System.Drawing.Size(1624, 892);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "未上传的托盘";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1307,7 +1307,7 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1496, 884);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1616, 884);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // panel3
@@ -1317,7 +1317,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1496, 75);
+            this.panel3.Size = new System.Drawing.Size(1616, 75);
             this.panel3.TabIndex = 0;
             // 
             // btSendMes
@@ -1349,7 +1349,7 @@
             this.dgvUnMES.ReadOnly = true;
             this.dgvUnMES.RowHeadersWidth = 62;
             this.dgvUnMES.RowTemplate.Height = 23;
-            this.dgvUnMES.Size = new System.Drawing.Size(1496, 809);
+            this.dgvUnMES.Size = new System.Drawing.Size(1616, 809);
             this.dgvUnMES.TabIndex = 1;
             // 
             // Column16
@@ -1373,8 +1373,8 @@
             // Column18
             // 
             this.Column18.DataPropertyName = "FinishedTime";
-            dataGridViewCellStyle11.Format = "yyyy-MM-dd HH:mm:ss";
-            this.Column18.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle23.Format = "yyyy-MM-dd HH:mm:ss";
+            this.Column18.DefaultCellStyle = dataGridViewCellStyle23;
             this.Column18.HeaderText = "完成时间";
             this.Column18.MinimumWidth = 8;
             this.Column18.Name = "Column18";
@@ -1396,7 +1396,7 @@
             this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Size = new System.Drawing.Size(1504, 892);
+            this.tabPage4.Size = new System.Drawing.Size(1624, 892);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "AB分档规则";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1422,7 +1422,7 @@
             this.dgvSwitch.ReadOnly = true;
             this.dgvSwitch.RowHeadersWidth = 62;
             this.dgvSwitch.RowTemplate.Height = 26;
-            this.dgvSwitch.Size = new System.Drawing.Size(1496, 884);
+            this.dgvSwitch.Size = new System.Drawing.Size(1616, 884);
             this.dgvSwitch.TabIndex = 13;
             // 
             // dataGridViewTextBoxColumn1
@@ -1439,8 +1439,8 @@
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.DataPropertyName = "Amin";
-            dataGridViewCellStyle12.Format = "########0.000";
-            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle24.Format = "########0.000";
+            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle24;
             this.dataGridViewTextBoxColumn10.HeaderText = "A档下限";
             this.dataGridViewTextBoxColumn10.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
@@ -1505,8 +1505,6 @@
             this.ClientSize = new System.Drawing.Size(1632, 1094);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(9);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "frmTestedData";
             this.Text = "检测结果";
             this.Load += new System.EventHandler(this.frmTestedData_Load);
