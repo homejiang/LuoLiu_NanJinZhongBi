@@ -1,0 +1,36 @@
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\MyTextBox\bin\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\MyTextBox\bin\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\MyTextBox\obj\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\MyTextBox\obj\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\MyTextBox\bin\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\MyTextBox\bin\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\MyTextBox\obj\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\MyTextBox\obj\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\MyTextBox\obj\Release\MyTextBox.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\MyTextBox\bin\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\MyTextBox\bin\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\MyTextBox\obj\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\MyTextBox\obj\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\MyTextBox\bin\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\MyTextBox\bin\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\MyTextBox\obj\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\MyTextBox\obj\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\MyTextBox\obj\Release\MyTextBox.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\MyTextBox\bin\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\MyTextBox\bin\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\MyTextBox\obj\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\MyTextBox\obj\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\MyTextBox\bin\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\MyTextBox\bin\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\MyTextBox\obj\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\MyTextBox\obj\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\MyTextBox\bin\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\MyTextBox\bin\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\MyTextBox\obj\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\MyTextBox\obj\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\MyTextBox\obj\Release\MyTextBox.csprojResolveAssemblyReference.cache
+D:\ALZFiles\SLN\AutoAssign\MyTextBox\bin\Release\MyTextBox.dll
+D:\ALZFiles\SLN\AutoAssign\MyTextBox\bin\Release\MyTextBox.pdb
+D:\ALZFiles\SLN\AutoAssign\MyTextBox\obj\Release\MyTextBox.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\AutoAssign\MyTextBox\obj\Release\MyTextBox.dll
+D:\ALZFiles\SLN\AutoAssign\MyTextBox\obj\Release\MyTextBox.pdb

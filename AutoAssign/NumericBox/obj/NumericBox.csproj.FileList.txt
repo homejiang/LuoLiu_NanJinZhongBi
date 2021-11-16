@@ -1,0 +1,10 @@
+bin\Release\NumericBox.dll
+bin\Release\NumericBox.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\NumericBox.dll
+obj\Release\NumericBox.pdb
+bin\Debug\NumericBox.dll
+bin\Debug\NumericBox.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\NumericBox.dll
+obj\Debug\NumericBox.pdb

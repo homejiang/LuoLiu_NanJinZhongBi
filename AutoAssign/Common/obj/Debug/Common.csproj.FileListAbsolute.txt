@@ -1,0 +1,191 @@
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\bin\Debug\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\bin\Debug\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\bin\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\bin\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.Execute.frmAPException.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.Form5.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.frmBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.frmDoSql.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.frmMainBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.frmMdiBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.frmSelectBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.frmUpdate1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.Msg.frmMsgRich.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.UpdateSqlServer.frmBearingUpdating.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.UserControls.frmMsgShineDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.UserControls.ucMsgShine.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.frmSetDbFile.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Debug\Common.Form6.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\bin\Debug\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\bin\Debug\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\bin\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\bin\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.Execute.frmAPException.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.Form5.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.Form6.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.frmBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.frmDoSql.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.frmMainBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.frmMdiBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.frmSelectBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.frmSetDbFile.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.frmUpdate1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.Msg.frmMsgRich.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.UpdateSqlServer.frmBearingUpdating.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.UserControls.frmMsgShineDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.UserControls.ucMsgShine.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Debug\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\bin\Debug\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\bin\Debug\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\bin\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\bin\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.Execute.frmAPException.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.Form5.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.Form6.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.frmBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.frmDoSql.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.frmMainBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.frmMdiBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.frmSelectBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.frmSetDbFile.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.frmUpdate1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.Msg.frmMsgRich.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.UpdateSqlServer.frmBearingUpdating.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.UserControls.frmMsgShineDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.UserControls.ucMsgShine.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Debug\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\bin\Debug\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\bin\Debug\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\bin\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\bin\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.Execute.frmAPException.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.Form5.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.Form6.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.frmBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.frmDoSql.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.frmMainBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.frmMdiBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.frmSelectBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.frmSetDbFile.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.frmUpdate1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.Msg.frmMsgRich.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.UpdateSqlServer.frmBearingUpdating.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.UserControls.frmMsgShineDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.UserControls.ucMsgShine.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Debug\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\bin\Debug\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\bin\Debug\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\bin\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\bin\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.Execute.frmAPException.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.Form5.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.Form6.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.frmBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.frmDoSql.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.frmMainBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.frmMdiBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.frmSelectBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.frmSetDbFile.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.frmUpdate1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.Msg.frmMsgRich.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.UpdateSqlServer.frmBearingUpdating.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.UserControls.frmMsgShineDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.UserControls.ucMsgShine.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Debug\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\bin\Debug\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\bin\Debug\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\bin\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\bin\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.Execute.frmAPException.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.Form5.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.Form6.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.frmBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.frmDoSql.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.frmMainBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.frmMdiBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.frmSelectBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.frmSetDbFile.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.frmUpdate1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.Msg.frmMsgRich.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.UpdateSqlServer.frmBearingUpdating.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.UserControls.frmMsgShineDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.UserControls.ucMsgShine.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Debug\Common.pdb
+D:\ALZFiles\SLN\AutoAssign\Common\bin\Debug\Common.exe
+D:\ALZFiles\SLN\AutoAssign\Common\bin\Debug\Common.pdb
+D:\ALZFiles\SLN\AutoAssign\Common\bin\Debug\ErrorService.dll
+D:\ALZFiles\SLN\AutoAssign\Common\bin\Debug\ErrorService.pdb
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.Execute.frmAPException.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.Form1.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.Form2.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.Form3.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.Form4.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.Form5.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.Form6.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.frmBase.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.frmDoSql.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.frmMainBase.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.frmMdiBase.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.frmSelectBase.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.frmSetDbFile.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.frmUpdate1.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.Msg.frmMsgRich.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.Properties.Resources.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.UpdateSqlServer.frmBearingUpdating.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.UserControls.frmMsgShineDetail.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.UserControls.ucMsgShine.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.csproj.GenerateResource.cache
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.exe
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.pdb
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Debug\Common.csproj.CopyComplete

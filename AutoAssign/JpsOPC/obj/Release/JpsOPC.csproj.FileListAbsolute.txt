@@ -1,0 +1,52 @@
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\JpsOPC\bin\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\JpsOPC\bin\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\JpsOPC\obj\Release\Interop.OPCAutomation.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\JpsOPC\obj\Release\JpsOPC.csproj.ResolveComReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\JpsOPC\obj\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\JpsOPC\obj\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\JpsOPC\obj\Release\JpsOPC.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\JpsOPC\bin\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\JpsOPC\bin\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\JpsOPC\obj\Release\Interop.OPCAutomation.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\JpsOPC\obj\Release\JpsOPC.csproj.ResolveComReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\JpsOPC\obj\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\JpsOPC\obj\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\JpsOPC\obj\Release\JpsOPC.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\JpsOPC\bin\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\JpsOPC\bin\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\JpsOPC\obj\Release\Interop.OPCAutomation.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\JpsOPC\obj\Release\JpsOPC.csproj.ResolveComReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\JpsOPC\obj\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\JpsOPC\obj\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\JpsOPC\bin\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\JpsOPC\bin\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\JpsOPC\obj\Release\Interop.OPCAutomation.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\JpsOPC\obj\Release\JpsOPC.csproj.ResolveComReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\JpsOPC\obj\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\JpsOPC\obj\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\JpsOPC\obj\Release\JpsOPC.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\JpsOPC\bin\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\JpsOPC\bin\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\JpsOPC\obj\Release\Interop.OPCAutomation.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\JpsOPC\obj\Release\JpsOPC.csproj.ResolveComReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\JpsOPC\obj\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\JpsOPC\obj\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\JpsOPC\bin\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\JpsOPC\bin\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\JpsOPC\obj\Release\JpsOPC.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\JpsOPC\obj\Release\Interop.OPCAutomation.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\JpsOPC\obj\Release\JpsOPC.csproj.ResolveComReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\JpsOPC\obj\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\JpsOPC\obj\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\JpsOPC\bin\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\JpsOPC\bin\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\JpsOPC\obj\Release\Interop.OPCAutomation.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\JpsOPC\obj\Release\JpsOPC.csproj.ResolveComReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\JpsOPC\obj\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\JpsOPC\obj\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\JpsOPC\obj\Release\JpsOPC.csprojResolveAssemblyReference.cache
+D:\ALZFiles\SLN\AutoAssign\JpsOPC\obj\Release\JpsOPC.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\AutoAssign\JpsOPC\obj\Release\JpsOPC.dll
+D:\ALZFiles\SLN\AutoAssign\JpsOPC\obj\Release\JpsOPC.pdb
+D:\ALZFiles\SLN\AutoAssign\JpsOPC\bin\Release\JpsOPC.dll
+D:\ALZFiles\SLN\AutoAssign\JpsOPC\bin\Release\JpsOPC.pdb

@@ -1,0 +1,21 @@
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\FindIP\bin\Release\FindIP.exe.config
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\FindIP\bin\Release\FindIP.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\FindIP\bin\Release\FindIP.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\FindIP\obj\Release\FindIP.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\FindIP\obj\Release\FindIP.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\FindIP\obj\Release\FindIP.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\FindIP\obj\Release\FindIP.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\FindIP\obj\Release\FindIP.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\FindIP\obj\Release\FindIP.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\FindIP\obj\Release\FindIP.Form2.resources
+D:\ALZFiles\SLN\AutoAssign\FindIP\obj\Release\FindIP.csproj.AssemblyReference.cache
+D:\ALZFiles\SLN\AutoAssign\FindIP\obj\Release\FindIP.Form1.resources
+D:\ALZFiles\SLN\AutoAssign\FindIP\obj\Release\FindIP.Form2.resources
+D:\ALZFiles\SLN\AutoAssign\FindIP\obj\Release\FindIP.Properties.Resources.resources
+D:\ALZFiles\SLN\AutoAssign\FindIP\obj\Release\FindIP.csproj.GenerateResource.cache
+D:\ALZFiles\SLN\AutoAssign\FindIP\obj\Release\FindIP.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\AutoAssign\FindIP\obj\Release\FindIP.exe
+D:\ALZFiles\SLN\AutoAssign\FindIP\obj\Release\FindIP.pdb
+D:\ALZFiles\SLN\AutoAssign\FindIP\bin\Release\FindIP.exe.config
+D:\ALZFiles\SLN\AutoAssign\FindIP\bin\Release\FindIP.exe
+D:\ALZFiles\SLN\AutoAssign\FindIP\bin\Release\FindIP.pdb

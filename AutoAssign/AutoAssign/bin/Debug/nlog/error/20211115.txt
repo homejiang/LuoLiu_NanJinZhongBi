@@ -1,0 +1,14 @@
+2021-11-15 14:42:52.849 [Error] 读取总数据量出错：Invalid object name 'SN1'.(.Net SqlClient Data Provider) SendMesControler.Listen => SendMesControler.ShowErrAsyn => AppLogger.ShowErr
+2021-11-15 14:42:57.924 [Error] 读取总数据量出错：Invalid object name 'SN1'.(.Net SqlClient Data Provider) SendMesControler.Listen => SendMesControler.ShowErrAsyn => AppLogger.ShowErr
+2021-11-15 14:43:02.972 [Error] 读取总数据量出错：Invalid object name 'SN1'.(.Net SqlClient Data Provider) SendMesControler.Listen => SendMesControler.ShowErrAsyn => AppLogger.ShowErr
+2021-11-15 14:43:08.089 [Error] 读取总数据量出错：Invalid object name 'SN1'.(.Net SqlClient Data Provider) SendMesControler.Listen => SendMesControler.ShowErrAsyn => AppLogger.ShowErr
+2021-11-15 14:43:13.203 [Error] 读取总数据量出错：Invalid object name 'SN1'.(.Net SqlClient Data Provider) SendMesControler.Listen => SendMesControler.ShowErrAsyn => AppLogger.ShowErr
+2021-11-15 14:44:50.830 [Error] 读取总数据量出错：Invalid object name 'SN1'.(.Net SqlClient Data Provider) SendMesControler.Listen => SendMesControler.ShowErrAsyn => AppLogger.ShowErr
+2021-11-15 14:44:55.871 [Error] 读取总数据量出错：Invalid object name 'SN1'.(.Net SqlClient Data Provider) SendMesControler.Listen => SendMesControler.ShowErrAsyn => AppLogger.ShowErr
+2021-11-15 14:45:00.917 [Error] 读取总数据量出错：Invalid object name 'SN1'.(.Net SqlClient Data Provider) SendMesControler.Listen => SendMesControler.ShowErrAsyn => AppLogger.ShowErr
+2021-11-15 14:45:06.052 [Error] 读取总数据量出错：Invalid object name 'SN1'.(.Net SqlClient Data Provider) SendMesControler.Listen => SendMesControler.ShowErrAsyn => AppLogger.ShowErr
+2021-11-15 14:45:11.095 [Error] 读取总数据量出错：Invalid object name 'SN1'.(.Net SqlClient Data Provider) SendMesControler.Listen => SendMesControler.ShowErrAsyn => AppLogger.ShowErr
+2021-11-15 14:45:16.171 [Error] 读取总数据量出错：Invalid object name 'SN1'.(.Net SqlClient Data Provider) SendMesControler.Listen => SendMesControler.ShowErrAsyn => AppLogger.ShowErr
+2021-11-15 14:45:21.222 [Error] 读取总数据量出错：Invalid object name 'SN1'.(.Net SqlClient Data Provider) SendMesControler.Listen => SendMesControler.ShowErrAsyn => AppLogger.ShowErr
+2021-11-15 14:45:26.254 [Error] 读取总数据量出错：Invalid object name 'SN1'.(.Net SqlClient Data Provider) SendMesControler.Listen => SendMesControler.ShowErrAsyn => AppLogger.ShowErr
+2021-11-15 14:45:31.313 [Error] 读取总数据量出错：Invalid object name 'SN1'.(.Net SqlClient Data Provider) SendMesControler.Listen => SendMesControler.ShowErrAsyn => AppLogger.ShowErr

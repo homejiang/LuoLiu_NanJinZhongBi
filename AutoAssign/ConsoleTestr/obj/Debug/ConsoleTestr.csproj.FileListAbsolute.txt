@@ -1,0 +1,58 @@
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\NLog.config
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\ConsoleTestr.exe.config
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\ConsoleTestr.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\ConsoleTestr.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\AutoAssign.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\zxing.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\NLog.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\AutoAssign.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\zxing.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\zxing.xml
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\NLog.xml
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\bin\Debug\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\obj\Debug\ConsoleTestr.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\obj\Debug\ConsoleTestr.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ConsoleTestr\obj\Debug\ConsoleTestr.pdb
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\NLog.config
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\ConsoleTestr.exe.config
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\ConsoleTestr.exe
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\ConsoleTestr.pdb
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\AutoAssign.exe
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\Common.exe
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\ErrorService.dll
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\MyDataGridView.dll
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\JpsOPC.dll
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\zxing.dll
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\MyTextBox.dll
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\NLog.dll
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\Newtonsoft.Json.dll
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\NumericBox.dll
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\AutoAssign.pdb
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\AutoAssign.exe.config
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\Common.pdb
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\ErrorService.pdb
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\MyDataGridView.pdb
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\JpsOPC.pdb
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\zxing.pdb
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\zxing.xml
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\MyTextBox.pdb
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\NLog.xml
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\Newtonsoft.Json.xml
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\NumericBox.pdb
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\obj\Debug\ConsoleTestr.csproj.AssemblyReference.cache
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\obj\Debug\ConsoleTestr.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\obj\Debug\ConsoleTestr.csproj.CopyComplete
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\obj\Debug\ConsoleTestr.exe
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\obj\Debug\ConsoleTestr.pdb
+D:\ALZFiles\SLN\AutoAssign\ConsoleTestr\bin\Debug\NPOI.dll

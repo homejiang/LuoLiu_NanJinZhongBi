@@ -1,0 +1,32 @@
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\NumericBox\bin\Debug\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\NumericBox\bin\Debug\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\NumericBox\obj\Debug\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\NumericBox\obj\Debug\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\NumericBox\bin\Debug\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\NumericBox\bin\Debug\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\NumericBox\obj\Debug\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\NumericBox\obj\Debug\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\NumericBox\obj\Debug\NumericBox.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\NumericBox\bin\Debug\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\NumericBox\bin\Debug\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\NumericBox\obj\Debug\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\NumericBox\obj\Debug\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\NumericBox\obj\Debug\NumericBox.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\NumericBox\bin\Debug\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\NumericBox\bin\Debug\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\NumericBox\obj\Debug\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\NumericBox\obj\Debug\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\NumericBox\bin\Debug\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\NumericBox\bin\Debug\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\NumericBox\obj\Debug\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\NumericBox\obj\Debug\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\NumericBox\bin\Debug\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\NumericBox\bin\Debug\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\NumericBox\obj\Debug\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\NumericBox\obj\Debug\NumericBox.pdb
+D:\ALZFiles\SLN\AutoAssign\NumericBox\bin\Debug\NumericBox.dll
+D:\ALZFiles\SLN\AutoAssign\NumericBox\bin\Debug\NumericBox.pdb
+D:\ALZFiles\SLN\AutoAssign\NumericBox\obj\Debug\NumericBox.csproj.AssemblyReference.cache
+D:\ALZFiles\SLN\AutoAssign\NumericBox\obj\Debug\NumericBox.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\AutoAssign\NumericBox\obj\Debug\NumericBox.dll
+D:\ALZFiles\SLN\AutoAssign\NumericBox\obj\Debug\NumericBox.pdb

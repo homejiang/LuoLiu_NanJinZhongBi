@@ -1,0 +1,10 @@
+bin\Release\MyTextBox.dll
+bin\Release\MyTextBox.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\MyTextBox.dll
+obj\Release\MyTextBox.pdb
+bin\Debug\MyTextBox.dll
+bin\Debug\MyTextBox.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\MyTextBox.dll
+obj\Debug\MyTextBox.pdb

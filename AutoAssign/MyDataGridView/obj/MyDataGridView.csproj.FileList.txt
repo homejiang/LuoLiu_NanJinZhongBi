@@ -1,0 +1,7 @@
+bin\Debug\MyDataGridView.dll
+bin\Debug\MyDataGridView.pdb
+bin\Debug\NumericBox.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\MyDataGridView.dll
+obj\Debug\MyDataGridView.pdb
+bin\Debug\NumericBox.pdb

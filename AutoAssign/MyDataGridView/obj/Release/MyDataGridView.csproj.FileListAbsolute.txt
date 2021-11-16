@@ -1,0 +1,58 @@
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\MyDataGridView\bin\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\MyDataGridView\bin\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\MyDataGridView\bin\Release\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\MyDataGridView\bin\Release\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\MyDataGridView\obj\Release\MyDataGridView.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\MyDataGridView\obj\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\MyDataGridView\obj\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\MyDataGridView\bin\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\MyDataGridView\bin\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\MyDataGridView\bin\Release\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\MyDataGridView\bin\Release\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\MyDataGridView\bin\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\MyDataGridView\bin\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\MyDataGridView\bin\Release\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\MyDataGridView\bin\Release\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\MyDataGridView\bin\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\MyDataGridView\bin\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\MyDataGridView\bin\Release\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\MyDataGridView\bin\Release\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\MyDataGridView\bin\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\MyDataGridView\bin\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\MyDataGridView\bin\Release\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\MyDataGridView\bin\Release\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\MyDataGridView\bin\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\MyDataGridView\bin\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\MyDataGridView\bin\Release\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\MyDataGridView\bin\Release\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\bin\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\bin\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\bin\Release\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\bin\Release\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.pdb
+D:\ALZFiles\SLN\AutoAssign\MyDataGridView\bin\Release\MyDataGridView.dll
+D:\ALZFiles\SLN\AutoAssign\MyDataGridView\bin\Release\MyDataGridView.pdb
+D:\ALZFiles\SLN\AutoAssign\MyDataGridView\bin\Release\NumericBox.dll
+D:\ALZFiles\SLN\AutoAssign\MyDataGridView\bin\Release\NumericBox.pdb
+D:\ALZFiles\SLN\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.csproj.AssemblyReference.cache
+D:\ALZFiles\SLN\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.csproj.CopyComplete
+D:\ALZFiles\SLN\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.dll
+D:\ALZFiles\SLN\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.pdb

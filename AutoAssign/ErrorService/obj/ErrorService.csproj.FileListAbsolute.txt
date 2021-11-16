@@ -1,0 +1,238 @@
+D:\商品化\erpcs\ErrorService\bin\Release\ErrorService.dll
+D:\商品化\erpcs\ErrorService\bin\Release\ErrorService.pdb
+D:\商品化\erpcs\ErrorService\obj\Release\ResolveAssemblyReference.cache
+D:\商品化\erpcs\ErrorService\obj\Release\ErrorService.wErrorMessage.resources
+D:\商品化\erpcs\ErrorService\obj\Release\ErrorService.csproj.GenerateResource.Cache
+D:\商品化\erpcs\ErrorService\obj\Release\ErrorService.dll
+D:\商品化\erpcs\ErrorService\obj\Release\ErrorService.pdb
+D:\程序\erpcs\ErrorService\bin\Debug\ErrorService.dll
+D:\程序\erpcs\ErrorService\bin\Debug\ErrorService.pdb
+D:\程序\erpcs\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+D:\程序\erpcs\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\程序\erpcs\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\程序\erpcs\ErrorService\obj\Debug\ErrorService.dll
+D:\程序\erpcs\ErrorService\obj\Debug\ErrorService.pdb
+D:\定制软件\erpcs\ErrorService\bin\Release\ErrorService.dll
+D:\定制软件\erpcs\ErrorService\bin\Release\ErrorService.pdb
+D:\定制软件\erpcs\ErrorService\obj\Release\ResolveAssemblyReference.cache
+D:\定制软件\erpcs\ErrorService\obj\Release\ErrorService.wErrorMessage.resources
+D:\定制软件\erpcs\ErrorService\obj\Release\ErrorService.csproj.GenerateResource.Cache
+D:\定制软件\erpcs\ErrorService\obj\Release\ErrorService.dll
+D:\定制软件\erpcs\ErrorService\obj\Release\ErrorService.pdb
+D:\程序\erpcs\ErrorService\bin\Release\ErrorService.dll
+D:\程序\erpcs\ErrorService\bin\Release\ErrorService.pdb
+D:\程序\erpcs\ErrorService\obj\Release\ResolveAssemblyReference.cache
+D:\程序\erpcs\ErrorService\obj\Release\ErrorService.wErrorMessage.resources
+D:\程序\erpcs\ErrorService\obj\Release\ErrorService.csproj.GenerateResource.Cache
+D:\程序\erpcs\ErrorService\obj\Release\ErrorService.dll
+D:\程序\erpcs\ErrorService\obj\Release\ErrorService.pdb
+D:\定制软件\海盐\ErrorService\bin\Debug\ErrorService.dll
+D:\定制软件\海盐\ErrorService\bin\Debug\ErrorService.pdb
+D:\定制软件\海盐\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+D:\定制软件\海盐\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\定制软件\海盐\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\定制软件\海盐\ErrorService\obj\Debug\ErrorService.dll
+D:\定制软件\海盐\ErrorService\obj\Debug\ErrorService.pdb
+D:\定制软件\erpcs\ErrorService\bin\Debug\ErrorService.dll
+D:\定制软件\erpcs\ErrorService\bin\Debug\ErrorService.pdb
+D:\定制软件\erpcs\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+D:\定制软件\erpcs\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\定制软件\erpcs\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\定制软件\erpcs\ErrorService\obj\Debug\ErrorService.dll
+D:\定制软件\erpcs\ErrorService\obj\Debug\ErrorService.pdb
+D:\商品化\erpcs\ErrorService\bin\Debug\ErrorService.dll
+D:\商品化\erpcs\ErrorService\bin\Debug\ErrorService.pdb
+D:\商品化\erpcs\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+D:\商品化\erpcs\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\商品化\erpcs\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\商品化\erpcs\ErrorService\obj\Debug\ErrorService.dll
+D:\商品化\erpcs\ErrorService\obj\Debug\ErrorService.pdb
+D:\程序文件\erpcs\ErrorService\bin\Debug\ErrorService.dll
+D:\程序文件\erpcs\ErrorService\bin\Debug\ErrorService.pdb
+D:\程序文件\erpcs\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+D:\程序文件\erpcs\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\程序文件\erpcs\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\程序文件\erpcs\ErrorService\obj\Debug\ErrorService.dll
+D:\程序文件\erpcs\ErrorService\obj\Debug\ErrorService.pdb
+E:\姜鹏松程序\jiangpengsongProject\ProjectFuTong\FuTongBuilder\ErrorService\bin\Debug\ErrorService.dll
+E:\姜鹏松程序\jiangpengsongProject\ProjectFuTong\FuTongBuilder\ErrorService\bin\Debug\ErrorService.pdb
+E:\姜鹏松程序\jiangpengsongProject\ProjectFuTong\FuTongBuilder\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+E:\姜鹏松程序\jiangpengsongProject\ProjectFuTong\FuTongBuilder\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+E:\姜鹏松程序\jiangpengsongProject\ProjectFuTong\FuTongBuilder\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+E:\姜鹏松程序\jiangpengsongProject\ProjectFuTong\FuTongBuilder\ErrorService\obj\Debug\ErrorService.dll
+E:\姜鹏松程序\jiangpengsongProject\ProjectFuTong\FuTongBuilder\ErrorService\obj\Debug\ErrorService.pdb
+D:\Project Files\香港TOCCL\不合格管理\NoStandardManage\ErrorService\bin\Debug\ErrorService.dll
+D:\Project Files\香港TOCCL\不合格管理\NoStandardManage\ErrorService\bin\Debug\ErrorService.pdb
+D:\Project Files\香港TOCCL\不合格管理\NoStandardManage\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+D:\Project Files\香港TOCCL\不合格管理\NoStandardManage\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\Project Files\香港TOCCL\不合格管理\NoStandardManage\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\Project Files\香港TOCCL\不合格管理\NoStandardManage\ErrorService\obj\Debug\ErrorService.dll
+D:\Project Files\香港TOCCL\不合格管理\NoStandardManage\ErrorService\obj\Debug\ErrorService.pdb
+D:\Project Files\富通\不合格管理\NoStandardManage\ErrorService\bin\Debug\ErrorService.dll
+D:\Project Files\富通\不合格管理\NoStandardManage\ErrorService\bin\Debug\ErrorService.pdb
+D:\Project Files\富通\不合格管理\NoStandardManage\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+D:\Project Files\富通\不合格管理\NoStandardManage\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\Project Files\富通\不合格管理\NoStandardManage\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\Project Files\富通\不合格管理\NoStandardManage\ErrorService\obj\Debug\ErrorService.dll
+D:\Project Files\富通\不合格管理\NoStandardManage\ErrorService\obj\Debug\ErrorService.pdb
+D:\Project Files\富通\不合格管理\NoStandardManage\ErrorService\bin\Release\ErrorService.dll
+D:\Project Files\富通\不合格管理\NoStandardManage\ErrorService\bin\Release\ErrorService.pdb
+D:\Project Files\富通\不合格管理\NoStandardManage\ErrorService\obj\Release\ResolveAssemblyReference.cache
+D:\Project Files\富通\不合格管理\NoStandardManage\ErrorService\obj\Release\ErrorService.wErrorMessage.resources
+D:\Project Files\富通\不合格管理\NoStandardManage\ErrorService\obj\Release\ErrorService.csproj.GenerateResource.Cache
+D:\Project Files\富通\不合格管理\NoStandardManage\ErrorService\obj\Release\ErrorService.dll
+D:\Project Files\富通\不合格管理\NoStandardManage\ErrorService\obj\Release\ErrorService.pdb
+D:\Project Files\光缆仓库管理及报价系统\CableManage\CableManage\ErrorService\bin\Debug\ErrorService.dll
+D:\Project Files\光缆仓库管理及报价系统\CableManage\CableManage\ErrorService\bin\Debug\ErrorService.pdb
+D:\Project Files\光缆仓库管理及报价系统\CableManage\CableManage\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+D:\Project Files\光缆仓库管理及报价系统\CableManage\CableManage\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\Project Files\光缆仓库管理及报价系统\CableManage\CableManage\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\Project Files\光缆仓库管理及报价系统\CableManage\CableManage\ErrorService\obj\Debug\ErrorService.dll
+D:\Project Files\光缆仓库管理及报价系统\CableManage\CableManage\ErrorService\obj\Debug\ErrorService.pdb
+D:\Project Files\光缆仓库管理及报价系统\CableManage\CableManage\ErrorService\bin\Release\ErrorService.dll
+D:\Project Files\光缆仓库管理及报价系统\CableManage\CableManage\ErrorService\bin\Release\ErrorService.pdb
+D:\Project Files\光缆仓库管理及报价系统\CableManage\CableManage\ErrorService\obj\Release\ResolveAssemblyReference.cache
+D:\Project Files\光缆仓库管理及报价系统\CableManage\CableManage\ErrorService\obj\Release\ErrorService.wErrorMessage.resources
+D:\Project Files\光缆仓库管理及报价系统\CableManage\CableManage\ErrorService\obj\Release\ErrorService.csproj.GenerateResource.Cache
+D:\Project Files\光缆仓库管理及报价系统\CableManage\CableManage\ErrorService\obj\Release\ErrorService.dll
+D:\Project Files\光缆仓库管理及报价系统\CableManage\CableManage\ErrorService\obj\Release\ErrorService.pdb
+E:\Project Files\CableERP\CableERP\ErrorService\bin\Debug\ErrorService.dll
+E:\Project Files\CableERP\CableERP\ErrorService\bin\Debug\ErrorService.pdb
+E:\Project Files\CableERP\CableERP\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+E:\Project Files\CableERP\CableERP\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+E:\Project Files\CableERP\CableERP\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+E:\Project Files\CableERP\CableERP\ErrorService\obj\Debug\ErrorService.dll
+E:\Project Files\CableERP\CableERP\ErrorService\obj\Debug\ErrorService.pdb
+E:\Project Files\CableERP\CableERP\ErrorService\bin\Release\ErrorService.dll
+E:\Project Files\CableERP\CableERP\ErrorService\bin\Release\ErrorService.pdb
+E:\Project Files\CableERP\CableERP\ErrorService\obj\Release\ResolveAssemblyReference.cache
+E:\Project Files\CableERP\CableERP\ErrorService\obj\Release\ErrorService.wErrorMessage.resources
+E:\Project Files\CableERP\CableERP\ErrorService\obj\Release\ErrorService.csproj.GenerateResource.Cache
+E:\Project Files\CableERP\CableERP\ErrorService\obj\Release\ErrorService.dll
+E:\Project Files\CableERP\CableERP\ErrorService\obj\Release\ErrorService.pdb
+E:\Project Files\ForHsy\searchData\SearchData\ErrorService\bin\Debug\ErrorService.dll
+E:\Project Files\ForHsy\searchData\SearchData\ErrorService\bin\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\searchData\SearchData\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+E:\Project Files\ForHsy\searchData\SearchData\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+E:\Project Files\ForHsy\searchData\SearchData\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+E:\Project Files\ForHsy\searchData\SearchData\ErrorService\obj\Debug\ErrorService.dll
+E:\Project Files\ForHsy\searchData\SearchData\ErrorService\obj\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\searchData\SearchData\ErrorService\bin\Release\ErrorService.dll
+E:\Project Files\ForHsy\searchData\SearchData\ErrorService\bin\Release\ErrorService.pdb
+E:\Project Files\ForHsy\searchData\SearchData\ErrorService\obj\Release\ResolveAssemblyReference.cache
+E:\Project Files\ForHsy\searchData\SearchData\ErrorService\obj\Release\ErrorService.wErrorMessage.resources
+E:\Project Files\ForHsy\searchData\SearchData\ErrorService\obj\Release\ErrorService.csproj.GenerateResource.Cache
+E:\Project Files\ForHsy\searchData\SearchData\ErrorService\obj\Release\ErrorService.dll
+E:\Project Files\ForHsy\searchData\SearchData\ErrorService\obj\Release\ErrorService.pdb
+E:\Project Files\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\bin\Release\ErrorService.dll
+E:\Project Files\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\bin\Release\ErrorService.pdb
+E:\Project Files\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\obj\Release\ResolveAssemblyReference.cache
+E:\Project Files\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\obj\Release\ErrorService.wErrorMessage.resources
+E:\Project Files\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\obj\Release\ErrorService.csproj.GenerateResource.Cache
+E:\Project Files\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\obj\Release\ErrorService.dll
+E:\Project Files\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\obj\Release\ErrorService.pdb
+E:\Project Files\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\bin\Debug\ErrorService.dll
+E:\Project Files\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\bin\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+E:\Project Files\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+E:\Project Files\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+E:\Project Files\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\obj\Debug\ErrorService.dll
+E:\Project Files\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\obj\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\程序20151129晚\SourceCode\ErrorService\bin\Debug\ErrorService.dll
+E:\Project Files\ForHsy\程序20151129晚\SourceCode\ErrorService\bin\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\程序20151129晚\SourceCode\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+E:\Project Files\ForHsy\程序20151129晚\SourceCode\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+E:\Project Files\ForHsy\程序20151129晚\SourceCode\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+E:\Project Files\ForHsy\程序20151129晚\SourceCode\ErrorService\obj\Debug\ErrorService.dll
+E:\Project Files\ForHsy\程序20151129晚\SourceCode\ErrorService\obj\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\程序20151130晚\SourceCode\ErrorService\bin\Debug\ErrorService.dll
+E:\Project Files\ForHsy\程序20151130晚\SourceCode\ErrorService\bin\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\程序20151130晚\SourceCode\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+E:\Project Files\ForHsy\程序20151130晚\SourceCode\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+E:\Project Files\ForHsy\程序20151130晚\SourceCode\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+E:\Project Files\ForHsy\程序20151130晚\SourceCode\ErrorService\obj\Debug\ErrorService.dll
+E:\Project Files\ForHsy\程序20151130晚\SourceCode\ErrorService\obj\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\20151201晚\SourceCode\ErrorService\bin\Debug\ErrorService.dll
+E:\Project Files\ForHsy\20151201晚\SourceCode\ErrorService\bin\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\20151201晚\SourceCode\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+E:\Project Files\ForHsy\20151201晚\SourceCode\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+E:\Project Files\ForHsy\20151201晚\SourceCode\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+E:\Project Files\ForHsy\20151201晚\SourceCode\ErrorService\obj\Debug\ErrorService.dll
+E:\Project Files\ForHsy\20151201晚\SourceCode\ErrorService\obj\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\20151203中午\SourceCode\ErrorService\bin\Debug\ErrorService.dll
+E:\Project Files\ForHsy\20151203中午\SourceCode\ErrorService\bin\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\20151203中午\SourceCode\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+E:\Project Files\ForHsy\20151203中午\SourceCode\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+E:\Project Files\ForHsy\20151203中午\SourceCode\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+E:\Project Files\ForHsy\20151203中午\SourceCode\ErrorService\obj\Debug\ErrorService.dll
+E:\Project Files\ForHsy\20151203中午\SourceCode\ErrorService\obj\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\20151203晚上\SourceCode\ErrorService\bin\Debug\ErrorService.dll
+E:\Project Files\ForHsy\20151203晚上\SourceCode\ErrorService\bin\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\20151203晚上\SourceCode\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+E:\Project Files\ForHsy\20151203晚上\SourceCode\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+E:\Project Files\ForHsy\20151203晚上\SourceCode\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+E:\Project Files\ForHsy\20151203晚上\SourceCode\ErrorService\obj\Debug\ErrorService.dll
+E:\Project Files\ForHsy\20151203晚上\SourceCode\ErrorService\obj\Debug\ErrorService.pdb
+E:\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\bin\Release\ErrorService.dll
+E:\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\bin\Release\ErrorService.pdb
+E:\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\obj\Release\ResolveAssemblyReference.cache
+E:\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\obj\Release\ErrorService.wErrorMessage.resources
+E:\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\obj\Release\ErrorService.csproj.GenerateResource.Cache
+E:\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\obj\Release\ErrorService.dll
+E:\ForHsy\汽车离合器轴承耐久性测试\SourceCode\ErrorService\obj\Release\ErrorService.pdb
+E:\Project Files\ForHsy\20151207晚\SourceCode\ErrorService\bin\Release\ErrorService.dll
+E:\Project Files\ForHsy\20151207晚\SourceCode\ErrorService\bin\Release\ErrorService.pdb
+E:\Project Files\ForHsy\20151207晚\SourceCode\ErrorService\obj\Release\ResolveAssemblyReference.cache
+E:\Project Files\ForHsy\20151207晚\SourceCode\ErrorService\obj\Release\ErrorService.wErrorMessage.resources
+E:\Project Files\ForHsy\20151207晚\SourceCode\ErrorService\obj\Release\ErrorService.csproj.GenerateResource.Cache
+E:\Project Files\ForHsy\20151207晚\SourceCode\ErrorService\obj\Release\ErrorService.dll
+E:\Project Files\ForHsy\20151207晚\SourceCode\ErrorService\obj\Release\ErrorService.pdb
+E:\Project Files\ForHsy\20151207晚\SourceCode\ErrorService\bin\Debug\ErrorService.dll
+E:\Project Files\ForHsy\20151207晚\SourceCode\ErrorService\bin\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\20151207晚\SourceCode\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+E:\Project Files\ForHsy\20151207晚\SourceCode\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+E:\Project Files\ForHsy\20151207晚\SourceCode\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+E:\Project Files\ForHsy\20151207晚\SourceCode\ErrorService\obj\Debug\ErrorService.dll
+E:\Project Files\ForHsy\20151207晚\SourceCode\ErrorService\obj\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\SourceCode\ErrorService\bin\Debug\ErrorService.dll
+E:\Project Files\ForHsy\SourceCode\ErrorService\bin\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\SourceCode\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+E:\Project Files\ForHsy\SourceCode\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+E:\Project Files\ForHsy\SourceCode\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+E:\Project Files\ForHsy\SourceCode\ErrorService\obj\Debug\ErrorService.dll
+E:\Project Files\ForHsy\SourceCode\ErrorService\obj\Debug\ErrorService.pdb
+E:\Project Files\ForHsy\SourceCode\ErrorService\bin\Release\ErrorService.dll
+E:\Project Files\ForHsy\SourceCode\ErrorService\bin\Release\ErrorService.pdb
+E:\Project Files\ForHsy\SourceCode\ErrorService\obj\Release\ResolveAssemblyReference.cache
+E:\Project Files\ForHsy\SourceCode\ErrorService\obj\Release\ErrorService.wErrorMessage.resources
+E:\Project Files\ForHsy\SourceCode\ErrorService\obj\Release\ErrorService.csproj.GenerateResource.Cache
+E:\Project Files\ForHsy\SourceCode\ErrorService\obj\Release\ErrorService.dll
+E:\Project Files\ForHsy\SourceCode\ErrorService\obj\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceCode\ErrorService\bin\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceCode\ErrorService\bin\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceCode\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceCode\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceCode\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceCode\ErrorService\obj\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceCode\ErrorService\obj\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceCode\ErrorService\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceCode\ErrorService\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceCode\ErrorService\obj\Release\ResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceCode\ErrorService\obj\Release\ErrorService.wErrorMessage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceCode\ErrorService\obj\Release\ErrorService.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceCode\ErrorService\obj\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceCode\ErrorService\obj\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode\ErrorService\bin\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode\ErrorService\bin\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode\ErrorService\obj\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode\ErrorService\obj\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode\ErrorService\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode\ErrorService\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode\ErrorService\obj\Release\ResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode\ErrorService\obj\Release\ErrorService.wErrorMessage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode\ErrorService\obj\Release\ErrorService.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode\ErrorService\obj\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode\ErrorService\obj\Release\ErrorService.pdb

@@ -1,0 +1,217 @@
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\bin\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\bin\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.Execute.frmAPException.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.frmBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.frmDoSql.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.frmMainBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.frmMdiBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.frmSelectBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.frmUpdate1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.Msg.frmMsgRich.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.UpdateSqlServer.frmBearingUpdating.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.UserControls.frmMsgShineDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.UserControls.ucMsgShine.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.Form5.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\Common\obj\Release\Common.frmSetDbFile.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\bin\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\bin\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.Execute.frmAPException.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.Form5.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.Form6.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.frmBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.frmDoSql.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.frmMainBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.frmMdiBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.frmSelectBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.frmSetDbFile.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.frmUpdate1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.Msg.frmMsgRich.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.UpdateSqlServer.frmBearingUpdating.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.UserControls.frmMsgShineDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.UserControls.ucMsgShine.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\Common\obj\Release\Common.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\bin\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\bin\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.Execute.frmAPException.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.Form5.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.Form6.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.frmBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.frmDoSql.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.frmMainBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.frmMdiBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.frmSelectBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.frmSetDbFile.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.frmUpdate1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.Msg.frmMsgRich.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.UpdateSqlServer.frmBearingUpdating.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.UserControls.frmMsgShineDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.UserControls.ucMsgShine.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\Common\obj\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\bin\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\bin\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.Execute.frmAPException.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.Form5.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.Form6.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.frmBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.frmDoSql.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.frmMainBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.frmMdiBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.frmSelectBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.frmSetDbFile.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.frmUpdate1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.Msg.frmMsgRich.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.UpdateSqlServer.frmBearingUpdating.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.UserControls.frmMsgShineDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.UserControls.ucMsgShine.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\Common\obj\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\bin\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\bin\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.Execute.frmAPException.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.Form5.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.Form6.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.frmBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.frmDoSql.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.frmMainBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.frmMdiBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.frmSelectBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.frmSetDbFile.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.frmUpdate1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.Msg.frmMsgRich.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.UpdateSqlServer.frmBearingUpdating.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.UserControls.frmMsgShineDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.UserControls.ucMsgShine.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\Common\obj\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\bin\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\bin\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.Execute.frmAPException.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.Form5.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.Form6.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.frmBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.frmDoSql.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.frmMainBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.frmMdiBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.frmSelectBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.frmSetDbFile.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.frmUpdate1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.Msg.frmMsgRich.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.UpdateSqlServer.frmBearingUpdating.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.UserControls.frmMsgShineDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.UserControls.ucMsgShine.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\Common\obj\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\bin\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\bin\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.Execute.frmAPException.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.Form5.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.Form6.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.frmBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.frmDoSql.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.frmMainBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.frmMdiBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.frmSelectBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.frmSetDbFile.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.frmUpdate1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.Msg.frmMsgRich.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.UpdateSqlServer.frmBearingUpdating.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.UserControls.frmMsgShineDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.UserControls.ucMsgShine.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\Common\obj\Release\Common.pdb
+D:\ALZFiles\SLN\AutoAssign\Common\bin\Release\Common.exe
+D:\ALZFiles\SLN\AutoAssign\Common\bin\Release\Common.pdb
+D:\ALZFiles\SLN\AutoAssign\Common\bin\Release\ErrorService.dll
+D:\ALZFiles\SLN\AutoAssign\Common\bin\Release\ErrorService.pdb
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.csproj.AssemblyReference.cache
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.Execute.frmAPException.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.Form1.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.Form2.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.Form3.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.Form4.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.Form5.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.Form6.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.frmBase.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.frmDoSql.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.frmMainBase.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.frmMdiBase.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.frmSelectBase.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.frmSetDbFile.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.frmUpdate1.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.Msg.frmMsgRich.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.Properties.Resources.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.UpdateSqlServer.frmBearingUpdating.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.UserControls.frmMsgShineDetail.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.UserControls.ucMsgShine.resources
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.csproj.GenerateResource.cache
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.csproj.CopyComplete
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.exe
+D:\ALZFiles\SLN\AutoAssign\Common\obj\Release\Common.pdb

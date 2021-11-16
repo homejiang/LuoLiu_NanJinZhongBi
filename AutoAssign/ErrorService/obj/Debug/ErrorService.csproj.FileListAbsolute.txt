@@ -1,0 +1,55 @@
+D:\商品化\ERPCS\ErrorService\bin\Debug\ErrorService.dll
+D:\商品化\ERPCS\ErrorService\bin\Debug\ErrorService.pdb
+D:\商品化\ERPCS\ErrorService\obj\Debug\ResolveAssemblyReference.cache
+D:\商品化\ERPCS\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\商品化\ERPCS\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\商品化\ERPCS\ErrorService\obj\Debug\ErrorService.dll
+D:\商品化\ERPCS\ErrorService\obj\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\ErrorService\bin\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\ErrorService\bin\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\ErrorService\obj\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\ErrorService\obj\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\ErrorService\bin\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\ErrorService\bin\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\ErrorService\obj\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\ErrorService\obj\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\ErrorService\obj\Debug\ErrorService.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\ErrorService\bin\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\ErrorService\bin\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\ErrorService\obj\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\ErrorService\obj\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\ErrorService\obj\Debug\ErrorService.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\ErrorService\bin\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\ErrorService\bin\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\ErrorService\obj\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\ErrorService\obj\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\ErrorService\obj\Debug\ErrorService.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\ErrorService\bin\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\ErrorService\bin\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\ErrorService\obj\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\ErrorService\obj\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ErrorService\bin\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ErrorService\bin\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ErrorService\obj\Debug\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ErrorService\obj\Debug\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\ErrorService\obj\Debug\ErrorService.csprojResolveAssemblyReference.cache
+D:\ALZFiles\SLN\AutoAssign\ErrorService\bin\Debug\ErrorService.dll
+D:\ALZFiles\SLN\AutoAssign\ErrorService\bin\Debug\ErrorService.pdb
+D:\ALZFiles\SLN\AutoAssign\ErrorService\obj\Debug\ErrorService.wErrorMessage.resources
+D:\ALZFiles\SLN\AutoAssign\ErrorService\obj\Debug\ErrorService.csproj.GenerateResource.cache
+D:\ALZFiles\SLN\AutoAssign\ErrorService\obj\Debug\ErrorService.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\AutoAssign\ErrorService\obj\Debug\ErrorService.dll
+D:\ALZFiles\SLN\AutoAssign\ErrorService\obj\Debug\ErrorService.pdb
+D:\ALZFiles\SLN\AutoAssign\ErrorService\obj\Debug\ErrorService.csproj.AssemblyReference.cache

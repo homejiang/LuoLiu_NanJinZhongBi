@@ -1,0 +1,993 @@
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\bin\Release\AutoAssign.exe.config
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\bin\Release\AutoAssign.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\bin\Release\AutoAssign.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\bin\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\bin\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\bin\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\bin\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\bin\Release\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\bin\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\bin\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\bin\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\bin\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\bin\Release\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\Interop.Microsoft.Office.Interop.Excel.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.csproj.ResolveComReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.AutoCode.frmAutoCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.BasicData.frmMac.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.BasicData.frmUserManager.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.BasicData.frmProductSpec.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.BasicData.frmProuctClassEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.BasicData.frmProuctSpecEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.BasicData.frmQualityDesc.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.BasicData.frmProcessCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectOnOff.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectGongYi.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProductClass.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProductSpec.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProcessCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectQualityDesc.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectMode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.DataM.frmTestedList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.DataM.frmSendMsgList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.DataM.frmTestedData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Debug.frmBatData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Debug.frmDebug.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Debug.frmPLCValue.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Debug.frmTuoPanBtyErr.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Debug.frmWriteIntoPlcBatBools.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.frmErrMsg.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.frmStatisticLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.frmPrinterLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.frmSendMesLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.frmGetResultLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.frmMain1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.frmScanner2Log.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.frmScanner1Log.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.frmGrooveSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.frmMain.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Login.frmFindUser.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Login.frmLogin.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Login.frmModifyPwd.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.PeiFang.frmGongYiSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.PeiFang.frmPeiFangEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.PeiFang.frmPfList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.PeiFang.frmSelectPf.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Printer.frmPrinter.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.frmJumpTo.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.frmPageRowsCount.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Scanner.frmScannerDebug.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Scanner.frmSendText.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Setting.frmLocalP.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Setting.frmPrinter.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Setting.frmScannerSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Setting.frmSysInterval.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Setting.frmSysSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.UserControls.ucDrawingReel.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.UserControls.ucMyGroove.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.ucRecordPage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.frmNewTest.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.DataM.frmSendMesDataClear.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Debug.frmScannerLogSendDataBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.frmAddTuoPlanCnt.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.frmPlanCompeleted.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Debug.frmResultLogSendDataBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.ClearData.frmByCaoIndex.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.ClearData.frmByTuoPanCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.RemoteMac.frmCopy.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.UserControls.ucCopySNProgress.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.frmSNCopyLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.RemoteMac.frmRemoteMacIP.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Printer.frmPrinterSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.Printer.frmPrintRreview.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\bin\Release\QRCoder.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSetTuoPanCode1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmClearSN.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmMacJdl.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSNCntOverSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmGetTuoFromRemoteMac.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCSV.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCorrect.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCorrectErrMsg.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\SourceCode2015\DongtouWave\AutoAssign\obj\Release\AutoAssign.UserControls.ucCorrectItem.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\AutoAssign.exe.config
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\AutoAssign.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\AutoAssign.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\zxing.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\zxing.presentation.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\zxing.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\zxing.xml
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\zxing.presentation.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\bin\Release\zxing.presentation.xml
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\Interop.Microsoft.Office.Interop.Excel.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.ResolveComReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.AutoCode.frmAutoCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmMac.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmUserManager.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProductSpec.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProuctClassEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProuctSpecEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmQualityDesc.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProcessCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectOnOff.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectGongYi.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProductClass.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProductSpec.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProcessCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectQualityDesc.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectMode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.ClearData.frmByCaoIndex.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.ClearData.frmByTuoPanCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmSendMesDataClear.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmTestedList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmSendMsgList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmTestedData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmBatData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmDebug.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmPLCValue.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmResultLogSendDataBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmScannerLogSendDataBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmTuoPanBtyErr.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmWriteIntoPlcBatBools.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCorrect.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCorrectErrMsg.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCSV.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmGetTuoFromRemoteMac.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmClearSN.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmMacJdl.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSetTuoPanCode1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSNCntOverSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmAddTuoPlanCnt.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmErrMsg.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmNewTest.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmPlanCompeleted.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmSNCopyLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmStatisticLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmPrinterLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmSendMesLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmGetResultLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmMain1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmScanner2Log.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmScanner1Log.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmGrooveSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmMain.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmFindUser.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmLogin.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmModifyPwd.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmGongYiSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmPeiFangEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmPfList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmSelectPf.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrinter.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrinterSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrintRreview.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.frmJumpTo.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.frmPageRowsCount.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.RemoteMac.frmCopy.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.RemoteMac.frmRemoteMacIP.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Scanner.frmScannerDebug.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Scanner.frmSendText.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmLocalP.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmPrinter.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmScannerSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSysInterval.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSysSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucCopySNProgress.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucCorrectItem.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucDrawingReel.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucMyGroove.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.ucRecordPage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSendPrintCmd.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMesList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\洛柳MES\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectPlan.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\AutoAssign.exe.config
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\Interop.Microsoft.Office.Interop.Excel.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.ResolveComReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\AutoAssign.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\AutoAssign.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\zxing.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\zxing.presentation.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\zxing.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\zxing.xml
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\zxing.presentation.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\bin\Release\zxing.presentation.xml
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.AutoCode.frmAutoCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmMac.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectPlan.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmUserManager.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProductSpec.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProuctClassEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProuctSpecEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmQualityDesc.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProcessCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectOnOff.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectGongYi.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProductClass.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProductSpec.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProcessCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectQualityDesc.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectMode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.ClearData.frmByCaoIndex.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.ClearData.frmByTuoPanCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmPactDataView.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmSendMesDataClear.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMesList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmTestedList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmSendMsgList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmTestedData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmBatData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmDebug.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmPLCValue.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmResultLogSendDataBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmScannerLogSendDataBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmTuoPanBtyErr.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmWriteIntoPlcBatBools.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCorrect.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCorrectErrMsg.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCSV.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmGetTuoFromRemoteMac.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmClearSN.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmMacJdl.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSendPrintCmd.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSetTuoPanCode1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSNCntOverSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmAddTuoPlanCnt.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmErrMsg.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmNewTest.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmPlanCompeleted.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmSNCopyLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmStatisticLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmPrinterLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmSendMesLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmGetResultLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmMain1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmScanner2Log.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmScanner1Log.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmGrooveSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmMain.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmFindUser.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmLogin.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmModifyPwd.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmGongYiSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmPeiFangEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmPfList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmSelectPf.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrinter.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrinterSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrintRreview.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.frmJumpTo.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.frmPageRowsCount.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.RemoteMac.frmCopy.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.RemoteMac.frmRemoteMacIP.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Scanner.frmScannerDebug.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Scanner.frmSendText.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmLocalP.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmPrinter.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmScannerSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSysInterval.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSysSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucCopySNProgress.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucCorrectItem.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucDrawingReel.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucMyGroove.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.ucRecordPage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectUser.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSelectMacs.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSelectStation.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmStationConfig.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmPrintCnt.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCSVTestResult.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\AutoAssign.exe.config
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\AutoAssign.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\AutoAssign.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\zxing.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\zxing.presentation.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\zxing.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\zxing.xml
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\zxing.presentation.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\bin\Release\zxing.presentation.xml
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\Interop.Microsoft.Office.Interop.Excel.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.ResolveComReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.AutoCode.frmAutoCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmMac.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectPlan.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectUser.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmUserManager.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProductSpec.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProuctClassEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProuctSpecEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmQualityDesc.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProcessCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectOnOff.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectGongYi.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProductClass.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProductSpec.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProcessCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectQualityDesc.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectMode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.ClearData.frmByCaoIndex.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.ClearData.frmByTuoPanCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMKBuildingDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMKDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmPactDataView.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmSendMesDataClear.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMesList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMKList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmTestedList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmSendMsgList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmTestedData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmBatData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmDebug.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmMKAutomation.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmPLCValue.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmResultLogSendDataBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmScannerLogSendDataBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmTuoPanBtyErr.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmWriteIntoPlcBatBools.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCorrect.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCorrectErrMsg.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCSV.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCSVTestResult.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmGetTuoFromRemoteMac.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmClearSN.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmMacJdl.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmPrintCnt.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSendPrintCmd.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSetTuoPanCode1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSNCntOverSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmAddTuoPlanCnt.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmErrMsg.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmNewTest.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmPlanCompeleted.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmSNCopyLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmStatisticLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmPrinterLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmSendMesLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmGetResultLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmMain1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmScanner2Log.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmScanner1Log.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmGrooveSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmMain.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmFindUser.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmLogin.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmModifyPwd.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.APLog.frmMKBuildingLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.MK.frmClearRealMKData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmGongYiSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmPeiFangEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmPfList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmSelectPf.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrinter.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrinterSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrintRreview.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.frmJumpTo.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.frmPageRowsCount.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.RemoteMac.frmCopy.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.RemoteMac.frmRemoteMacIP.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Scanner.frmScannerDebug.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Scanner.frmSendText.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmLocalP.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmPrinter.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmScannerSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSelectMacs.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSelectStation.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmStationConfig.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSysInterval.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSysSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucCopySNProgress.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucCorrectItem.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucDrawingReel.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucMyGroove.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.ucRecordPage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\域统新能源\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectAutoMKMode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\AutoAssign.exe.config
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\Interop.Microsoft.Office.Interop.Excel.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.ResolveComReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\AutoAssign.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\AutoAssign.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\zxing.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\zxing.presentation.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\zxing.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\zxing.xml
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\zxing.presentation.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\bin\Release\zxing.presentation.xml
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.AutoCode.frmAutoCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmMac.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectAutoMKMode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectPlan.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectUser.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmUserManager.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProductSpec.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProuctClassEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProuctSpecEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmQualityDesc.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProcessCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectOnOff.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectGongYi.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProductClass.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProductSpec.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProcessCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectQualityDesc.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectMode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.ClearData.frmByCaoIndex.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.ClearData.frmByTuoPanCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMKBuildingDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMKDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmPactDataView.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmSendMesDataClear.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMesList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMKList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmTestedList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmSendMsgList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmTestedData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmBatData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmDebug.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmMKAutomation.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmPLCValue.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmResultLogSendDataBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmScannerLogSendDataBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmTuoPanBtyErr.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmWriteIntoPlcBatBools.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCorrect.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCorrectErrMsg.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCSV.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCSVTestResult.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmGetTuoFromRemoteMac.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmClearSN.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmMacJdl.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmPrintCnt.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSendPrintCmd.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSetTuoPanCode1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSNCntOverSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmAddTuoPlanCnt.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmErrMsg.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmNewTest.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmPlanCompeleted.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmSNCopyLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmStatisticLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmPrinterLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmSendMesLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmGetResultLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmMain1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmScanner2Log.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmScanner1Log.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmGrooveSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmMain.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmFindUser.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmLogin.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmModifyPwd.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.APLog.frmMKBuildingLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.MK.frmClearRealMKData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmGongYiSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmPeiFangEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmPfList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmSelectPf.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrinter.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrinterSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrintRreview.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.frmJumpTo.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.frmPageRowsCount.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.RemoteMac.frmCopy.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.RemoteMac.frmRemoteMacIP.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Scanner.frmScannerDebug.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Scanner.frmSendText.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmLocalP.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmPrinter.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmScannerSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSelectMacs.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSelectStation.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmStationConfig.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSysInterval.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSysSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucCopySNProgress.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucCorrectItem.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucDrawingReel.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucMyGroove.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.ucRecordPage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\分选机程序\长风动力二期\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\AutoAssign.exe.config
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\Interop.Microsoft.Office.Interop.Excel.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.ResolveComReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.AutoCode.frmAutoCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmMac.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectAutoMKMode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectPlan.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectUser.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmUserManager.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProductSpec.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProuctClassEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProuctSpecEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmQualityDesc.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProcessCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectOnOff.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectGongYi.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProductClass.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProductSpec.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProcessCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectQualityDesc.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectMode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.ClearData.frmByCaoIndex.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.ClearData.frmByTuoPanCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMKBuildingDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMKDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmPactDataView.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmSendMesDataClear.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMesList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMKList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmTestedList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmSendMsgList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmTestedData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmBatData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmDebug.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmMKAutomation.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmPLCValue.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmResultLogSendDataBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmScannerLogSendDataBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmTuoPanBtyErr.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmWriteIntoPlcBatBools.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCorrect.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCorrectErrMsg.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCSV.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCSVTestResult.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmGetTuoFromRemoteMac.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmClearSN.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmMacJdl.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmPrintCnt.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSendPrintCmd.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSetTuoPanCode1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSNCntOverSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmAddTuoPlanCnt.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmErrMsg.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmNewTest.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmPlanCompeleted.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmSNCopyLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmStatisticLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmPrinterLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmSendMesLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmGetResultLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmMain1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmScanner2Log.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmScanner1Log.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmGrooveSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmMain.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmFindUser.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmLogin.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmModifyPwd.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.APLog.frmMKBuildingLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.MK.frmClearRealMKData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmGongYiSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmPeiFangEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmPfList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmSelectPf.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrinter.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrinterSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrintRreview.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.frmJumpTo.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.frmPageRowsCount.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.RemoteMac.frmCopy.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.RemoteMac.frmRemoteMacIP.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Scanner.frmScannerDebug.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Scanner.frmSendText.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmLocalP.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmPrinter.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmScannerSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSelectMacs.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSelectStation.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmStationConfig.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSysInterval.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSysSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucCopySNProgress.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucCorrectItem.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucDrawingReel.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucMyGroove.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.ucRecordPage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\AutoAssign.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\AutoAssign.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\zxing.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\zxing.presentation.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\zxing.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\zxing.xml
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\zxing.presentation.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\AutoAssign\AutoAssign\bin\Release\zxing.presentation.xml
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\AutoAssign.exe.config
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\Interop.Microsoft.Office.Interop.Excel.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.ResolveComReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\AutoAssign.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\AutoAssign.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\Common.exe
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\zxing.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\zxing.presentation.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\Common.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\zxing.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\zxing.xml
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\zxing.presentation.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\zxing.presentation.xml
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.AutoCode.frmAutoCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmMac.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectAutoMKMode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectSwitchMode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectPlan.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectUser.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmUserManager.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProductSpec.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProuctClassEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProuctSpecEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmQualityDesc.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProcessCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectOnOff.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectGongYi.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProductClass.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProductSpec.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProcessCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectQualityDesc.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectMode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.ClearData.frmByCaoIndex.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.ClearData.frmByTuoPanCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMKBuildingDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMKDetail.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmPactDataView.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmSendMesDataClear.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMesList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMKList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmTestedList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmSendMsgList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmTestedData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmBatData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmDebug.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmMKAutomation.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmPLCValue.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmResultLogSendDataBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmScannerLogSendDataBase.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmTuoPanBtyErr.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmWriteIntoPlcBatBools.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCorrect.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCorrectErrMsg.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCSV.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCSVTestResult.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmGetTuoFromRemoteMac.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmClearSN.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmMacJdl.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmPrintCnt.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSendPrintCmd.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSetTuoPanCode1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSNCntOverSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form2.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form3.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form4.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmAddTuoPlanCnt.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmErrMsg.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmNewTest.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmPlanCompeleted.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmSNCopyLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmStatisticLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmPrinterLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmSendMesLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmGetResultLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmMain1.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmScanner2Log.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmScanner1Log.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmGrooveSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmMain.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmFindUser.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmLogin.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmModifyPwd.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.APLog.frmMKBuildingLog.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.MK.frmClearRealMKData.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.NanJingZB.frmNjzbDebug.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.NanJingZB.frmSj.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.NanJingZB.frmSjList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.NanJingZB.frmSwitchEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.NanJingZB.frmYcEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmGongYiSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmPeiFangEdit.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmPfList.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmSelectPf.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrinter.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrinterSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrintRreview.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Properties.Resources.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.frmJumpTo.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.frmPageRowsCount.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.RemoteMac.frmCopy.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.RemoteMac.frmRemoteMacIP.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Scanner.frmScannerDebug.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Scanner.frmSendText.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmLocalP.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmPrinter.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmScannerSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSelectMacs.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSelectStation.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmStationConfig.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSysInterval.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSysSetting.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucCopySNProgress.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucCorrectItem.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucDrawingReel.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucMyGroove.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.ucRecordPage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\NLog.config
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\NLog.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\NLog.xml
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\Newtonsoft.Json.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\bin\Release\Newtonsoft.Json.xml
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.NanJingZB.frmCreateTuopanCode.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectSN.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\LuoLiu_NanJinZhongBi\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmInputingSN.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\NLog.config
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\AutoAssign.exe.config
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\AutoAssign.exe
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\AutoAssign.pdb
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\Common.exe
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\ErrorService.dll
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\JpsOPC.dll
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\MyDataGridView.dll
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\MyTextBox.dll
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\Newtonsoft.Json.dll
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\NLog.dll
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\NumericBox.dll
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\zxing.dll
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\zxing.presentation.dll
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\Common.pdb
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\ErrorService.pdb
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\JpsOPC.pdb
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\MyDataGridView.pdb
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\MyTextBox.pdb
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\NumericBox.pdb
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\Newtonsoft.Json.xml
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\NLog.xml
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\zxing.pdb
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\zxing.xml
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\zxing.presentation.pdb
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\zxing.presentation.xml
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.AssemblyReference.cache
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\Interop.Microsoft.Office.Interop.Excel.dll
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.ResolveComReference.cache
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.AutoCode.frmAutoCode.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmMac.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectAutoMKMode.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectSN.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectSwitchMode.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectPlan.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectUser.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmUserManager.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProductSpec.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProuctClassEdit.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProuctSpecEdit.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmQualityDesc.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmProcessCode.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectOnOff.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectGongYi.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProductClass.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProductSpec.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectProcessCode.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectQualityDesc.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.BasicData.frmSelectMode.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.ClearData.frmByCaoIndex.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.ClearData.frmByTuoPanCode.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMKBuildingDetail.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMKDetail.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmPactDataView.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmSendMesDataClear.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMesList.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmMKList.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmTestedList.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmSendMsgList.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.DataM.frmTestedData.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmBatData.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmDebug.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmMKAutomation.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmPLCValue.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmResultLogSendDataBase.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmScannerLogSendDataBase.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmTuoPanBtyErr.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Debug.frmWriteIntoPlcBatBools.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCorrect.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCorrectErrMsg.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCSV.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmCSVTestResult.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmGetTuoFromRemoteMac.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmClearSN.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmMacJdl.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmPrintCnt.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSendPrintCmd.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSetTuoPanCode1.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmSNCntOverSetting.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form1.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form2.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form3.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Form4.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmAddTuoPlanCnt.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmErrMsg.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmInputingSN.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmNewTest.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmPlanCompeleted.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmSNCopyLog.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmStatisticLog.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmPrinterLog.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmSendMesLog.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmGetResultLog.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmMain1.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmScanner2Log.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmScanner1Log.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmGrooveSetting.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.frmMain.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmFindUser.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmLogin.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Login.frmModifyPwd.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.APLog.frmMKBuildingLog.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.MK.frmClearRealMKData.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.NanJingZB.frmCreateTuopanCode.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.NanJingZB.frmNjzbDebug.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.NanJingZB.frmSj.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.NanJingZB.frmSjList.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.NanJingZB.frmSwitchEdit.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.NanJingZB.frmYcEdit.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmGongYiSetting.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmPeiFangEdit.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmPfList.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.PeiFang.frmSelectPf.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrinter.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrinterSetting.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Printer.frmPrintRreview.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Properties.Resources.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.frmJumpTo.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.frmPageRowsCount.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.RemoteMac.frmCopy.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.RemoteMac.frmRemoteMacIP.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Scanner.frmScannerDebug.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Scanner.frmSendText.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmLocalP.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmPrinter.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmScannerSetting.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSelectMacs.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSelectStation.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmStationConfig.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSysInterval.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.Setting.frmSysSetting.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucCopySNProgress.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucCorrectItem.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucDrawingReel.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.UserControls.ucMyGroove.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.RecordPagesManager.ucRecordPage.resources
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.GenerateResource.cache
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.csproj.CopyComplete
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.exe
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.pdb
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\NPOI.dll
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\NPOI.OOXML.dll
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\NPOI.OpenXml4Net.dll
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\NPOI.OpenXmlFormats.dll
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\ALZFiles\SLN\AutoAssign\AutoAssign\obj\Release\AutoAssign.ExpFuns.frmToExcel.resources

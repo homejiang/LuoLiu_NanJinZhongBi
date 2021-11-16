@@ -1,0 +1,14 @@
+bin\Release\ErrorService.dll
+bin\Release\ErrorService.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\ErrorService.wErrorMessage.resources
+obj\Release\ErrorService.csproj.GenerateResource.Cache
+obj\Release\ErrorService.dll
+obj\Release\ErrorService.pdb
+bin\Debug\ErrorService.dll
+bin\Debug\ErrorService.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ErrorService.wErrorMessage.resources
+obj\Debug\ErrorService.csproj.GenerateResource.Cache
+obj\Debug\ErrorService.dll
+obj\Debug\ErrorService.pdb
