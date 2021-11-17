@@ -9,3 +9,13 @@ D:\ALZFiles\SLN\AutoAssign\FindIP\obj\Debug\FindIP.csproj.GenerateResource.cache
 D:\ALZFiles\SLN\AutoAssign\FindIP\obj\Debug\FindIP.csproj.CoreCompileInputs.cache
 D:\ALZFiles\SLN\AutoAssign\FindIP\obj\Debug\FindIP.exe
 D:\ALZFiles\SLN\AutoAssign\FindIP\obj\Debug\FindIP.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\obj\Debug\FindIP.Form1.resources
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\obj\Debug\FindIP.Form2.resources
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\obj\Debug\FindIP.Properties.Resources.resources
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\obj\Debug\FindIP.csproj.GenerateResource.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\obj\Debug\FindIP.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\obj\Debug\FindIP.exe
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\bin\Debug\FindIP.exe.config
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\bin\Debug\FindIP.exe
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\bin\Debug\FindIP.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\obj\Debug\FindIP.pdb

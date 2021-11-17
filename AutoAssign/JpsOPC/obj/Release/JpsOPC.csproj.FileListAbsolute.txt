@@ -50,3 +50,15 @@ D:\ALZFiles\SLN\AutoAssign\JpsOPC\obj\Release\JpsOPC.dll
 D:\ALZFiles\SLN\AutoAssign\JpsOPC\obj\Release\JpsOPC.pdb
 D:\ALZFiles\SLN\AutoAssign\JpsOPC\bin\Release\JpsOPC.dll
 D:\ALZFiles\SLN\AutoAssign\JpsOPC\bin\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\JpsOPC\bin\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\JpsOPC\bin\Release\JpsOPC.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\JpsOPC\obj\Release\Interop.OPCAutomation.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\JpsOPC\obj\Release\JpsOPC.csproj.ResolveComReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\JpsOPC\obj\Release\JpsOPC.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\JpsOPC\obj\Release\JpsOPC.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\JpsOPC\bin\Release\JpsOPC.dll
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\JpsOPC\bin\Release\JpsOPC.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\JpsOPC\obj\Release\JpsOPC.csproj.AssemblyReference.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\JpsOPC\obj\Release\JpsOPC.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\JpsOPC\obj\Release\JpsOPC.dll
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\JpsOPC\obj\Release\JpsOPC.pdb

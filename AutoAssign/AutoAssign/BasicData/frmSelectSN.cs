@@ -14,6 +14,30 @@ namespace AutoAssign.BasicData
         public frmSelectSN()
         {
             InitializeComponent();
+            int iCnt = this.GetCnt();
+            if (iCnt > 10000)
+            {
+                this.labNoticeCliear.Visible = true;
+                this.labNoticeCliear.Text = $"本地电芯数已达{iCnt}条,请及时清除不用的电芯，否则系统查询电芯效率会降低。";
+            }
+            else
+            {
+                this.labNoticeCliear.Visible = false;
+            }
+        }
+        private int GetCnt()
+        {
+            DataTable dt;
+            try
+            {
+                dt = Common.CommonDAL.DoSqlCommand.GetDateTable("SELECT COUNT(*) FROM NanJingZB_DXOrgData");
+            }
+            catch(Exception EX)
+            {
+                this.ShowMsg(EX.Message);
+                return 0;
+            }
+            return int.Parse(dt.Rows[0][0].ToString());
         }
         #region 处理函数
         private bool Perinit()
@@ -306,6 +330,13 @@ namespace AutoAssign.BasicData
                 if (!dr[this.DataGridViewCheckColumnName].Equals(DBNull.Value) && (bool)dr[this.DataGridViewCheckColumnName])
                     dr[this.DataGridViewCheckColumnName] = false;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //删除电芯
+            frmClearSN frm = new frmClearSN();
+            frm.ShowDialog();
         }
     }
 }

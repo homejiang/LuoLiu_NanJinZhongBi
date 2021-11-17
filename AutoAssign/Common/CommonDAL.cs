@@ -1292,7 +1292,6 @@ namespace Common
             strUser = Common.CommonFuns.ConfigINI.GetString("RemoteMES", "User", string.Empty);
             strPwd = Common.CommonFuns.ConfigINI.GetString("RemoteMES", "pwd", string.Empty);
             strPwd = Common.CommonFuns.EncryptDecryptService.Base64Decrypt(strPwd);
-
             if (strServer.Length == 0)
             {
                 System.Windows.Forms.MessageBox.Show("请正确配置RemoteMES路径。", "系统提示");

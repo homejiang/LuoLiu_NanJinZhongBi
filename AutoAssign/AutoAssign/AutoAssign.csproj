@@ -105,6 +105,12 @@
     <Compile Include="BasicData\frmSelectAutoMKMode.Designer.cs">
       <DependentUpon>frmSelectAutoMKMode.cs</DependentUpon>
     </Compile>
+    <Compile Include="BasicData\frmClearSN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicData\frmClearSN.Designer.cs">
+      <DependentUpon>frmClearSN.cs</DependentUpon>
+    </Compile>
     <Compile Include="BasicData\frmSelectSN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -753,6 +759,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BasicData\frmSelectAutoMKMode.resx">
       <DependentUpon>frmSelectAutoMKMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicData\frmClearSN.resx">
+      <DependentUpon>frmClearSN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BasicData\frmSelectSN.resx">
       <DependentUpon>frmSelectSN.cs</DependentUpon>

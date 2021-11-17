@@ -90,7 +90,6 @@
             this.清理数据提高设备运行效率ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.设备稼动率查看ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.清空总电芯数据统计ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.导入远程设备的托盘数据仅4号机ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助说明ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.消息窗口ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -119,6 +118,7 @@
             this.拷贝其他设备电芯编号ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsbDataOver = new System.Windows.Forms.ToolStripTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btInputSN = new System.Windows.Forms.Button();
             this.btTuopanCodeSettting = new System.Windows.Forms.Button();
             this.tbTuopanCode = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -213,7 +213,7 @@
             this.ucDianXinCnt = new AutoAssign.UserControls.ucDrawingReel();
             this.ucScanner1 = new AutoAssign.UserControls.ucDrawingReel();
             this.ucMacState = new AutoAssign.UserControls.ucDrawingReel();
-            this.btInputSN = new System.Windows.Forms.Button();
+            this.清除本地不用的电芯ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroove)).BeginInit();
@@ -468,7 +468,7 @@
             this.清理数据提高设备运行效率ToolStripMenuItem,
             this.设备稼动率查看ToolStripMenuItem,
             this.清空总电芯数据统计ToolStripMenuItem,
-            this.导入远程设备的托盘数据仅4号机ToolStripMenuItem});
+            this.清除本地不用的电芯ToolStripMenuItem});
             this.历史数据ToolStripMenuItem.Name = "历史数据ToolStripMenuItem";
             this.历史数据ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.历史数据ToolStripMenuItem.Text = "数据";
@@ -476,56 +476,56 @@
             // 查看当前生产计划详细信息ToolStripMenuItem
             // 
             this.查看当前生产计划详细信息ToolStripMenuItem.Name = "查看当前生产计划详细信息ToolStripMenuItem";
-            this.查看当前生产计划详细信息ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
+            this.查看当前生产计划详细信息ToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
             this.查看当前生产计划详细信息ToolStripMenuItem.Text = "查看当前生产计划详细信息";
             this.查看当前生产计划详细信息ToolStripMenuItem.Click += new System.EventHandler(this.查看当前生产计划详细信息ToolStripMenuItem_Click);
             // 
             // 继续未完成的测试ToolStripMenuItem
             // 
             this.继续未完成的测试ToolStripMenuItem.Name = "继续未完成的测试ToolStripMenuItem";
-            this.继续未完成的测试ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
+            this.继续未完成的测试ToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
             this.继续未完成的测试ToolStripMenuItem.Text = "当前批次数据";
             this.继续未完成的测试ToolStripMenuItem.Click += new System.EventHandler(this.继续未完成的测试ToolStripMenuItem_Click);
             // 
             // 历史数据查询ToolStripMenuItem
             // 
             this.历史数据查询ToolStripMenuItem.Name = "历史数据查询ToolStripMenuItem";
-            this.历史数据查询ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
+            this.历史数据查询ToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
             this.历史数据查询ToolStripMenuItem.Text = "历史数据查询";
             this.历史数据查询ToolStripMenuItem.Click += new System.EventHandler(this.历史数据查询ToolStripMenuItem_Click);
             // 
             // 正在插装的模块ToolStripMenuItem
             // 
             this.正在插装的模块ToolStripMenuItem.Name = "正在插装的模块ToolStripMenuItem";
-            this.正在插装的模块ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
+            this.正在插装的模块ToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
             this.正在插装的模块ToolStripMenuItem.Text = "正在插装的模块";
             this.正在插装的模块ToolStripMenuItem.Click += new System.EventHandler(this.正在插装的模块ToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(259, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(244, 22);
             this.toolStripMenuItem1.Text = "已完成托盘";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // 已完成模块ToolStripMenuItem
             // 
             this.已完成模块ToolStripMenuItem.Name = "已完成模块ToolStripMenuItem";
-            this.已完成模块ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
+            this.已完成模块ToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
             this.已完成模块ToolStripMenuItem.Text = "已完成模块";
             this.已完成模块ToolStripMenuItem.Click += new System.EventHandler(this.已完成模块ToolStripMenuItem_Click);
             // 
             // 首检记录查询ToolStripMenuItem
             // 
             this.首检记录查询ToolStripMenuItem.Name = "首检记录查询ToolStripMenuItem";
-            this.首检记录查询ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
+            this.首检记录查询ToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
             this.首检记录查询ToolStripMenuItem.Text = "首检记录查询";
             this.首检记录查询ToolStripMenuItem.Click += new System.EventHandler(this.首检记录查询ToolStripMenuItem_Click);
             // 
             // 待传MES数据ToolStripMenuItem
             // 
             this.待传MES数据ToolStripMenuItem.Name = "待传MES数据ToolStripMenuItem";
-            this.待传MES数据ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
+            this.待传MES数据ToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
             this.待传MES数据ToolStripMenuItem.Text = "上传MES记录";
             this.待传MES数据ToolStripMenuItem.Click += new System.EventHandler(this.待传MES数据ToolStripMenuItem_Click);
             // 
@@ -535,7 +535,7 @@
             this.根据托盘号ToolStripMenuItem,
             this.根据槽号ToolStripMenuItem});
             this.清理电芯数据ToolStripMenuItem.Name = "清理电芯数据ToolStripMenuItem";
-            this.清理电芯数据ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
+            this.清理电芯数据ToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
             this.清理电芯数据ToolStripMenuItem.Text = "清理当前批次电芯数据";
             this.清理电芯数据ToolStripMenuItem.Click += new System.EventHandler(this.清理电芯数据ToolStripMenuItem_Click);
             // 
@@ -556,30 +556,23 @@
             // 清理数据提高设备运行效率ToolStripMenuItem
             // 
             this.清理数据提高设备运行效率ToolStripMenuItem.Name = "清理数据提高设备运行效率ToolStripMenuItem";
-            this.清理数据提高设备运行效率ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
+            this.清理数据提高设备运行效率ToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
             this.清理数据提高设备运行效率ToolStripMenuItem.Text = "清理数据（提高设备运行效率）";
             this.清理数据提高设备运行效率ToolStripMenuItem.Click += new System.EventHandler(this.清理数据提高设备运行效率ToolStripMenuItem_Click);
             // 
             // 设备稼动率查看ToolStripMenuItem
             // 
             this.设备稼动率查看ToolStripMenuItem.Name = "设备稼动率查看ToolStripMenuItem";
-            this.设备稼动率查看ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
+            this.设备稼动率查看ToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
             this.设备稼动率查看ToolStripMenuItem.Text = "设备稼动率查看";
             this.设备稼动率查看ToolStripMenuItem.Click += new System.EventHandler(this.设备稼动率查看ToolStripMenuItem_Click);
             // 
             // 清空总电芯数据统计ToolStripMenuItem
             // 
             this.清空总电芯数据统计ToolStripMenuItem.Name = "清空总电芯数据统计ToolStripMenuItem";
-            this.清空总电芯数据统计ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
+            this.清空总电芯数据统计ToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
             this.清空总电芯数据统计ToolStripMenuItem.Text = "清空总电芯数据统计";
             this.清空总电芯数据统计ToolStripMenuItem.Click += new System.EventHandler(this.清空总电芯数据统计ToolStripMenuItem_Click);
-            // 
-            // 导入远程设备的托盘数据仅4号机ToolStripMenuItem
-            // 
-            this.导入远程设备的托盘数据仅4号机ToolStripMenuItem.Name = "导入远程设备的托盘数据仅4号机ToolStripMenuItem";
-            this.导入远程设备的托盘数据仅4号机ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
-            this.导入远程设备的托盘数据仅4号机ToolStripMenuItem.Text = "导入远程设备的托盘数据(仅4号机)";
-            this.导入远程设备的托盘数据仅4号机ToolStripMenuItem.Click += new System.EventHandler(this.导入远程设备的托盘数据仅4号机ToolStripMenuItem_Click);
             // 
             // 帮助ToolStripMenuItem
             // 
@@ -831,6 +824,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1008, 92);
             this.panel1.TabIndex = 232;
+            // 
+            // btInputSN
+            // 
+            this.btInputSN.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btInputSN.Location = new System.Drawing.Point(883, 4);
+            this.btInputSN.Margin = new System.Windows.Forms.Padding(2);
+            this.btInputSN.Name = "btInputSN";
+            this.btInputSN.Size = new System.Drawing.Size(97, 30);
+            this.btInputSN.TabIndex = 248;
+            this.btInputSN.Text = "导入电芯";
+            this.btInputSN.UseVisualStyleBackColor = true;
+            this.btInputSN.Click += new System.EventHandler(this.btInputSN_Click);
             // 
             // btTuopanCodeSettting
             // 
@@ -1984,17 +1989,12 @@
             this.ucMacState.Size = new System.Drawing.Size(65, 95);
             this.ucMacState.TabIndex = 242;
             // 
-            // btInputSN
+            // 清除本地不用的电芯ToolStripMenuItem
             // 
-            this.btInputSN.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btInputSN.Location = new System.Drawing.Point(883, 4);
-            this.btInputSN.Margin = new System.Windows.Forms.Padding(2);
-            this.btInputSN.Name = "btInputSN";
-            this.btInputSN.Size = new System.Drawing.Size(97, 30);
-            this.btInputSN.TabIndex = 248;
-            this.btInputSN.Text = "导入电芯";
-            this.btInputSN.UseVisualStyleBackColor = true;
-            this.btInputSN.Click += new System.EventHandler(this.btInputSN_Click);
+            this.清除本地不用的电芯ToolStripMenuItem.Name = "清除本地不用的电芯ToolStripMenuItem";
+            this.清除本地不用的电芯ToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.清除本地不用的电芯ToolStripMenuItem.Text = "清除本地不用的电芯";
+            this.清除本地不用的电芯ToolStripMenuItem.Click += new System.EventHandler(this.清除本地不用的电芯ToolStripMenuItem_Click);
             // 
             // frmMain1
             // 
@@ -2156,7 +2156,6 @@
         private UserControls.ucDrawingReel ucSpeed;
         private System.Windows.Forms.ToolStripMenuItem 设备稼动率查看ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 清空总电芯数据统计ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 导入远程设备的托盘数据仅4号机ToolStripMenuItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -2209,5 +2208,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btTuopanCodeSettting;
         private System.Windows.Forms.Button btInputSN;
+        private System.Windows.Forms.ToolStripMenuItem 清除本地不用的电芯ToolStripMenuItem;
     }
 }

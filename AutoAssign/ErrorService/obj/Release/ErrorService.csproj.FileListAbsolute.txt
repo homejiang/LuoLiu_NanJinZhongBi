@@ -50,3 +50,17 @@ D:\ALZFiles\SLN\AutoAssign\ErrorService\obj\Release\ErrorService.csproj.Generate
 D:\ALZFiles\SLN\AutoAssign\ErrorService\obj\Release\ErrorService.csproj.CoreCompileInputs.cache
 D:\ALZFiles\SLN\AutoAssign\ErrorService\obj\Release\ErrorService.dll
 D:\ALZFiles\SLN\AutoAssign\ErrorService\obj\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\ErrorService\bin\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\ErrorService\bin\Release\ErrorService.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\ErrorService\obj\Release\ErrorService.wErrorMessage.resources
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\ErrorService\obj\Release\ErrorService.csproj.GenerateResource.Cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\ErrorService\obj\Release\ErrorService.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\ErrorService\obj\Release\ErrorService.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\ErrorService\bin\Release\ErrorService.dll
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\ErrorService\bin\Release\ErrorService.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\ErrorService\obj\Release\ErrorService.csproj.AssemblyReference.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\ErrorService\obj\Release\ErrorService.wErrorMessage.resources
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\ErrorService\obj\Release\ErrorService.csproj.GenerateResource.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\ErrorService\obj\Release\ErrorService.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\ErrorService\obj\Release\ErrorService.dll
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\ErrorService\obj\Release\ErrorService.pdb

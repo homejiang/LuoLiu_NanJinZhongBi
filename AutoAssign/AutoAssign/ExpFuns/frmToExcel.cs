@@ -84,11 +84,11 @@ namespace AutoAssign.ExpFuns
             if (this.btTrue.Text != BTText_Stop)
             {
                 string strFile;
-                if(this.tbTarget.Text.Length==0)
+                if (this.tbTarget.Text.Length == 0)
                 {
                     this.ShowMsg("请设置目标文件名！");
                 }
-                if(File.Exists(this.tbTarget.Text))
+                if (File.Exists(this.tbTarget.Text))
                 {
                     this.ShowMsg("文件名已经存在了！");
                     return;
@@ -107,13 +107,13 @@ namespace AutoAssign.ExpFuns
                 this.ShowMsgRich("导出成功！");
                 //this.btTrue.Text = BTText_complate;
                 //this.btTrue.Enabled = true;
-            }           
+            }
         }
 
         private bool Save2Excel(string strFile, out string strErr)
         {
             strErr = "";
-             DataSet ds = null;
+            DataSet ds = null;
             List<Common.CommonDAL.SqlSearchEntiy> listSql = new List<Common.CommonDAL.SqlSearchEntiy>();
             listSql.Add(new Common.CommonDAL.SqlSearchEntiy(string.Format("EXEC [dbo].[Tested_Grooves_1] '{0}' ,'{1}'", this._ResultTableName.Replace("'", "''"), this._BatTableName.Replace("'", "''")), "合格"));
             listSql.Add(new Common.CommonDAL.SqlSearchEntiy(string.Format("EXEC [dbo].[Tested_Grooves_2] '{0}' ,'{1}'", this._ResultTableName.Replace("'", "''"), this._BatTableName.Replace("'", "''")), "不合格"));
@@ -125,30 +125,32 @@ namespace AutoAssign.ExpFuns
             catch (Exception ex)
             {
                 strErr = ex.Message;
-               
+
             }
             _MyCsvWriter_CsvSaveFinishedNotice(false, false, 50);
 
-            //try
-            //{
-            //    ExcelRender.RenderToExcel(ds, strFile);
-            //}
-            //catch (Exception ex)
-            //{
-            //    strErr = string.Format("写入Excel数据时出错：{0}({1})", ex.Message, ex.Source);
-            //    return false;
-            //}
-            Thread _thread = new Thread(() => ExcelRender.RenderToExcel(ds, strFile));
-            _thread.IsBackground = true;
+            if (ds == null) { this.ShowMsg("可能数据已经被清除，未找到任何数据"); this.Close(); } 
+
             try
             {
-                _thread.Start();
+                ExcelRender.RenderToExcel(ds, strFile);
             }
             catch (Exception ex)
             {
                 strErr = string.Format("写入Excel数据时出错：{0}({1})", ex.Message, ex.Source);
                 return false;
             }
+            //Thread _thread = new Thread(() => ExcelRender.RenderToExcel(ds, strFile));
+            //_thread.IsBackground = true;
+            //try
+            //{
+            //    _thread.Start();
+            //}
+            //catch (Exception ex)
+            //{
+            //    strErr = string.Format("写入Excel数据时出错：{0}({1})", ex.Message, ex.Source);
+            //    return false;
+            //}
             _MyCsvWriter_CsvSaveFinishedNotice(true, true, 100);
             return true;
         }
@@ -162,10 +164,10 @@ namespace AutoAssign.ExpFuns
             dialog.FileName = string.Format("批次{0}数据_{1}.xls", this._TestCode, DateTime.Now.ToString("yyyyMMddHHmmss"));
             dialog.AddExtension = true;
             if (System.Windows.Forms.DialogResult.OK != dialog.ShowDialog(this))
-                return ;
+                return;
             if (dialog.FileName == string.Empty)
             {
-                return ;
+                return;
             }
             this.tbTarget.Text = dialog.FileName;
             this.btTrue.Enabled = true;
@@ -223,10 +225,10 @@ namespace AutoAssign.ExpFuns
             Compeleted = 1,
             Writing = 2
         }
-        
+
         protected override void OnClosing(CancelEventArgs e)
         {
-            if(this.btTrue.Text==BTText_Stop)
+            if (this.btTrue.Text == BTText_Stop)
             {
                 e.Cancel = true;
                 this.ShowMsg("请先终止！");
@@ -240,9 +242,9 @@ namespace AutoAssign.ExpFuns
             this._MyCsvWriter = new JPSEntity.MyCsvWriter(this);
             this._MyCsvWriter.CsvSaveFinishedNotice += _MyCsvWriter_CsvSaveFinishedNotice;
         }
-         /// <summary>
-         /// datatable 存入excel
-         /// </summary>
+        /// <summary>
+        /// datatable 存入excel
+        /// </summary>
         public class ExcelRender
         {
             /// <summary>

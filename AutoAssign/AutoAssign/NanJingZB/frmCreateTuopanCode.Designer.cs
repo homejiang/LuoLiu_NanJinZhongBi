@@ -49,6 +49,8 @@
             this.tbCode5_7 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.tbDate = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -165,7 +167,7 @@
             // 
             // tbSerial
             // 
-            this.tbSerial.Location = new System.Drawing.Point(547, 50);
+            this.tbSerial.Location = new System.Drawing.Point(561, 55);
             this.tbSerial.Name = "tbSerial";
             this.tbSerial.Size = new System.Drawing.Size(109, 26);
             this.tbSerial.TabIndex = 4;
@@ -175,7 +177,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.Location = new System.Drawing.Point(556, 27);
+            this.label9.Location = new System.Drawing.Point(572, 31);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(79, 20);
             this.label9.TabIndex = 12;
@@ -185,11 +187,11 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label10.Location = new System.Drawing.Point(543, 79);
+            this.label10.Location = new System.Drawing.Point(543, 84);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(143, 21);
+            this.label10.Size = new System.Drawing.Size(134, 21);
             this.label10.TabIndex = 14;
-            this.label10.Text = "10位(自动前面补0)";
+            this.label10.Text = "7位(自动前面补0)";
             // 
             // btSave
             // 
@@ -204,7 +206,7 @@
             // btRefreshSerial
             // 
             this.btRefreshSerial.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btRefreshSerial.Location = new System.Drawing.Point(541, 103);
+            this.btRefreshSerial.Location = new System.Drawing.Point(541, 108);
             this.btRefreshSerial.Name = "btRefreshSerial";
             this.btRefreshSerial.Size = new System.Drawing.Size(120, 34);
             this.btRefreshSerial.TabIndex = 15;
@@ -252,11 +254,32 @@
             this.label12.TabIndex = 19;
             this.label12.Text = "7位";
             // 
+            // tbDate
+            // 
+            this.tbDate.Location = new System.Drawing.Point(498, 55);
+            this.tbDate.Name = "tbDate";
+            this.tbDate.ReadOnly = true;
+            this.tbDate.Size = new System.Drawing.Size(54, 26);
+            this.tbDate.TabIndex = 20;
+            this.tbDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label13.Location = new System.Drawing.Point(499, 32);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(51, 20);
+            this.label13.TabIndex = 21;
+            this.label13.Text = "日期码";
+            // 
             // frmCreateTuopanCode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(703, 186);
+            this.Controls.Add(this.tbDate);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.tbCode5_7);
             this.Controls.Add(this.label11);
@@ -313,5 +336,7 @@
         private System.Windows.Forms.TextBox tbCode5_7;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox tbDate;
+        private System.Windows.Forms.Label label13;
     }
 }

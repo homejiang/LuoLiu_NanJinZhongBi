@@ -56,3 +56,19 @@ D:\ALZFiles\SLN\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.csproj.Core
 D:\ALZFiles\SLN\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.csproj.CopyComplete
 D:\ALZFiles\SLN\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.dll
 D:\ALZFiles\SLN\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\bin\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\bin\Release\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\bin\Release\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\bin\Release\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\obj\Release\MyDataGridView.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\bin\Release\MyDataGridView.dll
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\bin\Release\MyDataGridView.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\bin\Release\NumericBox.dll
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\bin\Release\NumericBox.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\obj\Release\MyDataGridView.csproj.AssemblyReference.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\obj\Release\MyDataGridView.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\obj\Release\MyDataGridView.csproj.CopyComplete
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\obj\Release\MyDataGridView.dll
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\obj\Release\MyDataGridView.pdb

@@ -32,7 +32,6 @@ namespace AutoAssign.NanJingZB
         public frmCreateTuopanCode(string sCodeHeader)
         {
             InitializeComponent();
-           
             this.tbCode1_3.Tag = 3;
             this.tbCode2_1.Tag = 1;
             this.tbCode3_1.Tag = 1;
@@ -65,10 +64,28 @@ namespace AutoAssign.NanJingZB
                 this.tbCode5_7.Text = "0000000";
             this.BindSerial();
             #endregion
+            this.btSave.Enabled = this.BindDateCodes();
+
+            this.tbSerial.ReadOnly = !this.BindSerial();
             foreach (TextBox tb in _Textbox)
             {
                 tb.TextChanged += Tb_TextChanged;
             }
+        }
+        private bool BindDateCodes()
+        {
+            DataTable dt;
+            try
+            {
+                dt = Common.CommonDAL.DoSqlCommand.GetDateTable("SELECT DBO.NanJingZB_GetDateCodes()");
+            }
+            catch (Exception EX)
+            {
+                this.ShowMsg(EX.Message);
+                return false;
+            }
+            this.tbDate.Text = dt.Rows[0][0].ToString();
+            return true;
         }
         private void Tb_TextChanged(object sender, EventArgs e)
         {
@@ -117,7 +134,7 @@ namespace AutoAssign.NanJingZB
             DataTable dt;
             try
             {
-                dt = Common.CommonDAL.DoSqlCommand.GetDateTable($"SELECT * FROM Testing_MaxTuoPanCode WHERE YYM='{sCode.Replace("'", "''")}'");
+                dt = Common.CommonDAL.DoSqlCommand.GetDateTable($"SELECT * FROM Testing_MaxTuoPanCode WHERE YYM='{sCode.Replace("'", "''")}{this.tbDate.Text}'");
             }
             catch(Exception ex)
             {

@@ -49,3 +49,19 @@ D:\ALZFiles\SLN\AutoAssign\MyDataGridView\obj\Debug\MyDataGridView.csproj.CoreCo
 D:\ALZFiles\SLN\AutoAssign\MyDataGridView\obj\Debug\MyDataGridView.dll
 D:\ALZFiles\SLN\AutoAssign\MyDataGridView\obj\Debug\MyDataGridView.pdb
 D:\ALZFiles\SLN\AutoAssign\MyDataGridView\obj\Debug\MyDataGridView.csproj.CopyComplete
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\bin\Debug\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\bin\Debug\MyDataGridView.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\bin\Debug\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\bin\Debug\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\obj\Debug\MyDataGridView.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\obj\Debug\MyDataGridView.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyDataGridView\obj\Debug\MyDataGridView.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\bin\Debug\MyDataGridView.dll
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\bin\Debug\MyDataGridView.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\bin\Debug\NumericBox.dll
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\bin\Debug\NumericBox.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\obj\Debug\MyDataGridView.csproj.AssemblyReference.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\obj\Debug\MyDataGridView.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\obj\Debug\MyDataGridView.dll
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\obj\Debug\MyDataGridView.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyDataGridView\obj\Debug\MyDataGridView.csproj.CopyComplete

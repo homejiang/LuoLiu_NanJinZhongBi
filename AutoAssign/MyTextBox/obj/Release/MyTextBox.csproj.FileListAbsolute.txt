@@ -34,3 +34,13 @@ D:\ALZFiles\SLN\AutoAssign\MyTextBox\bin\Release\MyTextBox.pdb
 D:\ALZFiles\SLN\AutoAssign\MyTextBox\obj\Release\MyTextBox.csproj.CoreCompileInputs.cache
 D:\ALZFiles\SLN\AutoAssign\MyTextBox\obj\Release\MyTextBox.dll
 D:\ALZFiles\SLN\AutoAssign\MyTextBox\obj\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyTextBox\bin\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyTextBox\bin\Release\MyTextBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyTextBox\obj\Release\MyTextBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\MyTextBox\obj\Release\MyTextBox.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyTextBox\bin\Release\MyTextBox.dll
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyTextBox\bin\Release\MyTextBox.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyTextBox\obj\Release\MyTextBox.csproj.AssemblyReference.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyTextBox\obj\Release\MyTextBox.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyTextBox\obj\Release\MyTextBox.dll
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\MyTextBox\obj\Release\MyTextBox.pdb

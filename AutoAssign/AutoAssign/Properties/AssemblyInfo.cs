@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("洛柳")]
 [assembly: AssemblyProduct("AutoAssign")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,8 +32,8 @@ using System.Runtime.InteropServices;
 //可以指定所有这些值，也可以使用“生成号”和“修订号”的默认值，
 // 方法是按如下所示使用“*”: :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("86.21.1112.93")]
-[assembly: AssemblyFileVersion("86.21.1112.93")]
+[assembly: AssemblyVersion("86.21.1116.94")]
+[assembly: AssemblyFileVersion("86.21.1116.94")]
 /**********
  * 86.19.222.13：
  * 1、添加订单号
@@ -166,4 +166,9 @@ using System.Runtime.InteropServices;
     添加条码规则设置，以及打印时添加上槽号显示
     86.21.1027.92：
     条码规则改成14位的，后面7个追溯码也加上去了
+    86.21.1116.94：
+    1、托盘码添加日期
+    2、手动打印托盘号时，加上槽号选择
+    3、手动删除本地电芯功能
+    4、检测数据导出excel AutoAssign.ExpFuns.frmToExcel
  * *******************/

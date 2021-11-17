@@ -30,3 +30,13 @@ D:\ALZFiles\SLN\AutoAssign\NumericBox\obj\Debug\NumericBox.csproj.AssemblyRefere
 D:\ALZFiles\SLN\AutoAssign\NumericBox\obj\Debug\NumericBox.csproj.CoreCompileInputs.cache
 D:\ALZFiles\SLN\AutoAssign\NumericBox\obj\Debug\NumericBox.dll
 D:\ALZFiles\SLN\AutoAssign\NumericBox\obj\Debug\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\NumericBox\bin\Debug\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\NumericBox\bin\Debug\NumericBox.pdb
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\NumericBox\obj\Debug\NumericBox.csprojResolveAssemblyReference.cache
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\NumericBox\obj\Debug\NumericBox.dll
+D:\Project Files\Yrotcafretho\ForHsy\SourceRich\洛柳\南京中比\分选机程序\LuoLiu_NanJinZhongBi\AutoAssign\NumericBox\obj\Debug\NumericBox.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\NumericBox\bin\Debug\NumericBox.dll
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\NumericBox\bin\Debug\NumericBox.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\NumericBox\obj\Debug\NumericBox.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\NumericBox\obj\Debug\NumericBox.dll
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\NumericBox\obj\Debug\NumericBox.pdb

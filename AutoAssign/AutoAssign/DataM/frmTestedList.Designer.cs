@@ -68,20 +68,22 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.Controls.Add(this.toolStrip1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.dgvList, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(884, 519);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1326, 778);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbEdit,
             this.tsbDel,
@@ -94,7 +96,8 @@
             this.tsbOutputExcel});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(884, 32);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.toolStrip1.Size = new System.Drawing.Size(1326, 38);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -104,7 +107,7 @@
             this.tsbEdit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbEdit.Name = "tsbEdit";
-            this.tsbEdit.Size = new System.Drawing.Size(56, 29);
+            this.tsbEdit.Size = new System.Drawing.Size(70, 33);
             this.tsbEdit.Text = "打开";
             this.tsbEdit.Click += new System.EventHandler(this.tsbEdit_Click);
             // 
@@ -114,14 +117,14 @@
             this.tsbDel.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbDel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbDel.Name = "tsbDel";
-            this.tsbDel.Size = new System.Drawing.Size(55, 29);
+            this.tsbDel.Size = new System.Drawing.Size(69, 33);
             this.tsbDel.Text = "删除";
             this.tsbDel.Click += new System.EventHandler(this.tsbDel_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 32);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
             // 
             // tsbCompeleted
             // 
@@ -129,26 +132,26 @@
             this.tsbCompeleted.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbCompeleted.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbCompeleted.Name = "tsbCompeleted";
-            this.tsbCompeleted.Size = new System.Drawing.Size(85, 29);
+            this.tsbCompeleted.Size = new System.Drawing.Size(111, 33);
             this.tsbCompeleted.Text = "测试结束";
             this.tsbCompeleted.Click += new System.EventHandler(this.tsbCompeleted_Click);
             // 
             // tlsTesteTime
             // 
             this.tlsTesteTime.Name = "tlsTesteTime";
-            this.tlsTesteTime.Size = new System.Drawing.Size(56, 29);
+            this.tlsTesteTime.Size = new System.Drawing.Size(82, 33);
             this.tlsTesteTime.Text = "测试时间";
             // 
             // tslTitle
             // 
             this.tslTitle.Name = "tslTitle";
-            this.tslTitle.Size = new System.Drawing.Size(81, 29);
+            this.tslTitle.Size = new System.Drawing.Size(118, 33);
             this.tslTitle.Text = "测试批次号";
             // 
             // tsCombox
             // 
             this.tsCombox.Name = "tsCombox";
-            this.tsCombox.Size = new System.Drawing.Size(100, 32);
+            this.tsCombox.Size = new System.Drawing.Size(148, 38);
             this.tsCombox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tsCombox_KeyDown);
             // 
             // tsbSearch
@@ -157,7 +160,7 @@
             this.tsbSearch.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSearch.Name = "tsbSearch";
-            this.tsbSearch.Size = new System.Drawing.Size(57, 29);
+            this.tsbSearch.Size = new System.Drawing.Size(71, 33);
             this.tsbSearch.Text = "搜索";
             this.tsbSearch.Click += new System.EventHandler(this.tsbSearch_Click);
             // 
@@ -167,7 +170,7 @@
             this.tsbOutputExcel.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbOutputExcel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbOutputExcel.Name = "tsbOutputExcel";
-            this.tsbOutputExcel.Size = new System.Drawing.Size(84, 29);
+            this.tsbOutputExcel.Size = new System.Drawing.Size(110, 33);
             this.tsbOutputExcel.Text = "导出托盘";
             this.tsbOutputExcel.Click += new System.EventHandler(this.tsbOutputExcel_Click);
             // 
@@ -195,14 +198,14 @@
             this.Column14,
             this.Column9});
             this.dgvList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvList.Location = new System.Drawing.Point(0, 33);
+            this.dgvList.Location = new System.Drawing.Point(0, 50);
             this.dgvList.Margin = new System.Windows.Forms.Padding(0);
             this.dgvList.Name = "dgvList";
             this.dgvList.ReadOnly = true;
             this.dgvList.RowHeadersWidth = 37;
             this.dgvList.RowTemplate.Height = 23;
             this.dgvList.ShowLineNo = true;
-            this.dgvList.Size = new System.Drawing.Size(884, 486);
+            this.dgvList.Size = new System.Drawing.Size(1326, 728);
             this.dgvList.TabIndex = 1;
             this.dgvList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.myDataGridView1_CellContentClick);
             this.dgvList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.myDataGridView1_CellDoubleClick);
@@ -211,6 +214,7 @@
             // 
             this.Column8.DataPropertyName = "StateView";
             this.Column8.HeaderText = "测试状态";
+            this.Column8.MinimumWidth = 8;
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             this.Column8.Width = 78;
@@ -219,13 +223,16 @@
             // 
             this.Column1.DataPropertyName = "Code";
             this.Column1.HeaderText = "测试批次";
+            this.Column1.MinimumWidth = 8;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
+            this.Column1.Width = 150;
             // 
             // Column2
             // 
             this.Column2.DataPropertyName = "OperatorName";
             this.Column2.HeaderText = "测试人";
+            this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             this.Column2.Width = 68;
@@ -236,27 +243,34 @@
             dataGridViewCellStyle1.Format = "yyyy-MM-dd HH:mm";
             this.Column3.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column3.HeaderText = "开始时间";
+            this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
+            this.Column3.Width = 150;
             // 
             // Column11
             // 
             this.Column11.DataPropertyName = "EndTime";
             this.Column11.HeaderText = "结束时间";
+            this.Column11.MinimumWidth = 8;
             this.Column11.Name = "Column11";
             this.Column11.ReadOnly = true;
+            this.Column11.Width = 150;
             // 
             // Column4
             // 
             this.Column4.DataPropertyName = "ModeView";
             this.Column4.HeaderText = "测试模式";
+            this.Column4.MinimumWidth = 8;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
+            this.Column4.Width = 150;
             // 
             // Column17
             // 
             this.Column17.DataPropertyName = "GongYiTypeView";
             this.Column17.HeaderText = "分档规则";
+            this.Column17.MinimumWidth = 8;
             this.Column17.Name = "Column17";
             this.Column17.ReadOnly = true;
             this.Column17.Width = 78;
@@ -265,20 +279,25 @@
             // 
             this.Column15.DataPropertyName = "OrderNo";
             this.Column15.HeaderText = "生产计划";
+            this.Column15.MinimumWidth = 8;
             this.Column15.Name = "Column15";
             this.Column15.ReadOnly = true;
+            this.Column15.Width = 150;
             // 
             // Column16
             // 
             this.Column16.DataPropertyName = "PactCode";
             this.Column16.HeaderText = "生产任务单";
+            this.Column16.MinimumWidth = 8;
             this.Column16.Name = "Column16";
             this.Column16.ReadOnly = true;
+            this.Column16.Width = 150;
             // 
             // Column10
             // 
             this.Column10.DataPropertyName = "Spec";
             this.Column10.HeaderText = "电芯规格分类";
+            this.Column10.MinimumWidth = 8;
             this.Column10.Name = "Column10";
             this.Column10.ReadOnly = true;
             this.Column10.Width = 110;
@@ -287,6 +306,7 @@
             // 
             this.Column5.DataPropertyName = "ClassName";
             this.Column5.HeaderText = "电芯规格";
+            this.Column5.MinimumWidth = 8;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             this.Column5.Width = 88;
@@ -295,6 +315,7 @@
             // 
             this.Column6.DataPropertyName = "ProcessCode";
             this.Column6.HeaderText = "所属工序";
+            this.Column6.MinimumWidth = 8;
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             this.Column6.Width = 78;
@@ -303,6 +324,7 @@
             // 
             this.Column7.DataPropertyName = "GongYiTypeName";
             this.Column7.HeaderText = "工艺类型";
+            this.Column7.MinimumWidth = 8;
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             this.Column7.Width = 78;
@@ -311,20 +333,25 @@
             // 
             this.Column12.DataPropertyName = "MbatchNum";
             this.Column12.HeaderText = "来料工单号";
+            this.Column12.MinimumWidth = 8;
             this.Column12.Name = "Column12";
             this.Column12.ReadOnly = true;
+            this.Column12.Width = 150;
             // 
             // Column13
             // 
             this.Column13.DataPropertyName = "MbatchNumCheckOnView";
             this.Column13.HeaderText = "来料工单校验";
+            this.Column13.MinimumWidth = 8;
             this.Column13.Name = "Column13";
             this.Column13.ReadOnly = true;
+            this.Column13.Width = 150;
             // 
             // Column14
             // 
             this.Column14.DataPropertyName = "SNContainCheckOnView";
             this.Column14.HeaderText = "电芯编号重复校验";
+            this.Column14.MinimumWidth = 8;
             this.Column14.Name = "Column14";
             this.Column14.ReadOnly = true;
             this.Column14.Width = 125;
@@ -339,11 +366,12 @@
             // 
             // frmTestedList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 519);
+            this.ClientSize = new System.Drawing.Size(1326, 778);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
             this.Name = "frmTestedList";
             this.ShowIcon = false;
             this.Text = "分选批次列表";

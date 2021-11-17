@@ -31,10 +31,11 @@ namespace FindIP
         private void button2_Click(object sender, EventArgs e)
         {
             decimal dec;
-          //  if(!decimal.TryParse(this.textBox1.Text, System.Globalization.NumberStyles.Float,,out dec))
+            //  if(!decimal.TryParse(this.textBox1.Text, System.Globalization.NumberStyles.Float,,out dec))
             if (!decimal.TryParse(this.textBox1.Text, out dec))
-                {
-                }
+            {
+            }
+        
         }
     }
 }

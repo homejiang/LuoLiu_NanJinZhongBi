@@ -775,7 +775,7 @@ namespace AutoAssign
             DataTable dt;
             try
             {
-                dt = Common.CommonDAL.DoSqlCommand.GetDateTable($"SELECT * FROM Testing_MaxTuoPanCode WHERE YYM='{sHeader.Replace("'","''")}'");
+                dt = Common.CommonDAL.DoSqlCommand.GetDateTable($"SELECT * FROM Testing_MaxTuoPanCode WHERE YYM='{sHeader.Replace("'","''")}'+dbo.NanJingZB_GetDateCodes()");
             }
             catch (Exception ex)
             {
@@ -3514,6 +3514,12 @@ namespace AutoAssign
             frmInputingSN frm1 = new frmInputingSN(datas);
             frm1.TopMost = true;
             frm1.ShowDialog();
+        }
+
+        private void 清除本地不用的电芯ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BasicData.frmClearSN frm = new BasicData.frmClearSN();
+            frm.ShowDialog();
         }
     }
 }

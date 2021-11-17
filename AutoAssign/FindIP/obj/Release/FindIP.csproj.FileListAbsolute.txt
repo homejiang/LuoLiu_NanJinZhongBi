@@ -19,3 +19,14 @@ D:\ALZFiles\SLN\AutoAssign\FindIP\obj\Release\FindIP.pdb
 D:\ALZFiles\SLN\AutoAssign\FindIP\bin\Release\FindIP.exe.config
 D:\ALZFiles\SLN\AutoAssign\FindIP\bin\Release\FindIP.exe
 D:\ALZFiles\SLN\AutoAssign\FindIP\bin\Release\FindIP.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\bin\Release\FindIP.exe.config
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\bin\Release\FindIP.exe
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\bin\Release\FindIP.pdb
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\obj\Release\FindIP.csproj.AssemblyReference.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\obj\Release\FindIP.Form1.resources
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\obj\Release\FindIP.Form2.resources
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\obj\Release\FindIP.Properties.Resources.resources
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\obj\Release\FindIP.csproj.GenerateResource.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\obj\Release\FindIP.csproj.CoreCompileInputs.cache
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\obj\Release\FindIP.exe
+D:\ALZFiles\SLN\新建文件夹\AutoAssign(1)\FindIP\obj\Release\FindIP.pdb

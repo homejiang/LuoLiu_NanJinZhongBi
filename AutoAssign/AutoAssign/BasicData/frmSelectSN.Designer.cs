@@ -28,15 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btTrue = new System.Windows.Forms.Button();
             this.btClose = new System.Windows.Forms.Button();
             this.dgvDetail = new MyControl.MyDataGridView();
+            this.colCheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btUnSel = new System.Windows.Forms.Button();
             this.btSeled = new System.Windows.Forms.Button();
@@ -47,13 +54,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tbPici = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.colCheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.labNoticeCliear = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetail)).BeginInit();
@@ -79,6 +81,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labNoticeCliear);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btTrue);
             this.panel1.Controls.Add(this.btClose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -134,6 +138,69 @@
             this.dgvDetail.ShowLineNo = true;
             this.dgvDetail.Size = new System.Drawing.Size(984, 584);
             this.dgvDetail.TabIndex = 1;
+            // 
+            // colCheckBox
+            // 
+            this.colCheckBox.Frozen = true;
+            this.colCheckBox.HeaderText = "";
+            this.colCheckBox.Name = "colCheckBox";
+            this.colCheckBox.Width = 35;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "PatchCode";
+            this.Column1.HeaderText = "导入批次";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column1.Width = 110;
+            // 
+            // Column17
+            // 
+            this.Column17.DataPropertyName = "ItemCode";
+            this.Column17.HeaderText = "电芯编号";
+            this.Column17.Name = "Column17";
+            this.Column17.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column17.Width = 220;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "Capacity";
+            dataGridViewCellStyle9.Format = "#########0.####";
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle9;
+            this.Column6.HeaderText = "电容";
+            this.Column6.Name = "Column6";
+            this.Column6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column6.Width = 78;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "Resistance";
+            dataGridViewCellStyle10.Format = "#########0.####";
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle10;
+            this.Column7.HeaderText = "电阻";
+            this.Column7.Name = "Column7";
+            this.Column7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column7.Width = 98;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "Voltage";
+            dataGridViewCellStyle11.Format = "#########0.####";
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle11;
+            this.Column8.HeaderText = "电压";
+            this.Column8.Name = "Column8";
+            this.Column8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column10
+            // 
+            this.Column10.DataPropertyName = "InsertTimes";
+            dataGridViewCellStyle12.Format = "yyyy-MM-dd HH:mm:ss";
+            this.Column10.DefaultCellStyle = dataGridViewCellStyle12;
+            this.Column10.HeaderText = "导入时间";
+            this.Column10.Name = "Column10";
+            this.Column10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column10.Width = 110;
             // 
             // panel2
             // 
@@ -236,68 +303,27 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "导入批次";
             // 
-            // colCheckBox
+            // button1
             // 
-            this.colCheckBox.Frozen = true;
-            this.colCheckBox.HeaderText = "";
-            this.colCheckBox.Name = "colCheckBox";
-            this.colCheckBox.Width = 35;
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(12, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 30);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "清理本地电芯";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Column1
+            // labNoticeCliear
             // 
-            this.Column1.DataPropertyName = "PatchCode";
-            this.Column1.HeaderText = "导入批次";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column1.Width = 110;
-            // 
-            // Column17
-            // 
-            this.Column17.DataPropertyName = "ItemCode";
-            this.Column17.HeaderText = "电芯编号";
-            this.Column17.Name = "Column17";
-            this.Column17.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column17.Width = 220;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "Capacity";
-            dataGridViewCellStyle5.Format = "#########0.####";
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Column6.HeaderText = "电容";
-            this.Column6.Name = "Column6";
-            this.Column6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column6.Width = 78;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "Resistance";
-            dataGridViewCellStyle6.Format = "#########0.####";
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle6;
-            this.Column7.HeaderText = "电阻";
-            this.Column7.Name = "Column7";
-            this.Column7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column7.Width = 98;
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "Voltage";
-            dataGridViewCellStyle7.Format = "#########0.####";
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle7;
-            this.Column8.HeaderText = "电压";
-            this.Column8.Name = "Column8";
-            this.Column8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column10
-            // 
-            this.Column10.DataPropertyName = "InsertTimes";
-            dataGridViewCellStyle8.Format = "yyyy-MM-dd HH:mm:ss";
-            this.Column10.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Column10.HeaderText = "导入时间";
-            this.Column10.Name = "Column10";
-            this.Column10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column10.Width = 110;
+            this.labNoticeCliear.AutoSize = true;
+            this.labNoticeCliear.Font = new System.Drawing.Font("宋体", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labNoticeCliear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.labNoticeCliear.Location = new System.Drawing.Point(129, 18);
+            this.labNoticeCliear.Name = "labNoticeCliear";
+            this.labNoticeCliear.Size = new System.Drawing.Size(397, 15);
+            this.labNoticeCliear.TabIndex = 8;
+            this.labNoticeCliear.Text = "请及时清除本地不用的电芯，否则系统查询电芯效率会降低";
             // 
             // frmSelectSN
             // 
@@ -310,6 +336,7 @@
             this.Load += new System.EventHandler(this.frmBsFWithAllocateInfo_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetail)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -341,5 +368,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.Label labNoticeCliear;
+        private System.Windows.Forms.Button button1;
     }
 }
